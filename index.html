@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+		<script src="https://cdn.jsdelivr.net/npm/leaflet-vector-tile-layer@0.4.0/dist/VectorTileLayer.umd.min.js"></script>
+		<!-- Load Esri Leaflet from CDN -->
+		<script src="https://unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet.js"
+		integrity="sha512-cMQ5e58BDuu1pr9BQ/eGRn6HaR6Olh0ofcHFWe5XesdCITVuSBiBZZbhCijBe5ya238f/zMMRYIMIIg1jxv4sQ=="
+		crossorigin=""></script>
+		<style>
+			#mapid {
+				height: 700px;
+			}
+			.leaflet-container { background-color: #FFF }
+		</style>
+	</head>
+	<body>
+		<div id="mapid"></div>
+
+		<script>
+
+		// Basemap layers
+		var base = {
+			'Empty': L.tileLayer(''),
+			'Esri_WorldImagery':  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+				attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+		  }),
+			'Stadia_AlidadeSmooth': L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+				maxZoom: 20,
+				attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+			}),
+			'Streets': L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+			})
+		};
+
+		// Layers
+		var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
+		boundaries.setStyle({
+			color: 'grey',
+			weight: 2,
+			fill: false
+		});
+		var hospitals = L.esri.featureLayer({ url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6' });
+		hospitals.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var va = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0' });
+		va.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+
+    // Add it all together
+		var mymap = L.map('mapid', {
+			center: [45.9, -93.6],
+			zoom: 6,
+			layers: [base.Empty]
+		});
+
+		var overlayMaps = {
+			"Boundaries": boundaries,
+			"Hospitals/Medical Centers": hospitals,
+			"Veterans Health Administration Medical Facilities": va
+		}
+
+		mymap.addLayer(boundaries)
+		L.control.layers(base, overlayMaps).addTo(mymap);
+
+
+			// VectorTileLayer('data/boundary/{z}/{x}/{y}.pbf', {
+			// 	minDetailZoom: 0,
+			// 	maxDetailZoom: 8,
+			// 	vectorTileLayerStyles: {
+			// 		cb_2017_us_county_500k: {
+			// 			weight: 1,
+			// 			color: '#000000',
+			// 			opacity: 0.2,
+			// 			fill: false
+			// 		},
+			// 		cb_2015_us_state_500k: {
+			// 			weight: 3,
+			// 			color: '#000000',
+			// 			opacity: 0.2,
+			// 			fill: false
+			// 		}
+			// 	}
+			// }).addTo(mymap);
+			//
+			// VectorTileLayer('data/county_cases/{z}/{x}/{y}.pbf', {
+			// 	minDetailZoom: 0,
+			// 	maxDetailZoom: 8,
+			// 	style: function(f, name) {
+			// 		//console.log(f, name);
+			// 		const cases = f.properties.cases;
+			//
+			// 		const ln_cases = Math.log(cases);
+			// 		const gb = 215 - Math.floor(ln_cases * 255 / 7);
+			// 		const rgb = (255 << 16) + (gb << 8) + (gb)
+			//
+			// 		return ({
+			// 			stroke: false,
+			// 			fillColor: '#'+rgb.toString(16),
+			// 			fill: true
+			// 			});
+			// 	}
+			// }).addTo(mymap);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "_from": "leaflet-vector-tile-layer",
+  "_id": "leaflet-vector-tile-layer@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-3j7AWc4wz7WPat0clXFE1NfxT/Jc345IyDpXnR9xcZ8zlXi2ksdPSwFo2sK8g4138aGIi7zrC+RFwOh8FkMwNA==",
+  "_location": "/leaflet-vector-tile-layer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "leaflet-vector-tile-layer",
+    "name": "leaflet-vector-tile-layer",
+    "escapedName": "leaflet-vector-tile-layer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/leaflet-vector-tile-layer/-/leaflet-vector-tile-layer-0.4.0.tgz",
+  "_shasum": "11ed2855d643ba4b6215a73ed9155950015d12b7",
+  "_spec": "leaflet-vector-tile-layer",
+  "_where": "/home/jimk/Public/GeoMoose/gm3",
+  "author": {
+    "name": "Joachim Kuebart",
+    "email": "joachim.kuebart@gmail.com"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/jkuebart/Leaflet.VectorTileLayer/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Joachim Kuebart",
+      "email": "joachim.kuebart@gmail.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "Leaflet layer for vector tiles",
+  "devDependencies": {
+    "@mapbox/vector-tile": "*",
+    "jslint-cli": "*",
+    "pbf": "*",
+    "rollup": "*",
+    "rollup-plugin-buble": "*",
+    "rollup-plugin-butternut": "*",
+    "rollup-plugin-commonjs": "*",
+    "rollup-plugin-node-resolve": "*"
+  },
+  "files": [
+    "AUTHORS",
+    "LICENCE",
+    "README.md",
+    "dist/VectorTileLayer.js",
+    "dist/VectorTileLayer.js.map",
+    "dist/VectorTileLayer.min.js",
+    "dist/VectorTileLayer.min.js.map",
+    "dist/VectorTileLayer.umd.js",
+    "dist/VectorTileLayer.umd.js.map",
+    "dist/VectorTileLayer.umd.min.js",
+    "dist/VectorTileLayer.umd.min.js.map",
+    "package.json"
+  ],
+  "homepage": "https://gitlab.com/jkuebart/Leaflet.VectorTileLayer#readme",
+  "keywords": [
+    "leaflet",
+    "vector tiles"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "dist/VectorTileLayer.umd.min.js",
+  "module": "dist/VectorTileLayer.js",
+  "name": "leaflet-vector-tile-layer",
+  "peerDependencies": {
+    "leaflet": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/jkuebart/Leaflet.VectorTileLayer.git"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "clean": "rm -fr dist node_modules package-lock.json",
+    "lint": "jslint rollup.config.js package.json src/js/*",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.0"
+}
