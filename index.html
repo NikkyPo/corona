@@ -47,6 +47,46 @@
 		va.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
+		var nursingHomes = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0' });
+		nursingHomes.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var prisons = L.esri.featureLayer({ url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/11' });
+		prisons.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var publicSchools = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0/query?outFields=*&where=STATE%20like%20%27%25MN%25%27' });
+		publicSchools.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var policeStations = L.esri.featureLayer({ url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30/query' });
+		policeStations.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var fireStations = L.esri.featureLayer({ url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Fire_Stations/FeatureServer/0/query?where=STATE+like+%27%25MN%25%27&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=" });
+		fireStations.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var redCross = L.esri.featureLayer({ url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3' });
+		redCross.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{chapter}</strong></p>', layer.feature.properties);
+		});
+		var redCrossFacilities = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0/query?outFields=*&where=1%3D1' });
+		redCrossFacilities.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+		});
+		var shelters = L.esri.featureLayer({ url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5/query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'" });
+		shelters.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{SHELTER_NAME}</strong></p>', layer.feature.properties);
+		});
+		var bases = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0" });
+		bases.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{SITE_NAME}</strong></p>', layer.feature.properties);
+		});
+		var airports = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0/query?outFields=*&where=State_Name%20like%20'%25MINNESOTA%25'" });
+		airports.bindPopup(function (layer) {
+			return L.Util.template('<p><strong>{Fac_Name}</strong></p>', layer.feature.properties);
+		});
 
     // Add it all together
 		var mymap = L.map('mapid', {
@@ -58,7 +98,17 @@
 		var overlayMaps = {
 			"Boundaries": boundaries,
 			"Hospitals/Medical Centers": hospitals,
-			"Veterans Health Administration Medical Facilities": va
+			"Veterans Health Administration Medical Facilities": va,
+			"Nursing Homes": nursingHomes,
+			"Prisons": prisons,
+			"Public Schools (Minnesota)": publicSchools,
+			"Police Stations": policeStations,
+			"Fire Stations (Minnesota)": fireStations,
+			"American Red Cross Chapter Regions": redCross,
+			"American Red Cross Chapter Facilities": redCrossFacilities,
+			"Minnesota Shelter System Facilities": shelters,
+			"Military Bases": bases,
+			"Minnesota Airports": airports
 		}
 
 		mymap.addLayer(boundaries)
