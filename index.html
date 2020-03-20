@@ -21,6 +21,15 @@
 
 		<script>
 
+		// Custom styling
+
+		var icon = L.icon({
+			iconUrl: 'https://esri.github.io/esri-leaflet/img/earthquake-icon.png',
+			iconSize: [27, 31],
+			iconAnchor: [13.5, 17.5],
+			popupAnchor: [0, -11]
+		});
+
 		// Basemap layers
 		var base = {
 			'None': L.tileLayer(''),
@@ -39,15 +48,54 @@
 			weight: 2,
 			fill: false
 		});
-		var hospitals = L.esri.featureLayer({ url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6' });
+		var hospitals = L.esri.featureLayer({
+			url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6',
+			pointToLayer: function (geojson, latlng) {
+        return L.circleMarker(latlng, {
+					radius: 5,
+				  stroke: true, //true/false for stroke
+				  color: '#3388ff', //stroke color
+				  opacity: 1, //a value between 0 and 1
+				  weight: 3, //stroke weight
+				  fillColor: '#3288ff', //HEX or color name
+				  fillOpacity: .7, //opacity 0-1 of fill
+        });
+      }
+	   });
 		hospitals.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
-		var va = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0' });
+		var va = L.esri.featureLayer({
+			url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0',
+			pointToLayer: function (geojson, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 5,
+					stroke: true, //true/false for stroke
+					color: '#f03b20', //stroke color
+					opacity: 1, //a value between 0 and 1
+					weight: 3, //stroke weight
+					fillColor: '#ffeda0', //HEX or color name
+					fillOpacity: .7, //opacity 0-1 of fill
+				});
+			}
+		 });
 		va.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
-		var nursingHomes = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0' });
+		var nursingHomes = L.esri.featureLayer({
+			url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/NursingHomes/FeatureServer/0',
+			pointToLayer: function (geojson, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 5,
+					stroke: true, //true/false for stroke
+					color: '#2ca25f', //stroke color
+					opacity: 1, //a value between 0 and 1
+					weight: 3, //stroke weight
+					fillColor: '#e5f5f9', //HEX or color name
+					fillOpacity: .7, //opacity 0-1 of fill
+				});
+			}
+		 });
 		nursingHomes.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
@@ -68,6 +116,11 @@
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
 		var redCross = L.esri.featureLayer({ url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3' });
+		redCross.setStyle({
+			color: 'green',
+			weight: 3,
+			fill: true
+		});
 		redCross.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{chapter}</strong></p>', layer.feature.properties);
 		});
