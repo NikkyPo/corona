@@ -21,15 +21,6 @@
 
 		<script>
 
-		// Custom styling
-
-		var icon = L.icon({
-			iconUrl: 'https://esri.github.io/esri-leaflet/img/earthquake-icon.png',
-			iconSize: [27, 31],
-			iconAnchor: [13.5, 17.5],
-			popupAnchor: [0, -11]
-		});
-
 		// Basemap layers
 		var base = {
 			'None': L.tileLayer(''),
@@ -103,7 +94,7 @@
 		prisons.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
-		var publicSchools = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0/query?outFields=*&where=STATE%20like%20%27%25MN%25%27' });
+		var publicSchools = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0' });
 		publicSchools.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
@@ -111,7 +102,7 @@
 		policeStations.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
-		var fireStations = L.esri.featureLayer({ url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Fire_Stations/FeatureServer/0/query?where=STATE+like+%27%25MN%25%27&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=" });
+		var fireStations = L.esri.featureLayer({ url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Fire_Stations/FeatureServer/0" });
 		fireStations.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
@@ -128,7 +119,7 @@
 		redCrossFacilities.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
 		});
-		var shelters = L.esri.featureLayer({ url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5/query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'" });
+		var shelters = L.esri.featureLayer({ url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5/" });
 		shelters.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{SHELTER_NAME}</strong></p>', layer.feature.properties);
 		});
@@ -136,7 +127,7 @@
 		bases.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{SITE_NAME}</strong></p>', layer.feature.properties);
 		});
-		var airports = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0/query?outFields=*&where=State_Name%20like%20'%25MINNESOTA%25'" });
+		var airports = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0" });
 		airports.bindPopup(function (layer) {
 			return L.Util.template('<p><strong>{Fac_Name}</strong></p>', layer.feature.properties);
 		});
@@ -166,6 +157,25 @@
 
 		mymap.addLayer(boundaries)
 		L.control.layers(base, overlayMaps).addTo(mymap);
+
+		// mymap.on('zoomend', function() {
+		// var zoomlevel = mymap.getZoom();
+		//     if (zoomlevel  <10){
+		//         if (mymap.hasLayer(hospitals)) {
+		//             mymap.removeLayer(hospitals);
+		//         } else {
+		//             console.log("no point layer active");
+		//         }
+		//     }
+		//     if (zoomlevel >= 10){
+		//         if (mymap.hasLayer(hospitals)){
+		//             console.log("layer already added");
+		//         } else {
+		//             mymap.addLayer(hospitals);
+		//         }
+		//     }
+		// console.log("Current Zoom Level =" + zoomlevel)
+		// });
 
 
 			// VectorTileLayer('data/boundary/{z}/{x}/{y}.pbf', {
@@ -205,6 +215,8 @@
 			// 			});
 			// 	}
 			// }).addTo(mymap);
+
+			// query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'
 		</script>
 	</body>
 </html>
