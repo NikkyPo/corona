@@ -15,39 +15,9 @@ html, body, #mapid {
 .icon {
 	display: inline-block;
 	margin: 2px;
-	height: 30px;
-	width: 30px;
+	height: 35px;
+	width: 35px;
 }
-
-/* ICONS */
-.icon-airport {
-	background: url('data/airport.svg') center center no-repeat;
-}
-.icon-hospital {
-	background: url('data/hospital.svg') center center no-repeat;
-}
-.icon-nursing_home {
-	background: url('data/nursingHomes.svg') center center no-repeat;
-}
-
-
-/* MARKERS */
-/* .leaflet-marker-icon {
-	padding: 2px;
-	text-align: center;
-}
-.marker-bar {
-	background: url('data/airport.svg') center center no-repeat;
-}
-.marker-fuel {
-	background: url('data/airport.svg') center center no-repeat;
-}
-.marker-parking {
-	background: url('data/airport.svg') center center no-repeat;
-}
-.marker-drinking_water {
-	background: url('data/airport.svg') center center no-repeat;
-} */
 
 /* The container */
 .container {
@@ -114,4 +84,46 @@ html, body, #mapid {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+/* Create a custom radio button */
+.radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .radiobtn {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radiobtn {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .radiobtn:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radiobtn:after {
+ 	top: 7px;
+	left: 7px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: white;
 }

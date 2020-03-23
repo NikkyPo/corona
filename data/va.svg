@@ -1,1 +1,440 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" class="svg-inline--fa fa-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="brown" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="health-and-medical_medical-care-gray-halo_256x256.svg"
+   inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\communications_alerts-warnings-messages.png"
+   inkscape:export-xdpi="300.00464"
+   inkscape:export-ydpi="300.00464">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker8549"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8547"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8503"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8501"
+         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.718588,4.033735 -2.207289,0.0160133 8.718588,-4.001708 c -1.745498,2.372061 -1.73544,5.617452 0,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker8463"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.718588,4.033735 -2.207289,0.0160133 8.718588,-4.001708 c -1.745498,2.372061 -1.73544,5.617452 0,8.035443 z"
+         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8461"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <style
+       id="style4879">.cls-1{fill-rule:evenodd;}</style>
+    <style
+       id="style5360"
+       type="text/css">
+   
+    .str0 {stroke:black;stroke-width:1.50665;stroke-linecap:round}
+    .str1 {stroke:black;stroke-width:2.05897}
+    .fil0 {fill:none}
+    .fil1 {fill:#000000}
+   
+  </style>
+    <style
+       id="style5433"
+       type="text/css">
+   
+    .str0 {stroke:black;stroke-width:1.50665;stroke-linecap:round}
+    .str1 {stroke:black;stroke-width:2.05897}
+    .fil0 {fill:none}
+    .fil1 {fill:#000000}
+   
+  </style>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.765625"
+     inkscape:cx="-302.11164"
+     inkscape:cy="84.283015"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="657"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:lockguides="true"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-0.93017576,23.874511"
+       orientation="0,1"
+       id="guide5700"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-26.098869,26.473047"
+       orientation="0,1"
+       id="guide5726"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="104.51042,-2.9104167"
+       orientation="0,1"
+       id="guide5880"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-71.093695,29.279377"
+       orientation="0,1"
+       id="guide6001"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-46.304445,58.278122"
+       orientation="0,1"
+       id="guide6005"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-0.10335287,20.205485"
+       orientation="0,1"
+       id="guide6736"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-0.43848907,22.874513"
+       orientation="0,1"
+       inkscape:locked="true"
+       id="guide6738" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid2386" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="background:always"
+     style="display:inline">
+    <g
+       inkscape:label=":iter4"
+       id="g7852"
+       inkscape:groupmode="layer"
+       style="display:inline">
+      <circle
+         r="28.166189"
+         cy="33.872955"
+         cx="33.866665"
+         id="circle7850"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png" />
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(0,-229.2666)"
+     id="g1180"
+     inkscape:groupmode="layer"
+     inkscape:label="halo:always">
+    <g
+       style="display:inline"
+       inkscape:label="-gray-halo:iter3"
+       id="g1210"
+       inkscape:groupmode="layer">
+      <circle
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#919395;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle1208"
+         cx="33.866665"
+         cy="263.13959"
+         r="30.966955"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png" />
+    </g>
+    <g
+       style="display:none"
+       inkscape:label="-red-halo:iter3"
+       id="g1206"
+       inkscape:groupmode="layer">
+      <circle
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#c52038;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle1204"
+         cx="33.866665"
+         cy="263.13959"
+         r="30.966955"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-red.png" />
+    </g>
+    <g
+       style="display:none"
+       inkscape:label="-green-halo:iter3"
+       id="g1202"
+       inkscape:groupmode="layer">
+      <circle
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#5e9c42;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle1200"
+         cx="33.866665"
+         cy="263.13959"
+         r="30.966955"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-green.png" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer18"
+       inkscape:label="-yellow-halo:iter3"
+       style="display:none">
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         r="30.966955"
+         cy="263.13959"
+         cx="33.866665"
+         id="circle1178-4"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#fbba16;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-amber.png" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="border:always"
+     style="display:inline">
+    <g
+       style="display:inline"
+       transform="translate(0,-229.2666)"
+       id="g2274"
+       inkscape:groupmode="layer"
+       inkscape:label=":iter2">
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#003366;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.99994087;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="m 33.867545,234.5268 c -15.782655,0 -28.6137047,12.83102 -28.6137047,28.61363 0,15.7827 12.8310497,28.61203 28.6137047,28.61203 15.782662,0 28.611962,-12.82933 28.611962,-28.61203 0,-15.78261 -12.8293,-28.61363 -28.611962,-28.61363 z m 0,1.17793 c 15.132933,0 27.434005,12.30281 27.434005,27.4357 0,15.13299 -12.301072,27.43402 -27.434005,27.43402 -15.132925,0 -27.4357477,-12.30103 -27.4357477,-27.43402 0,-15.13289 12.3028227,-27.4357 27.4357477,-27.4357 z"
+         id="circle2272"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="content:always"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="g8245"
+       inkscape:label="health-and-medical_medical-care-with-label"
+       style="display:none">
+      <g
+         id="g8280"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-with-label.png"
+         inkscape:export-xdpi="300.00464"
+         inkscape:export-ydpi="300.00464"
+         transform="matrix(0.84488,0,0,0.84488,5.6025153,-5.1654031)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path8221"
+           d="m 43.90452,15.01388 5.42929,0 0,5.42972 5.42967,0 0,5.42925 -5.42967,0 0,5.42971 -5.42929,0 0,-5.42971 -5.42969,0 0,-5.42925 5.42969,0 z"
+           style="display:inline;opacity:1;fill:#003366;fill-opacity:1;stroke:#a9d499;stroke-width:0;stroke-miterlimit:0.93999988;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+        <path
+           style="fill:#003366;fill-opacity:1;stroke-width:2.44095707"
+           d="M 82.91211,98.56836 A 14.65734,14.65734 0 0 0 68.26563,113.2148 l 0,4.918 -0.002,0 0,33.791 22.02929,10.2715 6.08985,0 c 1.30478,-1.0926 2.69004,-2.0673 4.31443,-2.6211 l 21.2676,-7.4277 0,-2.1563 -24.41011,0 a 12.05518,12.05518 0 0 1 -8.61524,-3.5879 12.05557,12.05557 0 0 1 -3.58789,-8.6171 12.2092,12.2092 0 0 1 12.20313,-12.2051 l 9.86331,0 a 4.574109,4.574109 0 0 1 0.8281,0.074 l 4.7207,-27.08594 -18.86133,0 z"
+           transform="scale(0.2645833,0.2645833)"
+           id="path8223"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+        <path
+           style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
+           inkscape:connector-curvature="0"
+           d="m 23.8742,36.45564 a 1.940429,1.940429 0 0 0 1.93751,1.93751 l 1.93751,0 0.67167,-3.87502 -2.60918,0 a 1.934926,1.934926 0 0 0 -1.93751,1.93751 z"
+           id="path8225"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
+           d="m 33.56634,26.07955 -0.005,8.43846 0,3.87502 0.64604,0 a 1.934926,1.934926 0 0 0 1.9375,-1.93751 l 0,-7.81059 A 2.58126,2.58126 0 0 0 33.5688,26.07955 Z"
+           id="path8227"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+        <circle
+           style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
+           cx="27.10338"
+           cy="19.534731"
+           r="4.5208549"
+           id="circle8229"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+        <path
+           style="display:inline;fill:#003366;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           inkscape:connector-curvature="0"
+           d="m 26.30408,45.37377 c -0.24858,0.33655 -0.42537,0.72936 -0.48826,1.15601 -0.0702,0.39463 -0.0356,0.81009 0.0944,1.20354 0.46166,1.29244 1.88066,1.97925 3.17715,1.53523 l 6.44596,-2.25575 0.2978,0.84881 -6.45171,2.25307 c -1.75779,0.6119 -3.68826,-0.32274 -4.31449,-2.08485 -0.21442,-0.61318 -0.19807,-1.24546 -0.066,-1.85531 l -9.27232,-4.32375 c -1.25931,-0.58725 -2.76139,-0.0429 -3.34616,1.21113 -0.5897,1.2646 -0.0401,2.76274 1.21929,3.34997 l 16.0658,7.49161 c 0.52319,0.244 1.09773,0.26142 1.64142,0.12833 l 14.14703,-3.0388 5.69288,2.65463 3.61666,-7.75595 -0.047,-0.022 0.0351,-0.0753 -13.18842,-6.14987 -14.11736,4.93084 c -0.44774,0.15264 -0.83867,0.42631 -1.1417,0.7982 z"
+           id="path8231"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+        <path
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.25349689px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 29.8888,26.07955 -2.13958,12.3136 c 1.90709,0 3.90443,0 5.81152,0 l 0.006,-12.3136 z"
+           id="path8243"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+           inkscape:export-xdpi="300.00458"
+           inkscape:export-ydpi="300.00458" />
+      </g>
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot8050-8-8-9"
+         style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#003366;fill-opacity:1;stroke:none"
+         transform="matrix(0.33531175,0,0,0.33531175,-9.9501032,-7.6446991)"
+         inkscape:export-xdpi="300.00464"
+         inkscape:export-ydpi="300.00464"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-with-label.png"><flowRegion
+           id="flowRegion8046-2-9-3"
+           style="font-size:14.66666698px;text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1"><rect
+             id="rect8044-9-3-4"
+             width="221"
+             height="111.7344"
+             x="20"
+             y="165.76559"
+             style="font-size:14.66666698px;text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1em;font-family:'Arial Narrow';-inkscape-font-specification:'Arial Narrow Bold';letter-spacing:-1.20000005px;fill:#003366;fill-opacity:1"
+           id="flowPara8271">Medical </flowPara><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1em;font-family:'Arial Narrow';-inkscape-font-specification:'Arial Narrow Bold';letter-spacing:-1.20000005px;fill:#003366;fill-opacity:1"
+           id="flowPara8284">Care</flowPara></flowRoot>    </g>
+    <g
+       style="display:inline"
+       inkscape:label="health-and-medical_medical-care"
+       id="g1994"
+       inkscape:groupmode="layer">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1952"
+         d="m 42.347453,17.944617 4.587099,0 0,4.587462 4.587419,0 0,4.587065 -4.587419,0 0,4.587453 -4.587099,0 0,-4.587453 -4.587436,0 0,-4.587065 4.587436,0 z"
+         style="display:inline;opacity:1;fill:#003366;fill-opacity:1;stroke:#a9d499;stroke-width:0;stroke-miterlimit:0.93999988;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+      <path
+         style="fill:#003366;fill-opacity:1;stroke-width:2.44095707"
+         d="m 23.78767,27.293773 a 3.2765185,3.2765185 0 0 0 -3.274091,3.274082 l 0,1.099376 -4.47e-4,0 0,7.553678 4.924453,2.296102 1.361332,0 c 0.291672,-0.24424 0.601334,-0.462126 0.964452,-0.585923 l 4.754183,-1.660396 0,-0.482022 -5.456663,0 a 2.6948287,2.6948287 0 0 1 -1.925861,-0.802044 2.6949158,2.6949158 0 0 1 -0.80204,-1.926275 2.7292584,2.7292584 0 0 1 2.727901,-2.728343 l 2.204855,0 a 1.0225016,1.0225016 0 0 1 0.185115,0.01654 l 1.055271,-6.054821 -4.216284,0 z"
+         id="path2227"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+      <path
+         style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
+         inkscape:connector-curvature="0"
+         d="m 25.424236,36.060331 a 1.6394297,1.6394297 0 0 0 1.636964,1.636964 l 1.636963,0 0.567481,-3.273927 -2.204444,0 a 1.6347803,1.6347803 0 0 0 -1.636964,1.636963 z"
+         id="path2229"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
+         d="m 33.612932,27.29378 -0.0042,7.129486 0,3.273927 0.545826,0 a 1.6347803,1.6347803 0 0 0 1.636955,-1.636963 l 0,-6.599012 A 2.1808549,2.1808549 0 0 0 33.615035,27.29378 Z"
+         id="path2231-7"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+      <circle
+         style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
+         cx="28.152506"
+         cy="21.764193"
+         r="3.8195798"
+         id="circle2233"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+      <path
+         style="display:inline;fill:#003366;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:connector-curvature="0"
+         d="m 27.477193,43.595081 c -0.21002,0.284344 -0.359386,0.616221 -0.412521,0.97669 -0.05931,0.333415 -0.03008,0.684428 0.07976,1.016846 0.390047,1.091957 1.588932,1.672229 2.68431,1.297086 l 5.446063,-1.905839 0.251605,0.717143 -5.45092,1.903574 c -1.485122,0.516982 -3.116138,-0.272677 -3.645227,-1.761448 -0.181159,-0.518064 -0.167345,-1.052264 -0.05576,-1.567515 l -7.833998,-3.653049 c -1.063965,-0.496156 -2.333043,-0.03625 -2.827103,1.023259 -0.498226,1.068435 -0.03388,2.334184 1.030154,2.830323 l 13.573673,6.329511 c 0.442032,0.206151 0.92745,0.220869 1.386803,0.108424 l 11.952542,-2.567422 4.809801,2.242844 3.055643,-6.552847 -0.03971,-0.01859 0.02965,-0.06362 -11.142632,-5.195902 -11.927475,4.165968 c -0.378287,0.128963 -0.708576,0.360181 -0.9646,0.674383 z"
+         id="path7144-0-1"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.25349689px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="m 30.505852,27.29378 -1.807689,10.403515 c 1.611262,0 3.298775,0 4.910037,0 L 33.6133,27.29378 Z"
+         id="path11822"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
+         inkscape:export-xdpi="300.00458"
+         inkscape:export-ydpi="300.00458" />
+    </g>
+  </g>
+</svg>
