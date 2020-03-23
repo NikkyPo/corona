@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="safety-and-security_fire-services-red-halo_256x256.svg"
+   inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\communications_alerts-warnings-messages.png"
+   inkscape:export-xdpi="300.00464"
+   inkscape:export-ydpi="300.00464">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker8549"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8547"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8503"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8501"
+         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.718588,4.033735 -2.207289,0.0160133 8.718588,-4.001708 c -1.745498,2.372061 -1.73544,5.617452 0,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker8463"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.718588,4.033735 -2.207289,0.0160133 8.718588,-4.001708 c -1.745498,2.372061 -1.73544,5.617452 0,8.035443 z"
+         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8461"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <style
+       id="style4879">.cls-1{fill-rule:evenodd;}</style>
+    <style
+       id="style5360"
+       type="text/css">
+   
+    .str0 {stroke:black;stroke-width:1.50665;stroke-linecap:round}
+    .str1 {stroke:black;stroke-width:2.05897}
+    .fil0 {fill:none}
+    .fil1 {fill:#000000}
+   
+  </style>
+    <style
+       id="style5433"
+       type="text/css">
+   
+    .str0 {stroke:black;stroke-width:1.50665;stroke-linecap:round}
+    .str1 {stroke:black;stroke-width:2.05897}
+    .fil0 {fill:none}
+    .fil1 {fill:#000000}
+   
+  </style>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.765625"
+     inkscape:cx="-302.11164"
+     inkscape:cy="84.283015"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="657"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:lockguides="true"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-0.93017576,23.874511"
+       orientation="0,1"
+       id="guide5700"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-26.098869,26.473047"
+       orientation="0,1"
+       id="guide5726"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="104.51042,-2.9104167"
+       orientation="0,1"
+       id="guide5880"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-71.093695,29.279377"
+       orientation="0,1"
+       id="guide6001"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-46.304445,58.278122"
+       orientation="0,1"
+       id="guide6005"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-0.10335287,20.205485"
+       orientation="0,1"
+       id="guide6736"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="-0.43848907,22.874513"
+       orientation="0,1"
+       inkscape:locked="true"
+       id="guide6738" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid2386" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="background:always"
+     style="display:inline">
+    <g
+       inkscape:label=":iter4"
+       id="g7852"
+       inkscape:groupmode="layer"
+       style="display:inline">
+      <circle
+         r="28.166189"
+         cy="33.872955"
+         cx="33.866665"
+         id="circle7850"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png" />
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(0,-229.2666)"
+     id="g1180"
+     inkscape:groupmode="layer"
+     inkscape:label="halo:always">
+    <g
+       style="display:none"
+       inkscape:label="-gray-halo:iter3"
+       id="g1210"
+       inkscape:groupmode="layer">
+      <circle
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#919395;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle1208"
+         cx="33.866665"
+         cy="263.13959"
+         r="30.966955"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png" />
+    </g>
+    <g
+       style="display:inline"
+       inkscape:label="-red-halo:iter3"
+       id="g1206"
+       inkscape:groupmode="layer">
+      <circle
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#c52038;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle1204"
+         cx="33.866665"
+         cy="263.13959"
+         r="30.966955"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-red.png" />
+    </g>
+    <g
+       style="display:none"
+       inkscape:label="-green-halo:iter3"
+       id="g1202"
+       inkscape:groupmode="layer">
+      <circle
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#5e9c42;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle1200"
+         cx="33.866665"
+         cy="263.13959"
+         r="30.966955"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-green.png" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer18"
+       inkscape:label="-yellow-halo:iter3"
+       style="display:none">
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         r="30.966955"
+         cy="263.13959"
+         cx="33.866665"
+         id="circle1178-4"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#fbba16;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-amber.png" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="border:always"
+     style="display:inline">
+    <g
+       style="display:inline"
+       transform="translate(0,-229.2666)"
+       id="g2274"
+       inkscape:groupmode="layer"
+       inkscape:label=":iter2">
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#003366;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.99994087;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="m 33.867545,234.5268 c -15.782655,0 -28.6137047,12.83102 -28.6137047,28.61363 0,15.7827 12.8310497,28.61203 28.6137047,28.61203 15.782662,0 28.611962,-12.82933 28.611962,-28.61203 0,-15.78261 -12.8293,-28.61363 -28.611962,-28.61363 z m 0,1.17793 c 15.132933,0 27.434005,12.30281 27.434005,27.4357 0,15.13299 -12.301072,27.43402 -27.434005,27.43402 -15.132925,0 -27.4357477,-12.30103 -27.4357477,-27.43402 0,-15.13289 12.3028227,-27.4357 27.4357477,-27.4357 z"
+         id="circle2272"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="content:always"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="g7799"
+       inkscape:label="safety-and-security_fire-services-with-label"
+       style="display:none">
+      <g
+         id="g8772"
+         transform="matrix(0.84488,0,0,0.84488,5.2538663,-4.5836661)"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-with-label.png"
+         inkscape:export-xdpi="300.00464"
+         inkscape:export-ydpi="300.00464">
+        <path
+           inkscape:connector-curvature="0"
+           id="path7791"
+           d="m 34.35369,9.391864 c -0.16011,-0.0034 -0.32239,-0.0016 -0.48731,0.0052 -2.56808,-0.008 -5.25662,1.304016 -7.15822,2.584856 -2.10509,1.60077 -4.34555,2.72867 -6.80992,2.62309 -0.74863,0.009 -1.22357,0.0709 -1.05574,0.13746 1.52408,1.29468 2.76841,3.08227 4.01784,4.51549 0.47551,0.54474 0.8561,1.07632 0.84387,1.18081 -0.0114,0.10451 -1.1424,1.06822 -1.68362,1.57354 -0.003,0.003 -0.005,0.006 -0.008,0.009 0,0 -5.1e-4,0 -5.1e-4,0 0,0 0,5.2e-4 0,5.2e-4 -0.003,0.003 -0.007,0.005 -0.009,0.008 -0.50532,0.54121 -1.46904,1.67223 -1.57355,1.68362 -0.10449,0.0122 -0.63606,-0.36837 -1.1808,-0.84388 -1.43323,-1.24943 -3.22081,-2.49375 -4.51549,-4.01784 -0.0666,-0.16782 -0.12816,0.30711 -0.13746,1.05575 0.10558,2.46435 -1.02233,4.70483 -2.6231,6.80992 -1.45838,2.53308 -2.69344,4.51844 -2.58485,7.15719 -0.008,2.56808 1.30401,5.25662 2.58485,7.15822 1.60077,2.10508 2.72868,4.34555 2.6231,6.80992 0.009,0.74863 0.0709,1.22356 0.13746,1.05574 1.29468,-1.52408 3.08226,-2.76841 4.51549,-4.01784 0.54474,-0.47551 1.07631,-0.8561 1.1808,-0.84387 0.10451,0.0114 1.06823,1.14241 1.57355,1.68361 0.003,0.003 0.006,0.005 0.009,0.008 1.7e-4,1.7e-4 3.5e-4,3.6e-4 5.1e-4,5.2e-4 0.003,0.003 0.005,0.006 0.008,0.009 0.54121,0.50532 1.67223,1.46904 1.68362,1.57355 0.0122,0.10449 -0.36836,0.63607 -0.84387,1.18081 -1.24943,1.43322 -2.49375,3.2208 -4.01784,4.51548 -0.16783,0.0666 0.3071,0.12816 1.05574,0.13746 2.46435,-0.10558 4.70483,1.02233 6.80992,2.6231 2.53309,1.45838 4.51844,2.69344 7.15719,2.58485 2.56808,0.008 5.25662,-1.30401 7.15822,-2.58485 2.10509,-1.60077 4.34556,-2.72868 6.80992,-2.6231 0.74863,-0.009 1.22357,-0.0709 1.05575,-0.13746 -1.52408,-1.29468 -2.76841,-3.08226 -4.01784,-4.51548 -0.47551,-0.54474 -0.85611,-1.07632 -0.84388,-1.18081 0.0114,-0.10451 1.14241,-1.06823 1.68362,-1.57355 0.003,-0.003 0.005,-0.006 0.008,-0.009 l 5.2e-4,5.2e-4 c 0.003,-0.003 0.007,-0.006 0.01,-0.009 0.50532,-0.54121 1.46903,-1.67223 1.57354,-1.68362 0.10449,-0.0122 0.63607,0.36836 1.18081,0.84388 1.43322,1.24942 3.2208,2.49375 4.51548,4.01784 0.0666,0.16782 0.12816,-0.30711 0.13746,-1.05575 -0.10558,-2.46435 1.02233,-4.70483 2.6231,-6.80992 1.45838,-2.53308 2.69345,-4.51844 2.58486,-7.15719 0.008,-2.56808 -1.30402,-5.25662 -2.58486,-7.15822 -1.60077,-2.10509 -2.72868,-4.34556 -2.6231,-6.80992 -0.009,-0.74863 -0.0709,-1.22357 -0.13746,-1.05575 -1.29468,1.52408 -3.08226,2.76842 -4.51548,4.01785 -0.54474,0.47551 -1.07632,0.8561 -1.18081,0.84387 -0.10451,-0.0114 -1.06822,-1.14241 -1.57354,-1.68362 -0.003,-0.003 -0.007,-0.006 -0.01,-0.009 l -11.85357,11.854 -5.2e-4,-5.2e-4 11.85405,-11.85354 c -0.003,-0.003 -0.006,-0.007 -0.009,-0.01 -0.54121,-0.50532 -1.67223,-1.46904 -1.68361,-1.57355 -0.0122,-0.10449 0.36836,-0.63606 0.84387,-1.1808 1.24943,-1.43322 2.49375,-3.22081 4.01784,-4.51549 0.16782,-0.0666 -0.30711,-0.12816 -1.05575,-0.13746 -2.46435,0.10558 -4.70483,-1.02232 -6.80992,-2.62309 -2.37476,-1.36724 -4.26822,-2.538477 -6.66987,-2.590027 z"
+           style="display:inline;fill:#003366;fill-opacity:1;stroke:#fffffc;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-with-label.png"
+           inkscape:export-xdpi="300.00464"
+           inkscape:export-ydpi="300.00464" />
+        <path
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#fffffc;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 29.58927,17.54565 c 3.69548,2.14469 5.56057,5.07121 6.21004,8.96266 0.42777,-0.89797 0.75192,-2.86792 0.0828,-4.81499 7.88461,4.40087 10.48364,10.16797 10.09258,15.44791 -0.42747,5.77152 -4.2399,9.31006 -10.15187,10.40246 0.004,-0.005 0.006,-0.0103 0.01,-0.0145 -0.7115,0.12762 -1.43428,0.19392 -2.15858,0.19634 -1.13976,-0.002 -2.27289,-0.16248 -3.364,-0.47266 -4.75578,-1.25342 -8.67236,-4.90813 -8.67236,-9.90519 0,-8.07211 9.09079,-11.76515 7.9519,-19.80199 z"
+           id="path7795"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-with-label.png"
+           inkscape:export-xdpi="300.00464"
+           inkscape:export-ydpi="300.00464" />
+        <path
+           style="display:inline;fill:#003366;fill-opacity:1;stroke-width:0.0930874"
+           d="m 31.17115,25.22639 c 2.31767,1.55232 3.48742,3.67036 3.89473,6.48699 0.2683,-0.64995 0.47158,-2.07566 0.0519,-3.48495 4.94495,3.18534 6.5751,7.35961 6.32983,11.18122 -0.26809,4.17741 -2.65915,6.73839 -6.36689,7.52907 0.003,-0.003 0.006,-0.007 0.007,-0.01 -0.44623,0.0924 -0.89962,0.13991 -1.35386,0.14166 -0.71482,-0.002 -1.42548,-0.11735 -2.10978,-0.34186 -2.98263,-0.90722 -5.43894,-3.5526 -5.43894,-7.16946 0,-5.84258 5.70136,-8.51566 4.98708,-14.3327 z"
+           id="path7797"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-with-label.png"
+           inkscape:export-xdpi="300.00464"
+           inkscape:export-ydpi="300.00464" />
+      </g>
+      <flowRoot
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-with-label.png"
+         inkscape:export-ydpi="300.00464"
+         inkscape:export-xdpi="300.00464"
+         transform="matrix(0.33531175,0,0,0.33531175,-9.8461323,-7.6446991)"
+         style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#003366;fill-opacity:1;stroke:none"
+         id="flowRoot3230-5"
+         xml:space="preserve"><flowRegion
+           style="font-size:14.66666698px;text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1"
+           id="flowRegion3224-10"><rect
+             style="font-size:14.66666698px;text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1"
+             y="165.76559"
+             x="20"
+             height="111.7344"
+             width="221"
+             id="rect3222-2" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1em;font-family:'Arial Narrow';-inkscape-font-specification:'Arial Narrow Bold';letter-spacing:-1.20000005px;fill:#003366;fill-opacity:1"
+           id="flowPara3226-1">Fire </flowPara><flowPara
+           id="flowPara3228-0"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1em;font-family:'Arial Narrow';-inkscape-font-specification:'Arial Narrow Bold';letter-spacing:-1.20000005px;fill:#003366;fill-opacity:1">Services</flowPara></flowRoot>    </g>
+    <g
+       style="display:inline"
+       inkscape:label="safety-and-security_fire-services"
+       id="g3682"
+       inkscape:groupmode="layer">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3663"
+         d="m 34.278399,13.187652 c -0.135274,-0.0029 -0.272381,-0.0014 -0.411719,0.0044 -2.169719,-0.0068 -4.441213,1.101737 -6.047837,2.183894 -1.778548,1.352459 -3.671468,2.305399 -5.753565,2.216196 -0.632502,0.0076 -1.03377,0.0599 -0.891973,0.116138 1.287664,1.093849 2.338974,2.604148 3.394592,3.815047 0.401749,0.46024 0.723302,0.909361 0.712969,0.997643 -0.0096,0.0883 -0.965191,0.902517 -1.422457,1.329452 -0.0025,0.0025 -0.0042,0.0051 -0.0068,0.0076 0,0 -4.31e-4,0 -4.31e-4,0 0,0 0,4.39e-4 0,4.39e-4 -0.0025,0.0025 -0.0059,0.0042 -0.0076,0.0068 -0.426934,0.457258 -1.241162,1.412834 -1.329461,1.422457 -0.08828,0.01031 -0.537394,-0.311228 -0.997634,-0.712977 -1.210907,-1.055618 -2.721198,-2.10692 -3.815047,-3.394593 -0.05627,-0.141787 -0.10828,0.259471 -0.116137,0.891982 0.0892,2.08208 -0.863746,3.975017 -2.216205,5.753566 -1.232156,2.140148 -2.275634,3.817539 -2.183888,6.046966 -0.0068,2.16972 1.101732,4.441213 2.183888,6.047837 1.352459,1.77854 2.305407,3.671468 2.216205,5.753565 0.0076,0.632503 0.0599,1.033762 0.116137,0.891974 1.093849,-1.287665 2.60414,-2.338974 3.815047,-3.394593 0.46024,-0.401749 0.909353,-0.723301 0.997634,-0.712969 0.0883,0.0096 0.902527,0.9652 1.329461,1.422449 0.0025,0.0025 0.0051,0.0042 0.0076,0.0068 1.44e-4,1.44e-4 2.96e-4,3.04e-4 4.31e-4,4.39e-4 0.0025,0.0025 0.0042,0.0051 0.0068,0.0076 0.457258,0.426935 1.412834,1.241163 1.422457,1.329461 0.01031,0.08828 -0.31122,0.537403 -0.712969,0.997643 -1.055618,1.210899 -2.106919,2.721189 -3.394592,3.815039 -0.141797,0.05627 0.259462,0.108279 0.891973,0.116137 2.08208,-0.0892 3.975017,0.863746 5.753565,2.216205 2.140157,1.232156 3.81754,2.275633 6.046967,2.183888 2.169719,0.0068 4.441213,-1.101732 6.047837,-2.183888 1.778548,-1.352459 3.671477,-2.305408 5.753565,-2.216205 0.632503,-0.0076 1.03377,-0.0599 0.891982,-0.116137 -1.287664,-1.09385 -2.338974,-2.60414 -3.394592,-3.815039 -0.401749,-0.46024 -0.723311,-0.909361 -0.712978,-0.997643 0.0096,-0.0883 0.9652,-0.902526 1.422457,-1.329461 0.0025,-0.0025 0.0042,-0.0051 0.0068,-0.0076 l 4.39e-4,4.4e-4 c 0.0025,-0.0025 0.0059,-0.0051 0.0084,-0.0076 0.426935,-0.457258 1.241154,-1.412834 1.329453,-1.422457 0.08828,-0.01031 0.537403,0.31122 0.997643,0.712977 1.210898,1.05561 2.721189,2.10692 3.815038,3.394593 0.05627,0.141788 0.10828,-0.259471 0.116137,-0.891982 -0.0892,-2.08208 0.863747,-3.975017 2.216205,-5.753565 1.232156,-2.140149 2.275642,-3.81754 2.183897,-6.046967 0.0068,-2.16972 -1.101741,-4.441213 -2.183897,-6.047837 -1.352458,-1.778548 -2.305407,-3.671477 -2.216205,-5.753565 -0.0076,-0.632503 -0.0599,-1.03377 -0.116137,-0.891982 -1.093849,1.287664 -2.60414,2.338982 -3.815038,3.394601 -0.46024,0.401749 -0.909362,0.723302 -0.997643,0.712969 -0.0883,-0.0096 -0.902518,-0.9652 -1.329453,-1.422457 -0.0025,-0.0025 -0.0059,-0.0051 -0.0084,-0.0076 l -10.014885,10.015124 -4.39e-4,-4.39e-4 10.01525,-10.014819 c -0.0025,-0.0025 -0.0051,-0.0059 -0.0076,-0.0084 -0.457258,-0.426934 -1.412834,-1.241162 -1.422449,-1.329461 -0.01031,-0.08828 0.31122,-0.537394 0.712969,-0.997634 1.055619,-1.210899 2.10692,-2.721198 3.394593,-3.815047 0.141788,-0.05627 -0.259471,-0.10828 -0.891982,-0.116137 -2.08208,0.0892 -3.975017,-0.863738 -5.753565,-2.216197 -2.006388,-1.155154 -3.606134,-2.144708 -5.63524,-2.188262 z"
+         style="display:inline;fill:#003366;fill-opacity:1;stroke:#fffffc;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-gray.png"
+         inkscape:export-xdpi="300.00464"
+         inkscape:export-ydpi="300.00464" />
+      <path
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#fffffc;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 30.252785,20.083659 c 3.122237,1.812005 4.698014,4.284564 5.246738,7.572372 0.361415,-0.758677 0.635282,-2.423048 0.06996,-4.068089 6.66155,3.718207 8.857418,8.590715 8.527019,13.05163 -0.361161,4.876242 -3.582206,7.865884 -8.577112,8.788831 0.0034,-0.0042 0.0051,-0.0087 0.0084,-0.01225 -0.601132,0.107824 -1.211794,0.163839 -1.823741,0.165884 -0.96296,-0.0017 -1.920319,-0.137276 -2.842176,-0.399341 -4.018064,-1.05899 -7.327104,-4.146781 -7.327104,-8.368697 0,-6.819964 7.680627,-9.94014 6.718402,-16.730305 z"
+         id="path3667"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-gray.png"
+         inkscape:export-xdpi="300.00464"
+         inkscape:export-ydpi="300.00464" />
+      <path
+         style="display:inline;fill:#003366;fill-opacity:1;stroke-width:0.0930874"
+         d="m 31.589283,26.572962 c 1.958153,1.311525 2.946452,3.101014 3.29058,5.480728 0.226681,-0.549129 0.398428,-1.753683 0.04385,-2.944364 4.17789,2.69123 5.555171,6.217987 5.347947,9.446789 -0.226504,3.52941 -2.246663,5.693131 -5.379258,6.361161 0.0025,-0.0025 0.0051,-0.0059 0.0059,-0.0084 -0.377011,0.07807 -0.760071,0.118207 -1.143849,0.119686 -0.603937,-0.0017 -1.20436,-0.09915 -1.782511,-0.288831 -2.519964,-0.766492 -4.595252,-3.001521 -4.595252,-6.057333 0,-4.936279 4.816965,-7.194711 4.213484,-12.109412 z"
+         id="path3670"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\safety-and-security_fire-services-gray.png"
+         inkscape:export-xdpi="300.00464"
+         inkscape:export-ydpi="300.00464" />
+    </g>
+  </g>
+</svg>
