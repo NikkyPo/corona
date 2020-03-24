@@ -374,3 +374,40 @@ mymap.on('zoomend', function() {
 // });
 
   // query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'
+  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
+  				minDetailZoom: 0,
+  				maxDetailZoom: 8,
+  				vectorTileLayerStyles: {
+  					cb_2017_us_county_500k: {
+  						weight: 1,
+  						color: '#000000',
+  						opacity: 0.2,
+  						fill: false
+  					},
+  					cb_2015_us_state_500k: {
+  						weight: 3,
+  						color: '#000000',
+  						opacity: 0.2,
+  						fill: false
+  					}
+  				}
+  			}).addTo(mymap);
+
+  			VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/county_cases/{z}/{x}/{y}.pbf', {
+  				minDetailZoom: 0,
+  				maxDetailZoom: 8,
+  				style: function(f, name) {
+  					//console.log(f, name);
+  					const cases = f.properties.cases;
+
+  					const ln_cases = Math.log(cases);
+  					const gb = 215 - Math.floor(ln_cases * 255 / 7);
+  					const rgb = (255 << 16) + (gb << 8) + (gb)
+
+  					return ({
+  						stroke: false,
+  						fillColor: '#'+rgb.toString(16),
+  						fill: true
+  						});
+  				}
+  			}).addTo(mymap);
