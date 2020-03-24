@@ -1,440 +1,213 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="256"
-   viewBox="0 0 67.733332 67.733335"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="0 0 128 128"
+   height="128"
+   width="128"
    version="1.1"
-   id="svg8"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="health-and-medical_medical-care-gray-halo_256x256.svg"
-   inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\communications_alerts-warnings-messages.png"
-   inkscape:export-xdpi="300.00464"
-   inkscape:export-ydpi="300.00464">
-  <defs
-     id="defs2">
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker8549"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow2Lend">
-      <path
-         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path8547"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow2Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker8503"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path8501"
-         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         d="M 8.718588,4.033735 -2.207289,0.0160133 8.718588,-4.001708 c -1.745498,2.372061 -1.73544,5.617452 0,8.035443 z"
-         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker8463"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow2Lend">
-      <path
-         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
-         d="M 8.718588,4.033735 -2.207289,0.0160133 8.718588,-4.001708 c -1.745498,2.372061 -1.73544,5.617452 0,8.035443 z"
-         style="fill:#003366;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path8461"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <style
-       id="style4879">.cls-1{fill-rule:evenodd;}</style>
-    <style
-       id="style5360"
-       type="text/css">
-   
-    .str0 {stroke:black;stroke-width:1.50665;stroke-linecap:round}
-    .str1 {stroke:black;stroke-width:2.05897}
-    .fil0 {fill:none}
-    .fil1 {fill:#000000}
-   
-  </style>
-    <style
-       id="style5433"
-       type="text/css">
-   
-    .str0 {stroke:black;stroke-width:1.50665;stroke-linecap:round}
-    .str1 {stroke:black;stroke-width:2.05897}
-    .fil0 {fill:none}
-    .fil1 {fill:#000000}
-   
-  </style>
-    <pattern
-       y="0"
-       x="0"
-       height="6"
-       width="6"
-       patternUnits="userSpaceOnUse"
-       id="EMFhbasepattern" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.765625"
-     inkscape:cx="-302.11164"
-     inkscape:cy="84.283015"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer3"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="1280"
-     inkscape:window-height="657"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:lockguides="true"
-     showguides="false"
-     inkscape:guide-bbox="true">
-    <sodipodi:guide
-       position="-0.93017576,23.874511"
-       orientation="0,1"
-       id="guide5700"
-       inkscape:locked="true" />
-    <sodipodi:guide
-       position="-26.098869,26.473047"
-       orientation="0,1"
-       id="guide5726"
-       inkscape:locked="true" />
-    <sodipodi:guide
-       position="104.51042,-2.9104167"
-       orientation="0,1"
-       id="guide5880"
-       inkscape:locked="true" />
-    <sodipodi:guide
-       position="-71.093695,29.279377"
-       orientation="0,1"
-       id="guide6001"
-       inkscape:locked="true" />
-    <sodipodi:guide
-       position="-46.304445,58.278122"
-       orientation="0,1"
-       id="guide6005"
-       inkscape:locked="true" />
-    <sodipodi:guide
-       position="-0.10335287,20.205485"
-       orientation="0,1"
-       id="guide6736"
-       inkscape:locked="true" />
-    <sodipodi:guide
-       position="-0.43848907,22.874513"
-       orientation="0,1"
-       inkscape:locked="true"
-       id="guide6738" />
-    <inkscape:grid
-       type="xygrid"
-       id="grid2386" />
-  </sodipodi:namedview>
+   id="svg2">
   <metadata
-     id="metadata5">
+     id="metadata8">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="background:always"
-     style="display:inline">
-    <g
-       inkscape:label=":iter4"
-       id="g7852"
-       inkscape:groupmode="layer"
-       style="display:inline">
-      <circle
-         r="28.166189"
-         cy="33.872955"
-         cx="33.866665"
-         id="circle7850"
-         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png" />
-    </g>
-  </g>
-  <g
-     style="display:inline"
-     transform="translate(0,-229.2666)"
-     id="g1180"
-     inkscape:groupmode="layer"
-     inkscape:label="halo:always">
-    <g
-       style="display:inline"
-       inkscape:label="-gray-halo:iter3"
-       id="g1210"
-       inkscape:groupmode="layer">
-      <circle
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#919395;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle1208"
-         cx="33.866665"
-         cy="263.13959"
-         r="30.966955"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png" />
-    </g>
-    <g
-       style="display:none"
-       inkscape:label="-red-halo:iter3"
-       id="g1206"
-       inkscape:groupmode="layer">
-      <circle
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#c52038;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle1204"
-         cx="33.866665"
-         cy="263.13959"
-         r="30.966955"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-red.png" />
-    </g>
-    <g
-       style="display:none"
-       inkscape:label="-green-halo:iter3"
-       id="g1202"
-       inkscape:groupmode="layer">
-      <circle
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#5e9c42;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle1200"
-         cx="33.866665"
-         cy="263.13959"
-         r="30.966955"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-green.png" />
-    </g>
-    <g
-       inkscape:groupmode="layer"
-       id="layer18"
-       inkscape:label="-yellow-halo:iter3"
-       style="display:none">
-      <circle
-         inkscape:export-ydpi="300"
-         inkscape:export-xdpi="300"
-         r="30.966955"
-         cy="263.13959"
-         cx="33.866665"
-         id="circle1178-4"
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#fbba16;stroke-width:5.81207037;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-amber.png" />
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer8"
-     inkscape:label="border:always"
-     style="display:inline">
-    <g
-       style="display:inline"
-       transform="translate(0,-229.2666)"
-       id="g2274"
-       inkscape:groupmode="layer"
-       inkscape:label=":iter2">
-      <path
-         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#003366;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.99994087;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         d="m 33.867545,234.5268 c -15.782655,0 -28.6137047,12.83102 -28.6137047,28.61363 0,15.7827 12.8310497,28.61203 28.6137047,28.61203 15.782662,0 28.611962,-12.82933 28.611962,-28.61203 0,-15.78261 -12.8293,-28.61363 -28.611962,-28.61363 z m 0,1.17793 c 15.132933,0 27.434005,12.30281 27.434005,27.4357 0,15.13299 -12.301072,27.43402 -27.434005,27.43402 -15.132925,0 -27.4357477,-12.30103 -27.4357477,-27.43402 0,-15.13289 12.3028227,-27.4357 27.4357477,-27.4357 z"
-         id="circle2272"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\transportation-icon_highway-roadway-gray.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         inkscape:connector-curvature="0" />
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="content:always"
-     style="display:inline">
-    <g
-       inkscape:groupmode="layer"
-       id="g8245"
-       inkscape:label="health-and-medical_medical-care-with-label"
-       style="display:none">
-      <g
-         id="g8280"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-with-label.png"
-         inkscape:export-xdpi="300.00464"
-         inkscape:export-ydpi="300.00464"
-         transform="matrix(0.84488,0,0,0.84488,5.6025153,-5.1654031)">
-        <path
-           inkscape:connector-curvature="0"
-           id="path8221"
-           d="m 43.90452,15.01388 5.42929,0 0,5.42972 5.42967,0 0,5.42925 -5.42967,0 0,5.42971 -5.42929,0 0,-5.42971 -5.42969,0 0,-5.42925 5.42969,0 z"
-           style="display:inline;opacity:1;fill:#003366;fill-opacity:1;stroke:#a9d499;stroke-width:0;stroke-miterlimit:0.93999988;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-        <path
-           style="fill:#003366;fill-opacity:1;stroke-width:2.44095707"
-           d="M 82.91211,98.56836 A 14.65734,14.65734 0 0 0 68.26563,113.2148 l 0,4.918 -0.002,0 0,33.791 22.02929,10.2715 6.08985,0 c 1.30478,-1.0926 2.69004,-2.0673 4.31443,-2.6211 l 21.2676,-7.4277 0,-2.1563 -24.41011,0 a 12.05518,12.05518 0 0 1 -8.61524,-3.5879 12.05557,12.05557 0 0 1 -3.58789,-8.6171 12.2092,12.2092 0 0 1 12.20313,-12.2051 l 9.86331,0 a 4.574109,4.574109 0 0 1 0.8281,0.074 l 4.7207,-27.08594 -18.86133,0 z"
-           transform="scale(0.2645833,0.2645833)"
-           id="path8223"
-           inkscape:connector-curvature="0"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-        <path
-           style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
-           inkscape:connector-curvature="0"
-           d="m 23.8742,36.45564 a 1.940429,1.940429 0 0 0 1.93751,1.93751 l 1.93751,0 0.67167,-3.87502 -2.60918,0 a 1.934926,1.934926 0 0 0 -1.93751,1.93751 z"
-           id="path8225"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
-           d="m 33.56634,26.07955 -0.005,8.43846 0,3.87502 0.64604,0 a 1.934926,1.934926 0 0 0 1.9375,-1.93751 l 0,-7.81059 A 2.58126,2.58126 0 0 0 33.5688,26.07955 Z"
-           id="path8227"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-        <circle
-           style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
-           cx="27.10338"
-           cy="19.534731"
-           r="4.5208549"
-           id="circle8229"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-        <path
-           style="display:inline;fill:#003366;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-           inkscape:connector-curvature="0"
-           d="m 26.30408,45.37377 c -0.24858,0.33655 -0.42537,0.72936 -0.48826,1.15601 -0.0702,0.39463 -0.0356,0.81009 0.0944,1.20354 0.46166,1.29244 1.88066,1.97925 3.17715,1.53523 l 6.44596,-2.25575 0.2978,0.84881 -6.45171,2.25307 c -1.75779,0.6119 -3.68826,-0.32274 -4.31449,-2.08485 -0.21442,-0.61318 -0.19807,-1.24546 -0.066,-1.85531 l -9.27232,-4.32375 c -1.25931,-0.58725 -2.76139,-0.0429 -3.34616,1.21113 -0.5897,1.2646 -0.0401,2.76274 1.21929,3.34997 l 16.0658,7.49161 c 0.52319,0.244 1.09773,0.26142 1.64142,0.12833 l 14.14703,-3.0388 5.69288,2.65463 3.61666,-7.75595 -0.047,-0.022 0.0351,-0.0753 -13.18842,-6.14987 -14.11736,4.93084 c -0.44774,0.15264 -0.83867,0.42631 -1.1417,0.7982 z"
-           id="path8231"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-        <path
-           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.25349689px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-           d="m 29.8888,26.07955 -2.13958,12.3136 c 1.90709,0 3.90443,0 5.81152,0 l 0.006,-12.3136 z"
-           id="path8243"
-           inkscape:connector-curvature="0"
-           inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-           inkscape:export-xdpi="300.00458"
-           inkscape:export-ydpi="300.00458" />
-      </g>
-      <flowRoot
-         xml:space="preserve"
-         id="flowRoot8050-8-8-9"
-         style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#003366;fill-opacity:1;stroke:none"
-         transform="matrix(0.33531175,0,0,0.33531175,-9.9501032,-7.6446991)"
-         inkscape:export-xdpi="300.00464"
-         inkscape:export-ydpi="300.00464"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-with-label.png"><flowRegion
-           id="flowRegion8046-2-9-3"
-           style="font-size:14.66666698px;text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1"><rect
-             id="rect8044-9-3-4"
-             width="221"
-             height="111.7344"
-             x="20"
-             y="165.76559"
-             style="font-size:14.66666698px;text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1" /></flowRegion><flowPara
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1em;font-family:'Arial Narrow';-inkscape-font-specification:'Arial Narrow Bold';letter-spacing:-1.20000005px;fill:#003366;fill-opacity:1"
-           id="flowPara8271">Medical </flowPara><flowPara
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1em;font-family:'Arial Narrow';-inkscape-font-specification:'Arial Narrow Bold';letter-spacing:-1.20000005px;fill:#003366;fill-opacity:1"
-           id="flowPara8284">Care</flowPara></flowRoot>    </g>
-    <g
-       style="display:inline"
-       inkscape:label="health-and-medical_medical-care"
-       id="g1994"
-       inkscape:groupmode="layer">
-      <path
-         inkscape:connector-curvature="0"
-         id="path1952"
-         d="m 42.347453,17.944617 4.587099,0 0,4.587462 4.587419,0 0,4.587065 -4.587419,0 0,4.587453 -4.587099,0 0,-4.587453 -4.587436,0 0,-4.587065 4.587436,0 z"
-         style="display:inline;opacity:1;fill:#003366;fill-opacity:1;stroke:#a9d499;stroke-width:0;stroke-miterlimit:0.93999988;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-      <path
-         style="fill:#003366;fill-opacity:1;stroke-width:2.44095707"
-         d="m 23.78767,27.293773 a 3.2765185,3.2765185 0 0 0 -3.274091,3.274082 l 0,1.099376 -4.47e-4,0 0,7.553678 4.924453,2.296102 1.361332,0 c 0.291672,-0.24424 0.601334,-0.462126 0.964452,-0.585923 l 4.754183,-1.660396 0,-0.482022 -5.456663,0 a 2.6948287,2.6948287 0 0 1 -1.925861,-0.802044 2.6949158,2.6949158 0 0 1 -0.80204,-1.926275 2.7292584,2.7292584 0 0 1 2.727901,-2.728343 l 2.204855,0 a 1.0225016,1.0225016 0 0 1 0.185115,0.01654 l 1.055271,-6.054821 -4.216284,0 z"
-         id="path2227"
-         inkscape:connector-curvature="0"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-      <path
-         style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
-         inkscape:connector-curvature="0"
-         d="m 25.424236,36.060331 a 1.6394297,1.6394297 0 0 0 1.636964,1.636964 l 1.636963,0 0.567481,-3.273927 -2.204444,0 a 1.6347803,1.6347803 0 0 0 -1.636964,1.636963 z"
-         id="path2229"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-      <path
-         inkscape:connector-curvature="0"
-         style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
-         d="m 33.612932,27.29378 -0.0042,7.129486 0,3.273927 0.545826,0 a 1.6347803,1.6347803 0 0 0 1.636955,-1.636963 l 0,-6.599012 A 2.1808549,2.1808549 0 0 0 33.615035,27.29378 Z"
-         id="path2231-7"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-      <circle
-         style="fill:#003366;fill-opacity:1;stroke-width:0.64583647"
-         cx="28.152506"
-         cy="21.764193"
-         r="3.8195798"
-         id="circle2233"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-      <path
-         style="display:inline;fill:#003366;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         inkscape:connector-curvature="0"
-         d="m 27.477193,43.595081 c -0.21002,0.284344 -0.359386,0.616221 -0.412521,0.97669 -0.05931,0.333415 -0.03008,0.684428 0.07976,1.016846 0.390047,1.091957 1.588932,1.672229 2.68431,1.297086 l 5.446063,-1.905839 0.251605,0.717143 -5.45092,1.903574 c -1.485122,0.516982 -3.116138,-0.272677 -3.645227,-1.761448 -0.181159,-0.518064 -0.167345,-1.052264 -0.05576,-1.567515 l -7.833998,-3.653049 c -1.063965,-0.496156 -2.333043,-0.03625 -2.827103,1.023259 -0.498226,1.068435 -0.03388,2.334184 1.030154,2.830323 l 13.573673,6.329511 c 0.442032,0.206151 0.92745,0.220869 1.386803,0.108424 l 11.952542,-2.567422 4.809801,2.242844 3.055643,-6.552847 -0.03971,-0.01859 0.02965,-0.06362 -11.142632,-5.195902 -11.927475,4.165968 c -0.378287,0.128963 -0.708576,0.360181 -0.9646,0.674383 z"
-         id="path7144-0-1"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-      <path
-         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.25349689px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         d="m 30.505852,27.29378 -1.807689,10.403515 c 1.611262,0 3.298775,0 4.910037,0 L 33.6133,27.29378 Z"
-         id="path11822"
-         inkscape:connector-curvature="0"
-         inkscape:export-filename="C:\Users\Charlotte Abel\Documents\Symbology\Components\For Distribution\health-and-medical-icon_medical-care-gray.png"
-         inkscape:export-xdpi="300.00458"
-         inkscape:export-ydpi="300.00458" />
-    </g>
-  </g>
+  <defs
+     id="defs6" />
+  <image
+     y="0"
+     x="0"
+     id="image10"
+     xlink:href="data:image/png;base64,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
+"
+     style="image-rendering:optimizeQuality"
+     preserveAspectRatio="none"
+     height="128"
+     width="128" />
 </svg>

@@ -1,14 +1,3 @@
-// Basemap layers
-// var base = {
-//   'None': L.tileLayer(''),
-//   'Aerial':  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-//     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-//   }),
-//   'Streets': L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-//   })
-// };
-
 var none = L.tileLayer('');
 var aerial = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
@@ -85,7 +74,7 @@ nursingHomes.bindPopup(function (layer) {
 // Prisons
 var prisonsIcon = L.icon({
 	iconUrl: 'data/prisons.svg',
-	iconSize: [15, 15],
+	iconSize: [35, 35],
   iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
@@ -177,7 +166,7 @@ var redCrossFacilitiesIcon = L.icon({
   popupAnchor: [0, -28]
 });
 var redCrossFacilities = L.esri.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0/query?outFields=*&where=1%3D1',
+  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0',
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: redCrossFacilitiesIcon
@@ -260,165 +249,128 @@ var mymap = L.map('mapid', {
 //   "Minnesota Airports": airports
 // }
 
-$("#boundaries").click(function(event) {
-    if(mymap.hasLayer(boundaries)) {
-        mymap.removeLayer(boundaries);
-    } else {
-        mymap.addLayer(boundaries);
-   }
-});
-$("#hospitals").click(function(event) {
-    if(mymap.hasLayer(hospitals)) {
-        mymap.removeLayer(hospitals);
-    } else {
-        mymap.addLayer(hospitals);
-   }
-});
-$("#va").click(function(event) {
-    if(mymap.hasLayer(va)) {
-        mymap.removeLayer(va);
-    } else {
-        mymap.addLayer(va);
-   }
-});
-$("#nursingHomes").click(function(event) {
-    if(mymap.hasLayer(nursingHomes)) {
-        mymap.removeLayer(nursingHomes);
-    } else {
-        mymap.addLayer(nursingHomes);
-   }
-});
-$("#prisons").click(function(event) {
-    if(mymap.hasLayer(prisons)) {
-        mymap.removeLayer(prisons);
-    } else {
-        mymap.addLayer(prisons);
-   }
-});
-$("#publicSchools").click(function(event) {
-    if(mymap.hasLayer(publicSchools)) {
-        mymap.removeLayer(publicSchools);
-    } else {
-        mymap.addLayer(publicSchools);
-   }
-});
-$("#policeStations").click(function(event) {
-    if(mymap.hasLayer(policeStations)) {
-        mymap.removeLayer(policeStations);
-    } else {
-        mymap.addLayer(policeStations);
-   }
-});
-$("#fireStations").click(function(event) {
-    if(mymap.hasLayer(fireStations)) {
-        mymap.removeLayer(fireStations);
-    } else {
-        mymap.addLayer(fireStations);
-   }
-});
-$("#redCross").click(function(event) {
-    if(mymap.hasLayer(redCross)) {
-        mymap.removeLayer(redCross);
-    } else {
-        mymap.addLayer(redCross);
-   }
-});
-$("#redCrossFacilities").click(function(event) {
-    if(mymap.hasLayer(redCrossFacilities)) {
-        mymap.removeLayer(redCrossFacilities);
-    } else {
-        mymap.addLayer(redCrossFacilities);
-   }
-});
-$("#shelters").click(function(event) {
-    if(mymap.hasLayer(shelters)) {
-        mymap.removeLayer(shelters);
-    } else {
-        mymap.addLayer(shelters);
-   }
-});
-$("#bases").click(function(event) {
-    if(mymap.hasLayer(bases)) {
-        mymap.removeLayer(bases);
-    } else {
-        mymap.addLayer(bases);
-   }
-});
-$("#airports").click(function(event) {
-    if(mymap.hasLayer(airports)) {
-        mymap.removeLayer(airports);
-    } else {
-        mymap.addLayer(airports);
-   }
-});
-
-// Basemap logic
-$("#none").click(function(event) {
-    if(mymap.hasLayer(none)) {
-      console.log("has layer")
-    } else {
-      mymap.removeLayer(streets);
-      mymap.removeLayer(aerial);
-      mymap.addLayer(none);
-   }
-});
-
-$("#aerial").click(function(event) {
-    if(mymap.hasLayer(aerial)) {
-      console.log("has layer")
-    } else {
-      mymap.removeLayer(streets);
-      mymap.removeLayer(none);
-      mymap.addLayer(aerial);
-
-   }
-});
-
-$("#streets").click(function(event) {
-    if(mymap.hasLayer(streets)) {
-      console.log("has layer")
-    } else {
-      mymap.removeLayer(none);
-      mymap.removeLayer(aerial);
-      mymap.addLayer(streets);
-   }
-});
 
 mymap.addLayer(boundaries)
 var sidebar = L.control.sidebar('sidebar').addTo(mymap);
+// mymap.on('zoomend', function() {
+//     if (mymap.getZoom() < 8){
+//             mymap.removeLayer(airports);
+//     }
+//     else {
+//             mymap.addLayer(airports);
+//         }
+// });
 // L.control.layers(base, null).addTo(mymap);
 
-// $("input[type='checkbox']").click(function(event) {
-//     event.preventDefault();
-//     console.log(event.target.id)
-//     if(mymap.hasLayer(mrdsLayer)) {
-//         // $(this).removeClass('selected');
-//         mymap.removeLayer(mrdsLayer);
-//     } else {
-//         mymap.addLayer(mrdsLayer);
-//         // $(this).addClass('selected');
-//    }
-// });
-// mymap.on('zoomend', function() {
+// Basemap logic
+$("input[type='radio']").change(function() {
+  var radioClicked = $(this).attr("id")
+  switch (radioClicked) {
+    case "none":
+      mymap.removeLayer(streets);
+      mymap.removeLayer(aerial);
+      mymap.addLayer(none);
+    break;
+    case "aerial":
+      mymap.removeLayer(streets);
+      mymap.removeLayer(none);
+      mymap.addLayer(aerial);
+    break;
+    case "streets":
+      mymap.removeLayer(none);
+      mymap.removeLayer(aerial);
+      mymap.addLayer(streets);
+    break;
+  }
+});
+
+$("input[type='checkbox']").change(function() {
+  var layerClicked = $(this).attr("id")
+  switch (layerClicked) {
+    case "airports":
+      toggleLayer(this.checked, airports)
+    break;
+    case "redCrossFacilities":
+      toggleLayer(this.checked, redCrossFacilities);
+    break;
+    case "redCross":
+      toggleLayer(this.checked, redCross);
+    break;
+    case "fireStations":
+      toggleLayer(this.checked, fireStations);
+    break;
+    case "hospitals":
+      toggleLayer(this.checked, hospitals);
+    break;
+    case "bases":
+      toggleLayer(this.checked, bases);
+    break;
+    case "boundaries":
+      toggleLayer(this.checked, boundaries);
+    break;
+    case "nursingHomes":
+      toggleLayer(this.checked, nursingHomes);
+    break;
+    case "policeStations":
+      toggleLayer(this.checked, policeStations);
+    break;
+    case "prisons":
+      toggleLayer(this.checked, prisons);
+    break;
+    case "publicSchools":
+      toggleLayer(this.checked, publicSchools);
+    break;
+    case "shelters":
+      toggleLayer(this.checked, shelters);
+    break;
+    case "va":
+      toggleLayer(this.checked, va);
+    break;
+  }
+});
+
+function toggleLayer(checked, layer) {
+	if (checked) {
+  	mymap.addLayer(layer);
+  } else {
+  	mymap.removeLayer(layer);
+  }
+}
+
+mymap.on('zoomend', function() {
+  var zoomlevel = mymap.getZoom();
+  if (zoomlevel > 7){
+    console.log("zoomed too far out")
+    if (mymap.hasLayer(airports)) mymap.removeLayer(airports);
+    document.querySelector("input[id=airports]").checked = false;
+    if (mymap.hasLayer(fireStations)) mymap.removeLayer(fireStations);
+    if (mymap.hasLayer(hospitals)) mymap.removeLayer(hospitals);
+  }
+  else {
+    if (document.querySelector("input[id=airports]").checked && !mymap.hasLayer(airports)) mymap.addLayer(airports);
+    if (document.querySelector("input[id=fireStations]").checked && !mymap.hasLayer(fireStations)) mymap.addLayer(fireStations);
+    if (document.querySelector("input[id=hospitals]").checked && !mymap.hasLayer(hospitals)) mymap.addLayer(hospitals);
+  }
+});
+
+
+// mymap.on('zoomend', function () {
 // var zoomlevel = mymap.getZoom();
-//     if (zoomlevel  <10){
-//         if (mymap.hasLayer(hospitals)) {
-//             mymap.removeLayer(hospitals);
+//     if (zoomlevel < 10){
+//         if (mymap.hasLayer(airports)) {
+//             mymap.removeLayer(airports);
 //         } else {
 //             console.log("no point layer active");
 //         }
 //     }
 //     if (zoomlevel >= 10){
-//         if (mymap.hasLayer(hospitals)){
+//         if (mymap.hasLayer(airports)){
 //             console.log("layer already added");
 //         } else {
-//             mymap.addLayer(hospitals);
+//             mymap.addLayer(airports);
 //         }
 //     }
 // console.log("Current Zoom Level =" + zoomlevel)
 // });
-
-
-
 
   // query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'
