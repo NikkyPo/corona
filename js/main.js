@@ -38,7 +38,9 @@ var cases =  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/co
       });
   }
 });
-
+cases.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>'+ layer.properties.st_name + '</strong><br></p><p>'+ layer.properties.cty_name +' county <br>'+ layer.properties.cases + ' cases<br> Updated: ' + layer.properties.updated_at +' </p>');
+});
 
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
 boundaries.setStyle({
@@ -279,26 +281,6 @@ var sidebar = L.control.sidebar('sidebar').addTo(mymap);
 // L.control.layers(base, null).addTo(mymap);
 
 // Basemap logic
-$("input[type='radio']").change(function() {
-  var radioClicked = $(this).attr("id")
-  switch (radioClicked) {
-    case "none":
-      mymap.removeLayer(streets);
-      mymap.removeLayer(aerial);
-      mymap.addLayer(none);
-    break;
-    case "aerial":
-      mymap.removeLayer(streets);
-      mymap.removeLayer(none);
-      mymap.addLayer(aerial);
-    break;
-    case "streets":
-      mymap.removeLayer(none);
-      mymap.removeLayer(aerial);
-      mymap.addLayer(streets);
-    break;
-  }
-});
 
 $("input[type='checkbox']").change(function() {
   var layerClicked = $(this).attr("id")
@@ -359,22 +341,85 @@ function toggleLayer(checked, layer) {
   }
 }
 
-mymap.on('zoomend', function() {
-  var zoomlevel = mymap.getZoom();
-  if (zoomlevel > 7){
-    console.log("zoomed too far out")
-    if (mymap.hasLayer(airports)) mymap.removeLayer(airports);
-    document.querySelector("input[id=airports]").checked = false;
-    if (mymap.hasLayer(fireStations)) mymap.removeLayer(fireStations);
-    if (mymap.hasLayer(hospitals)) mymap.removeLayer(hospitals);
-  }
-  else {
-    if (document.querySelector("input[id=airports]").checked && !mymap.hasLayer(airports)) mymap.addLayer(airports);
-    if (document.querySelector("input[id=fireStations]").checked && !mymap.hasLayer(fireStations)) mymap.addLayer(fireStations);
-    if (document.querySelector("input[id=hospitals]").checked && !mymap.hasLayer(hospitals)) mymap.addLayer(hospitals);
+
+
+$("input[type='radio']").change(function() {
+  var radioClicked = $(this).attr("id")
+  switch (radioClicked) {
+    case "none":
+      mymap.removeLayer(streets);
+      mymap.removeLayer(aerial);
+      mymap.addLayer(none);
+      none.bringToBack();
+    break;
+    case "aerial":
+      mymap.removeLayer(streets);
+      mymap.removeLayer(none);
+      mymap.addLayer(aerial);
+      aerial.bringToBack();
+    break;
+    case "streets":
+      mymap.removeLayer(none);
+      mymap.removeLayer(aerial);
+      mymap.addLayer(streets);
+      streets.bringToBack();
+    break;
   }
 });
+// mymap.on('zoomend', function() {
+//   var zoomlevel = mymap.getZoom();
+//   if (zoomlevel > 7){
+//     console.log("zoomed too far out")
+//     if (mymap.hasLayer(airports)) mymap.removeLayer(airports);
+//     document.querySelector("input[id=airports]").checked = false;
+//     if (mymap.hasLayer(fireStations)) mymap.removeLayer(fireStations);
+//     if (mymap.hasLayer(hospitals)) mymap.removeLayer(hospitals);
+//   }
+//   else {
+//     if (document.querySelector("input[id=airports]").checked && !mymap.hasLayer(airports)) mymap.addLayer(airports);
+//     if (document.querySelector("input[id=fireStations]").checked && !mymap.hasLayer(fireStations)) mymap.addLayer(fireStations);
+//     if (document.querySelector("input[id=hospitals]").checked && !mymap.hasLayer(hospitals)) mymap.addLayer(hospitals);
+//   }
+// });
 
+// var displayDate = '2020-03-24';
+// $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
+//  .done( data => {
+//   VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
+//     minDetailZoom: 0,
+//     maxDetailZoom: 8,
+//     style: function(f, name) {
+//       const state = f.properties.st_name;
+//       const county = f.properties.cty_name;
+//
+//       let r = 255;
+//       let g = 255;
+//       let b = 255;
+//       if(data[state] &&
+//          data[state]["counties"] &&
+//          data[state]["counties"][county] &&
+//          data[state]["counties"][county][displayDate]) {
+//         const cases = data[state]["counties"][county][displayDate];
+//         const ln_cases = Math.log(cases);
+//         if (ln_cases <= 7.0) {
+//           r = 255;
+//           g = b = 215 - Math.floor(ln_cases * 255 / 7);
+//         } else {
+//           const b = (ln_cases - 7) * (255 / 5);
+//           const g = 0;
+//           const r = 255 - (b / 2);
+//         }
+//       }
+//       const rgb = (255 << 16) + (g << 8) + (b);
+//
+//       return ({
+//         stroke: false,
+//         fillColor: '#'+rgb.toString(16),
+//         fill: true
+//       });
+//     }
+//   });
+// });
 
 // mymap.on('zoomend', function () {
 // var zoomlevel = mymap.getZoom();

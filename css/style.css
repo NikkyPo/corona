@@ -8,6 +8,11 @@ html, body, #mapid {
     font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+div.legend div {
+  width: 200px;
+  text-align: right;
+}
+
 .leaflet-container {
   background-color: #FFF
 }
