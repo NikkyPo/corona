@@ -7,6 +7,39 @@ var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 })
 
 // Layers
+
+var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
+  minDetailZoom: 0,
+  maxDetailZoom: 8,
+  vectorTileLayerStyles: {
+    cb_2017_us_county_500k: {
+      weight: 1,
+      color: '#000000',
+      opacity: 0.2,
+      fill: false
+    }
+  }
+});
+
+var cases =  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/county_cases/{z}/{x}/{y}.pbf', {
+  minDetailZoom: 0,
+  maxDetailZoom: 8,
+  style: function(f, name) {
+    //console.log(f, name);
+    const cases = f.properties.cases;
+    const ln_cases = Math.log(cases);
+    const gb = 215 - Math.floor(ln_cases * 255 / 7);
+    const rgb = (255 << 16) + (gb << 8) + (gb)
+
+    return ({
+      stroke: false,
+      fillColor: '#'+rgb.toString(16),
+      fill: true
+      });
+  }
+});
+
+
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
 boundaries.setStyle({
   color: 'grey',
@@ -230,27 +263,10 @@ airports.bindPopup(function (layer) {
 var mymap = L.map('mapid', {
   center: [45.9, -93.6],
   zoom: 6,
-  layers: [none]
+  layers: [counties, cases, boundaries, none]
 });
 
-// var overlayMaps = {
-//   "Boundaries": boundaries,
-//   "Hospitals/Medical Centers": mrdsLayer,
-//   "Veterans Health Administration Medical Facilities": va,
-//   "Nursing Homes": nursingHomes,
-//   "Prisons": prisons,
-//   "Public Schools (Minnesota)": publicSchools,
-//   "Police Stations": policeStations,
-//   "Fire Stations (Minnesota)": fireStations,
-//   "American Red Cross Chapter Regions": redCross,
-//   "American Red Cross Chapter Facilities": redCrossFacilities,
-//   "Minnesota Shelter System Facilities": shelters,
-//   "Military Bases": bases,
-//   "Minnesota Airports": airports
-// }
 
-
-mymap.addLayer(boundaries)
 var sidebar = L.control.sidebar('sidebar').addTo(mymap);
 // mymap.on('zoomend', function() {
 //     if (mymap.getZoom() < 8){
@@ -287,6 +303,12 @@ $("input[type='radio']").change(function() {
 $("input[type='checkbox']").change(function() {
   var layerClicked = $(this).attr("id")
   switch (layerClicked) {
+    case "counties":
+      toggleLayer(this.checked, counties)
+    break;
+    case "cases":
+      toggleLayer(this.checked, cases)
+    break;
     case "airports":
       toggleLayer(this.checked, airports)
     break;
@@ -374,40 +396,3 @@ mymap.on('zoomend', function() {
 // });
 
   // query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'
-  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
-  				minDetailZoom: 0,
-  				maxDetailZoom: 8,
-  				vectorTileLayerStyles: {
-  					cb_2017_us_county_500k: {
-  						weight: 1,
-  						color: '#000000',
-  						opacity: 0.2,
-  						fill: false
-  					},
-  					cb_2015_us_state_500k: {
-  						weight: 3,
-  						color: '#000000',
-  						opacity: 0.2,
-  						fill: false
-  					}
-  				}
-  			}).addTo(mymap);
-
-  			VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/county_cases/{z}/{x}/{y}.pbf', {
-  				minDetailZoom: 0,
-  				maxDetailZoom: 8,
-  				style: function(f, name) {
-  					//console.log(f, name);
-  					const cases = f.properties.cases;
-
-  					const ln_cases = Math.log(cases);
-  					const gb = 215 - Math.floor(ln_cases * 255 / 7);
-  					const rgb = (255 << 16) + (gb << 8) + (gb)
-
-  					return ({
-  						stroke: false,
-  						fillColor: '#'+rgb.toString(16),
-  						fill: true
-  						});
-  				}
-  			}).addTo(mymap);
