@@ -25,12 +25,13 @@ var cases =  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/co
   minDetailZoom: 0,
   maxDetailZoom: 8,
   style: function(f, name) {
-    //console.log(f, name);
     const cases = f.properties.cases;
     const ln_cases = Math.log(cases);
+    console.log(ln_cases);
     const gb = 215 - Math.floor(ln_cases * 255 / 7);
+    console.log(gb);
     const rgb = (255 << 16) + (gb << 8) + (gb)
-
+    console.log(rgb);
     return ({
       stroke: false,
       fillColor: '#'+rgb.toString(16),
@@ -336,6 +337,7 @@ $("input[type='checkbox']").change(function() {
 function toggleLayer(checked, layer) {
 	if (checked) {
   	mymap.addLayer(layer);
+    layer.bringToFront();
   } else {
   	mymap.removeLayer(layer);
   }

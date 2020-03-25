@@ -10,7 +10,7 @@ html, body, #mapid {
 
 div.legend div {
   width: 200px;
-  text-align: right;
+  text-align: left;
 }
 
 .leaflet-container {
