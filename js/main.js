@@ -122,7 +122,7 @@ var nursingHomes = L.esri.featureLayer({
   }
  });
 nursingHomes.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>Type: {TYPE}<br>Population: {POPULATION}<br>Description: {NAICS_DESC}<br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>Type: {TYPE}<br>Population: {POPULATION}<br>Description: {NAICS_DESC}<br><br>{ADDRESS}, {CITY} {ZIP}</p>', layer.feature.properties);
 });
 
 //////////////////////////////////////////
@@ -185,7 +185,7 @@ var publicSchools = L.esri.featureLayer({
   }
     });
 publicSchools.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}}</p>', layer.feature.properties);
 });
 
 //////////////////////////////////////////
@@ -264,7 +264,7 @@ var va = L.esri.featureLayer({
   }
  });
 va.bindPopup(function (layer) {
-  return L.Util.template("<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>", layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}</p>", layer.feature.properties);
 });
 
 
