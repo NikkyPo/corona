@@ -132,3 +132,8 @@ div.legend div {
 	border-radius: 50%;
 	background: white;
 }
+
+.leaflet-tooltip{
+    width: 100px;
+    white-space: normal;
+}

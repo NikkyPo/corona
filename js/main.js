@@ -50,6 +50,40 @@ boundaries.setStyle({
   fill: false
 });
 
+////////////////////////////////////
+// Bases
+var bases = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0"});
+bases.setStyle({
+  color: 'green',
+  weight: 5,
+  fill: true
+});
+bases.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{SITE_NAME}</strong><br><br>State Territory: {STATE_TERR}</p>', layer.feature.properties);
+});
+
+/////////////////////////////////////////////
+// fireStations
+var fireStationsIcon = L.icon({
+	iconUrl: 'data/fireStations.svg',
+	iconSize: [25, 25],
+  iconAnchor: [16, 37],
+  popupAnchor: [0, -28]
+});
+var fireStations = L.esri.featureLayer({
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Fire_Station/FeatureServer/0",
+  where: "STATE = 'MN'",
+  pointToLayer: function (geojson, latlng) {
+  return L.marker(latlng, {
+      icon: fireStationsIcon
+    });
+  }
+   });
+fireStations.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+});
+
+///////////////////////////////////////////
 // Hospitals
 var hospitalsIcon = L.icon({
 	iconUrl: 'data/hospital.svg',
@@ -58,7 +92,8 @@ var hospitalsIcon = L.icon({
   popupAnchor: [0, -28]
 });
 var hospitals = L.esri.featureLayer({
-  url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6',
+  url: "https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6",
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
       icon: hospitalsIcon
@@ -66,28 +101,10 @@ var hospitals = L.esri.featureLayer({
   }
  });
 hospitals.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
 });
 
-// veterans
-var vaIcon = L.icon({
-	iconUrl: 'data/va.svg',
-	iconSize: [25, 25],
-  iconAnchor: [16, 37],
-  popupAnchor: [0, -28]
-});
-var va = L.esri.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0',
-  pointToLayer: function (geojson, latlng) {
-    return L.marker(latlng, {
-        icon: vaIcon
-      });
-  }
- });
-va.bindPopup(function (layer) {
-  return L.Util.template("<p><strong>{NAME}</strong><br><embed type='video/webm' src='https://www.sharedgeo.org/COVID-19/img/covid19-conus.webm' width='100%'' height='100%''></p>", layer.feature.properties);
-});
-
+//////////////////////////////////////////
 // Nursing Homes
 var nursingHomesIcon = L.icon({
 	iconUrl: 'data/nursingHomes.svg',
@@ -97,6 +114,7 @@ var nursingHomesIcon = L.icon({
 });
 var nursingHomes = L.esri.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/NursingHomes/FeatureServer/0',
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
         icon: nursingHomesIcon
@@ -104,9 +122,31 @@ var nursingHomes = L.esri.featureLayer({
   }
  });
 nursingHomes.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>Type: {TYPE}<br>Population: {POPULATION}<br>Description: {NAICS_DESC}<br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
 });
 
+//////////////////////////////////////////
+// Police
+var policeIcon = L.icon({
+	iconUrl: 'data/policeStations.svg',
+	iconSize: [25, 25],
+  iconAnchor: [16, 37],
+  popupAnchor: [0, -28]
+});
+var policeStations = L.esri.featureLayer({
+  url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30',
+  where: "STATE = 'MN'",
+  pointToLayer: function (geojson, latlng) {
+  return L.marker(latlng, {
+      icon: policeIcon
+    });
+  }
+   });
+policeStations.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+});
+
+/////////////////////////////////////////
 // Prisons
 var prisonsIcon = L.icon({
 	iconUrl: 'data/prisons.svg',
@@ -116,6 +156,7 @@ var prisonsIcon = L.icon({
 });
 var prisons = L.esri.featureLayer({
   url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/11',
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
         icon: prisonsIcon
@@ -123,9 +164,10 @@ var prisons = L.esri.featureLayer({
   }
   });
 prisons.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
 });
 
+//////////////////////////////////////////
 // Public Schools
 var publicSchoolsIcon = L.icon({
 	iconUrl: 'data/publicSchools.svg',
@@ -135,6 +177,7 @@ var publicSchoolsIcon = L.icon({
 });
 var publicSchools = L.esri.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0',
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
         icon: publicSchoolsIcon
@@ -142,58 +185,26 @@ var publicSchools = L.esri.featureLayer({
   }
     });
 publicSchools.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}}</p>', layer.feature.properties);
 });
 
-// Police
-var policeIcon = L.icon({
-	iconUrl: 'data/policeStations.svg',
-	iconSize: [25, 25],
-  iconAnchor: [16, 37],
-  popupAnchor: [0, -28]
-});
-var policeStations = L.esri.featureLayer({
-  url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30/query',
-  pointToLayer: function (geojson, latlng) {
-  return L.marker(latlng, {
-      icon: policeIcon
-    });
-  }
-   });
-policeStations.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
-});
-
-// fireStations
-var fireStationsIcon = L.icon({
-	iconUrl: 'data/fireStations.svg',
-	iconSize: [25, 25],
-  iconAnchor: [16, 37],
-  popupAnchor: [0, -28]
-});
-var fireStations = L.esri.featureLayer({
-  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Fire_Stations/FeatureServer/0",
-  pointToLayer: function (geojson, latlng) {
-  return L.marker(latlng, {
-      icon: fireStationsIcon
-    });
-  }
-   });
-fireStations.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
-});
-
+//////////////////////////////////////////
 // RedCross
-var redCross = L.esri.featureLayer({ url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3' });
+var redCross = L.esri.featureLayer({
+  url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3',
+  simplifyFactor: 0.5,
+  precision: 5
+ });
 redCross.setStyle({
   color: 'red',
   weight: 2,
-  fill: false
+  fillColor: '#ffcccb'
 });
 redCross.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{chapter}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{chapter}</strong><br><br>Region: {region}<br>Division: {division}</p>', layer.feature.properties);
 });
 
+///////////////////////////////////////////
 // RedCross Facilities
 var redCrossFacilitiesIcon = L.icon({
 	iconUrl: 'data/redCrossFacilities.svg',
@@ -203,6 +214,7 @@ var redCrossFacilitiesIcon = L.icon({
 });
 var redCrossFacilities = L.esri.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0',
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: redCrossFacilitiesIcon
@@ -210,9 +222,10 @@ var redCrossFacilities = L.esri.featureLayer({
   }
  });
 redCrossFacilities.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}</p>', layer.feature.properties);
 });
 
+////////////////////////////////////////////
 // Shelters
 var sheltersIcon = L.icon({
 	iconUrl: 'data/shelters.svg',
@@ -221,7 +234,8 @@ var sheltersIcon = L.icon({
   popupAnchor: [0, -28]
 });
 var shelters = L.esri.featureLayer({
-  url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5/",
+  url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5",
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: sheltersIcon
@@ -229,20 +243,35 @@ var shelters = L.esri.featureLayer({
   }
  });
 shelters.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{SHELTER_NAME}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{SHELTER_NAME}</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}</p>', layer.feature.properties);
 });
 
-// Bases
-var bases = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0"});
-bases.setStyle({
-  color: 'green',
-  weight: 5,
-  fill: true
+/////////////////////////////////////////
+// veterans
+var vaIcon = L.icon({
+	iconUrl: 'data/va.svg',
+	iconSize: [25, 25],
+  iconAnchor: [16, 37],
+  popupAnchor: [0, -28]
 });
-bases.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{SITE_NAME}</strong></p>', layer.feature.properties);
+var va = L.esri.featureLayer({
+  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0',
+  where: "STATE = 'MN'",
+  pointToLayer: function (geojson, latlng) {
+    return L.marker(latlng, {
+        icon: vaIcon
+      });
+  }
+ });
+va.bindPopup(function (layer) {
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>", layer.feature.properties);
 });
 
+
+
+
+
+/////////////////////////////////////////
 // Airports
 var airportsIcon = L.icon({
 	iconUrl: 'data/airport.svg',
@@ -252,6 +281,7 @@ var airportsIcon = L.icon({
 });
 var airports = L.esri.featureLayer({
   url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0",
+  where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: airportsIcon
@@ -266,7 +296,8 @@ airports.bindPopup(function (layer) {
 var mymap = L.map('mapid', {
   center: [45.9, -93.6],
   zoom: 6,
-  layers: [counties, cases, boundaries, none]
+  layers: [boundaries, none]
+  // layers: [counties, cases, boundaries, none]
 });
 
 
