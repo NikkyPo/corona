@@ -67,7 +67,6 @@ bases.bindPopup(function (layer) {
 var fireStationsIcon = L.icon({
 	iconUrl: 'data/fireStations.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var fireStations = L.esri.featureLayer({
@@ -88,7 +87,6 @@ fireStations.bindPopup(function (layer) {
 var hospitalsIcon = L.icon({
 	iconUrl: 'data/hospital.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var hospitals = L.esri.featureLayer({
@@ -109,7 +107,6 @@ hospitals.bindPopup(function (layer) {
 var nursingHomesIcon = L.icon({
 	iconUrl: 'data/nursingHomes.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var nursingHomes = L.esri.featureLayer({
@@ -130,7 +127,6 @@ nursingHomes.bindPopup(function (layer) {
 var policeIcon = L.icon({
 	iconUrl: 'data/policeStations.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var policeStations = L.esri.featureLayer({
@@ -151,7 +147,6 @@ policeStations.bindPopup(function (layer) {
 var prisonsIcon = L.icon({
 	iconUrl: 'data/prisons.svg',
 	iconSize: [35, 35],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var prisons = L.esri.featureLayer({
@@ -172,7 +167,6 @@ prisons.bindPopup(function (layer) {
 var publicSchoolsIcon = L.icon({
 	iconUrl: 'data/publicSchools.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var publicSchools = L.esri.featureLayer({
@@ -209,7 +203,6 @@ redCross.bindPopup(function (layer) {
 var redCrossFacilitiesIcon = L.icon({
 	iconUrl: 'data/redCrossFacilities.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var redCrossFacilities = L.esri.featureLayer({
@@ -230,7 +223,6 @@ redCrossFacilities.bindPopup(function (layer) {
 var sheltersIcon = L.icon({
 	iconUrl: 'data/shelters.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var shelters = L.esri.featureLayer({
@@ -251,7 +243,6 @@ shelters.bindPopup(function (layer) {
 var vaIcon = L.icon({
 	iconUrl: 'data/va.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var va = L.esri.featureLayer({
@@ -276,7 +267,6 @@ va.bindPopup(function (layer) {
 var airportsIcon = L.icon({
 	iconUrl: 'data/airport.svg',
 	iconSize: [25, 25],
-  iconAnchor: [16, 37],
   popupAnchor: [0, -28]
 });
 var airports = L.esri.featureLayer({
