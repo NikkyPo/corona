@@ -14,7 +14,7 @@
 		<script src="https://unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet.js"
 		integrity="sha512-cMQ5e58BDuu1pr9BQ/eGRn6HaR6Olh0ofcHFWe5XesdCITVuSBiBZZbhCijBe5ya238f/zMMRYIMIIg1jxv4sQ=="
 		crossorigin=""></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+		<script src="src/moment.min.js"></script>
 		<script src="src/jquery-3.4.1.min.js"></script>
 		<link rel="stylesheet" href="src/leaflet-sidebar.css" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -77,6 +77,14 @@
 										<div style="background-color: rgb(255,3,3, 0.7)">1000 or more </div>
 									</div>
 								</label>
+								<div id="dateControls">
+									<h5>COVID-19 Date Controls</h5>
+									<input type="date" id="date" min="2020-03-03" max="2020-04-02" value="2020-04-02">
+									<input type="button" value="Previous Day" onclick="showPreviousDay()">
+									<input type="button" value="Next Day" onclick="showNextDay()">
+									<!-- <input type="button" value="Animate" onclick="startAnimation()">
+									<input type="button" value="Stop Animation" onclick="stopAnimation()"> -->
+								</div><br><br>
 								<label class="container">Airports
 									<input class="special" id="airports" type="checkbox">
 									<span class="checkmark"></span>

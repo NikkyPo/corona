@@ -133,7 +133,6 @@ div.legend div {
 	background: white;
 }
 
-.leaflet-tooltip{
-    width: 100px;
-    white-space: normal;
+#dateControls {
+  margin-left: 35px;
 }
