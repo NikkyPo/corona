@@ -26,7 +26,7 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
 
 
 
-var displayDate = '2020-04-02';
+var displayDate = '2020-04-11';
 $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
  .done( data => {
    let layer = VectorTileLayer('data/state_county/{z}/{x}/{y}.pbf', {
