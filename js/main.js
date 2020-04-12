@@ -210,7 +210,7 @@ $.getJSON('data/airport.geojson')
   }
 })
 airports.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{FACILITYNA}</strong><br><br>{OWNER_CITY}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{FACILITYNA}</strong><br><br>{OWNER_ADDR}<br>{OWNER_CITY}</p>', layer.feature.properties);
 });
 });
 // var airports = L.esri.featureLayer({
