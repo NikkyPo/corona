@@ -26,51 +26,51 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
 
 
 
-var displayDate = '2020-04-11';
+var displayDate = '2020-04-09';
 $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
  .done( data => {
-   let layer = VectorTileLayer('data/state_county/{z}/{x}/{y}.pbf', {
-     minDetailZoom: 0,
-     maxDetailZoom: 8,
-     attribution: "COVID-19 data is from the University of Virginia Biocomplexity Institute's COVID-19 Surveillance <a href='http://nssac.bii.virginia.edu/covid-19/dashboard/'>Dashboard</a> <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC</a>",
-     style: function(f, name) {
-       //console.log(f, name);
-       const state = f.properties.st_name;
-       const county = f.properties.cty_name;
-       const population = f.properties.tot_pop;
-
-       let r = 255;
-       let g = 255;
-       let b = 255;
-       if(data[state] &&
-        data[state]["counties"] &&
-        data[state]["counties"][county] &&
-        data[state]["counties"][county][displayDate]) {
-         const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
-         const log_cases = (cases > 1) ? Math.log10(cases) : 0;
-
-         if (log_cases <= 2.5) {
-           r = 255;
-           g = b = 255 - Math.floor(log_cases * 255 / 2.5);
-         } else {
-           b = Math.floor((log_cases - 2.5) * (255 / 2.5));
-           g = 0;
-           r = 255 - (b / 2);
-         }
-         //console.log(county, cases, log_cases, r, g, b);
-       }
-       const rgb = (255 << 16) + (g << 8) + (b);
-
-       return ({
-         stroke: false,
-         fillColor: '#'+rgb.toString(16),
-         fill: true,
-         fillOpacity: 0.6
-       });
-     },
-     zIndex: 1
-   });
-   //layer.addTo(mymap);
+   // let layer = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
+   //   minDetailZoom: 0,
+   //   maxDetailZoom: 8,
+   //   attribution: "COVID-19 data is from the University of Virginia Biocomplexity Institute's COVID-19 Surveillance <a href='http://nssac.bii.virginia.edu/covid-19/dashboard/'>Dashboard</a> <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC</a>",
+   //   style: function(f, name) {
+   //     //console.log(f, name);
+   //     const state = f.properties.st_name;
+   //     const county = f.properties.cty_name;
+   //     const population = f.properties.tot_pop;
+   //
+   //     let r = 255;
+   //     let g = 255;
+   //     let b = 255;
+   //     if(data[state] &&
+   //      data[state]["counties"] &&
+   //      data[state]["counties"][county] &&
+   //      data[state]["counties"][county][displayDate]) {
+   //       const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
+   //       const log_cases = (cases > 1) ? Math.log10(cases) : 0;
+   //
+   //       if (log_cases <= 2.5) {
+   //         r = 255;
+   //         g = b = 255 - Math.floor(log_cases * 255 / 2.5);
+   //       } else {
+   //         b = Math.floor((log_cases - 2.5) * (255 / 2.5));
+   //         g = 0;
+   //         r = 255 - (b / 2);
+   //       }
+   //       //console.log(county, cases, log_cases, r, g, b);
+   //     }
+   //     const rgb = (255 << 16) + (g << 8) + (b);
+   //
+   //     return ({
+   //       stroke: false,
+   //       fillColor: '#'+rgb.toString(16),
+   //       fill: true,
+   //       fillOpacity: 0.6
+   //     });
+   //   },
+   //   zIndex: 1
+   // });
+   // layer.addTo(mymap);
    // layers.addBaseLayer(layer, "Active Cases per 100,000");
 
   cases = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
@@ -164,11 +164,6 @@ function stopAnimation() {
 
 
 
-
-
-
-
-
 // var cases =  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/county_cases/{z}/{x}/{y}.pbf', {
 //   minDetailZoom: 0,
 //   maxDetailZoom: 8,
@@ -205,17 +200,27 @@ var airportsIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var airports = L.esri.featureLayer({
-  url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0",
-  pointToLayer: function (geojson, latlng) {
-  return L.marker(latlng, {
-      icon: airportsIcon
-    });
+$.getJSON('data/airport.geojson')
+ .done( data => {
+   airports = new L.geoJSON(data, {
+     pointToLayer: function (geojson, latlng) {
+       return L.marker(latlng, {
+         icon: airportsIcon
+       });
   }
- });
+})
 airports.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{Fac_Name}</strong></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{FACILITYNA}</strong><br><br>{OWNER_CITY}</p>', layer.feature.properties);
 });
+});
+// var airports = L.esri.featureLayer({
+//   url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0",
+//   pointToLayer: function (geojson, latlng) {
+//   return L.marker(latlng, {
+//       icon: airportsIcon
+//     });
+//   }
+//  });
 
 ////////////////////////////////////
 // Bases
