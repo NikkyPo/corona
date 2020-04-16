@@ -195,7 +195,6 @@ boundaries.setStyle({
 
 /////////////////////////////////////////
 // Airports
-
 $.getJSON('data/airport.geojson')
  .done( data => {
    airports = new L.geoJSON(data, {
