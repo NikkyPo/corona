@@ -137,5 +137,8 @@ div.legend div {
   margin-left: 35px;
 }
 #airportsLegend {
+  display:flex;
+  align-items:center;
+  flex-direction: row;
   margin: 10px;
 }

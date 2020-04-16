@@ -204,7 +204,7 @@ $.getJSON('data/airport.geojson')
          case "Yes":
            var airport_com = L.icon({
            	iconUrl: 'data/airport_com.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_com});
@@ -222,7 +222,7 @@ $.getJSON('data/airport.geojson')
   }
 })
 airports.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{FacilityName}</strong><br><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Quick Reference</a><br><a target="_blank" href="{aeronauticalURL}">Airport detailed reference</a></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Quick Reference</a><br><a target="_blank" href="{aeronauticalURL}">Airport detailed reference</a></p>', layer.feature.properties);
 });
 });
 
