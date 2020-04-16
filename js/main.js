@@ -211,7 +211,7 @@ $.getJSON('data/airport.geojson')
          case "":
            var airport_non_com = L.icon({
            	iconUrl: 'data/airport_non_com.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_non_com});
