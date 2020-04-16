@@ -20,8 +20,8 @@ div.legend div {
 .icon {
 	display: inline-block;
 	margin: 2px;
-	height: 35px;
-	width: 35px;
+	height: 25px;
+	width: 25px;
 }
 
 /* The container */
@@ -135,4 +135,7 @@ div.legend div {
 
 #dateControls {
   margin-left: 35px;
+}
+#airportsLegend {
+  margin: 10px;
 }

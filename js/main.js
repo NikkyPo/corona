@@ -195,32 +195,36 @@ boundaries.setStyle({
 
 /////////////////////////////////////////
 // Airports
-var airportsIcon = L.icon({
-	iconUrl: 'data/airport.svg',
-	iconSize: [25, 25],
-  popupAnchor: [0, -28]
-});
+
 $.getJSON('data/airport.geojson')
  .done( data => {
    airports = new L.geoJSON(data, {
-     pointToLayer: function (geojson, latlng) {
-       return L.marker(latlng, {
-         icon: airportsIcon
-       });
+     pointToLayer: function (feature, latlng) {
+       switch(feature.properties["Certified"]) {
+         case "Yes":
+           var airport_com = L.icon({
+           	iconUrl: 'data/airport_com.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: airport_com});
+         case "":
+           var airport_non_com = L.icon({
+           	iconUrl: 'data/airport_non_com.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: airport_non_com});
+       }
+       // return L.marker(latlng, {
+       //   icon: airportsIcon
+       // });
   }
 })
 airports.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{FACILITYNA}</strong><br><br>{OWNER_ADDR}<br>{OWNER_CITY}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{FacilityName}</strong><br><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Quick Reference</a><br><a target="_blank" href="{aeronauticalURL}">Airport detailed reference</a></p>', layer.feature.properties);
 });
 });
-// var airports = L.esri.featureLayer({
-//   url: "https://geo.dot.gov/server/rest/services/NTAD/Airports/MapServer/0",
-//   pointToLayer: function (geojson, latlng) {
-//   return L.marker(latlng, {
-//       icon: airportsIcon
-//     });
-//   }
-//  });
 
 ////////////////////////////////////
 // Bases
