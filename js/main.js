@@ -206,23 +206,30 @@ $.getJSON('data/airport.geojson')
            	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
-           return L.marker(latlng, {icon: airport_com});
+           return L.marker(latlng, {icon: airport_com}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{QuickRef}">Quick reference</a><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
+           });
          case "":
            var airport_non_com = L.icon({
            	iconUrl: 'data/airport_non_com.svg',
            	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
-           return L.marker(latlng, {icon: airport_non_com});
+           return L.marker(latlng, {icon: airport_non_com}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{QuickRef}">Quick reference</a><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
+           });
+         case "Military":
+           var airport_non_com = L.icon({
+             iconUrl: 'data/airport_military.svg',
+             iconSize: [20, 20],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: airport_non_com}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
+           });
        }
-       // return L.marker(latlng, {
-       //   icon: airportsIcon
-       // });
   }
 })
-airports.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Quick Reference</a><br><a target="_blank" href="{aeronauticalURL}">Airport detailed reference</a></p>', layer.feature.properties);
-});
 });
 
 ////////////////////////////////////
