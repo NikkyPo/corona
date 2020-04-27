@@ -378,6 +378,27 @@ shelters.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{SHELTER_NAME}</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}</p>', layer.feature.properties);
 });
 
+////////////////////////////////////////////
+// Test Locations
+var testingIcon = L.icon({
+	iconUrl: 'data/testing.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -28]
+});
+var testing = L.esri.featureLayer({
+  url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/arcgis/rest/services/TestCollectionLocations/FeatureServer/0",
+  where: "State = 'MN'",
+  pointToLayer: function (geojson, latlng) {
+  return L.marker(latlng, {
+      icon: testingIcon
+    });
+  }
+ });
+testing.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{CollectSiteName}</strong><br>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br>{Phone}<br><br>Weekday Hours: {HoursOfOpMF}<br>Weekend Hours: {HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+});
+
+
 /////////////////////////////////////////
 // veterans
 var vaIcon = L.icon({
@@ -466,6 +487,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "shelters":
       toggleLayer(this.checked, shelters);
+    break;
+    case "testing":
+      toggleLayer(this.checked, testing);
     break;
     case "va":
       toggleLayer(this.checked, va);
