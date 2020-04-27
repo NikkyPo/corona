@@ -395,7 +395,7 @@ var testing = L.esri.featureLayer({
   }
  });
 testing.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{CollectSiteName}</strong><br>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br>{Phone}<br><br>Weekday Hours: {HoursOfOpMF}<br>Weekend Hours: {HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+  return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
 });
 
 
