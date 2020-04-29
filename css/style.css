@@ -136,9 +136,20 @@ div.legend div {
 #dateControls {
   margin-left: 35px;
 }
-#airportsLegend {
+#specialLegend {
   display:flex;
   align-items:center;
   flex-direction: row;
   margin: 10px;
 }
+.leaflet-tooltip {
+  display: none;
+}
+
+.leaflet-tooltip.county {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  font-weight: bold;
+  font-size: 20px;
+  }

@@ -7,18 +7,39 @@ var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 })
 
 // Layers
+// var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
+//   minDetailZoom: 0,
+//   maxDetailZoom: 8,
+//   vectorTileLayerStyles: {
+//     cb_2017_us_county_500k: {
+//       weight: 1,
+//       color: '#000000',
+//       opacity: 0.2,
+//       fill: false
+//     }
+//   }
+// });
 
-var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
-  minDetailZoom: 0,
-  maxDetailZoom: 8,
-  vectorTileLayerStyles: {
-    cb_2017_us_county_500k: {
-      weight: 1,
-      color: '#000000',
-      opacity: 0.2,
-      fill: false
-    }
-  }
+
+$.getJSON('data/counties.geojson')
+ .done( data => {
+   counties = new L.geoJSON(data, {
+     style: function (feature) {
+       return {
+         weight: 1,
+         opacity: 0.2,
+         color: '#000000',
+         opacity: 0.2,
+         fill: false
+       };
+     },
+     onEachFeature: function (feature, layer) {
+       layer.bindTooltip(function (layer) {
+           return layer.feature.properties.NAME; //merely sets the tooltip text
+        }, {direction: "center", permanent: true, opacity: 1, className: 'county'}  //then add your options
+       )
+}
+}).addTo(mymap);
 });
 
 
@@ -121,29 +142,6 @@ function stopAnimation() {
 }
 
 
-
-// var cases =  VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/county_cases/{z}/{x}/{y}.pbf', {
-//   minDetailZoom: 0,
-//   maxDetailZoom: 8,
-//   style: function(f, name) {
-//     const cases = f.properties.cases;
-//     const ln_cases = Math.log(cases);
-//     console.log(ln_cases);
-//     const gb = 215 - Math.floor(ln_cases * 255 / 7);
-//     console.log(gb);
-//     const rgb = (255 << 16) + (gb << 8) + (gb)
-//     console.log(rgb);
-//     return ({
-//       stroke: false,
-//       fillColor: '#'+rgb.toString(16),
-//       fill: true
-//       });
-//   }
-// });
-// cases.bindPopup(function (layer) {
-//   return L.Util.template('<p><strong>'+ layer.properties.st_name + '</strong><br></p><p>'+ layer.properties.cty_name +' county <br>'+ layer.properties.cases + ' cases<br> Updated: ' + layer.properties.updated_at +' </p>');
-// });
-
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
 boundaries.setStyle({
   color: 'grey',
@@ -177,12 +175,12 @@ $.getJSON('data/airport.geojson')
              return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{QuickRef}">Quick reference</a><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
            });
          case "Military":
-           var airport_non_com = L.icon({
+           var airport_military = L.icon({
              iconUrl: 'data/airport_military.svg',
              iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
-           return L.marker(latlng, {icon: airport_non_com}).bindPopup(function (layer) {
+           return L.marker(latlng, {icon: airport_military}).bindPopup(function (layer) {
              return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
            });
        }
@@ -388,15 +386,38 @@ var testingIcon = L.icon({
 var testing = L.esri.featureLayer({
   url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/arcgis/rest/services/TestCollectionLocations/FeatureServer/0",
   where: "State = 'MN'",
-  pointToLayer: function (geojson, latlng) {
-  return L.marker(latlng, {
-      icon: testingIcon
-    });
+  pointToLayer: function (feature, latlng) {
+    switch(feature.properties["DirUtilCol"]) {
+      case "By appointment":
+        var testing_appt = L.icon({
+         iconUrl: 'data/testing_appt.svg',
+         iconSize: [20, 20],
+          popupAnchor: [0, -8]
+        });
+        return L.marker(latlng, {icon: testing_appt}).bindPopup(function (layer) {
+          return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+        });
+      case "Drive-up":
+        var testing_driveup = L.icon({
+         iconUrl: 'data/testing_driveup.svg',
+         iconSize: [20, 20],
+          popupAnchor: [0, -8]
+        });
+        return L.marker(latlng, {icon: testing_driveup}).bindPopup(function (layer) {
+          return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+        });
+      default:
+        var testing_else = L.icon({
+          iconUrl: 'data/testing_else.svg',
+          iconSize: [20, 20],
+          popupAnchor: [0, -8]
+        });
+        return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
+          return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+        });
+    }
   }
  });
-testing.bindPopup(function (layer) {
-  return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
-});
 
 
 /////////////////////////////////////////
@@ -425,7 +446,7 @@ var mymap = L.map('mapid', {
   preferCanvas: true,
   center: [45.9, -93.6],
   zoom: 6,
-  layers: [counties, boundaries, none]
+  layers: [boundaries, none]
   // layers: [counties, cases, boundaries, none]
 });
 
@@ -531,78 +552,14 @@ $("input[type='radio']").change(function() {
     break;
   }
 });
+
+
+
+// var tooltipThreshold = 10;
 // mymap.on('zoomend', function() {
-//   var zoomlevel = mymap.getZoom();
-//   if (zoomlevel > 7){
-//     console.log("zoomed too far out")
-//     if (mymap.hasLayer(airports)) mymap.removeLayer(airports);
-//     document.querySelector("input[id=airports]").checked = false;
-//     if (mymap.hasLayer(fireStations)) mymap.removeLayer(fireStations);
-//     if (mymap.hasLayer(hospitals)) mymap.removeLayer(hospitals);
+//   if (mymap.getZoom() < tooltipThreshold) {
+//       $(".leaflet-tooltip").css("display","none")
+//   } else {
+//       $(".leaflet-tooltip").css("display","block")
 //   }
-//   else {
-//     if (document.querySelector("input[id=airports]").checked && !mymap.hasLayer(airports)) mymap.addLayer(airports);
-//     if (document.querySelector("input[id=fireStations]").checked && !mymap.hasLayer(fireStations)) mymap.addLayer(fireStations);
-//     if (document.querySelector("input[id=hospitals]").checked && !mymap.hasLayer(hospitals)) mymap.addLayer(hospitals);
-//   }
-// });
-
-// var displayDate = '2020-03-24';
-// $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
-//  .done( data => {
-//   VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
-//     minDetailZoom: 0,
-//     maxDetailZoom: 8,
-//     style: function(f, name) {
-//       const state = f.properties.st_name;
-//       const county = f.properties.cty_name;
-//
-//       let r = 255;
-//       let g = 255;
-//       let b = 255;
-//       if(data[state] &&
-//          data[state]["counties"] &&
-//          data[state]["counties"][county] &&
-//          data[state]["counties"][county][displayDate]) {
-//         const cases = data[state]["counties"][county][displayDate];
-//         const ln_cases = Math.log(cases);
-//         if (ln_cases <= 7.0) {
-//           r = 255;
-//           g = b = 215 - Math.floor(ln_cases * 255 / 7);
-//         } else {
-//           const b = (ln_cases - 7) * (255 / 5);
-//           const g = 0;
-//           const r = 255 - (b / 2);
-//         }
-//       }
-//       const rgb = (255 << 16) + (g << 8) + (b);
-//
-//       return ({
-//         stroke: false,
-//         fillColor: '#'+rgb.toString(16),
-//         fill: true
-//       });
-//     }
-//   });
-// });
-
-// mymap.on('zoomend', function () {
-// var zoomlevel = mymap.getZoom();
-//     if (zoomlevel < 10){
-//         if (mymap.hasLayer(airports)) {
-//             mymap.removeLayer(airports);
-//         } else {
-//             console.log("no point layer active");
-//         }
-//     }
-//     if (zoomlevel >= 10){
-//         if (mymap.hasLayer(airports)){
-//             console.log("layer already added");
-//         } else {
-//             mymap.addLayer(airports);
-//         }
-//     }
-// console.log("Current Zoom Level =" + zoomlevel)
-// });
-
-  // query?outFields=*&where=UPPER(STATE)%20like%20'%25MN%25'
+// })
