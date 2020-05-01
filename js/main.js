@@ -7,40 +7,40 @@ var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 })
 
 // Layers
-// var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
-//   minDetailZoom: 0,
-//   maxDetailZoom: 8,
-//   vectorTileLayerStyles: {
-//     cb_2017_us_county_500k: {
-//       weight: 1,
-//       color: '#000000',
-//       opacity: 0.2,
-//       fill: false
-//     }
-//   }
-// });
-
-
-$.getJSON('data/counties.geojson')
- .done( data => {
-   counties = new L.geoJSON(data, {
-     style: function (feature) {
-       return {
-         weight: 1,
-         opacity: 0.2,
-         color: '#000000',
-         opacity: 0.2,
-         fill: false
-       };
-     },
-     onEachFeature: function (feature, layer) {
-       layer.bindTooltip(function (layer) {
-           return layer.feature.properties.NAME; //merely sets the tooltip text
-        }, {direction: "center", permanent: true, opacity: 1, className: 'county'}  //then add your options
-       )
-}
-}).addTo(mymap);
+var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
+  minDetailZoom: 0,
+  maxDetailZoom: 8,
+  vectorTileLayerStyles: {
+    cb_2017_us_county_500k: {
+      weight: 1,
+      color: '#000000',
+      opacity: 0.2,
+      fill: false
+    }
+  }
 });
+
+
+// $.getJSON('data/counties.geojson')
+//  .done( data => {
+//    counties = new L.geoJSON(data, {
+//      style: function (feature) {
+//        return {
+//          weight: 1,
+//          opacity: 0.2,
+//          color: '#000000',
+//          opacity: 0.2,
+//          fill: false
+//        };
+//      },
+//      onEachFeature: function (feature, layer) {
+//        layer.bindTooltip(function (layer) {
+//            return layer.feature.properties.NAME; //merely sets the tooltip text
+//         }, {direction: "center", permanent: true, opacity: 1, className: 'county'}  //then add your options
+//        )
+// }
+// }).addTo(mymap);
+// });
 
 
 // Get yesterday's date
@@ -446,7 +446,7 @@ var mymap = L.map('mapid', {
   preferCanvas: true,
   center: [45.9, -93.6],
   zoom: 6,
-  layers: [boundaries, none]
+  layers: [counties, boundaries, none]
   // layers: [counties, cases, boundaries, none]
 });
 
