@@ -1,0 +1,389 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.2606931,44.2809333 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Faribault",
+    "Street":"1101 Linden Lane",
+    "City":"Faribault",
+    "State":"MN",
+    "Zip":55021,
+    "Capacity":2000,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"X",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/faribault/",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/09FacilityInmateProfile.pdf ",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.127025,45.1794524 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Lino Lakes",
+    "Street":"7525 Fourth Avenue",
+    "City":"Lino Lakes",
+    "State":"MN",
+    "Zip":55014,
+    "Capacity":1300,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"X",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/lino-lakes/",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/05FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.8056456,45.0240277 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Oak Park Heights",
+    "Street":"5329 Osgood Avenue North",
+    "City":"Stillwater",
+    "State":"MN",
+    "Zip":55082,
+    "Capacity":473,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"",
+    "Medium":"",
+    "Close":"",
+    "Maximum":"X",
+    "Website":"https://mn.gov/doc/facilities/oak-park-heights/",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/02FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.828752,46.3966103 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Moose Lake",
+    "Street":"1000 Lake Shore Drive",
+    "City":"Moose Lake",
+    "State":"MN",
+    "Zip":55767,
+    "Capacity":1035,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"",
+    "Medium":"X",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/willow-river-moose-lake/moose-lake.jsp",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/06MFacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.5347261,44.5624209 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Red Wing",
+    "Street":"1079 Highway 292",
+    "City":"Red Wing",
+    "State":"MN",
+    "Zip":55066,
+    "Capacity":118,
+    "MaleFemale":"Male",
+    "Juvenile":"X",
+    "Minimum":"",
+    "Medium":"",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/red-wing/juvenile/",
+    "Other Info":"",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.5347261,44.5631944 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Red Wing",
+    "Street":"1079 Highway 292",
+    "City":"Red Wing",
+    "State":"MN",
+    "Zip":55066,
+    "Capacity":45,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/red-wing/red-wing-adult/",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/08FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.9504079,45.7066764 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Rush City",
+    "Street":"7600 - 525th St.",
+    "City":"Rush City",
+    "State":"MN",
+    "Zip":55069,
+    "Capacity":1000,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"",
+    "Medium":"",
+    "Close":"X",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/rush-city/",
+    "Other Info":"http://www.doc.state.mn.us/facilities/tourreport/80FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.5401717,44.7906534 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Shakopee",
+    "Street":"1010 West Sixth Avenue",
+    "City":"Shakopee",
+    "State":"MN",
+    "Zip":55379,
+    "Capacity":535,
+    "MaleFemale":"Female",
+    "Juvenile":"X",
+    "Minimum":"X",
+    "Medium":"X",
+    "Close":"X",
+    "Maximum":"X",
+    "Website":"https://mn.gov/doc/facilities/shakopee/",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/04FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.175588,45.5515972 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - St. Cloud",
+    "Street":"2305 Minnesota Blvd",
+    "City":"St. Cloud",
+    "State":"MN",
+    "Zip":56304,
+    "Capacity":870,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"",
+    "Medium":"",
+    "Close":"X",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/st-cloud/",
+    "Other Info":"http://www.doc.state.mn.us/facilities/tourreport/03FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.7934,45.0299875 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Stillwater",
+    "Street":"970 Pickett St",
+    "City":"Bayport",
+    "State":"MN",
+    "Zip":55003,
+    "Capacity":1455,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"",
+    "Close":"X",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/stillwater/",
+    "Other Info":"https://coms.doc.state.mn.us/tourreport/01FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.240401,47.7726767 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Togo",
+    "Street":"62741 Co Rd. 551",
+    "City":"Togo",
+    "State":"MN",
+    "Zip":55723,
+    "Capacity":90,
+    "MaleFemale":"Male",
+    "Juvenile":"X",
+    "Minimum":"",
+    "Medium":"",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/togo/",
+    "Other Info":"http://www.doc.state.mn.us/facilities/tourreport/53FacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.8311053,46.3526634 ]
+    },
+    "properties": {
+    "FacilityName":"Minnesota Correctional Facility - Willow River",
+    "Street":"86032 County Highway 61",
+    "City":"Willow River",
+    "State":"MN",
+    "Zip":55795,
+    "Capacity":180,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://mn.gov/doc/facilities/willow-river-moose-lake/willow-river.jsp",
+    "Other Info":"http://www.doc.state.mn.us/facilities/tourreport/06WFacilityInmateProfile.pdf",
+    "Type":"State"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.8556688,46.109991 ]
+    },
+    "properties": {
+    "FacilityName":"Federal Correctional Institution - Sandstone",
+    "Street":"2300 Co Rd 29",
+    "City":"Sandstone",
+    "State":"MN",
+    "Zip":55072,
+    "Capacity":1340,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"",
+    "Medium":"X",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://www.bop.gov/locations/institutions/sst/",
+    "Other Info":"https://en.wikipedia.org/wiki/Federal_Correctional_Institution,_Sandstone",
+    "Type":"Federal"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.519237,44.0672983 ]
+    },
+    "properties": {
+    "FacilityName":"Federal Correctional Institution - Waseca",
+    "Street":"1000 University Dr SW",
+    "City":"Waseca",
+    "State":"MN",
+    "Zip":56093,
+    "Capacity":730,
+    "MaleFemale":"Female",
+    "Juvenile":"",
+    "Minimum":"",
+    "Medium":"X",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://www.bop.gov/locations/institutions/was/",
+    "Other Info":"https://en.wikipedia.org/wiki/Federal_Correctional_Institution,_Waseca",
+    "Type":"Federal"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.208863,46.8335203 ]
+    },
+    "properties": {
+    "FacilityName":"Federal Prison Camp - Duluth",
+    "Street":"4464 Ralston Dr",
+    "City":"Duluth",
+    "State":"MN",
+    "Zip":55811,
+    "Capacity":880,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"",
+    "Close":"",
+    "Maximum":"",
+    "Website":"https://www.bop.gov/locations/institutions/dth/",
+    "Other Info":"https://en.wikipedia.org/wiki/Federal_Prison_Camp,_Duluth",
+    "Type":"Federal"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.44514,44.0242841 ]
+    },
+    "properties": {
+    "FacilityName":"Federal Medical Center - Rochester",
+    "Street":"2110 E Center St",
+    "City":"Rochester",
+    "State":"MN",
+    "Zip":55904,
+    "Capacity":700,
+    "MaleFemale":"Male",
+    "Juvenile":"",
+    "Minimum":"X",
+    "Medium":"X",
+    "Close":"X",
+    "Maximum":"X",
+    "Website":"https://www.bop.gov/locations/institutions/rch/",
+    "Other Info":"https://en.wikipedia.org/wiki/Federal_Medical_Center,_Rochester",
+    "Type":"Federal"
+    }
+  }
+]
+}

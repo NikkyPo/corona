@@ -15,10 +15,11 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
       weight: 1,
       color: '#000000',
       opacity: 0.2,
-      fill: false
+      fill: false,
     }
   }
 });
+
 
 
 // $.getJSON('data/counties.geojson')
@@ -257,7 +258,7 @@ var nursingHomes = L.esri.featureLayer({
   }
  });
 nursingHomes.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>Type: {TYPE}<br>Population: {POPULATION}<br>Description: {NAICS_DESC}<br><br>{ADDRESS}, {CITY} {ZIP}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>Type: <br>Population: {POPULATION}<br>Description: {NAICS_DESC}<br><br>{ADDRESS}, {CITY} {ZIP}</p>', layer.feature.properties);
 });
 
 //////////////////////////////////////////
@@ -282,24 +283,39 @@ policeStations.bindPopup(function (layer) {
 
 /////////////////////////////////////////
 // Prisons
-var prisonsIcon = L.icon({
-	iconUrl: 'data/prisons.svg',
-	iconSize: [35, 35],
-  popupAnchor: [0, -28]
-});
-var prisons = L.esri.featureLayer({
-  url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/11',
-  where: "STATE = 'MN'",
-  pointToLayer: function (geojson, latlng) {
-    return L.marker(latlng, {
-        icon: prisonsIcon
-      });
-  }
-  });
-prisons.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
-});
+// var prisonsIcon = L.icon({
+// 	iconUrl: 'data/prisons.svg',
+// 	iconSize: [35, 35],
+//   popupAnchor: [0, -28]
+// });
 
+$.getJSON('data/prisons.geojson')
+ .done( data => {
+   prisons = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       switch(feature.properties["Type"]) {
+         case "Federal":
+           var prisons_fed = L.icon({
+           	iconUrl: 'data/prisons_fed.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: prisons_fed}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{FacilityName}</strong><br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{Other Info}"><button>Other Information</button></a><br><br>{Street}, {City} {Zip}</p>', layer.feature.properties);
+           });
+         case "State":
+           var prisons_state = L.icon({
+           	iconUrl: 'data/prisons_state.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: prisons_state}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{FacilityName}</strong><br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{Other Info}"><button>Other Information</button></a><br><br>{Street}, {City} {Zip}</p>', layer.feature.properties);
+           });
+       }
+  }
+})
+});
 //////////////////////////////////////////
 // Public Schools
 var publicSchoolsIcon = L.icon({
