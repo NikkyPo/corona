@@ -283,12 +283,6 @@ policeStations.bindPopup(function (layer) {
 
 /////////////////////////////////////////
 // Prisons
-// var prisonsIcon = L.icon({
-// 	iconUrl: 'data/prisons.svg',
-// 	iconSize: [35, 35],
-//   popupAnchor: [0, -28]
-// });
-
 $.getJSON('data/prisons.geojson')
  .done( data => {
    prisons = new L.geoJSON(data, {
@@ -301,7 +295,7 @@ $.getJSON('data/prisons.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_fed}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{Other Info}"><button>Other Information</button></a><br><br>{Street}, {City} {Zip}</p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{FacilityName}</strong><br>{Street}<br>{City} {Zip}<br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{Other Info}"><button>Other Information</button></a></p>', layer.feature.properties);
            });
          case "State":
            var prisons_state = L.icon({
@@ -310,7 +304,7 @@ $.getJSON('data/prisons.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_state}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{Other Info}"><button>Other Information</button></a><br><br>{Street}, {City} {Zip}</p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{FacilityName}</strong><br>{Street}<br>{City} {Zip}<br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{Other Info}"><button>Other Information</button></a></p>', layer.feature.properties);
            });
        }
   }
