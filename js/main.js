@@ -152,14 +152,14 @@ boundaries.setStyle({
 
 /////////////////////////////////////////
 // Airports
-$.getJSON('data/airport.geojson')
+$.getJSON('data/airport/airport.geojson')
  .done( data => {
    airports = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Certified"]) {
          case "Yes":
            var airport_com = L.icon({
-           	iconUrl: 'data/airport_com.svg',
+           	iconUrl: 'data/airport/airport_com.svg',
            	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
@@ -168,7 +168,7 @@ $.getJSON('data/airport.geojson')
            });
          case "":
            var airport_non_com = L.icon({
-           	iconUrl: 'data/airport_non_com.svg',
+           	iconUrl: 'data/airport/airport_non_com.svg',
            	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
@@ -177,7 +177,7 @@ $.getJSON('data/airport.geojson')
            });
          case "Military":
            var airport_military = L.icon({
-             iconUrl: 'data/airport_military.svg',
+             iconUrl: 'data/airport/airport_military.svg',
              iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
@@ -206,7 +206,7 @@ bases.bindPopup(function (layer) {
 var fireStationsIcon = L.icon({
 	iconUrl: 'data/fireStations.svg',
 	iconSize: [25, 25],
-  popupAnchor: [0, -28]
+  popupAnchor: [0, -8]
 });
 var fireStations = L.esri.featureLayer({
   url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Fire_Station/FeatureServer/0",
@@ -221,12 +221,34 @@ fireStations.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
 });
 
+/////////////////////////////////////////
+// Foodshelves
+var foodshelvesIcon = L.icon({
+	iconUrl: 'data/foodshelves.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -8]
+});
+
+$.getJSON('data/foodshelves.geojson')
+ .done( data => {
+   foodshelves = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
+        if (feature.properties.foodshelves_Url !== null) {
+          return L.marker(latlng, {icon: foodshelvesIcon}).bindPopup(function (feature) {
+            return L.Util.template("<br><iframe src={foodshelves_Url} style='border: 0px none; height: 400px; width: 310px;'></iframe>", feature.feature.properties);
+          });
+       }
+  }
+})
+});
+
 ///////////////////////////////////////////
 // Hospitals
 var hospitalsIcon = L.icon({
 	iconUrl: 'data/hospital.svg',
 	iconSize: [25, 25],
-  popupAnchor: [0, -28]
+  popupAnchor: [0, -8]
 });
 var hospitals = L.esri.featureLayer({
   url: "https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6",
@@ -283,14 +305,14 @@ policeStations.bindPopup(function (layer) {
 
 /////////////////////////////////////////
 // Prisons
-$.getJSON('data/prisons.geojson')
+$.getJSON('data/prison/prisons.geojson')
  .done( data => {
    prisons = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Type"]) {
          case "Federal":
            var prisons_fed = L.icon({
-           	iconUrl: 'data/prisons_fed.svg',
+           	iconUrl: 'data/prison/prisons_fed.svg',
            	iconSize: [25, 25],
              popupAnchor: [0, -8]
            });
@@ -299,7 +321,7 @@ $.getJSON('data/prisons.geojson')
            });
          case "State":
            var prisons_state = L.icon({
-           	iconUrl: 'data/prisons_state.svg',
+           	iconUrl: 'data/prison/prisons_state.svg',
            	iconSize: [25, 25],
              popupAnchor: [0, -8]
            });
@@ -400,7 +422,7 @@ var testing = L.esri.featureLayer({
     switch(feature.properties["DirUtilCol"]) {
       case "By appointment":
         var testing_appt = L.icon({
-         iconUrl: 'data/testing_appt.svg',
+         iconUrl: 'data/testing/testing_appt.svg',
          iconSize: [20, 20],
           popupAnchor: [0, -8]
         });
@@ -409,7 +431,7 @@ var testing = L.esri.featureLayer({
         });
       case "Drive-up":
         var testing_driveup = L.icon({
-         iconUrl: 'data/testing_driveup.svg',
+         iconUrl: 'data/testing/testing_driveup.svg',
          iconSize: [20, 20],
           popupAnchor: [0, -8]
         });
@@ -418,7 +440,7 @@ var testing = L.esri.featureLayer({
         });
       default:
         var testing_else = L.icon({
-          iconUrl: 'data/testing_else.svg',
+          iconUrl: 'data/testing/testing_else.svg',
           iconSize: [20, 20],
           popupAnchor: [0, -8]
         });
@@ -491,6 +513,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "redCross":
       toggleLayer(this.checked, redCross);
+    break;
+    case "foodshelves":
+      toggleLayer(this.checked, foodshelves);
     break;
     case "fireStations":
       toggleLayer(this.checked, fireStations);
