@@ -1,0 +1,1325 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.983115,44.149703 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"100 Martin Luther King Drive",
+    "City":"Mankato",
+    "State":"MN",
+    "Zip":56001,
+    "Phone":"507-389-2358",
+    "Type":"NG",
+    "Principal unit":"2nd Battalion, 135th Infantry Regiment, Hdqs./Co.",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.765179,46.89117 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1002 15th Avenue North",
+    "City":"Moorhead",
+    "State":"MN",
+    "Zip":56560,
+    "Phone":"218-236-2175",
+    "Type":"NG",
+    "Principal unit":"H&H Co-, 2nd Combined Arms Battalion, 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.244203,44.999187 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1025 Broadway St. NE",
+    "City":"Minneapolis",
+    "State":"MN",
+    "Zip":55413,
+    "Phone":"651-268-8003",
+    "Type":"NG",
+    "Principal unit":"84th Troop Command",
+    "Website":"https://minnesotanationalguard.ng.mil/84trc/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.021954,43.650174 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"108 Co Hwy 51",
+    "City":"Jackson",
+    "State":"MN",
+    "Zip":56143,
+    "Phone":"507-847-2984",
+    "Type":"NG",
+    "Principal unit":"B Battery, 1st Battalion, 125th Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.192399,46.33673 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1115 Wright Street",
+    "City":"Brainerd",
+    "State":"MN",
+    "Zip":56401,
+    "Phone":"218-828-2245",
+    "Type":"NG",
+    "Principal unit":"1st Combined Arms Battalion, 194th Armor Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/1194cab/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.957409,44.338777 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1120 W Swift S",
+    "City":"St. Peter",
+    "State":"MN",
+    "Zip":56082,
+    "Phone":"507-931-7283",
+    "Type":"NG",
+    "Principal unit":"F Company, 1st Battalion, 125th Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.358994,44.877915 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1200 Adams St SE",
+    "City":"Hutchinson",
+    "State":"MN",
+    "Zip":55350,
+    "Phone":"320-587-2351",
+    "Type":"NG",
+    "Principal unit":"E Co., 2nd Combined Arms Battalion, 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.853324,46.809172 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1220 Rossman Ave",
+    "City":"Detroit Lakes",
+    "State":"MN",
+    "Zip":56501,
+    "Phone":"218-847-1517",
+    "Type":"NG",
+    "Principal unit":"Det. 1, A Co., 2nd Combined Arms Battalion 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.615715,44.020233 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1303 Homer Rd",
+    "City":"Winona",
+    "State":"MN",
+    "Zip":55987,
+    "Phone":"507-453-2990",
+    "Type":"NG",
+    "Principal unit":"C Co., 2nd Battalion, 135th Infantry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.970718,45.809478 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1305 Main St S",
+    "City":"Pine City",
+    "State":"MN",
+    "Zip":55063,
+    "Phone":"651-654-5200",
+    "Type":"NG",
+    "Principal unit":"B Troop, 1st Squadron, 94th Cavalry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/194cav",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.080044,44.905519 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1346 S Robert St",
+    "City":"West St. Paul",
+    "State":"MN",
+    "Zip":55118,
+    "Phone":"651-552-7528",
+    "Type":"NG",
+    "Principal unit":"A Co., 2nd Battalion, 135th Infantry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.127175,44.747844 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"13865 S. Robert Trail",
+    "City":"Rosemount",
+    "State":"MN",
+    "Zip":55068,
+    "Phone":"651-282-4901",
+    "Type":"NG",
+    "Principal unit":"34th Red Bull Infantry Division Hdqs.",
+    "Website":"https://minnesotanationalguard.ng.mil/34id",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.90084,47.490309 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1430 23rd St NW",
+    "City":"Bemidji",
+    "State":"MN",
+    "Zip":56601,
+    "Phone":"218-755-2990",
+    "Type":"NG",
+    "Principal unit":"A Co-, 2nd Combined Arms Battalion 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.347921,46.075318 ]
+    },
+    "properties": {
+    "Name":"MN NG - Camp Ripley Training Center",
+    "Symbol":"Training",
+    "Street":"15000 Highway 115",
+    "City":"Little Falls",
+    "State":"MN",
+    "Zip":56345,
+    "Phone":"320-632-7000",
+    "Type":"NG",
+    "Principal unit":"Camp Ripley Training Center Command",
+    "Website":"https://minnesotanationalguard.ng.mil/crtc",
+    "OtherInfo":"https://en.wikipedia.org/wiki/Camp_Ripley"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.347921,46.075318 ]
+    },
+    "properties": {
+    "Name":"MN NG - Camp Ripley",
+    "Symbol":"Training",
+    "Street":"15000 Hwy 115, Bldg. 2-1",
+    "City":"Camp Ripley",
+    "State":"MN",
+    "Zip":56345,
+    "Phone":"320-616-2646",
+    "Type":"NG",
+    "Principal unit":"175th Regiment (Regional Training Institute)",
+    "Website":"https://minnesotanationalguard.ng.mil/175rti/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.036085,44.977294 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1530 Maryland Ave E",
+    "City":"East St. Paul",
+    "State":"MN",
+    "Zip":55106,
+    "Phone":"651-793-6522",
+    "Type":"NG",
+    "Principal unit":"B Co, 1st Combined Arms Battalion, 194th Armor Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/1194cab/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.16573,45.080048 ]
+    },
+    "properties": {
+    "Name":"MN NG - Arden Hills Army Training Site",
+    "Symbol":"Training",
+    "Street":"1536 Ben Franklin Dr.",
+    "City":"Arden Hills",
+    "State":"MN",
+    "Zip":55112,
+    "Phone":"651-634-5229",
+    "Type":"NG",
+    "Principal unit":"34th Red Bull Infantry Division Hdqs. (Pending)",
+    "Website":"https://minnesotanationalguard.ng.mil/34id",
+    "OtherInfo":"https://en.wikipedia.org/wiki/Minnesota_National_Guard"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.17688,45.565169 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"AFRC",
+    "Street":"1710 Veterans Drive",
+    "City":"St. Cloud",
+    "State":"MN",
+    "Zip":56303,
+    "Phone":"320-231-6080",
+    "Type":"NG",
+    "Principal unit":"682nd Engineer Battalion",
+    "Website":"https://minnesotanationalguard.ng.mil/682eng/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.430446,43.996911 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1715 Marion Rd SE",
+    "City":"Rochester",
+    "State":"MN",
+    "Zip":55904,
+    "Phone":"507-285-7346",
+    "Type":"NG",
+    "Principal unit":"B Co., 2nd Battalion, 135th Infantry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.613024,47.792121 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"1801 University Ave",
+    "City":"Crookston",
+    "State":"MN",
+    "Zip":56716,
+    "Phone":"218-281-6059",
+    "Type":"NG",
+    "Principal unit":"B Co-, 2nd Combined Arms Battalion 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.462376,44.314554 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"205 N. Broadway St.",
+    "City":"New Ulm",
+    "State":"MN",
+    "Zip":56073,
+    "Phone":"507-233-7801",
+    "Type":"NG",
+    "Principal unit":"1st Battalion, 125th Field Artillery, Hdqs./Battery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.069352,44.939023 ]
+    },
+    "properties": {
+    "Name":"MN NG - Army Aviation Support Facility",
+    "Symbol":"Helo",
+    "Street":"206 Airport Road",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55107,
+    "Phone":"651-268-8724",
+    "Type":"NG",
+    "Principal unit":"34th Expeditionary Combat Aviation Brigade (UH-60 Black Hawk and CH-47 Chinook helicopters)",
+    "Website":"https://minnesotanationalguard.ng.mil/34cab",
+    "OtherInfo":"https://en.wikipedia.org/wiki/34th_Combat_Aviation_Brigade"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.068339,45.537682 ]
+    },
+    "properties": {
+    "Name":"MN NG - Army Aviation Support Facility",
+    "Symbol":"Helo",
+    "Street":"2185 45th Ave SE",
+    "City":"St. Cloud",
+    "State":"MN",
+    "Zip":56304,
+    "Phone":"651-282-4549",
+    "Type":"NG",
+    "Principal unit":"Army Aviation Support Facility #2",
+    "Website":"https://minnesotanationalguard.ng.mil/34cab",
+    "OtherInfo":"https://it.wikipedia.org/wiki/Minnesota_Army_National_Guard"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.925272,47.422862 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"2312 Brooklyn Dr",
+    "City":"Hibbing",
+    "State":"MN",
+    "Zip":55746,
+    "Phone":"218-262-6758",
+    "Type":"NG",
+    "Principal unit":"A Troop, 1st Squadron, 94th Cavalry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/194cav",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.255669,44.083645 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"2323 W Bridge St",
+    "City":"Owatonna",
+    "State":"MN",
+    "Zip":55060,
+    "Phone":"507-455-5842",
+    "Type":"NG",
+    "Principal unit":"2nd Battalion, 135th Infantry Regiment, Hdqs./Co.",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.022265,45.200463 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"25 N Munsterman St",
+    "City":"Appleton",
+    "State":"MN",
+    "Zip":56208,
+    "Phone":"320-289-1343",
+    "Type":"NG",
+    "Principal unit":"175th Forward Support Co., 1st Battalion, 151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.184104,48.1114 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"250 Emil St",
+    "City":"Thief River Falls",
+    "State":"MN",
+    "Zip":56701,
+    "Phone":"218-681-0924",
+    "Type":"NG",
+    "Principal unit":"Det.1, B Co., 2nd Combined Arms Battalion 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.311021,44.32403 ]
+    },
+    "properties": {
+    "Name":"Armed Forces Reserve Center",
+    "Symbol":"AFRC",
+    "Street":"3000 W Airport Rd",
+    "City":"Faribault",
+    "State":"MN",
+    "Zip":55021,
+    "Phone":"651-268-8355",
+    "Type":"NG",
+    "Principal unit":"Co C, Div. H&H Battalion 34th Infantry Division",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.847234,44.7172 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"3050 Highway 316",
+    "City":"Hastings",
+    "State":"MN",
+    "Zip":55033,
+    "Phone":"651-268-8572",
+    "Type":"NG",
+    "Principal unit":"434th Chemical Company",
+    "Website":"https://minnesotanationalguard.ng.mil/434th/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.445821,45.307082 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"309 Madison Avenue",
+    "City":"Ortonville",
+    "State":"MN",
+    "Zip":56278,
+    "Phone":"320-839-3169",
+    "Type":"NG",
+    "Principal unit":"Battery C, 1st Battalion, 151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.209477,43.652274 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"309 S Freeman Ave",
+    "City":"Luverne",
+    "State":"MN",
+    "Zip":56156,
+    "Phone":"507-283-4403",
+    "Type":"NG",
+    "Principal unit":"A Battery, 1st Battalion, 125th Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.377877,45.889014 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"310 Broadway St",
+    "City":"Alexandria",
+    "State":"MN",
+    "Zip":56308,
+    "Phone":"320-762-7817",
+    "Type":"NG",
+    "Principal unit":"Battery C 1-194 FA, 1st Battalion, 151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.321279,44.827014 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"3300 W. 98th Street",
+    "City":"Bloomington",
+    "State":"MN",
+    "Zip":55431,
+    "Phone":"651-268-8772",
+    "Type":"NG",
+    "Principal unit":"1st Armored Brigade Combat Team Hdqs. 34 Infantry Division",
+    "Website":"https://minnesotanationalguard.ng.mil/1abct",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.840212,45.060087 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"350 Maryknoll Drive N",
+    "City":"Stillwater",
+    "State":"MN",
+    "Zip":55082,
+    "Phone":"651-268-8100",
+    "Type":"NG",
+    "Principal unit":"334th Brigade Engineer Battalion",
+    "Website":"https://minnesotanationalguard.ng.mil/334beb/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.158696,46.833429 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"4015 Airpark Blvd.",
+    "City":"Duluth",
+    "State":"MN",
+    "Zip":55811,
+    "Phone":"218-723-4756",
+    "Type":"NG",
+    "Principal unit":"H&H Troop, 1st Squadron, 94th Cavalry Regiment; D Co",
+    "Website":"https://minnesotanationalguard.ng.mil/194cav",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.385306,45.197827 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"408 E Main S",
+    "City":"Anoka",
+    "State":"MN",
+    "Zip":55303,
+    "Phone":"763-576-5785",
+    "Type":"NG",
+    "Principal unit":"1st Battalion, 125th Field Artillery, Hdqs./Battery Det.",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.335591,43.653703 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"410 Prospect Ave",
+    "City":"Albert Lea",
+    "State":"MN",
+    "Zip":56007,
+    "Phone":"507-379-3408",
+    "Type":"NG",
+    "Principal unit":"D Co. 2nd Battalion, 135th Infantry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/2-135",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.318965,43.996484 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"421 2nd Ave SW",
+    "City":"Pipestone",
+    "State":"MN",
+    "Zip":56164,
+    "Phone":"507-825-6898",
+    "Type":"NG",
+    "Principal unit":"A Battery, 1st Battalion, 125th Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.068536,46.290555 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"421 E Cecil Ave",
+    "City":"Fergus Falls",
+    "State":"MN",
+    "Zip":56537,
+    "Phone":"218-739-7581",
+    "Type":"NG",
+    "Principal unit":"Det. 1, H&H Co, 2nd Combined Arms Battalion, 136th Infantry, Hdqs./Co.",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.171534,46.84768 ]
+    },
+    "properties": {
+    "Name":"MN ANG - Duluth Air Base",
+    "Symbol":"Military Airport",
+    "Street":"4680 Viper St",
+    "City":"Duluth",
+    "State":"MN",
+    "Zip":55811,
+    "Phone":"218-788-7210",
+    "Type":"ANG",
+    "Principal unit":"148th Fighter Wing (F-16's)",
+    "Website":"https://www.148fw.ang.af.mil/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/148th_Fighter_Wing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.159152,45.083929 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"4761 Hamline Ave. N",
+    "City":"Arden Hills",
+    "State":"MN",
+    "Zip":55112,
+    "Phone":"651-282-4087",
+    "Type":"NG",
+    "Principal unit":"834th Aviation Support Battalion (Substanial NG Property from TCAAP)",
+    "Website":"https://minnesotanationalguard.ng.mil/834asb/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.794619,44.442729 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"500 Timmerman Dr",
+    "City":"Marshall",
+    "State":"MN",
+    "Zip":56258,
+    "Phone":"507-537-6104",
+    "Type":"NG",
+    "Principal unit":"Battery A, 1st Battalion, 151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.191783,45.011429 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"504 3rd St",
+    "City":"Madison",
+    "State":"MN",
+    "Zip":56256,
+    "Phone":"320-598-3466",
+    "Type":"NG",
+    "Principal unit":"Battery B, 1st Battalion, 151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.250175,45.569777 ]
+    },
+    "properties": {
+    "Name":"Armed Forces Reserve and Community Center",
+    "Symbol":"AFRC",
+    "Street":"505 Spirit River Dr S",
+    "City":"Cambridge",
+    "State":"MN",
+    "Zip":55008,
+    "Phone":"763-689-7065",
+    "Type":"NG",
+    "Principal unit":"850th Horizontal Engineer Company, 682nd Engineer Battalion",
+    "Website":"https://minnesotanationalguard.ng.mil/682eng/ ",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.7983,45.302553 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"505 Walnut Street",
+    "City":"Monticello",
+    "State":"MN",
+    "Zip":55362,
+    "Phone":"763-295-6671",
+    "Type":"NG",
+    "Principal unit":"257th Military Police Company",
+    "Website":"https://minnesotanationalguard.ng.mil/257th/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.132367,46.446671 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"517 Jefferson St N",
+    "City":"Wadena",
+    "State":"MN",
+    "Zip":56482,
+    "Phone":"218-631-1701",
+    "Type":"NG",
+    "Principal unit":"C Co., 2nd Combined Arms Battalion, 136th Infantry",
+    "Website":"https://minnesotanationalguard.ng.mil/2-136",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.629835,43.985265 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"521 Armstrong Blvd N",
+    "City":"St. James",
+    "State":"MN",
+    "Zip":56081,
+    "Phone":"507-375-3821",
+    "Type":"NG",
+    "Principal unit":"F Company, 1st Battalion, 125th Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.519554,45.131375 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"525 N Gilman Ave",
+    "City":"Litchfield",
+    "State":"MN",
+    "Zip":55355,
+    "Phone":"320-693-6066",
+    "Type":"NG",
+    "Principal unit":"849th Mobility Augmentation Co",
+    "Website":"https://minnesotanationalguard.ng.mil/682eng/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.200255,44.521759 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"530 Redwood 101",
+    "City":"Redwood Falls",
+    "State":"MN",
+    "Zip":56283,
+    "Phone":"507-637-4085",
+    "Type":"NG",
+    "Principal unit":"Co C, 682nd Engineering Battalion",
+    "Website":"https://minnesotanationalguard.ng.mil/682eng/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.351114,45.111014 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"5500 85th Ave N.",
+    "City":"Brooklyn Park",
+    "State":"MN",
+    "Zip":55443,
+    "Phone":"651-268-8087",
+    "Type":"NG",
+    "Principal unit":"347th Regional Support Group",
+    "Website":"https://minnesotanationalguard.ng.mil/347rsg/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.098801,44.952262 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"600 Cedar Street",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55101,
+    "Phone":"651-282-4044",
+    "Type":"ANG, NG",
+    "Principal unit":"MN NG Joint Force Hdqs.",
+    "Website":"https://minnesotanationalguard.ng.mil/jfhq",
+    "OtherInfo":"https://en.wikipedia.org/wiki/Minnesota_National_Guard"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.036444,45.126201 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"611 High Ave NE",
+    "City":"Willmar",
+    "State":"MN",
+    "Zip":56201,
+    "Phone":"320-231-5459",
+    "Type":"NG",
+    "Principal unit":"Forward Support Company, 682nd Engineer Battalion",
+    "Website":"https://minnesotanationalguard.ng.mil/682eng/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.192513,44.882218 ]
+    },
+    "properties": {
+    "Name":"MN NG - WMD Team",
+    "Symbol":"WMD",
+    "Street":"612 Militia Drive",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55111,
+    "Phone":"651-281-3874",
+    "Type":"NG",
+    "Principal unit":"55th Civil Support Team",
+    "Website":"https://minnesotanationalguard.ng.mil/55cst",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.954727,45.737195 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"628 Sinclair Lewis Ave",
+    "City":"Sauk Centre",
+    "State":"MN",
+    "Zip":56378,
+    "Phone":"320-762-7817",
+    "Type":"NG",
+    "Principal unit":"C Co., 1st Combined Arms Battalion, 194th Armor Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/1194cab/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.201075,44.892436 ]
+    },
+    "properties": {
+    "Name":"MN ANG - Minneapolis/St. Paul Air Base",
+    "Symbol":"Military Airport",
+    "Street":"631 Minuteman Dr",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55111,
+    "Phone":"612-713-1000  ",
+    "Type":"ANG",
+    "Principal unit":"133rd Airlift Wing (C-130's)",
+    "Website":"https://www.133aw.ang.af.mil/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/133rd_Airlift_Wing"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.47717,43.643751 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"700 N Fairlakes Ave",
+    "City":"Fairmont",
+    "State":"MN",
+    "Zip":56031,
+    "Phone":"507-235-3917",
+    "Type":"NG",
+    "Principal unit":"C Battery, 1st Battalion, 125th Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/1-125/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.707462,44.940024 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"711 S. 17th Street",
+    "City":"Montevideo",
+    "State":"MN",
+    "Zip":56265,
+    "Phone":"320-269-9284",
+    "Type":"NG",
+    "Principal unit":"1st Battalion, 151st Field Artillery, Hdqs./Co.",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.901447,45.597158 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"722 Iowa Ave",
+    "City":"Morris",
+    "State":"MN",
+    "Zip":56267,
+    "Phone":"320-589-7293",
+    "Type":"NG",
+    "Principal unit":"175th Forward Support Company, 1st Battalion, 151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.939488,43.672767 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"800 21st St. NE",
+    "City":"Austin",
+    "State":"MN",
+    "Zip":55912,
+    "Phone":"651-282-8064",
+    "Type":"NG",
+    "Principal unit":"224th Transportation Company; Co I, 334th Brigade Support Btl, 2nd Brigade, 135th Infantry Regiment, 34th Infantry Division",
+    "Website":"https://minnesotanationalguard.ng.mil/224th",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.461695,46.711074 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"801 MN-33",
+    "City":"Cloquet",
+    "State":"MN",
+    "Zip":55720,
+    "Phone":"218-879-0877",
+    "Type":"NG",
+    "Principal unit":"C Troop, 1st Squadron, 94th Cavalry Regiment",
+    "Website":"https://minnesotanationalguard.ng.mil/194cav",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.065841,44.832524 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"8076 Babcock Trail",
+    "City":"Inver Grove Heights",
+    "State":"MN",
+    "Zip":55077,
+    "Phone":"651-282-4974",
+    "Type":"NG",
+    "Principal unit":"Division Headquarters and Headquarters Battalion, 34th Infantry Division",
+    "Website":"https://minnesotanationalguard.ng.mil/dhhb/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.970818,44.830641 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"8180 Belden Blvd.",
+    "City":"Cottage Grove",
+    "State":"MN",
+    "Zip":55016,
+    "Phone":"651-268-8190",
+    "Type":"NG",
+    "Principal unit":"204th Area Support Medical Company",
+    "Website":"https://minnesotanationalguard.ng.mil/204asmc",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.50492,44.563293 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"885 E 7th St",
+    "City":"Red Wing",
+    "State":"MN",
+    "Zip":55066,
+    "Phone":"651-267-3769",
+    "Type":"NG",
+    "Principal unit":"434th Chemical Company Det.",
+    "Website":"https://minnesotanationalguard.ng.mil/434th/",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.892078,47.489954 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"900 W Lake Street",
+    "City":"Chisholm",
+    "State":"MN",
+    "Zip":55719,
+    "Phone":"651-282-4119",
+    "Type":"NG",
+    "Principal unit":"114th Transportation Company",
+    "Website":"https://minnesotanationalguard.ng.mil/114tc",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.990729,44.776804 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"910 W Lincoln Ave",
+    "City":"Olivia",
+    "State":"MN",
+    "Zip":56277,
+    "Phone":"320-523-2545",
+    "Type":"NG",
+    "Principal unit":"Btry B (Det), 1-151st Field Artillery",
+    "Website":"https://minnesotanationalguard.ng.mil/151fa/  ",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.526315,47.242649 ]
+    },
+    "properties": {
+    "Name":"MN NG - Armory",
+    "Symbol":"Armory",
+    "Street":"930 NE 1st Av",
+    "City":"Grand Rapids",
+    "State":"MN",
+    "Zip":55744,
+    "Phone":"218-327-4498",
+    "Type":"NG",
+    "Principal unit":"C Co., 2nd Combined Arms Battalion, 136th Infantry",
+    "Website":"",
+    "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
+    }
+  }
+]
+}

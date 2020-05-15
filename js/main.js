@@ -189,16 +189,79 @@ $.getJSON('data/airport/airport.geojson')
 })
 });
 
-////////////////////////////////////
-// Bases
-var bases = L.esri.featureLayer({ url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0"});
-bases.setStyle({
-  color: 'green',
-  weight: 5,
-  fill: true
-});
-bases.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{SITE_NAME}</strong><br><br>State Territory: {STATE_TERR}</p>', layer.feature.properties);
+/////////////////////////////////////////
+// Federal Guard
+$.getJSON('data/military/federal.geojson')
+ .done( data => {
+   federal = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       switch(feature.properties["TypeLabel"]) {
+         case "Army":
+           var army_federal = L.icon({
+           	iconUrl: 'data/military/army_federal.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+           });
+         case "Navy":
+           var navy_federal = L.icon({
+           	iconUrl: 'data/military/navy_federal.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: navy_federal}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+           });
+         case "USMC":
+           var usmc_federal = L.icon({
+             iconUrl: 'data/military/usmc_federal.svg',
+             iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: usmc_federal}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+           });
+           case "Air Force":
+             var military_airport_national = L.icon({
+               iconUrl: 'data/military/military_airport_national.svg',
+               iconSize: [25, 25],
+               popupAnchor: [0, -8]
+             });
+             return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             });
+           case "Coast Guard":
+             var coast_federal = L.icon({
+               iconUrl: 'data/military/coast_federal.svg',
+               iconSize: [25, 25],
+               popupAnchor: [0, -8]
+             });
+             return L.marker(latlng, {icon: coast_federal}).bindPopup(function (layer) {
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             });
+             case "USACE":
+               var usace_federal = L.icon({
+                 iconUrl: 'data/military/usace_federal.svg',
+                 iconSize: [25, 25],
+                 popupAnchor: [0, -8]
+               });
+               return L.marker(latlng, {icon: usace_federal}).bindPopup(function (layer) {
+                 return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+               });
+               case "AFRC":
+                 var afrc_federal = L.icon({
+                   iconUrl: 'data/military/afrc_federal.svg',
+                   iconSize: [25, 25],
+                   popupAnchor: [0, -8]
+                 });
+                 return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
+                   return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+                 });
+       }
+  }
+})
 });
 
 /////////////////////////////////////////////
@@ -224,12 +287,12 @@ fireStations.bindPopup(function (layer) {
 /////////////////////////////////////////
 // Foodshelves
 var foodshelvesIcon = L.icon({
-	iconUrl: 'data/foodshelves.svg',
+	iconUrl: 'data/foodshelves/foodshelves.svg',
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 
-$.getJSON('data/foodshelves.geojson')
+$.getJSON('data/foodshelves/foodshelves.geojson')
  .done( data => {
    foodshelves = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
@@ -262,6 +325,75 @@ var hospitals = L.esri.featureLayer({
 hospitals.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
 });
+
+
+
+/////////////////////////////////////////
+// National Guard
+$.getJSON('data/military/national_guard.geojson')
+ .done( data => {
+   national = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       switch(feature.properties["Symbol"]) {
+         case "Armory":
+           var armory_national = L.icon({
+           	iconUrl: 'data/military/armory_national.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: armory_national}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+           });
+         case "Military Airport":
+           var military_airport_national = L.icon({
+           	iconUrl: 'data/military/military_airport_national.svg',
+           	iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+           });
+         case "Helo":
+           var helo_national = L.icon({
+             iconUrl: 'data/military/helo_national.svg',
+             iconSize: [25, 25],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: helo_national}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+           });
+           case "Training":
+             var training_national = L.icon({
+               iconUrl: 'data/military/training_national.svg',
+               iconSize: [25, 25],
+               popupAnchor: [0, -8]
+             });
+             return L.marker(latlng, {icon: training_national}).bindPopup(function (layer) {
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             });
+           case "WMD":
+             var wmd_national = L.icon({
+               iconUrl: 'data/military/wmd_national.svg',
+               iconSize: [25, 25],
+               popupAnchor: [0, -8]
+             });
+             return L.marker(latlng, {icon: wmd_national}).bindPopup(function (layer) {
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             });
+             case "AFRC":
+               var afrc_federal = L.icon({
+                 iconUrl: 'data/military/afrc_federal.svg',
+                 iconSize: [25, 25],
+                 popupAnchor: [0, -8]
+               });
+               return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
+                 return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+               });
+       }
+  }
+})
+});
+
 
 //////////////////////////////////////////
 // Nursing Homes
@@ -514,6 +646,9 @@ $("input[type='checkbox']").change(function() {
     case "redCross":
       toggleLayer(this.checked, redCross);
     break;
+    case "federal":
+      toggleLayer(this.checked, federal);
+    break;
     case "foodshelves":
       toggleLayer(this.checked, foodshelves);
     break;
@@ -528,6 +663,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "boundaries":
       toggleLayer(this.checked, boundaries);
+    break;
+    case "national":
+      toggleLayer(this.checked, national);
     break;
     case "nursingHomes":
       toggleLayer(this.checked, nursingHomes);

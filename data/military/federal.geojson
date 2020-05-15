@@ -1,0 +1,425 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.25012,45.56983 ]
+    },
+    "properties": {
+    "Name":"Armed Forces Reserve and Community Center",
+    "Street":"505 Spirit River Dr S",
+    "City":"Cambridge",
+    "State":"MN",
+    "Zip":55008,
+    "Phone":"651-281-3848",
+    "Type":"Army Reserve",
+    "TypeLabel":"AFRC",
+    "Principal Units/Notes":"704 CM DET 1 CO (NBC RECON)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.29944,44.32322 ]
+    },
+    "properties": {
+    "Name":"Armed Forces Reserve Center",
+    "Street":"3000 W Airport Rd",
+    "City":"Faribault",
+    "State":"MN",
+    "Zip":55021,
+    "Phone":"507-334-9687",
+    "Type":"Army Reserve",
+    "TypeLabel":"AFRC",
+    "Principal Units/Notes":"417th Light Equipment Maintenance Co",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.17749,45.56485 ]
+    },
+    "properties": {
+    "Name":"Army Reserve Training Center",
+    "Street":"1710 Veterans Dr",
+    "City":"St. Cloud",
+    "State":"MN",
+    "Zip":56303,
+    "Phone":"320-251-7942",
+    "Type":"Army Reserve",
+    "TypeLabel":"AFRC",
+    "Principal Units/Notes":"367 Engineer Battalion HHS (CBT)(CORPS)(LT)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.22289,44.89625 ]
+    },
+    "properties": {
+    "Name":"Navy Operational Support Center",
+    "Street":"5905 S 34th Ave",
+    "City":"Minneapolis",
+    "State":"MN",
+    "Zip":55450,
+    "Phone":"612-713-4600",
+    "Type":"Navy Reserve",
+    "TypeLabel":"Navy",
+    "Principal Units/Notes":"CJNF HQ; Joint Reserve Intelligence Center; Various Support Units",
+    "Website":"https://www.facebook.com/NoscMinneapolisOmbudsman/  ",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.17436,46.36231 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"310 10th Ave NE",
+    "City":"Brainerd",
+    "State":"MN",
+    "Zip":56401,
+    "Phone":"218-829-9352",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"367 Engineer Battalion (CBT)(CORPS)(LT)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.855063,45.169105 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"1101 3rd St S ",
+    "City":"Buffalo",
+    "State":"MN",
+    "Zip":55313,
+    "Phone":"763-682-2582",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"353 Transportation Company",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.088764,46.768081 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"1500 St Louis Ave",
+    "City":"Duluth",
+    "State":"MN",
+    "Zip":55802,
+    "Phone":"218-727-1255",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"312th Engineer Co.; 477th Medical Co. Amb (GRD)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.199367,44.894987 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"506 Roeder Circle",
+    "City":"Fort Snelling",
+    "State":"MN",
+    "Zip":51111,
+    "Phone":"612-713-1000",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"1-340 TSBn, 181 INF BDE, 1st Army DIV West,  372nd Engr Gp",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.97794,44.146274 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"1550 Pohl Rd",
+    "City":"Mankato",
+    "State":"MN",
+    "Zip":56001,
+    "Phone":"507-625-4330",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"Co B 367 En Bn (CBT)(CORPS), 216 QM CO (FORCE PROV)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.431242,43.997025 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"1715 Marion Rd SE A",
+    "City":"Rochester",
+    "State":"MN",
+    "Zip":55904,
+    "Phone":"507-289-6869",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"79 MP Co (CBT SPT) SOUTH; 7212 U Med Spt (MSU)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.287309,45.562742 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"110 20th Ave SE",
+    "City":"Saint Joseph",
+    "State":"MN",
+    "Zip":56374,
+    "Phone":"320-251-7942",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"367th Engineer Battalion",
+    "Website":"https://www.facebook.com/pages/US-Army-Reserve/450143115155557",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.149595,45.080624 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"4655 Lexington Ave N",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55126,
+    "Phone":"651-628-2141",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"407th Civil Affairs",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.039835,44.367968 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"100 Highway 60",
+    "City":"Wabasha",
+    "State":"MN",
+    "Zip":55981,
+    "Phone":"651-565-4564",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"417 OD TM WVeh Rep Co Maint",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.583134,43.628026 ]
+    },
+    "properties": {
+    "Name":"US Army Reserve Center",
+    "Street":"1012 Milton Ave",
+    "City":"Worthington",
+    "State":"MN",
+    "Zip":56187,
+    "Phone":"507-376-4533",
+    "Type":"Army Reserve",
+    "TypeLabel":"Army",
+    "Principal Units/Notes":"452 QM Det 1 Co Sup (DS)",
+    "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.216376,44.895748 ]
+    },
+    "properties": {
+    "Name":"Minneapolis�Saint Paul Joint Air Reserve Station",
+    "Street":"760 Military Hwy #707",
+    "City":"Minneapolis",
+    "State":"MN",
+    "Zip":55450,
+    "Phone":"612-726-9440",
+    "Type":"Air Force Reserve",
+    "TypeLabel":"Air Force",
+    "Principal Units/Notes":"934th Airlift Wing (C-130's)",
+    "Website":"https://www.minneapolis.afrc.af.mil/",
+    "Other Info":"https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_Joint_Air_Reserve_Station"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.088578,44.947908 ]
+    },
+    "properties": {
+    "Name":"U.S. Army Corps of Engineers District Headquarters",
+    "Street":"180 5th St E, #700",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55101,
+    "Phone":"651-290-5807",
+    "Type":"Army Active",
+    "TypeLabel":"USACE",
+    "Principal Units/Notes":"U.S. Army and Civilan Engineers and Support Staff",
+    "Website":"https://www.mvp.usace.army.mil/Missions/Emergency-Management/",
+    "Other Info":"https://www.usace.army.mil/locations.aspx"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.091924,46.775517 ]
+    },
+    "properties": {
+    "Name":"U.S. Army Corps of Engineers Vessel Yard",
+    "Street":"901 Minnesota Avenue",
+    "City":"Duluth",
+    "State":"MN",
+    "Zip":55802,
+    "Phone":"218-720-5260 x 35265",
+    "Type":"Army Active",
+    "TypeLabel":"USACE",
+    "Principal Units/Notes":"Federal port facility; Duluth Area Office Floating Plant",
+    "Website":"https://en.wikipedia.org/wiki/U.S._Army_Corps_of_Engineers_Duluth_Vessel_Yard",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.333256,47.746082 ]
+    },
+    "properties": {
+    "Name":"North Superior Coast Guard Station",
+    "Street":"315 Broadway",
+    "City":"Grand Marais",
+    "State":"MN",
+    "Zip":55604,
+    "Phone":"218-720-5412",
+    "Type":"USCG Reserve",
+    "TypeLabel":"Coast Guard",
+    "Principal Units/Notes":"4 USCG Reservists from Memorial Day to Labor Day",
+    "Website":"https://www.atlanticarea.uscg.mil/Our-Organization/District-9/Ninth-District-Units/Sector-Sault-Sainte-Marie/Units/North-Superior/",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.352391,44.856957 ]
+    },
+    "properties": {
+    "Name":"US Coast Guard",
+    "Street":"5600 American Blvd West, Suite 250",
+    "City":"Bloomington",
+    "State":"MN",
+    "Zip":55437,
+    "Phone":"952-806-0021",
+    "Type":"USCG Active",
+    "TypeLabel":"Coast Guard",
+    "Principal Units/Notes":"USCG Marine Safety Detachment - St. Paul",
+    "Website":"https://www.atlanticarea.uscg.mil/Our-Organization/District-8/District-Units/Sector-Upper-Mississippi-River/Marine-Safety-Detachments/",
+    "Other Info":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.090702,46.771803 ]
+    },
+    "properties": {
+    "Name":"US Coast Guard Station",
+    "Street":"1201 Minnesota Avenue",
+    "City":"Duluth",
+    "State":"MN",
+    "Zip":55802,
+    "Phone":"218-529-3100",
+    "Type":"USCG Active",
+    "TypeLabel":"Coast Guard",
+    "Principal Units/Notes":"Aids to Navigation Team - Duluth, USCGC ALDER",
+    "Website":"https://www.atlanticarea.uscg.mil/Our-Organization/District-9/Ninth-District-Units/Sector-Sault-Sainte-Marie/Units/Duluth/",
+    "Other Info":"https://www.atlanticarea.uscg.mil/Our-Organization/District-9/Ninth-District-Staff/Prevention-Division/Cutters/ALDER/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.223213,44.897023 ]
+    },
+    "properties": {
+    "Name":"USMC Reserve",
+    "Street":"5906 S 34th Ave",
+    "City":"Minneapolis",
+    "State":"MN",
+    "Zip":55450,
+    "Phone":"612-713-1893",
+    "Type":"USMC Reserve",
+    "TypeLabel":"USMC",
+    "Principal Units/Notes":"Wing Support Squadron 471; resident of NOSC Minneapolis",
+    "Website":"https://www.marforres.marines.mil/Major-Subordinate-Commands/4th-Marine-Aircraft-Wing/Marine-Aircraft-Group-41/Marine-Wing-Support-Squadron-471/",
+    "Other Info":""
+    }
+  }
+]
+}
