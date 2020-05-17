@@ -25,6 +25,7 @@
         <div class="sidebar-tabs">
             <ul role="tablist">
                 <li><a href="#layers" role="tab"><i class="fa fa-bars"></i></a></li>
+								<li><a href="#resources" role="tab"><i class="fa fa-book"></i></a></li>
                 <li><a href="#help" role="tab"><i class="fa fa-question-circle"></i></a></li>
             </ul>
         </div>
@@ -52,16 +53,16 @@
 								</label>
 								<hr>
 								<h3>Boundaries</h3>
-								<label class="container">Political Boundaries
+								<label class="container">International & State
 									<input type="checkbox" id="boundaries" checked>
 									<span class="checkmark"></span>
 								</label>
-								<label class="container">Counties
+								<label class="container">Minnesota Counties
 									<input type="checkbox" id="counties" checked>
 									<span class="checkmark"></span>
 								</label>
 								<hr>
-								<h3>Layers</h3>
+								<h3>Layers - COVID-19 Response</h3>
 								<label class="container">COVID-19 cases by county
 									<input type="checkbox" id="cases" checked>
 									<span class="checkmark"></span>
@@ -79,7 +80,6 @@
 										<div style="background-color: rgb(199,0,113)">10,000 to 29,000</div>
 										<div style="background-color: rgb(171,0,169)">30,000 to 99,999</div>
 										<div style="background-color: rgb(140,0,230)">100,000 or more</div>
-
 									</div>
 								</label>
 								<div id="dateControls">
@@ -90,6 +90,29 @@
 									<!-- <input type="button" value="Animate" onclick="startAnimation()">
 									<input type="button" value="Stop Animation" onclick="stopAnimation()"> -->
 								</div><br><br>
+								<label class="container">Local Foodshelves
+									<input id="foodshelves" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="foodshelvesLegend"><img class="icon" src="data/foodshelves/foodshelves.svg" alt="legend for foodshelves"></div>
+								</label>
+								<label class="container">Testing Locations
+									<input id="testing" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="specialLegend">
+											<img class="icon" src="data/testing/testing_appt.svg" alt="legend for testing locations">
+											<i style="margin-left: 10px;">By appointment only</i>
+									</div>
+									<div id="specialLegend">
+											<img class="icon" src="data/testing/testing_driveup.svg" alt="legend for testing locations">
+											<i style="margin-left: 10px;">Drive-up only</i>
+									</div>
+									<div id="specialLegend">
+											<img class="icon" src="data/testing/testing_else.svg" alt="legend for testing locations">
+											<i style="margin-left: 10px;">All other</i>
+									</div>
+								</label>
+								<hr>
+								<h3>Layers - General</h3>
 								<label class="container">Airports with hard surface runways 5,000' or more
 									<input class="special" id="airports" type="checkbox">
 									<span class="checkmark"></span><br>
@@ -105,16 +128,6 @@
 											<img class="icon" src="data/airport/airport_military.svg" alt="legend for airports">
 											<i style="margin-left: 10px;">Military</i>
 									</div>
-								</label>
-								<label class="container">American Red Cross Chapter Facilities
-									<input id="redCrossFacilities" type="checkbox">
-									<span class="checkmark"></span>
-									<div id="redCrossFacilitiesLegend"><img class="icon" src="data/redCrossFacilities.svg" alt="legend for redCrossFacilities"></div>
-								</label>
-								<label class="container">American Red Cross Chapter Regions
-									<input id="redCross" type="checkbox">
-									<span class="checkmark"></span>
-									<div id="redCrossLegend"><img class="icon" src="data/redCross.svg" alt="legend for redCross"></div>
 								</label>
 								<label class="container">Federal Guard
 									<input class="special" id="federal" type="checkbox">
@@ -152,11 +165,6 @@
 									<input id="fireStations" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="fireStationsLegend"><img class="icon" src="data/fireStations.svg" alt="legend for fireStations"></div>
-								</label>
-								<label class="container">Cities with Foodshelves
-									<input id="foodshelves" type="checkbox">
-									<span class="checkmark"></span>
-									<div id="foodshelvesLegend"><img class="icon" src="data/foodshelves/foodshelves.svg" alt="legend for foodshelves"></div>
 								</label>
 								<label class="container">Hospitals/Medical Centers
 									<input id="hospitals" type="checkbox">
@@ -206,39 +214,32 @@
 									<span class="checkmark"></span>
 									<div id="specialLegend">
 											<img class="icon" src="data/prison/prisons_fed.svg" alt="legend for federal prisons">
-											<i style="margin-left: 10px;">Federal Prison</i>
+											<i style="margin-left: 10px;">Federal</i>
 									</div>
 									<div id="specialLegend">
 											<img class="icon" src="data/prison/prisons_state.svg" alt="legend for state prisons">
-											<i style="margin-left: 10px;">State Prison</i>
+											<i style="margin-left: 10px;">State</i>
 									</div>
 								</label>
-								<label class="container">Public Schools (Minnesota)
+								<label class="container">Public Schools
 									<input id="publicSchools" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="publicSchoolsLegend"><img class="icon" src="data/publicSchools.svg" alt="legend for publicSchools"></div>
+								</label>
+								<label class="container">Red Cross Chapter Facilities
+									<input id="redCrossFacilities" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="redCrossFacilitiesLegend"><img class="icon" src="data/redCrossFacilities.svg" alt="legend for redCrossFacilities"></div>
+								</label>
+								<label class="container">Red Cross Chapter Regions
+									<input id="redCross" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="redCrossLegend"><img class="icon" src="data/redCross.svg" alt="legend for redCross"></div>
 								</label>
 								<label class="container">Shelter System Facilities
 									<input id="shelters" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="sheltersLegend"><img class="icon" src="data/shelters.svg" alt="legend for shelters"></div>
-								</label>
-								<label class="container">Testing Locations
-									<input id="testing" type="checkbox">
-									<span class="checkmark"></span>
-									<h5>Directions to utilize the testing location</h5>
-									<div id="specialLegend">
-											<img class="icon" src="data/testing/testing_appt.svg" alt="legend for testing locations">
-											<i style="margin-left: 10px;">By appointment only</i>
-									</div>
-									<div id="specialLegend">
-											<img class="icon" src="data/testing/testing_driveup.svg" alt="legend for testing locations">
-											<i style="margin-left: 10px;">Drive-up only</i>
-									</div>
-									<div id="specialLegend">
-											<img class="icon" src="data/testing/testing_else.svg" alt="legend for testing locations">
-											<i style="margin-left: 10px;">All other types of directions</i>
-									</div>
 								</label>
 								<label class="container">Veterans Health Administration Medical Facilities
 									<input id="va" type="checkbox">
@@ -246,11 +247,88 @@
 									<div id="vaLegend"><img class="icon" src="data/va.svg" alt="legend for va"></div>
 								</label>
             </div>
+						<div class="sidebar-pane" id="resources">
+                <h1 class="sidebar-header">Resources<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+								<p><i>Map metadata</i></p>
+								<div class="">
+									<h4>COVID-19 cases by county</h4>
+									<p>iframe from https://www.foodpantries.org/st/minnesota </p>
+								</div>
+								<div class="">
+									<h4>Foodshelves</h4>
+									<p>iframe from https://www.foodpantries.org/st/minnesota </p>
+								</div>
+								<div class="">
+									<h4>Testing Locations</h4>
+									<p>https://services1.arcgis.com/KoDrdxDCTDvfgddz/arcgis/rest/services/TestCollectionLocations/FeatureServer/0</p>
+								</div>
+								<div>
+									<h4>Airport swith hard surface runways 5,000' or more</h4>
+									<ul>
+										<li>Commercial: https://www.faa.gov/airports/airport_safety/airportdata_5010/menu/emergencyplanairports.cfm?Region=&District=&State=MN&County=&City=&Use=PU&Certification=IS%20NOT%20NULL</li>
+										<li>Non-Commercial: https://www.faa.gov/airports/airport_safety/airportdata_5010/menu/emergencyplanairports.cfm?Region=&District=&State=MN&County=&City=&Use=PU&Certification=IS%20NULL</li>
+										<li>Military or Joint Use: https://www.airnav.com/airport/ (By airport) </li>
+									</ul>
+								</div>
+								<div class="">
+									<h4>Military</h4>
+									<p></p>
+								</div>
+								<div class="">
+									<h4>Fire Stations</h4>
+									<p>https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Fire_Station/FeatureServer/0 </p>
+								</div>
+								<div class="">
+									<h4>Hospitals/Medical Centers</h4>
+									<p>https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6</p>
+								</div>
+								<div class="">
+									<h4>Nursing Homes</h4>
+									<p>https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/NursingHomes/FeatureServer/0</p>
+								</div>
+								<div class="">
+									<h4>Police Stations</h4>
+									<p>https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30</p>
+								</div>
+								<div class="">
+									<h4>Prisons</h4>
+									<p></p>
+								</div>
+								<div class="">
+									<h4>Public Schools</h4>
+									<p>https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0</p>
+								</div>
+								<div class="">
+									<h4>Red Cross Chapter Facilities</h4>
+									<p>https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0</p>
+								</div>
+								<div class="">
+									<h4>Red Cross Chapter Regions</h4>
+									<p>https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3</p>
+								</div>
+								<div class="">
+									<h4>Shelter System Facilities</h4>
+									<p>https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5</p>
+								</div>
+								<div class="">
+									<h4>Veterans Health Administration Medical Facilities</h4>
+									<p>https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0</p>
+								</div>
+								<hr>
+								<div class="">
+									<h4>Symbology</h4>
+									<ul>
+										<li>NAPSG Standards: https://napsg-web.s3.amazonaws.com/symbology/index.html#/subcat?Infrastructure</li>
+										<li>Font Awesome: https://fontawesome.com/icons</li>
+									</ul>
+								</div>
+
+            </div>
 						<div class="sidebar-pane" id="help">
-                <h1 class="sidebar-header">Help<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+								<h1 class="sidebar-header">Help<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
 								<p>Choose a basemap and/or click on a layer (or multiple)</p>
 								<p>Click on a point or polygon to see a pop-up to find out more information.</p>
-            </div>
+						</div>
         </div>
     </div>
 		<div id="mapid" class="sidebar-map">
