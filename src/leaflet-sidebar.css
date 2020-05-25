@@ -14,13 +14,13 @@
       transition: width 500ms; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .sidebar {
-      width: 305px; } }
+      width: 235px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .sidebar {
-      width: 390px; } }
+      width: 300px; } }
   @media (min-width: 1200px) {
     .sidebar {
-      width: 460px; } }
+      width: 370px; } }
 
 .sidebar-left {
   left: 0; }
@@ -100,18 +100,18 @@
   left: 0;
   right: 0;
   box-sizing: border-box;
-  padding: 10px 20px; }
+  padding: 10px 15px; }
   .sidebar-pane.active {
     display: block; }
   @media (min-width: 768px) and (max-width: 991px) {
     .sidebar-pane {
-      min-width: 265px; } }
+      min-width: 195px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .sidebar-pane {
-      min-width: 350px; } }
+      min-width: 260px; } }
   @media (min-width: 1200px) {
     .sidebar-pane {
-      min-width: 420px; } }
+      min-width: 430px; } }
 
 .sidebar-header {
   margin: -10px -20px 0;
@@ -165,15 +165,15 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 315px; } }
+    left: 245px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 400px; } }
+    left: 310px; } }
 
 @media (min-width: 1200px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 470px; } }
+    left: 380px; } }
 
 @media (min-width: 768px) {
   .sidebar-left.collapsed ~ .sidebar-map .leaflet-left {
@@ -185,15 +185,15 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
-    right: 315px; } }
+    right: 245px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
-    right: 400px; } }
+    right: 310px; } }
 
 @media (min-width: 1200px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
-    right: 470px; } }
+    right: 380px; } }
 
 @media (min-width: 768px) {
   .sidebar-right.collapsed ~ .sidebar-map .leaflet-right {

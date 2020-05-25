@@ -432,7 +432,7 @@ var policeStations = L.esri.featureLayer({
   }
    });
 policeStations.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}<br><br>Phone: </p>', layer.feature.properties);
 });
 
 /////////////////////////////////////////
@@ -517,7 +517,7 @@ var redCrossFacilities = L.esri.featureLayer({
   }
  });
 redCrossFacilities.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Phone: {PHONE}</p>', layer.feature.properties);
 });
 
 ////////////////////////////////////////////
@@ -537,7 +537,28 @@ var shelters = L.esri.featureLayer({
   }
  });
 shelters.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{SHELTER_NAME}</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{SHELTER_NAME} \n'+
+  '</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}<br><br>\n'+
+  'County: {COUNTY_PARISH}<br>FIPS CODE: {FIPS_CODE}<br>\n'+
+  'Evacuation Capacity: {EVACUATION_CAPACITY}<br> \n'+
+  'Post Impact Capacity: {POST_IMPACT_CAPACITY}<br> \n'+
+  'ADA Compliant: {ADA_COMPLIANT}<br>\n'+
+  'Wheelchair Accessible: {WHEELCHAIR_ACCESSIBLE}<br>\n'+
+  'Pet Accommodations: {PET_ACCOMMODATIONS_CODE} {PET_ACCOMMODATIONS_DESC}<br>\n'+
+  'Generator Onsite: {GENERATOR_ONSITE}<br>\n'+
+  'Self sufficient electricity: {SELF_SUFFICIENT_ELECTRICITY}<br>\n'+
+  'In 100 year floodplain: {IN_100_YR_FLOODPLAIN}<br\n'+
+  'In 500 year floodplain: {IN_500_YR_FLOODPLAIN}<br><br>\n'+
+  'Phone: {ORG_MAIN_PHONE}<br>\n'+
+  'Hotline Phone: {ORG_HOTLINE_PHONE}<br> \n'+
+  'Email: {ORG_EMAIL}<br>\n'+
+  'Shelter Status: {SHELTER_STATUS_CODE}<br>\n'+
+  'Shelter Open Date: {SHELTER_OPEN_DATE}<br>\n'+
+  'Shelter Closed Date: {SHELTER_CLOSED_DATE}<br> \n'+
+  'Medical needs population: {MEDICAL_NEEDS_POPULATION}<br> \n'+
+  'Other population: {OTHER_POPULATION} {OTHER_POPULATION_DESCRIPTION}<br>\n'+
+  'Total population: {TOTAL_POPULATION}<br> \n'+
+  'Pet population: {PET_POPULATION}</p>', layer.feature.properties);
 });
 
 ////////////////////////////////////////////
