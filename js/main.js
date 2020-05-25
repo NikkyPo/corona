@@ -629,7 +629,7 @@ va.bindPopup(function (layer) {
 // Add it all together
 var mymap = L.map('mapid', {
   preferCanvas: true,
-  center: [45.9, -93.6],
+  center: [45.9, -95.9],
   zoom: 6,
   layers: [counties, boundaries, none]
   // layers: [counties, cases, boundaries, none]
