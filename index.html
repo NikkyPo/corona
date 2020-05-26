@@ -37,7 +37,7 @@
                     Data
                     <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
-								<p style="margin-top: 0.5em;"></p>
+								<p style="margin-top: 1em; margin-bottom: 1em;"><i>See Resources tab for a list of data sources</i></p><hr>
 								<h3>Basemaps</h3>
 								<label class="container">None
 								  <input type="radio" checked="checked" name="radio" id="none">
@@ -126,65 +126,70 @@
 									</div>
 									<div id="specialLegend">
 											<img class="icon" src="data/airport/airport_military.svg" alt="legend for airports">
-											<i style="margin-left: 10px;">Military</i>
+											<i style="margin-left: 10px;">Military or Joint Use</i>
 									</div>
 								</label>
-								<label class="container">Fire Stations (Minnesota)
+								<label class="container">Fire Stations
 									<input id="fireStations" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="fireStationsLegend"><img class="icon" src="data/fireStations.svg" alt="legend for fireStations"></div>
 								</label>
-								<label class="container">Hospitals/Medical Centers
+								<label class="container">Hospitals/Medical Facilities (Public)
 									<input id="hospitals" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="hospitalsLegend"><img class="icon" src="data/hospital.svg" alt="legend for Hospitals"></div>
+								</label>
+								<label class="container">Hospitals/Medical Facilities (Veterans Administration)
+									<input id="va" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="vaLegend"><img class="icon" src="data/va.svg" alt="legend for va"></div>
 								</label>
 								<label class="container">Military - Federal Facilities
 									<input class="special" id="federal" type="checkbox">
 									<span class="checkmark"></span><br>
 									<div id="specialLegend">
-											<img class="icon" src="data/military/army_federal.svg" alt="legend for Federal Army">
-											<i style="margin-left: 10px;">Army</i>
-									</div>
-									<div id="specialLegend">
-											<img class="icon" src="data/military/navy_federal.svg" alt="legend for Federal Navy">
-											<i style="margin-left: 10px;">Navy</i>
-									</div>
-									<div id="specialLegend">
-											<img class="icon" src="data/military/usmc_federal.svg" alt="legend for Federal US Marine Corps">
-											<i style="margin-left: 10px;">US Marine Corps</i>
-									</div>
-									<div id="specialLegend">
 											<img class="icon" src="data/military/military_airport_national.svg" alt="legend for Federal Air Force">
 											<i style="margin-left: 10px;">Air Force</i>
+									</div>
+									<div id="specialLegend">
+											<img class="icon" src="data/military/afrc_federal.svg" alt="legend for Federal Air Force Reserve Command">
+											<i style="margin-left: 10px;">Armed Forces Reserve Center</i>
+									</div>
+									<div id="specialLegend">
+											<img class="icon" src="data/military/army_federal.svg" alt="legend for Federal Army">
+											<i style="margin-left: 10px;">Army</i>
 									</div>
 									<div id="specialLegend">
 											<img class="icon" src="data/military/coast_federal.svg" alt="legend for Federal Coast Guard">
 											<i style="margin-left: 10px;">Coast Guard</i>
 									</div>
 									<div id="specialLegend">
+											<img class="icon" src="data/military/navy_federal.svg" alt="legend for Federal Navy">
+											<i style="margin-left: 10px;">Navy</i>
+									</div>
+									<div id="specialLegend">
 											<img class="icon" src="data/military/usace_federal.svg" alt="legend for Federal US Army Corps of Engineers">
 											<i style="margin-left: 10px;">US Army Corps of Engineers</i>
 									</div>
 									<div id="specialLegend">
-											<img class="icon" src="data/military/afrc_federal.svg" alt="legend for Federal Air Force Reserve Command">
-											<i style="margin-left: 10px;">Air Force Reserve Command</i>
+											<img class="icon" src="data/military/usmc_federal.svg" alt="legend for Federal US Marine Corps">
+											<i style="margin-left: 10px;">US Marine Corps</i>
 									</div>
 								</label>
 								<label class="container">Military - Minnesota National Guard Facilities
 									<input class="special" id="national" type="checkbox">
 									<span class="checkmark"></span><br>
 									<div id="specialLegend">
-											<img class="icon" src="data/military/armory_national.svg" alt="legend for National Guard Armories">
-											<i style="margin-left: 10px;">Armories</i>
+											<img class="icon" src="data/military/military_airport_national.svg" alt="legend for National Guard National Guard">
+											<i style="margin-left: 10px;">Airfields</i>
 									</div>
 									<div id="specialLegend">
 											<img class="icon" src="data/military/afrc_federal.svg" alt="legend for National Guard Air Force Reserve Command">
-											<i style="margin-left: 10px;">Air Force Reserve Command</i>
+											<i style="margin-left: 10px;">Armed Forces Reserve Center</i>
 									</div>
 									<div id="specialLegend">
-											<img class="icon" src="data/military/military_airport_national.svg" alt="legend for National Guard National Guard">
-											<i style="margin-left: 10px;">Airfields</i>
+											<img class="icon" src="data/military/armory_national.svg" alt="legend for National Guard Armories">
+											<i style="margin-left: 10px;">Armories</i>
 									</div>
 									<div id="specialLegend">
 											<img class="icon" src="data/military/helo_national.svg" alt="legend for National Guard Helo Facilities">
@@ -198,6 +203,11 @@
 											<img class="icon" src="data/military/wmd_national.svg" alt="legend for National Guard Weapons of Mass Destruction Support Team">
 											<i style="margin-left: 10px;">Weapons of Mass Destruction Support Team</i>
 									</div>
+								</label>
+								<label class="container">Military - Other States Facilities
+									<input id="bases" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="basesLegend"><img class="icon" src="data/military/other_military.svg" alt="legend for other military"></div>
 								</label>
 								<label class="container">Nursing Homes
 									<input id="nursingHomes" type="checkbox">
@@ -218,7 +228,7 @@
 									</div>
 									<div id="specialLegend">
 											<img class="icon" src="data/prison/prisons_state.svg" alt="legend for state prisons">
-											<i style="margin-left: 10px;">State</i>
+											<i style="margin-left: 10px;">Minnesota</i>
 									</div>
 								</label>
 								<label class="container">Public Schools
@@ -226,12 +236,12 @@
 									<span class="checkmark"></span>
 									<div id="publicSchoolsLegend"><img class="icon" src="data/publicSchools.svg" alt="legend for publicSchools"></div>
 								</label>
-								<label class="container">Red Cross Chapter Facilities
+								<label class="container">Red Cross Facilities
 									<input id="redCrossFacilities" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="redCrossFacilitiesLegend"><img class="icon" src="data/redCrossFacilities.svg" alt="legend for redCrossFacilities"></div>
 								</label>
-								<label class="container">Red Cross Chapter Regions
+								<label class="container">Red Cross Regions
 									<input id="redCross" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="redCrossLegend"><img class="icon" src="data/redCross.svg" alt="legend for redCross"></div>
@@ -240,11 +250,6 @@
 									<input id="shelters" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="sheltersLegend"><img class="icon" src="data/shelters.svg" alt="legend for shelters"></div>
-								</label>
-								<label class="container">Veterans Health Administration Medical Facilities
-									<input id="va" type="checkbox">
-									<span class="checkmark"></span>
-									<div id="vaLegend"><img class="icon" src="data/va.svg" alt="legend for va"></div>
 								</label>
             </div>
 						<div class="sidebar-pane" id="resources">

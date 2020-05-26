@@ -189,6 +189,21 @@ $.getJSON('data/airport/airport.geojson')
 })
 });
 
+////////////////////////////////////
+// Bases
+var bases = L.esri.featureLayer({
+  url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0",
+  where: "SITE_NAME NOT LIKE 'Duluth IAP' AND SITE_NAME NOT LIKE 'NG Duluth NG Armory' AND SITE_NAME NOT LIKE 'NG St Cloud NG Armory' AND SITE_NAME NOT LIKE 'NG St Cloud AASF' AND SITE_NAME NOT LIKE 'NG Rochester NGA and OMS 2' AND SITE_NAME NOT LIKE 'NG Rosemount NG Armory'",
+});
+bases.setStyle({
+  color: 'green',
+  weight: 5,
+  fill: true
+});
+bases.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{SITE_NAME}</strong><br><br>State Territory: {STATE_TERR}<br>Status: {OPER_STAT}<br>Component: {COMPONENT}</p>', layer.feature.properties);
+});
+
 /////////////////////////////////////////
 // Federal Guard
 $.getJSON('data/military/federal.geojson')
@@ -652,6 +667,9 @@ var sidebar = L.control.sidebar('sidebar').addTo(mymap);
 $("input[type='checkbox']").change(function() {
   var layerClicked = $(this).attr("id")
   switch (layerClicked) {
+    case "bases":
+    toggleLayer(this.checked, bases);
+    break;
     case "counties":
       toggleLayer(this.checked, counties)
     break;
