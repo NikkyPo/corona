@@ -16,7 +16,7 @@
     "Zip":56001,
     "Phone":"507-389-2358",
     "Type":"NG",
-    "Principal unit":"2nd Battalion, 135th Infantry Regiment, Hdqs./Co.",
+    "PrincipalUnitsNotes":"2nd Battalion, 135th Infantry Regiment, Hdqs./Co.",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -36,7 +36,7 @@
     "Zip":56560,
     "Phone":"218-236-2175",
     "Type":"NG",
-    "Principal unit":"H&H Co-, 2nd Combined Arms Battalion, 136th Infantry",
+    "PrincipalUnitsNotes":"H&H Co-, 2nd Combined Arms Battalion, 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -56,7 +56,7 @@
     "Zip":55413,
     "Phone":"651-268-8003",
     "Type":"NG",
-    "Principal unit":"84th Troop Command",
+    "PrincipalUnitsNotes":"84th Troop Command",
     "Website":"https://minnesotanationalguard.ng.mil/84trc/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -76,7 +76,7 @@
     "Zip":56143,
     "Phone":"507-847-2984",
     "Type":"NG",
-    "Principal unit":"B Battery, 1st Battalion, 125th Field Artillery",
+    "PrincipalUnitsNotes":"B Battery, 1st Battalion, 125th Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -96,7 +96,7 @@
     "Zip":56401,
     "Phone":"218-828-2245",
     "Type":"NG",
-    "Principal unit":"1st Combined Arms Battalion, 194th Armor Regiment",
+    "PrincipalUnitsNotes":"1st Combined Arms Battalion, 194th Armor Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/1194cab/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -116,7 +116,7 @@
     "Zip":56082,
     "Phone":"507-931-7283",
     "Type":"NG",
-    "Principal unit":"F Company, 1st Battalion, 125th Field Artillery",
+    "PrincipalUnitsNotes":"F Company, 1st Battalion, 125th Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -136,7 +136,7 @@
     "Zip":55350,
     "Phone":"320-587-2351",
     "Type":"NG",
-    "Principal unit":"E Co., 2nd Combined Arms Battalion, 136th Infantry",
+    "PrincipalUnitsNotes":"E Co., 2nd Combined Arms Battalion, 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -156,7 +156,7 @@
     "Zip":56501,
     "Phone":"218-847-1517",
     "Type":"NG",
-    "Principal unit":"Det. 1, A Co., 2nd Combined Arms Battalion 136th Infantry",
+    "PrincipalUnitsNotes":"Det. 1, A Co., 2nd Combined Arms Battalion 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -176,7 +176,7 @@
     "Zip":55987,
     "Phone":"507-453-2990",
     "Type":"NG",
-    "Principal unit":"C Co., 2nd Battalion, 135th Infantry Regiment",
+    "PrincipalUnitsNotes":"C Co., 2nd Battalion, 135th Infantry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -196,7 +196,7 @@
     "Zip":55063,
     "Phone":"651-654-5200",
     "Type":"NG",
-    "Principal unit":"B Troop, 1st Squadron, 94th Cavalry Regiment",
+    "PrincipalUnitsNotes":"B Troop, 1st Squadron, 94th Cavalry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/194cav",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -216,7 +216,7 @@
     "Zip":55118,
     "Phone":"651-552-7528",
     "Type":"NG",
-    "Principal unit":"A Co., 2nd Battalion, 135th Infantry Regiment",
+    "PrincipalUnitsNotes":"A Co., 2nd Battalion, 135th Infantry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -236,7 +236,7 @@
     "Zip":55068,
     "Phone":"651-282-4901",
     "Type":"NG",
-    "Principal unit":"34th Red Bull Infantry Division Hdqs.",
+    "PrincipalUnitsNotes":"34th Red Bull Infantry Division Hdqs.",
     "Website":"https://minnesotanationalguard.ng.mil/34id",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -256,7 +256,7 @@
     "Zip":56601,
     "Phone":"218-755-2990",
     "Type":"NG",
-    "Principal unit":"A Co-, 2nd Combined Arms Battalion 136th Infantry",
+    "PrincipalUnitsNotes":"A Co-, 2nd Combined Arms Battalion 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -276,7 +276,7 @@
     "Zip":56345,
     "Phone":"320-632-7000",
     "Type":"NG",
-    "Principal unit":"Camp Ripley Training Center Command",
+    "PrincipalUnitsNotes":"Camp Ripley Training Center Command",
     "Website":"https://minnesotanationalguard.ng.mil/crtc",
     "OtherInfo":"https://en.wikipedia.org/wiki/Camp_Ripley"
     }
@@ -296,7 +296,7 @@
     "Zip":56345,
     "Phone":"320-616-2646",
     "Type":"NG",
-    "Principal unit":"175th Regiment (Regional Training Institute)",
+    "PrincipalUnitsNotes":"175th Regiment (Regional Training Institute)",
     "Website":"https://minnesotanationalguard.ng.mil/175rti/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -316,7 +316,7 @@
     "Zip":55106,
     "Phone":"651-793-6522",
     "Type":"NG",
-    "Principal unit":"B Co, 1st Combined Arms Battalion, 194th Armor Regiment",
+    "PrincipalUnitsNotes":"B Co, 1st Combined Arms Battalion, 194th Armor Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/1194cab/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -336,7 +336,7 @@
     "Zip":55112,
     "Phone":"651-634-5229",
     "Type":"NG",
-    "Principal unit":"34th Red Bull Infantry Division Hdqs. (Pending)",
+    "PrincipalUnitsNotes":"34th Red Bull Infantry Division Hdqs. (Pending)",
     "Website":"https://minnesotanationalguard.ng.mil/34id",
     "OtherInfo":"https://en.wikipedia.org/wiki/Minnesota_National_Guard"
     }
@@ -356,7 +356,7 @@
     "Zip":56303,
     "Phone":"320-231-6080",
     "Type":"NG",
-    "Principal unit":"682nd Engineer Battalion",
+    "PrincipalUnitsNotes":"682nd Engineer Battalion",
     "Website":"https://minnesotanationalguard.ng.mil/682eng/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -376,7 +376,7 @@
     "Zip":55904,
     "Phone":"507-285-7346",
     "Type":"NG",
-    "Principal unit":"B Co., 2nd Battalion, 135th Infantry Regiment",
+    "PrincipalUnitsNotes":"B Co., 2nd Battalion, 135th Infantry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -396,7 +396,7 @@
     "Zip":56716,
     "Phone":"218-281-6059",
     "Type":"NG",
-    "Principal unit":"B Co-, 2nd Combined Arms Battalion 136th Infantry",
+    "PrincipalUnitsNotes":"B Co-, 2nd Combined Arms Battalion 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -416,7 +416,7 @@
     "Zip":56073,
     "Phone":"507-233-7801",
     "Type":"NG",
-    "Principal unit":"1st Battalion, 125th Field Artillery, Hdqs./Battery",
+    "PrincipalUnitsNotes":"1st Battalion, 125th Field Artillery, Hdqs./Battery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -436,7 +436,7 @@
     "Zip":55107,
     "Phone":"651-268-8724",
     "Type":"NG",
-    "Principal unit":"34th Expeditionary Combat Aviation Brigade (UH-60 Black Hawk and CH-47 Chinook helicopters)",
+    "PrincipalUnitsNotes":"34th Expeditionary Combat Aviation Brigade (UH-60 Black Hawk and CH-47 Chinook helicopters)",
     "Website":"https://minnesotanationalguard.ng.mil/34cab",
     "OtherInfo":"https://en.wikipedia.org/wiki/34th_Combat_Aviation_Brigade"
     }
@@ -456,7 +456,7 @@
     "Zip":56304,
     "Phone":"651-282-4549",
     "Type":"NG",
-    "Principal unit":"Army Aviation Support Facility #2",
+    "PrincipalUnitsNotes":"Army Aviation Support Facility #2",
     "Website":"https://minnesotanationalguard.ng.mil/34cab",
     "OtherInfo":"https://it.wikipedia.org/wiki/Minnesota_Army_National_Guard"
     }
@@ -476,7 +476,7 @@
     "Zip":55746,
     "Phone":"218-262-6758",
     "Type":"NG",
-    "Principal unit":"A Troop, 1st Squadron, 94th Cavalry Regiment",
+    "PrincipalUnitsNotes":"A Troop, 1st Squadron, 94th Cavalry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/194cav",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -496,7 +496,7 @@
     "Zip":55060,
     "Phone":"507-455-5842",
     "Type":"NG",
-    "Principal unit":"2nd Battalion, 135th Infantry Regiment, Hdqs./Co.",
+    "PrincipalUnitsNotes":"2nd Battalion, 135th Infantry Regiment, Hdqs./Co.",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -516,7 +516,7 @@
     "Zip":56208,
     "Phone":"320-289-1343",
     "Type":"NG",
-    "Principal unit":"175th Forward Support Co., 1st Battalion, 151st Field Artillery",
+    "PrincipalUnitsNotes":"175th Forward Support Co., 1st Battalion, 151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -536,7 +536,7 @@
     "Zip":56701,
     "Phone":"218-681-0924",
     "Type":"NG",
-    "Principal unit":"Det.1, B Co., 2nd Combined Arms Battalion 136th Infantry",
+    "PrincipalUnitsNotes":"Det.1, B Co., 2nd Combined Arms Battalion 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -556,7 +556,7 @@
     "Zip":55021,
     "Phone":"651-268-8355",
     "Type":"NG",
-    "Principal unit":"Co C, Div. H&H Battalion 34th Infantry Division",
+    "PrincipalUnitsNotes":"Co C, Div. H&H Battalion 34th Infantry Division",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -576,7 +576,7 @@
     "Zip":55033,
     "Phone":"651-268-8572",
     "Type":"NG",
-    "Principal unit":"434th Chemical Company",
+    "PrincipalUnitsNotes":"434th Chemical Company",
     "Website":"https://minnesotanationalguard.ng.mil/434th/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -596,7 +596,7 @@
     "Zip":56278,
     "Phone":"320-839-3169",
     "Type":"NG",
-    "Principal unit":"Battery C, 1st Battalion, 151st Field Artillery",
+    "PrincipalUnitsNotes":"Battery C, 1st Battalion, 151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -616,7 +616,7 @@
     "Zip":56156,
     "Phone":"507-283-4403",
     "Type":"NG",
-    "Principal unit":"A Battery, 1st Battalion, 125th Field Artillery",
+    "PrincipalUnitsNotes":"A Battery, 1st Battalion, 125th Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -636,7 +636,7 @@
     "Zip":56308,
     "Phone":"320-762-7817",
     "Type":"NG",
-    "Principal unit":"Battery C 1-194 FA, 1st Battalion, 151st Field Artillery",
+    "PrincipalUnitsNotes":"Battery C 1-194 FA, 1st Battalion, 151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -656,7 +656,7 @@
     "Zip":55431,
     "Phone":"651-268-8772",
     "Type":"NG",
-    "Principal unit":"1st Armored Brigade Combat Team Hdqs. 34 Infantry Division",
+    "PrincipalUnitsNotes":"1st Armored Brigade Combat Team Hdqs. 34 Infantry Division",
     "Website":"https://minnesotanationalguard.ng.mil/1abct",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -676,7 +676,7 @@
     "Zip":55082,
     "Phone":"651-268-8100",
     "Type":"NG",
-    "Principal unit":"334th Brigade Engineer Battalion",
+    "PrincipalUnitsNotes":"334th Brigade Engineer Battalion",
     "Website":"https://minnesotanationalguard.ng.mil/334beb/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -696,7 +696,7 @@
     "Zip":55811,
     "Phone":"218-723-4756",
     "Type":"NG",
-    "Principal unit":"H&H Troop, 1st Squadron, 94th Cavalry Regiment; D Co",
+    "PrincipalUnitsNotes":"H&H Troop, 1st Squadron, 94th Cavalry Regiment; D Co",
     "Website":"https://minnesotanationalguard.ng.mil/194cav",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -716,7 +716,7 @@
     "Zip":55303,
     "Phone":"763-576-5785",
     "Type":"NG",
-    "Principal unit":"1st Battalion, 125th Field Artillery, Hdqs./Battery Det.",
+    "PrincipalUnitsNotes":"1st Battalion, 125th Field Artillery, Hdqs./Battery Det.",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -736,7 +736,7 @@
     "Zip":56007,
     "Phone":"507-379-3408",
     "Type":"NG",
-    "Principal unit":"D Co. 2nd Battalion, 135th Infantry Regiment",
+    "PrincipalUnitsNotes":"D Co. 2nd Battalion, 135th Infantry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/2-135",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -756,7 +756,7 @@
     "Zip":56164,
     "Phone":"507-825-6898",
     "Type":"NG",
-    "Principal unit":"A Battery, 1st Battalion, 125th Field Artillery",
+    "PrincipalUnitsNotes":"A Battery, 1st Battalion, 125th Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -776,7 +776,7 @@
     "Zip":56537,
     "Phone":"218-739-7581",
     "Type":"NG",
-    "Principal unit":"Det. 1, H&H Co, 2nd Combined Arms Battalion, 136th Infantry, Hdqs./Co.",
+    "PrincipalUnitsNotes":"Det. 1, H&H Co, 2nd Combined Arms Battalion, 136th Infantry, Hdqs./Co.",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -796,7 +796,7 @@
     "Zip":55811,
     "Phone":"218-788-7210",
     "Type":"ANG",
-    "Principal unit":"148th Fighter Wing (F-16's)",
+    "PrincipalUnitsNotes":"148th Fighter Wing (F-16's)",
     "Website":"https://www.148fw.ang.af.mil/",
     "OtherInfo":"https://en.wikipedia.org/wiki/148th_Fighter_Wing"
     }
@@ -816,7 +816,7 @@
     "Zip":55112,
     "Phone":"651-282-4087",
     "Type":"NG",
-    "Principal unit":"834th Aviation Support Battalion (Substanial NG Property from TCAAP)",
+    "PrincipalUnitsNotes":"834th Aviation Support Battalion (Substanial NG Property from TCAAP)",
     "Website":"https://minnesotanationalguard.ng.mil/834asb/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -836,7 +836,7 @@
     "Zip":56258,
     "Phone":"507-537-6104",
     "Type":"NG",
-    "Principal unit":"Battery A, 1st Battalion, 151st Field Artillery",
+    "PrincipalUnitsNotes":"Battery A, 1st Battalion, 151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -856,7 +856,7 @@
     "Zip":56256,
     "Phone":"320-598-3466",
     "Type":"NG",
-    "Principal unit":"Battery B, 1st Battalion, 151st Field Artillery",
+    "PrincipalUnitsNotes":"Battery B, 1st Battalion, 151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -876,7 +876,7 @@
     "Zip":55008,
     "Phone":"763-689-7065",
     "Type":"NG",
-    "Principal unit":"850th Horizontal Engineer Company, 682nd Engineer Battalion",
+    "PrincipalUnitsNotes":"850th Horizontal Engineer Company, 682nd Engineer Battalion",
     "Website":"https://minnesotanationalguard.ng.mil/682eng/ ",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -896,7 +896,7 @@
     "Zip":55362,
     "Phone":"763-295-6671",
     "Type":"NG",
-    "Principal unit":"257th Military Police Company",
+    "PrincipalUnitsNotes":"257th Military Police Company",
     "Website":"https://minnesotanationalguard.ng.mil/257th/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -916,7 +916,7 @@
     "Zip":56482,
     "Phone":"218-631-1701",
     "Type":"NG",
-    "Principal unit":"C Co., 2nd Combined Arms Battalion, 136th Infantry",
+    "PrincipalUnitsNotes":"C Co., 2nd Combined Arms Battalion, 136th Infantry",
     "Website":"https://minnesotanationalguard.ng.mil/2-136",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -936,7 +936,7 @@
     "Zip":56081,
     "Phone":"507-375-3821",
     "Type":"NG",
-    "Principal unit":"F Company, 1st Battalion, 125th Field Artillery",
+    "PrincipalUnitsNotes":"F Company, 1st Battalion, 125th Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -956,7 +956,7 @@
     "Zip":55355,
     "Phone":"320-693-6066",
     "Type":"NG",
-    "Principal unit":"849th Mobility Augmentation Co",
+    "PrincipalUnitsNotes":"849th Mobility Augmentation Co",
     "Website":"https://minnesotanationalguard.ng.mil/682eng/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -976,7 +976,7 @@
     "Zip":56283,
     "Phone":"507-637-4085",
     "Type":"NG",
-    "Principal unit":"Co C, 682nd Engineering Battalion",
+    "PrincipalUnitsNotes":"Co C, 682nd Engineering Battalion",
     "Website":"https://minnesotanationalguard.ng.mil/682eng/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -996,7 +996,7 @@
     "Zip":55443,
     "Phone":"651-268-8087",
     "Type":"NG",
-    "Principal unit":"347th Regional Support Group",
+    "PrincipalUnitsNotes":"347th Regional Support Group",
     "Website":"https://minnesotanationalguard.ng.mil/347rsg/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1016,7 +1016,7 @@
     "Zip":55101,
     "Phone":"651-282-4044",
     "Type":"ANG, NG",
-    "Principal unit":"MN NG Joint Force Hdqs.",
+    "PrincipalUnitsNotes":"MN NG Joint Force Hdqs.",
     "Website":"https://minnesotanationalguard.ng.mil/jfhq",
     "OtherInfo":"https://en.wikipedia.org/wiki/Minnesota_National_Guard"
     }
@@ -1036,7 +1036,7 @@
     "Zip":56201,
     "Phone":"320-231-5459",
     "Type":"NG",
-    "Principal unit":"Forward Support Company, 682nd Engineer Battalion",
+    "PrincipalUnitsNotes":"Forward Support Company, 682nd Engineer Battalion",
     "Website":"https://minnesotanationalguard.ng.mil/682eng/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1056,7 +1056,7 @@
     "Zip":55111,
     "Phone":"651-281-3874",
     "Type":"NG",
-    "Principal unit":"55th Civil Support Team",
+    "PrincipalUnitsNotes":"55th Civil Support Team",
     "Website":"https://minnesotanationalguard.ng.mil/55cst",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1076,7 +1076,7 @@
     "Zip":56378,
     "Phone":"320-762-7817",
     "Type":"NG",
-    "Principal unit":"C Co., 1st Combined Arms Battalion, 194th Armor Regiment",
+    "PrincipalUnitsNotes":"C Co., 1st Combined Arms Battalion, 194th Armor Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/1194cab/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1096,7 +1096,7 @@
     "Zip":55111,
     "Phone":"612-713-1000  ",
     "Type":"ANG",
-    "Principal unit":"133rd Airlift Wing (C-130's)",
+    "PrincipalUnitsNotes":"133rd Airlift Wing (C-130's)",
     "Website":"https://www.133aw.ang.af.mil/",
     "OtherInfo":"https://en.wikipedia.org/wiki/133rd_Airlift_Wing"
     }
@@ -1116,7 +1116,7 @@
     "Zip":56031,
     "Phone":"507-235-3917",
     "Type":"NG",
-    "Principal unit":"C Battery, 1st Battalion, 125th Field Artillery",
+    "PrincipalUnitsNotes":"C Battery, 1st Battalion, 125th Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/1-125/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1136,7 +1136,7 @@
     "Zip":56265,
     "Phone":"320-269-9284",
     "Type":"NG",
-    "Principal unit":"1st Battalion, 151st Field Artillery, Hdqs./Co.",
+    "PrincipalUnitsNotes":"1st Battalion, 151st Field Artillery, Hdqs./Co.",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1156,7 +1156,7 @@
     "Zip":56267,
     "Phone":"320-589-7293",
     "Type":"NG",
-    "Principal unit":"175th Forward Support Company, 1st Battalion, 151st Field Artillery",
+    "PrincipalUnitsNotes":"175th Forward Support Company, 1st Battalion, 151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1176,7 +1176,7 @@
     "Zip":55912,
     "Phone":"651-282-8064",
     "Type":"NG",
-    "Principal unit":"224th Transportation Company; Co I, 334th Brigade Support Btl, 2nd Brigade, 135th Infantry Regiment, 34th Infantry Division",
+    "PrincipalUnitsNotes":"224th Transportation Company; Co I, 334th Brigade Support Btl, 2nd Brigade, 135th Infantry Regiment, 34th Infantry Division",
     "Website":"https://minnesotanationalguard.ng.mil/224th",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1196,7 +1196,7 @@
     "Zip":55720,
     "Phone":"218-879-0877",
     "Type":"NG",
-    "Principal unit":"C Troop, 1st Squadron, 94th Cavalry Regiment",
+    "PrincipalUnitsNotes":"C Troop, 1st Squadron, 94th Cavalry Regiment",
     "Website":"https://minnesotanationalguard.ng.mil/194cav",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1216,7 +1216,7 @@
     "Zip":55077,
     "Phone":"651-282-4974",
     "Type":"NG",
-    "Principal unit":"Division Headquarters and Headquarters Battalion, 34th Infantry Division",
+    "PrincipalUnitsNotes":"Division Headquarters and Headquarters Battalion, 34th Infantry Division",
     "Website":"https://minnesotanationalguard.ng.mil/dhhb/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1236,7 +1236,7 @@
     "Zip":55016,
     "Phone":"651-268-8190",
     "Type":"NG",
-    "Principal unit":"204th Area Support Medical Company",
+    "PrincipalUnitsNotes":"204th Area Support Medical Company",
     "Website":"https://minnesotanationalguard.ng.mil/204asmc",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1256,7 +1256,7 @@
     "Zip":55066,
     "Phone":"651-267-3769",
     "Type":"NG",
-    "Principal unit":"434th Chemical Company Det.",
+    "PrincipalUnitsNotes":"434th Chemical Company Det.",
     "Website":"https://minnesotanationalguard.ng.mil/434th/",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1276,7 +1276,7 @@
     "Zip":55719,
     "Phone":"651-282-4119",
     "Type":"NG",
-    "Principal unit":"114th Transportation Company",
+    "PrincipalUnitsNotes":"114th Transportation Company",
     "Website":"https://minnesotanationalguard.ng.mil/114tc",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1296,7 +1296,7 @@
     "Zip":56277,
     "Phone":"320-523-2545",
     "Type":"NG",
-    "Principal unit":"Btry B (Det), 1-151st Field Artillery",
+    "PrincipalUnitsNotes":"Btry B (Det), 1-151st Field Artillery",
     "Website":"https://minnesotanationalguard.ng.mil/151fa/  ",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }
@@ -1316,7 +1316,7 @@
     "Zip":55744,
     "Phone":"218-327-4498",
     "Type":"NG",
-    "Principal unit":"C Co., 2nd Combined Arms Battalion, 136th Infantry",
+    "PrincipalUnitsNotes":"C Co., 2nd Combined Arms Battalion, 136th Infantry",
     "Website":"",
     "OtherInfo":"https://en.wikipedia.org/wiki/List_of_Minnesota_National_Guard_Units"
     }

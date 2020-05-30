@@ -16,7 +16,7 @@
     "Phone":"651-281-3848",
     "Type":"Army Reserve",
     "TypeLabel":"AFRC",
-    "Principal Units/Notes":"704 CM DET 1 CO (NBC RECON)",
+    "PrincipalUnitsNotes":"704 CM DET 1 CO (NBC RECON)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -36,7 +36,7 @@
     "Phone":"507-334-9687",
     "Type":"Army Reserve",
     "TypeLabel":"AFRC",
-    "Principal Units/Notes":"417th Light Equipment Maintenance Co",
+    "PrincipalUnitsNotes":"417th Light Equipment Maintenance Co",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -56,7 +56,7 @@
     "Phone":"320-251-7942",
     "Type":"Army Reserve",
     "TypeLabel":"AFRC",
-    "Principal Units/Notes":"367 Engineer Battalion HHS (CBT)(CORPS)(LT)",
+    "PrincipalUnitsNotes":"367 Engineer Battalion HHS (CBT)(CORPS)(LT)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -76,7 +76,7 @@
     "Phone":"612-713-4600",
     "Type":"Navy Reserve",
     "TypeLabel":"Navy",
-    "Principal Units/Notes":"CJNF HQ; Joint Reserve Intelligence Center; Various Support Units",
+    "PrincipalUnitsNotes":"CJNF HQ; Joint Reserve Intelligence Center; Various Support Units",
     "Website":"https://www.facebook.com/NoscMinneapolisOmbudsman/  ",
     "Other Info":""
     }
@@ -96,7 +96,7 @@
     "Phone":"218-829-9352",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"367 Engineer Battalion (CBT)(CORPS)(LT)",
+    "PrincipalUnitsNotes":"367 Engineer Battalion (CBT)(CORPS)(LT)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -116,7 +116,7 @@
     "Phone":"763-682-2582",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"353 Transportation Company",
+    "PrincipalUnitsNotes":"353 Transportation Company",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -136,7 +136,7 @@
     "Phone":"218-727-1255",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"312th Engineer Co.; 477th Medical Co. Amb (GRD)",
+    "PrincipalUnitsNotes":"312th Engineer Co.; 477th Medical Co. Amb (GRD)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -156,7 +156,7 @@
     "Phone":"612-713-1000",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"1-340 TSBn, 181 INF BDE, 1st Army DIV West,  372nd Engr Gp",
+    "PrincipalUnitsNotes":"1-340 TSBn, 181 INF BDE, 1st Army DIV West,  372nd Engr Gp",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -176,7 +176,7 @@
     "Phone":"507-625-4330",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"Co B 367 En Bn (CBT)(CORPS), 216 QM CO (FORCE PROV)",
+    "PrincipalUnitsNotes":"Co B 367 En Bn (CBT)(CORPS), 216 QM CO (FORCE PROV)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -196,7 +196,7 @@
     "Phone":"507-289-6869",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"79 MP Co (CBT SPT) SOUTH; 7212 U Med Spt (MSU)",
+    "PrincipalUnitsNotes":"79 MP Co (CBT SPT) SOUTH; 7212 U Med Spt (MSU)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -216,7 +216,7 @@
     "Phone":"320-251-7942",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"367th Engineer Battalion",
+    "PrincipalUnitsNotes":"367th Engineer Battalion",
     "Website":"https://www.facebook.com/pages/US-Army-Reserve/450143115155557",
     "Other Info":""
     }
@@ -236,7 +236,7 @@
     "Phone":"651-628-2141",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"407th Civil Affairs",
+    "PrincipalUnitsNotes":"407th Civil Affairs",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -256,7 +256,7 @@
     "Phone":"651-565-4564",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"417 OD TM WVeh Rep Co Maint",
+    "PrincipalUnitsNotes":"417 OD TM WVeh Rep Co Maint",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -276,7 +276,7 @@
     "Phone":"507-376-4533",
     "Type":"Army Reserve",
     "TypeLabel":"Army",
-    "Principal Units/Notes":"452 QM Det 1 Co Sup (DS)",
+    "PrincipalUnitsNotes":"452 QM Det 1 Co Sup (DS)",
     "Website":"https://www.globalsecurity.org/military/agency/army/88rsc-mn.htm",
     "Other Info":""
     }
@@ -296,7 +296,7 @@
     "Phone":"612-726-9440",
     "Type":"Air Force Reserve",
     "TypeLabel":"Air Force",
-    "Principal Units/Notes":"934th Airlift Wing (C-130's)",
+    "PrincipalUnitsNotes":"934th Airlift Wing (C-130's)",
     "Website":"https://www.minneapolis.afrc.af.mil/",
     "Other Info":"https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_Joint_Air_Reserve_Station"
     }
@@ -316,7 +316,7 @@
     "Phone":"651-290-5807",
     "Type":"Army Active",
     "TypeLabel":"USACE",
-    "Principal Units/Notes":"U.S. Army and Civilan Engineers and Support Staff",
+    "PrincipalUnitsNotes":"U.S. Army and Civilan Engineers and Support Staff",
     "Website":"https://www.mvp.usace.army.mil/Missions/Emergency-Management/",
     "Other Info":"https://www.usace.army.mil/locations.aspx"
     }
@@ -336,7 +336,7 @@
     "Phone":"218-720-5260 x 35265",
     "Type":"Army Active",
     "TypeLabel":"USACE",
-    "Principal Units/Notes":"Federal port facility; Duluth Area Office Floating Plant",
+    "PrincipalUnitsNotes":"Federal port facility; Duluth Area Office Floating Plant",
     "Website":"https://en.wikipedia.org/wiki/U.S._Army_Corps_of_Engineers_Duluth_Vessel_Yard",
     "Other Info":""
     }
@@ -356,7 +356,7 @@
     "Phone":"218-720-5412",
     "Type":"USCG Reserve",
     "TypeLabel":"Coast Guard",
-    "Principal Units/Notes":"4 USCG Reservists from Memorial Day to Labor Day",
+    "PrincipalUnitsNotes":"4 USCG Reservists from Memorial Day to Labor Day",
     "Website":"https://www.atlanticarea.uscg.mil/Our-Organization/District-9/Ninth-District-Units/Sector-Sault-Sainte-Marie/Units/North-Superior/",
     "Other Info":""
     }
@@ -376,7 +376,7 @@
     "Phone":"952-806-0021",
     "Type":"USCG Active",
     "TypeLabel":"Coast Guard",
-    "Principal Units/Notes":"USCG Marine Safety Detachment - St. Paul",
+    "PrincipalUnitsNotes":"USCG Marine Safety Detachment - St. Paul",
     "Website":"https://www.atlanticarea.uscg.mil/Our-Organization/District-8/District-Units/Sector-Upper-Mississippi-River/Marine-Safety-Detachments/",
     "Other Info":""
     }
@@ -396,7 +396,7 @@
     "Phone":"218-529-3100",
     "Type":"USCG Active",
     "TypeLabel":"Coast Guard",
-    "Principal Units/Notes":"Aids to Navigation Team - Duluth, USCGC ALDER",
+    "PrincipalUnitsNotes":"Aids to Navigation Team - Duluth, USCGC ALDER",
     "Website":"https://www.atlanticarea.uscg.mil/Our-Organization/District-9/Ninth-District-Units/Sector-Sault-Sainte-Marie/Units/Duluth/",
     "Other Info":"https://www.atlanticarea.uscg.mil/Our-Organization/District-9/Ninth-District-Staff/Prevention-Division/Cutters/ALDER/"
     }
@@ -416,7 +416,7 @@
     "Phone":"612-713-1893",
     "Type":"USMC Reserve",
     "TypeLabel":"USMC",
-    "Principal Units/Notes":"Wing Support Squadron 471; resident of NOSC Minneapolis",
+    "PrincipalUnitsNotes":"Wing Support Squadron 471; resident of NOSC Minneapolis",
     "Website":"https://www.marforres.marines.mil/Major-Subordinate-Commands/4th-Marine-Aircraft-Wing/Marine-Aircraft-Group-41/Marine-Wing-Support-Squadron-471/",
     "Other Info":""
     }

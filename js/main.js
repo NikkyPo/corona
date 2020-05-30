@@ -20,30 +20,6 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
-
-
-// $.getJSON('data/counties.geojson')
-//  .done( data => {
-//    counties = new L.geoJSON(data, {
-//      style: function (feature) {
-//        return {
-//          weight: 1,
-//          opacity: 0.2,
-//          color: '#000000',
-//          opacity: 0.2,
-//          fill: false
-//        };
-//      },
-//      onEachFeature: function (feature, layer) {
-//        layer.bindTooltip(function (layer) {
-//            return layer.feature.properties.NAME; //merely sets the tooltip text
-//         }, {direction: "center", permanent: true, opacity: 1, className: 'county'}  //then add your options
-//        )
-// }
-// }).addTo(mymap);
-// });
-
-
 // Get yesterday's date
 const today = new Date()
 const yesterday = new Date(today)
@@ -193,7 +169,7 @@ $.getJSON('data/airport/airport.geojson')
 // Bases
 var bases = L.esri.featureLayer({
   url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0",
-  where: "SITE_NAME NOT LIKE 'Duluth IAP' AND SITE_NAME NOT LIKE 'NG Duluth NG Armory' AND SITE_NAME NOT LIKE 'NG St Cloud NG Armory' AND SITE_NAME NOT LIKE 'NG St Cloud AASF' AND SITE_NAME NOT LIKE 'NG Rochester NGA and OMS 2' AND SITE_NAME NOT LIKE 'NG Rosemount NG Armory'",
+  where: "STATE_TERR NOT LIKE 'Minnesota'",
 });
 bases.setStyle({
   color: 'green',
@@ -218,7 +194,7 @@ $.getJSON('data/military/federal.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
            });
          case "Navy":
            var navy_federal = L.icon({
@@ -227,7 +203,7 @@ $.getJSON('data/military/federal.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: navy_federal}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
            });
          case "USMC":
            var usmc_federal = L.icon({
@@ -236,7 +212,7 @@ $.getJSON('data/military/federal.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: usmc_federal}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
            });
            case "Air Force":
              var military_airport_national = L.icon({
@@ -245,7 +221,7 @@ $.getJSON('data/military/federal.geojson')
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
              });
            case "Coast Guard":
              var coast_federal = L.icon({
@@ -357,7 +333,7 @@ $.getJSON('data/military/national_guard.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: armory_national}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
            });
          case "Military Airport":
            var military_airport_national = L.icon({
@@ -366,7 +342,7 @@ $.getJSON('data/military/national_guard.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
            });
          case "Helo":
            var helo_national = L.icon({
@@ -375,7 +351,7 @@ $.getJSON('data/military/national_guard.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: helo_national}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
            });
            case "Training":
              var training_national = L.icon({
@@ -384,7 +360,7 @@ $.getJSON('data/military/national_guard.geojson')
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: training_national}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
              });
            case "WMD":
              var wmd_national = L.icon({
@@ -393,7 +369,7 @@ $.getJSON('data/military/national_guard.geojson')
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: wmd_national}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
              });
              case "AFRC":
                var afrc_federal = L.icon({
@@ -402,7 +378,7 @@ $.getJSON('data/military/national_guard.geojson')
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
-                 return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+                 return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
                });
        }
   }
@@ -450,6 +426,35 @@ policeStations.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}<br><br>Phone: </p>', layer.feature.properties);
 });
 
+// var deaths = L.esri.featureLayer({
+//   url: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases2_v1/FeatureServer/1",
+//   where: "Province_State = 'Minnesota'"
+// });
+////////////////////////////////////
+// Positive COVID counties
+// other url:
+var positiveCounties = L.esri.featureLayer({
+  url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/PositiveCountyCount/FeatureServer/0",
+  style: function (feature) {
+  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY < 6) {
+    return { fillColor: 'rgb(230, 238, 207)', fill: true, stroke: false,fillOpacity: 0.6};
+  } else if (feature.properties.MLMIS_CTY > 5 && feature.properties.MLMIS_CTY < 51) {
+    return { fillColor: 'rgb(123, 204, 196)', fill: true, stroke: false,fillOpacity: 0.6};
+  } else if (feature.properties.MLMIS_CTY > 50 && feature.properties.MLMIS_CTY < 501) {
+    return { fillColor: 'rgb(67, 162, 202)', fill: true, stroke: false,fillOpacity: 0.6};
+  } else {
+    return { fillColor: 'rgb(7, 85, 145)', fill: true, stroke: false,fillOpacity: 0.6};
+  }
+}
+});
+positiveCounties.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{NAME_LOWER} County</strong><br><br>Positive Cases: {MLMIS_CTY}</p>', layer.feature.properties);
+});
+
+// var myFeatureGroup = L.featureGroup([deaths, positiveCounties])
+//   .on("click", function(e) {
+//   console.log(e.layer.feature); // NEED THE 'e' capture all data properties from all layers (merged)
+// })
 /////////////////////////////////////////
 // Prisons
 $.getJSON('data/prison/prisons.geojson')
@@ -584,7 +589,7 @@ var testingIcon = L.icon({
   popupAnchor: [0, -28]
 });
 var testing = L.esri.featureLayer({
-  url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/arcgis/rest/services/TestCollectionLocations/FeatureServer/0",
+  url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/ArcGIS/rest/services/CovidTestLocations_ProductionMap/FeatureServer/0",
   where: "State = 'MN'",
   pointToLayer: function (feature, latlng) {
     switch(feature.properties["DirUtilCol"]) {
@@ -711,6 +716,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "policeStations":
       toggleLayer(this.checked, policeStations);
+    break;
+    case "positiveCounties":
+      toggleLayer(this.checked, positiveCounties);
     break;
     case "prisons":
       toggleLayer(this.checked, prisons);
