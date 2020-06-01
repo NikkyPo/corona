@@ -426,10 +426,13 @@ policeStations.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}<br><br>Phone: </p>', layer.feature.properties);
 });
 
-// var deaths = L.esri.featureLayer({
+
+// var deaths = L.esri.query({
 //   url: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases2_v1/FeatureServer/1",
 //   where: "Province_State = 'Minnesota'"
 // });
+
+
 ////////////////////////////////////
 // Positive COVID counties
 // other url:
@@ -447,14 +450,42 @@ var positiveCounties = L.esri.featureLayer({
   }
 }
 });
-positiveCounties.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME_LOWER} County</strong><br><br>Positive Cases: {MLMIS_CTY}</p>', layer.feature.properties);
+
+positiveCounties.on('popupopen', function(evt) {
+	// when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
+  // so call "queryTrees", passing that info
+  queryInfo(evt.layer.feature, evt.popup);
 });
+
+positiveCounties.bindPopup(function (layer) {
+  // return temporary message while the "queryTrees" function called from the popupopen function runs:
+	return L.Util.template('Getting information');
+});
+
+var queryInfo = function(feature, popup) {
+  L.esri.query({
+    url: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases2_v1/FeatureServer/1",
+    where: "Province_State = 'Minnesota'"
+  })
+  .within(feature)
+  .run(function(error, featureCollection) {
+    var confirmed = featureCollection.features[0].properties.Confirmed
+    var deaths = featureCollection.features[0].properties.Deaths
+    var recovered = featureCollection.features[0].properties.Recovered
+
+  	// this function is called when the query is complete. Update the currently open popup.features[0].properties.Confirmed
+    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: ' + confirmed + '<br>Recovered: ' + recovered +  '<br>Deaths: ' + deaths, feature.properties));
+  }.bind(this));
+}
+// positiveCounties.bindPopup(function (layer) {
+//   return L.Util.template('<p><strong>{NAME_LOWER} County</strong><br><br>Positive Cases: {MLMIS_CTY}</p>', layer.feature.properties);
+// });
 
 // var myFeatureGroup = L.featureGroup([deaths, positiveCounties])
 //   .on("click", function(e) {
 //   console.log(e.layer.feature); // NEED THE 'e' capture all data properties from all layers (merged)
 // })
+
 /////////////////////////////////////////
 // Prisons
 $.getJSON('data/prison/prisons.geojson')
