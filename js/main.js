@@ -469,16 +469,14 @@ var queryInfo = function(feature, popup) {
   .within(feature)
   .run(function(error, featureCollection) {
     try {
-      var confirmed = featureCollection.features[0].properties.Confirmed
       var deaths = featureCollection.features[0].properties.Deaths
       var recovered = featureCollection.features[0].properties.Recovered
     } catch (error) {
-      var confirmed = "no data"
       var deaths = "no data"
       var recovered = "no data"
     }
   	// this function is called when the query is complete. Update the currently open popup.
-    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: ' + confirmed + '<br>Recovered: ' + recovered +  '<br>Deaths: ' + deaths, feature.properties));
+    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Recovered: ' + recovered +  '<br>Deaths: ' + deaths, feature.properties));
   }.bind(this));
 }
 
