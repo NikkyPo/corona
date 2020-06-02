@@ -5,22 +5,22 @@
   width: 100%;
   overflow: hidden;
   z-index: 2000; }
-  .sidebar.collapsed {
-    width: 40px; }
-  @media (min-width: 768px) {
-    .sidebar {
-      top: 10px;
-      bottom: 10px;
-      transition: width 500ms; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .sidebar {
-      width: 235px; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .sidebar {
-      width: 300px; } }
-  @media (min-width: 1200px) {
-    .sidebar {
-      width: 370px; } }
+.sidebar.collapsed {
+  width: 40px; }
+@media (min-width: 768px) {
+  .sidebar {
+    top: 10px;
+    bottom: 10px;
+    transition: width 500ms; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 245px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    width: 300px; } }
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 400px; } }
 
 .sidebar-left {
   left: 0; }
@@ -111,7 +111,7 @@
       min-width: 250px; } }
   @media (min-width: 1200px) {
     .sidebar-pane {
-      min-width: 420px; } }
+      min-width: 350px; } }
 
 .sidebar-header {
   margin: -10px -20px 0;
@@ -165,15 +165,15 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 245px; } }
+    left: 315px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 310px; } }
+    left: 400px; } }
 
 @media (min-width: 1200px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 380px; } }
+    left: 470px; } }
 
 @media (min-width: 768px) {
   .sidebar-left.collapsed ~ .sidebar-map .leaflet-left {
@@ -185,15 +185,15 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
-    right: 245px; } }
+    right: 315px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
-    right: 310px; } }
+    right: 400px; } }
 
 @media (min-width: 1200px) {
   .sidebar-right ~ .sidebar-map .leaflet-right {
-    right: 380px; } }
+    right: 470px; } }
 
 @media (min-width: 768px) {
   .sidebar-right.collapsed ~ .sidebar-map .leaflet-right {

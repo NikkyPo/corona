@@ -453,7 +453,6 @@ var positiveCounties = L.esri.featureLayer({
 
 positiveCounties.on('popupopen', function(evt) {
 	// when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
-  // so call "queryTrees", passing that info
   queryInfo(evt.layer.feature, evt.popup);
 });
 
@@ -469,22 +468,19 @@ var queryInfo = function(feature, popup) {
   })
   .within(feature)
   .run(function(error, featureCollection) {
-    var confirmed = featureCollection.features[0].properties.Confirmed
-    var deaths = featureCollection.features[0].properties.Deaths
-    var recovered = featureCollection.features[0].properties.Recovered
-
-  	// this function is called when the query is complete. Update the currently open popup.features[0].properties.Confirmed
+    try {
+      var confirmed = featureCollection.features[0].properties.Confirmed
+      var deaths = featureCollection.features[0].properties.Deaths
+      var recovered = featureCollection.features[0].properties.Recovered
+    } catch (error) {
+      var confirmed = "no data"
+      var deaths = "no data"
+      var recovered = "no data"
+    }
+  	// this function is called when the query is complete. Update the currently open popup.
     popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: ' + confirmed + '<br>Recovered: ' + recovered +  '<br>Deaths: ' + deaths, feature.properties));
   }.bind(this));
 }
-// positiveCounties.bindPopup(function (layer) {
-//   return L.Util.template('<p><strong>{NAME_LOWER} County</strong><br><br>Positive Cases: {MLMIS_CTY}</p>', layer.feature.properties);
-// });
-
-// var myFeatureGroup = L.featureGroup([deaths, positiveCounties])
-//   .on("click", function(e) {
-//   console.log(e.layer.feature); // NEED THE 'e' capture all data properties from all layers (merged)
-// })
 
 /////////////////////////////////////////
 // Prisons
