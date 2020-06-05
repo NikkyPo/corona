@@ -32,43 +32,46 @@ $("#date").attr("value", displayDate)
 $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
  .done( data => {
   cases = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
-     minDetailZoom: 0,
-     maxDetailZoom: 8,
-     attribution: "COVID-19 data is from the University of Virginia Biocomplexity Institute's COVID-19 Surveillance <a href='http://nssac.bii.virginia.edu/covid-19/dashboard/'>Dashboard</a> <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC</a>",
-     style: function(f, name) {
-       //console.log(f, name);
-       const state = f.properties.st_name;
-       const county = f.properties.cty_name;
+    minDetailZoom: 0,
+    maxDetailZoom: 8,
+    attribution: "COVID-19 data is from the New York Times <a href='https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html'>Dashboard</a> <a href='https://github.com/nytimes/covid-19-data'>Data Source</a>  <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC</a>",
+    style: function(f, name) {
+      //console.log(f, name);
+      const state = f.properties.st_name;
+      const county = f.properties.cty_name;
+      const population = f.properties.tot_pop;
 
-       let r = 255;
-       let g = 255;
-       let b = 255;
-       if(data[state] &&
-        data[state]["counties"] &&
-        data[state]["counties"][county] &&
-        data[state]["counties"][county][displayDate]) {
-         const cases = data[state]["counties"][county][displayDate];
-         const ln_cases = Math.log(cases);
-         if (ln_cases <= 7.0) {
-           r = 255;
-           g = b = 215 - Math.floor(ln_cases * 255 / 7);
-         } else {
-           b = Math.floor((ln_cases - 7) * (255 / 5));
-           g = 0;
-           r = 255 - (b / 2);
-         }
-       }
-       const rgb = (255 << 16) + (g << 8) + (b);
+      let r = 255;
+      let g = 255;
+      let b = 255;
+      if(data[state] &&
+       data[state]["counties"] &&
+       data[state]["counties"][county] &&
+       data[state]["counties"][county][displayDate]) {
+        const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
+        const log_cases = (cases > 1) ? Math.log10(cases) : 0;
 
-       return ({
-         stroke: false,
-         fillColor: '#'+rgb.toString(16),
-         fill: true,
-         fillOpacity: 0.6
-       });
-     },
+        if (log_cases <= 2.5) {
+          r = 255;
+          g = b = 255 - Math.floor(log_cases * 255 / 2.5);
+        } else {
+          b = Math.floor((log_cases - 2.5) * (255 / 2.5));
+          g = 0;
+          r = 255 - (b / 2);
+        }
+        console.log(county, cases, log_cases, r, g, b);
+      }
+      const rgb = (255 << 16) + (g << 8) + (b);
+
+      return ({
+        stroke: false,
+        fillColor: '#'+rgb.toString(16),
+        fill: true,
+        fillOpacity: 0.6
+      });
+    },
     zIndex: 1
-   });
+  });
    cases.addTo(mymap);
  });
 
@@ -190,7 +193,7 @@ $.getJSON('data/military/federal.geojson')
          case "Army":
            var army_federal = L.icon({
            	iconUrl: 'data/military/army_federal.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
@@ -199,7 +202,7 @@ $.getJSON('data/military/federal.geojson')
          case "Navy":
            var navy_federal = L.icon({
            	iconUrl: 'data/military/navy_federal.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: navy_federal}).bindPopup(function (layer) {
@@ -208,7 +211,7 @@ $.getJSON('data/military/federal.geojson')
          case "USMC":
            var usmc_federal = L.icon({
              iconUrl: 'data/military/usmc_federal.svg',
-             iconSize: [25, 25],
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: usmc_federal}).bindPopup(function (layer) {
@@ -217,7 +220,7 @@ $.getJSON('data/military/federal.geojson')
            case "Air Force":
              var military_airport_national = L.icon({
                iconUrl: 'data/military/military_airport_national.svg',
-               iconSize: [25, 25],
+               iconSize: [20, 20],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
@@ -226,7 +229,7 @@ $.getJSON('data/military/federal.geojson')
            case "Coast Guard":
              var coast_federal = L.icon({
                iconUrl: 'data/military/coast_federal.svg',
-               iconSize: [25, 25],
+               iconSize: [20, 20],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: coast_federal}).bindPopup(function (layer) {
@@ -235,7 +238,7 @@ $.getJSON('data/military/federal.geojson')
              case "USACE":
                var usace_federal = L.icon({
                  iconUrl: 'data/military/usace_federal.svg',
-                 iconSize: [25, 25],
+                 iconSize: [20, 20],
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: usace_federal}).bindPopup(function (layer) {
@@ -244,7 +247,7 @@ $.getJSON('data/military/federal.geojson')
                case "AFRC":
                  var afrc_federal = L.icon({
                    iconUrl: 'data/military/afrc_federal.svg',
-                   iconSize: [25, 25],
+                   iconSize: [20, 20],
                    popupAnchor: [0, -8]
                  });
                  return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
@@ -329,7 +332,7 @@ $.getJSON('data/military/national_guard.geojson')
          case "Armory":
            var armory_national = L.icon({
            	iconUrl: 'data/military/armory_national.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: armory_national}).bindPopup(function (layer) {
@@ -338,7 +341,7 @@ $.getJSON('data/military/national_guard.geojson')
          case "Military Airport":
            var military_airport_national = L.icon({
            	iconUrl: 'data/military/military_airport_national.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
@@ -347,7 +350,7 @@ $.getJSON('data/military/national_guard.geojson')
          case "Helo":
            var helo_national = L.icon({
              iconUrl: 'data/military/helo_national.svg',
-             iconSize: [25, 25],
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: helo_national}).bindPopup(function (layer) {
@@ -356,7 +359,7 @@ $.getJSON('data/military/national_guard.geojson')
            case "Training":
              var training_national = L.icon({
                iconUrl: 'data/military/training_national.svg',
-               iconSize: [25, 25],
+               iconSize: [20, 20],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: training_national}).bindPopup(function (layer) {
@@ -365,7 +368,7 @@ $.getJSON('data/military/national_guard.geojson')
            case "WMD":
              var wmd_national = L.icon({
                iconUrl: 'data/military/wmd_national.svg',
-               iconSize: [25, 25],
+               iconSize: [20, 20],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: wmd_national}).bindPopup(function (layer) {
@@ -374,7 +377,7 @@ $.getJSON('data/military/national_guard.geojson')
              case "AFRC":
                var afrc_federal = L.icon({
                  iconUrl: 'data/military/afrc_federal.svg',
-                 iconSize: [25, 25],
+                 iconSize: [20, 20],
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
@@ -427,12 +430,6 @@ policeStations.bindPopup(function (layer) {
 });
 
 
-// var deaths = L.esri.query({
-//   url: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases2_v1/FeatureServer/1",
-//   where: "Province_State = 'Minnesota'"
-// });
-
-
 ////////////////////////////////////
 // Positive COVID counties
 // other url:
@@ -470,13 +467,12 @@ var queryInfo = function(feature, popup) {
   .run(function(error, featureCollection) {
     try {
       var deaths = featureCollection.features[0].properties.Deaths
-      var recovered = featureCollection.features[0].properties.Recovered
     } catch (error) {
       var deaths = "no data"
       var recovered = "no data"
     }
   	// this function is called when the query is complete. Update the currently open popup.
-    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Recovered: ' + recovered +  '<br>Deaths: ' + deaths, feature.properties));
+    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Deaths: ' + deaths, feature.properties));
   }.bind(this));
 }
 
@@ -490,7 +486,7 @@ $.getJSON('data/prison/prisons.geojson')
          case "Federal":
            var prisons_fed = L.icon({
            	iconUrl: 'data/prison/prisons_fed.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_fed}).bindPopup(function (layer) {

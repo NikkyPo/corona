@@ -165,15 +165,15 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 315px; } }
+    left: 255px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 400px; } }
+    left: 310px; } }
 
 @media (min-width: 1200px) {
   .sidebar-left ~ .sidebar-map .leaflet-left {
-    left: 470px; } }
+    left: 410px; } }
 
 @media (min-width: 768px) {
   .sidebar-left.collapsed ~ .sidebar-map .leaflet-left {

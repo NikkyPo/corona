@@ -39,27 +39,32 @@
                 </h1>
 								<p style="margin-top: 1em; margin-bottom: 1em;"><i>See Resources tab for a list of data sources</i></p><hr>
 								<h3>Basemaps</h3>
+								<label class="container">Aerial
+									<input type="radio" name="radio" id="aerial">
+									<span class="radiobtn"></span>
+								</label>
 								<label class="container">None
 								  <input type="radio" checked="checked" name="radio" id="none">
 								  <span class="radiobtn"></span>
 								</label>
-								<label class="container">Aerial
-								  <input type="radio" name="radio" id="aerial">
-								  <span class="radiobtn"></span>
-								</label>
-								<label class="container">Streets
+								<label class="container">Map
 								  <input type="radio" name="radio" id="streets">
 								  <span class="radiobtn"></span>
 								</label>
 								<hr>
 								<h3>Boundaries</h3>
+								<label class="container">Counties
+									<input type="checkbox" id="counties" checked>
+									<span class="checkmark"></span>
+								</label>
 								<label class="container">International & State
 									<input type="checkbox" id="boundaries" checked>
 									<span class="checkmark"></span>
 								</label>
-								<label class="container">Counties
-									<input type="checkbox" id="counties" checked>
+								<label class="container">Red Cross Regions
+									<input id="redCross" type="checkbox">
 									<span class="checkmark"></span>
+									<div id="redCrossLegend"><img class="icon" src="data/redCross.svg" alt="legend for redCross"></div>
 								</label>
 								<hr>
 								<h3>Layers - COVID-19 Response</h3>
@@ -242,20 +247,15 @@
 											<i style="margin-left: 10px;">Minnesota</i>
 									</div>
 								</label>
-								<label class="container">Public Schools
-									<input id="publicSchools" type="checkbox">
-									<span class="checkmark"></span>
-									<div id="publicSchoolsLegend"><img class="icon" src="data/publicSchools.svg" alt="legend for publicSchools"></div>
-								</label>
 								<label class="container">Red Cross Facilities
 									<input id="redCrossFacilities" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="redCrossFacilitiesLegend"><img class="icon" src="data/redCrossFacilities.svg" alt="legend for redCrossFacilities"></div>
 								</label>
-								<label class="container">Red Cross Regions
-									<input id="redCross" type="checkbox">
+								<label class="container">Schools
+									<input id="publicSchools" type="checkbox">
 									<span class="checkmark"></span>
-									<div id="redCrossLegend"><img class="icon" src="data/redCross.svg" alt="legend for redCross"></div>
+									<div id="publicSchoolsLegend"><img class="icon" src="data/publicSchools.svg" alt="legend for publicSchools"></div>
 								</label>
 								<label class="container">Shelter System Facilities
 									<input id="shelters" type="checkbox">
