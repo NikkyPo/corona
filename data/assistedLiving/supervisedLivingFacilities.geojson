@@ -1,0 +1,6080 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.569959,43.760114 ]
+    },
+    "properties": {
+    "HFID":1611,
+    "NAME":"ABLE INC HOUSTON",
+    "ADDRESS":"105 WEST ELM STREET BOX 245",
+    "CITY":"HOUSTON",
+    "STATE":"MN",
+    "ZIP":55943,
+    "COUNTY_CODE":28,
+    "COUNTY_NAME":"HOUSTON",
+    "TELEPHONE":"507-896-3040",
+    "FAX":"507-895-4505",
+    "ADMINISTRATOR":"MS. GAIL MEYER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.31392,43.813762 ]
+    },
+    "properties": {
+    "HFID":1419,
+    "NAME":"ABLE INC LA CRESCENT",
+    "ADDRESS":"1700 LANCER BOULEVARD",
+    "CITY":"LA CRESCENT",
+    "STATE":"MN",
+    "ZIP":55947,
+    "COUNTY_CODE":28,
+    "COUNTY_NAME":"HOUSTON",
+    "TELEPHONE":"507-895-8111",
+    "FAX":"507-895-4505",
+    "ADMINISTRATOR":"MS. GAIL MEYER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":15,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":15,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.159306,45.0417 ]
+    },
+    "properties": {
+    "HFID":1378,
+    "NAME":"ACR HOME ON CUMMINGS",
+    "ADDRESS":"1385 CUMMINGS LANE",
+    "CITY":"ARDEN HILLS",
+    "STATE":"MN",
+    "ZIP":55112,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-636-7537",
+    "FAX":"651-697-1724",
+    "ADMINISTRATOR":"MR. GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.108555,45.070599 ]
+    },
+    "properties": {
+    "HFID":1620,
+    "NAME":"ACR HOME ON DAWN",
+    "ADDRESS":"191 DAWN AVENUE",
+    "CITY":"SHOREVIEW",
+    "STATE":"MN",
+    "ZIP":55126,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-486-0380",
+    "FAX":"651-486-7767",
+    "ADMINISTRATOR":"GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.331226,45.132714 ]
+    },
+    "properties": {
+    "HFID":20743,
+    "NAME":"ACR HOME ON FALLGOLD",
+    "ADDRESS":"9719 FALLGOLD PARKWAY",
+    "CITY":"BROOKLYN PARK",
+    "STATE":"MN",
+    "ZIP":55443,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-424-0352",
+    "FAX":"763-424-6544",
+    "ADMINISTRATOR":"GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.207444,45.03235 ]
+    },
+    "properties": {
+    "HFID":1576,
+    "NAME":"ACR HOME ON LYDIA WEST",
+    "ADDRESS":"2528 LYDIA AVENUE WEST",
+    "CITY":"ROSEVILLE",
+    "STATE":"MN",
+    "ZIP":55113,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-636-7172",
+    "FAX":"651-636-7205",
+    "ADMINISTRATOR":"GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.219741,45.063211 ]
+    },
+    "properties": {
+    "HFID":1573,
+    "NAME":"ACR HOME ON REDWOOD",
+    "ADDRESS":"862 REDWOOD LANE",
+    "CITY":"NEW BRIGHTON",
+    "STATE":"MN",
+    "ZIP":55112,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-635-9060",
+    "FAX":"651-635-4392",
+    "ADMINISTRATOR":"MR. GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.335454,45.03585 ]
+    },
+    "properties": {
+    "HFID":1628,
+    "NAME":"ACR HOME ON ROBIN",
+    "ADDRESS":"4404 ROBIN AVENUE",
+    "CITY":"ROBBINSDALE",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-535-1022",
+    "FAX":"763-535-2107",
+    "ADMINISTRATOR":"GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":5,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.126731,44.996513 ]
+    },
+    "properties": {
+    "HFID":24142,
+    "NAME":"ACR ON DALE COURT",
+    "ADDRESS":"1822 DALE COURT",
+    "CITY":"ROSEVILLE",
+    "STATE":"MN",
+    "ZIP":55113,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-488-1088",
+    "FAX":"651-488-1544",
+    "ADMINISTRATOR":"MR. GENE LEISTICO",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.176998,43.766528 ]
+    },
+    "properties": {
+    "HFID":1377,
+    "NAME":"ADOLESCENT TREATMENT CENTER",
+    "ADDRESS":"620 1ST AVENUE SOUTHWEST",
+    "CITY":"WINNEBAGO",
+    "STATE":"MN",
+    "ZIP":56098,
+    "COUNTY_CODE":22,
+    "COUNTY_NAME":"FARIBAULT",
+    "TELEPHONE":"507-893-3885",
+    "FAX":"507-893-4223",
+    "ADMINISTRATOR":"LARRY ANDERSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":24,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.98564,44.94142 ]
+    },
+    "properties": {
+    "HFID":33236,
+    "NAME":"AFTON PLACE",
+    "ADDRESS":"2715 UPPER AFTON ROAD",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-254-0500",
+    "FAX":"651-731-5847",
+    "ADMINISTRATOR":"MS. JAYNE QUINLAN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.490906,44.053853 ]
+    },
+    "properties": {
+    "HFID":1667,
+    "NAME":"ALLENDALE HOUSE",
+    "ADDRESS":"2847 19TH AVENUE NW",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55901,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"507-288-7195",
+    "FAX":"507-288-4522",
+    "ADMINISTRATOR":"MS. LINDA DRIESSEN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.262545,44.964747 ]
+    },
+    "properties": {
+    "HFID":1668,
+    "NAME":"AMERICAN INDIAN COMM DEVLP",
+    "ADDRESS":"1800 CHICAGO AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55404,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-879-3646",
+    "FAX":"612-879-3604",
+    "ADMINISTRATOR":"TODD JOHNSTON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":64,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.378,45.2103 ]
+    },
+    "properties": {
+    "HFID":4,
+    "NAME":"ANOKA METRO REG TREATMENT CTR",
+    "ADDRESS":"3301 7TH AVENUE NORTH",
+    "CITY":"ANOKA",
+    "STATE":"MN",
+    "ZIP":55303,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"651-431-5252",
+    "FAX":"651-431-7733",
+    "ADMINISTRATOR":"ROCHELLE FISCHER",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":29,
+    "OTHER_BEDS":175,
+    "PSY18_BEDS":175,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.245054,45.192925 ]
+    },
+    "properties": {
+    "HFID":1400,
+    "NAME":"ANTHONY LOUIS CENTER",
+    "ADDRESS":"1000 PAUL PARKWAY",
+    "CITY":"BLAINE",
+    "STATE":"MN",
+    "ZIP":55434,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"763-757-2906",
+    "FAX":"763-757-2059",
+    "ADMINISTRATOR":"JON BENSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":22,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.065242,46.268671 ]
+    },
+    "properties": {
+    "HFID":1222,
+    "NAME":"ARLINGTON HOME",
+    "ADDRESS":"1505 ARLINGTON STREET SOUTH",
+    "CITY":"FERGUS FALLS",
+    "STATE":"MN",
+    "ZIP":56537,
+    "COUNTY_CODE":56,
+    "COUNTY_NAME":"OTTER TAIL",
+    "TELEPHONE":"218-739-2045",
+    "FAX":"218-736-0089",
+    "ADMINISTRATOR":"NICOLAS CROSS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":5,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.783816,45.137892 ]
+    },
+    "properties": {
+    "HFID":1110,
+    "NAME":"ATWATER ICFIID",
+    "ADDRESS":"110 5TH STREET NORTH",
+    "CITY":"ATWATER",
+    "STATE":"MN",
+    "ZIP":56209,
+    "COUNTY_CODE":34,
+    "COUNTY_NAME":"KANDIYOHI",
+    "TELEPHONE":"320-974-8070",
+    "FAX":"320-974-3494",
+    "ADMINISTRATOR":"MS. ELIZABETH HILLSTROM",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.129205,45.003442 ]
+    },
+    "properties": {
+    "HFID":23246,
+    "NAME":"AXIS ON BELMONT",
+    "ADDRESS":"692 BELMONT LANE WEST",
+    "CITY":"ROSEVILLE",
+    "STATE":"MN",
+    "ZIP":55113,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-489-4630",
+    "FAX":"651-489-4678",
+    "ADMINISTRATOR":"MS. DOROTHY WROBEL",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.127324,45.004723 ]
+    },
+    "properties": {
+    "HFID":22846,
+    "NAME":"AXIS ON ELDRIDGE",
+    "ADDRESS":"651 ELDRIDGE AVENUE WEST",
+    "CITY":"ROSEVILLE",
+    "STATE":"MN",
+    "ZIP":55113,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-488-2237",
+    "FAX":"651-489-9520",
+    "ADMINISTRATOR":"MS. DOROTHY WROBEL",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.146299,45.038018 ]
+    },
+    "properties": {
+    "HFID":22370,
+    "NAME":"AXIS ON GLENHILL",
+    "ADDRESS":"1083 GLENHILL ROAD",
+    "CITY":"SHOREVIEW",
+    "STATE":"MN",
+    "ZIP":55126,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-482-0562",
+    "FAX":"651-482-0482",
+    "ADMINISTRATOR":"MS. DOROTHY WROBEL",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.033713,45.095807 ]
+    },
+    "properties": {
+    "HFID":1325,
+    "NAME":"AXIS ON SENECA",
+    "ADDRESS":"1586 SENECA TRAIL",
+    "CITY":"WHITE BEAR TOWNSHIP",
+    "STATE":"MN",
+    "ZIP":55110,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-426-3546",
+    "FAX":"651-426-8456",
+    "ADMINISTRATOR":"MS. DOROTHY WROBEL",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.200728,45.108791 ]
+    },
+    "properties": {
+    "HFID":23393,
+    "NAME":"AXIS ON ST. MICHAEL",
+    "ADDRESS":"5533 ST. MICHAEL STREET",
+    "CITY":"MOUNDS VIEW",
+    "STATE":"MN",
+    "ZIP":55112,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"763-717-4967",
+    "FAX":"763-783-0193",
+    "ADMINISTRATOR":"MS. DOROTHY WROBEL",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.015272,45.04793 ]
+    },
+    "properties": {
+    "HFID":22847,
+    "NAME":"AXIS ON WHITE BEAR AVENUE",
+    "ADDRESS":"3516 WHITE BEAR AVENUE NORTH",
+    "CITY":"WHITE BEAR LAKE",
+    "STATE":"MN",
+    "ZIP":55110,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-779-4301",
+    "FAX":"651-777-0415",
+    "ADMINISTRATOR":"MS. DOROTHY WROBEL",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.168902,44.449508 ]
+    },
+    "properties": {
+    "HFID":27689,
+    "NAME":"AZULE OPPORTUNITIES, LLC",
+    "ADDRESS":"529 WEST WOODLEY STREET",
+    "CITY":"NORTHFIELD",
+    "STATE":"MN",
+    "ZIP":55057,
+    "COUNTY_CODE":66,
+    "COUNTY_NAME":"RICE",
+    "TELEPHONE":"507-645-6226",
+    "FAX":"507-645-7473",
+    "ADMINISTRATOR":"JODY YOUNGER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.11613,46.5143063 ]
+    },
+    "properties": {
+    "HFID":1546,
+    "NAME":"BELL HILL RECOVERY CENTER",
+    "ADDRESS":"ROUTE 2 PO BOX 206",
+    "CITY":"WADENA",
+    "STATE":"MN",
+    "ZIP":56482,
+    "COUNTY_CODE":80,
+    "COUNTY_NAME":"WADENA",
+    "TELEPHONE":"218-631-3610",
+    "FAX":"218-631-3917",
+    "ADMINISTRATOR":"MR. ROSS OLSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":20,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.330329,45.168517 ]
+    },
+    "properties": {
+    "HFID":1538,
+    "NAME":"BETHESDA LUTHERAN COMM COT 5",
+    "ADDRESS":"2483 109TH AVENUE NW",
+    "CITY":"COON RAPIDS",
+    "STATE":"MN",
+    "ZIP":55433,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"952-443-2048",
+    "FAX":"952-443-2371",
+    "ADMINISTRATOR":"MS. MONICA SCHMIDT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":12,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.330431,45.168516 ]
+    },
+    "properties": {
+    "HFID":1253,
+    "NAME":"BETHESDA LUTHERAN COMM COT 6",
+    "ADDRESS":"2493 109TH AVENUE NW",
+    "CITY":"COON RAPIDS",
+    "STATE":"MN",
+    "ZIP":55433,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"952-443-2756",
+    "FAX":"952-443-2371",
+    "ADMINISTRATOR":"MONICA SCHMIDT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":11,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":11,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.226947,44.898123 ]
+    },
+    "properties": {
+    "HFID":1507,
+    "NAME":"BILL KELLY HOUSE",
+    "ADDRESS":"3104 EAST 58TH STREET",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55417,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-726-1502",
+    "FAX":"612-726-1009",
+    "ADMINISTRATOR":"MR. HUGH AYLWARD",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.779848,44.457694 ]
+    },
+    "properties": {
+    "HFID":27145,
+    "NAME":"BRENTWOOD HOME",
+    "ADDRESS":"1012 ESTHER LANE",
+    "CITY":"MARSHALL",
+    "STATE":"MN",
+    "ZIP":56285,
+    "COUNTY_CODE":42,
+    "COUNTY_NAME":"LYON",
+    "TELEPHONE":"507-532-4380",
+    "FAX":"507-929-3106",
+    "ADMINISTRATOR":"MS. CLAUDIA CRAVENS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":10,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.458295,44.321103 ]
+    },
+    "properties": {
+    "HFID":1641,
+    "NAME":"BROWN COUNTY EVAL CENTER INC",
+    "ADDRESS":"510 NORTH FRONT STREET",
+    "CITY":"NEW ULM",
+    "STATE":"MN",
+    "ZIP":56073,
+    "COUNTY_CODE":8,
+    "COUNTY_NAME":"BROWN",
+    "TELEPHONE":"507-359-9111",
+    "FAX":"507-354-7706",
+    "ADMINISTRATOR":"AMANDA SCHUKNECHT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.048576,44.904985 ]
+    },
+    "properties": {
+    "HFID":1240,
+    "NAME":"BRYANT AVE RESIDENCE",
+    "ADDRESS":"1120 BRYANT AVENUE",
+    "CITY":"SOUTH ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55075,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-451-2889",
+    "FAX":"651-451-5955",
+    "ADMINISTRATOR":"MS. SANDRA KINDEM",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":13,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":13,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.623696,43.605161 ]
+    },
+    "properties": {
+    "HFID":1278,
+    "NAME":"C C S INC RIDGEWOOD",
+    "ADDRESS":"1381 KNOLLWOOD DRIVE",
+    "CITY":"WORTHINGTON",
+    "STATE":"MN",
+    "ZIP":56187,
+    "COUNTY_CODE":53,
+    "COUNTY_NAME":"NOBLES",
+    "TELEPHONE":"507-376-6095",
+    "FAX":"507-376-5117",
+    "ADMINISTRATOR":"MS. PATRICIA COWDIN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":10,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":10,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.248566,45.312527 ]
+    },
+    "properties": {
+    "HFID":34169,
+    "NAME":"CAMBIA HILLS OF EAST BETHEL",
+    "ADDRESS":"900 189TH AVENUE NE",
+    "CITY":"EAST BETHEL",
+    "STATE":"MN",
+    "ZIP":55011,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"218-728-7500",
+    "FAX":"218-728-7501",
+    "ADMINISTRATOR":"DAVE HARTFORD",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":60,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.299687,45.184839 ]
+    },
+    "properties": {
+    "HFID":1141,
+    "NAME":"CAMILIA ROSE GROUP HOME",
+    "ADDRESS":"11820 XEON BOULEVARD",
+    "CITY":"COON RAPIDS",
+    "STATE":"MN",
+    "ZIP":55448,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"763-755-8480",
+    "FAX":"763-755-3130",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":29,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":29,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.093281,46.306168 ]
+    },
+    "properties": {
+    "HFID":34188,
+    "NAME":"CARE FERGUS FALLS",
+    "ADDRESS":"1010 MARYLAND LANE",
+    "CITY":"FERGUS FALLS",
+    "STATE":"MN",
+    "ZIP":56537,
+    "COUNTY_CODE":56,
+    "COUNTY_NAME":"OTTER TAIL",
+    "TELEPHONE":"218-736-1821",
+    "FAX":"None",
+    "ADMINISTRATOR":"BROOKE THORSON",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.041175,44.860164 ]
+    },
+    "properties": {
+    "HFID":1503,
+    "NAME":"CARECO APARTMENTS INC",
+    "ADDRESS":"6115 CARMEN AVENUE EAST",
+    "CITY":"INVER GROVE HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55076,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-451-1756",
+    "FAX":"651-451-1803",
+    "ADMINISTRATOR":"MR. REDHEART REDHEART",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":14,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":14,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.351344,44.808978 ]
+    },
+    "properties": {
+    "HFID":1508,
+    "NAME":"CARLSON DRAKE HOUSE",
+    "ADDRESS":"5414 WEST OLD SHAKOPEE CIRCLE",
+    "CITY":"BLOOMINGTON",
+    "STATE":"MN",
+    "ZIP":55437,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-888-5611",
+    "FAX":"952-888-3741",
+    "ADMINISTRATOR":"SUSAN OPPERMAN",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":12,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.909212,45.11462 ]
+    },
+    "properties": {
+    "HFID":1660,
+    "NAME":"CEDAR RIDGE",
+    "ADDRESS":"11400 JULIANNE AVENUE NORTH",
+    "CITY":"STILLWATER",
+    "STATE":"MN",
+    "ZIP":55082,
+    "COUNTY_CODE":82,
+    "COUNTY_NAME":"WASHINGTON",
+    "TELEPHONE":"651-426-3300",
+    "FAX":"651-426-0419",
+    "ADMINISTRATOR":"MS. MARTHA KLUG",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":25,
+    "SLFB_BEDS":9,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.762537,46.882869 ]
+    },
+    "properties": {
+    "HFID":1666,
+    "NAME":"CLAY COUNTY RECEIVING CENTER",
+    "ADDRESS":"715 11TH STREET NORTH #203",
+    "CITY":"MOORHEAD",
+    "STATE":"MN",
+    "ZIP":56560,
+    "COUNTY_CODE":14,
+    "COUNTY_NAME":"CLAY",
+    "TELEPHONE":"218-299-5220",
+    "FAX":"218-299-7205",
+    "ADMINISTRATOR":"MS. KATHY MCKAY",
+    "LIC_TYPE":"COUNTY",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.837844,44.728175 ]
+    },
+    "properties": {
+    "HFID":1406,
+    "NAME":"COCHRAN RECOVERY SERVICES INC",
+    "ADDRESS":"1294 EAST 18TH STREET BLDG 1",
+    "CITY":"HASTINGS",
+    "STATE":"MN",
+    "ZIP":55033,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-437-4209",
+    "FAX":"651-438-4144",
+    "ADMINISTRATOR":"MR. RICK TERZICK",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":27,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.975215,44.351416 ]
+    },
+    "properties": {
+    "HFID":24618,
+    "NAME":"COMM ADDICTION RECOVERY ENTERP",
+    "ADDRESS":"2000 KLEIN STREET",
+    "CITY":"ST. PETER",
+    "STATE":"MN",
+    "ZIP":56082,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"507-933-5191",
+    "FAX":"507-931-7888",
+    "ADMINISTRATOR":"CHRISTINA ANDERLEY",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.721144,43.65681 ]
+    },
+    "properties": {
+    "HFID":1045,
+    "NAME":"COMM OPTIONS AND RESOURCES I",
+    "ADDRESS":"332 FOX LAKE AVENUE",
+    "CITY":"SHERBURN",
+    "STATE":"MN",
+    "ZIP":56171,
+    "COUNTY_CODE":46,
+    "COUNTY_NAME":"MARTIN",
+    "TELEPHONE":"507-764-4612",
+    "FAX":"507-764-4422",
+    "ADMINISTRATOR":"MS. JUDY MARTENS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.656467,44.05309 ]
+    },
+    "properties": {
+    "HFID":33014,
+    "NAME":"COMMON GRND RECOVERY HSG INC",
+    "ADDRESS":"730 WEST BROADWAY",
+    "CITY":"WINONA",
+    "STATE":"MN",
+    "ZIP":55987,
+    "COUNTY_CODE":85,
+    "COUNTY_NAME":"WINONA",
+    "TELEPHONE":"507-615-0101",
+    "FAX":"507-615-0102",
+    "ADMINISTRATOR":"MS. MATTEA SCHMITZ",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":20,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.424359,46.67136 ]
+    },
+    "properties": {
+    "HFID":21547,
+    "NAME":"COMMUNITY ADDICTION RECOVERY",
+    "ADDRESS":"810 3RD STREET #102",
+    "CITY":"CARLTON",
+    "STATE":"MN",
+    "ZIP":55718,
+    "COUNTY_CODE":9,
+    "COUNTY_NAME":"CARLTON",
+    "TELEPHONE":"218-384-7003",
+    "FAX":"651-431-7679",
+    "ADMINISTRATOR":"JENNIFER RENNQUIST",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.016121,45.143329 ]
+    },
+    "properties": {
+    "HFID":26528,
+    "NAME":"COMMUNITY ADDICTION WILLMAR",
+    "ADDRESS":"1801 TECHNOLOGY DRIVE NE",
+    "CITY":"WILLMAR",
+    "STATE":"MN",
+    "ZIP":56201,
+    "COUNTY_CODE":34,
+    "COUNTY_NAME":"KANDIYOHI",
+    "TELEPHONE":"320-979-5104",
+    "FAX":"651-431-7408",
+    "ADMINISTRATOR":"LISA LUCKHARDT",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.181861,45.573035 ]
+    },
+    "properties": {
+    "HFID":1638,
+    "NAME":"CTRL MN RECEIVING AND REFERRAL",
+    "ADDRESS":"1321 NORTH 13TH STREET",
+    "CITY":"ST. CLOUD",
+    "STATE":"MN",
+    "ZIP":56303,
+    "COUNTY_CODE":73,
+    "COUNTY_NAME":"STEARNS",
+    "TELEPHONE":"320-252-6654",
+    "FAX":"320-281-3554",
+    "ADMINISTRATOR":"DR. RICHARD LEE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":20,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.767132,44.936517 ]
+    },
+    "properties": {
+    "HFID":1590,
+    "NAME":"DAWSON ICF MR",
+    "ADDRESS":"2974 192ND STREET",
+    "CITY":"DAWSON",
+    "STATE":"MN",
+    "ZIP":56232,
+    "COUNTY_CODE":37,
+    "COUNTY_NAME":"LAC QUI PARLE",
+    "TELEPHONE":"320-769-4444",
+    "FAX":"320-312-2211",
+    "ADMINISTRATOR":"MS. ELIZABETH HILLSTROM",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.50631,44.790084 ]
+    },
+    "properties": {
+    "HFID":1228,
+    "NAME":"DELPHI",
+    "ADDRESS":"1411 EAST SHAKOPEE AVENUE",
+    "CITY":"SHAKOPEE",
+    "STATE":"MN",
+    "ZIP":55379,
+    "COUNTY_CODE":70,
+    "COUNTY_NAME":"SCOTT",
+    "TELEPHONE":"651-772-4957",
+    "FAX":"651-772-2746",
+    "ADMINISTRATOR":"BLAKE ELLIOTT",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":9,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":9,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.542102,47.511872 ]
+    },
+    "properties": {
+    "HFID":20624,
+    "NAME":"DONOVAN FRANK DETOX CENTER",
+    "ADDRESS":"626 13TH STREET SOUTH",
+    "CITY":"VIRGINIA",
+    "STATE":"MN",
+    "ZIP":55792,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-749-2881",
+    "FAX":"218-749-3806",
+    "ADMINISTRATOR":"MS. JANIS ALLEN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":14,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.23767,47.517962 ]
+    },
+    "properties": {
+    "HFID":1610,
+    "NAME":"DRCC AURORA",
+    "ADDRESS":"417 SOUTH MAIN STREET",
+    "CITY":"AURORA",
+    "STATE":"MN",
+    "ZIP":55705,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-229-3369",
+    "FAX":"218-727-9555",
+    "ADMINISTRATOR":"THOMAS GILLESPIE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":5,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.04662,44.992023 ]
+    },
+    "properties": {
+    "HFID":1182,
+    "NAME":"DUNGARVIN BALBRIGGEN",
+    "ADDRESS":"1270 EAST LARPENTEUR AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-699-6050",
+    "FAX":"651-699-7265",
+    "ADMINISTRATOR":"KAREN HAMMOND",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":5,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.110518,45.06208 ]
+    },
+    "properties": {
+    "HFID":24104,
+    "NAME":"DUNGARVIN CAMARA",
+    "ADDRESS":"3989 VIRGINIA CIRCLE",
+    "CITY":"SHOREVIEW",
+    "STATE":"MN",
+    "ZIP":55126,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-699-6050",
+    "FAX":"651-699-7265",
+    "ADMINISTRATOR":"MS. KAREN HAMMOND",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":5,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.439122,44.992288 ]
+    },
+    "properties": {
+    "HFID":1211,
+    "NAME":"DUNGARVIN CHAI",
+    "ADDRESS":"1210 OAKVIEW LANE NORTH",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55441,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"651-699-6050",
+    "FAX":"651-699-7265",
+    "ADMINISTRATOR":"ANNA HEGLAND",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.175347,44.913438 ]
+    },
+    "properties": {
+    "HFID":1368,
+    "NAME":"DUNGARVIN TIKVAH",
+    "ADDRESS":"1778 ROME AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55116,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-699-6050",
+    "FAX":"651-699-7265",
+    "ADMINISTRATOR":"KAREN HAMMOND",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.41089,45.125234 ]
+    },
+    "properties": {
+    "HFID":245,
+    "NAME":"DUNGARVIN YOUGAL",
+    "ADDRESS":"10203 94TH AVENUE",
+    "CITY":"MAPLE GROVE",
+    "STATE":"MN",
+    "ZIP":55369,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"651-699-6050",
+    "FAX":"651-699-7265",
+    "ADMINISTRATOR":"ANNA HEGLAND",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.167855,46.742537 ]
+    },
+    "properties": {
+    "HFID":1544,
+    "NAME":"E B I INCORPORATED",
+    "ADDRESS":"625 NORTH 56 AVENUE WEST",
+    "CITY":"DULUTH",
+    "STATE":"MN",
+    "ZIP":55807,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-624-3122",
+    "FAX":"218-628-1699",
+    "ADMINISTRATOR":"MS. SARAH HAMILTON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.267152,44.969804 ]
+    },
+    "properties": {
+    "HFID":1584,
+    "NAME":"EDEN RESIDENTIAL PROGRAM",
+    "ADDRESS":"1025 PORTLAND AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55404,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-338-0723",
+    "FAX":"612-338-3653",
+    "ADMINISTRATOR":"JAMES WYNNE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":59,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.197773,45.565824 ]
+    },
+    "properties": {
+    "HFID":1178,
+    "NAME":"FOCUS XII HALFWAY HOUSE",
+    "ADDRESS":"3220 8TH STREET NORTH",
+    "CITY":"ST. CLOUD",
+    "STATE":"MN",
+    "ZIP":56303,
+    "COUNTY_CODE":73,
+    "COUNTY_NAME":"STEARNS",
+    "TELEPHONE":"320-252-2425",
+    "FAX":"320-529-1976",
+    "ADMINISTRATOR":"DR. RICHARD LEE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":18,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.03201,44.356879 ]
+    },
+    "properties": {
+    "HFID":32670,
+    "NAME":"FORENSIC MENTAL HEALTH PROGRAM",
+    "ADDRESS":"1703 COUNTY STATE AID HWY 15",
+    "CITY":"ST. PETER",
+    "STATE":"MN",
+    "ZIP":56082,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"507-985-3128",
+    "FAX":"651-431-7438",
+    "ADMINISTRATOR":"MS. CAROL OLSON",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":34,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.978687,44.304022 ]
+    },
+    "properties": {
+    "HFID":1418,
+    "NAME":"FORENSIC MENTAL HEALTH PROGRAM",
+    "ADDRESS":"100 FREEMAN DRIVE",
+    "CITY":"ST. PETER",
+    "STATE":"MN",
+    "ZIP":56082,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"507-985-3128",
+    "FAX":"651-431-7438",
+    "ADMINISTRATOR":"MS. CAROL OLSON",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":465,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.372469,43.651558 ]
+    },
+    "properties": {
+    "HFID":1390,
+    "NAME":"FOUNTAIN CENTERS",
+    "ADDRESS":"404 WEST FOUNTAIN STREET",
+    "CITY":"ALBERT LEA",
+    "STATE":"MN",
+    "ZIP":56007,
+    "COUNTY_CODE":24,
+    "COUNTY_NAME":"FREEBORN",
+    "TELEPHONE":"507-377-6411",
+    "FAX":"507-377-6443",
+    "ADMINISTRATOR":"MS MELISSA BARR",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":26,
+    "SLFB_BEDS":32,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.151706,46.352294 ]
+    },
+    "properties": {
+    "HFID":1681,
+    "NAME":"FOUR WINDS TREATMENT PROGRAM",
+    "ADDRESS":"11600 STATE AVENUE",
+    "CITY":"BRAINERD",
+    "STATE":"MN",
+    "ZIP":56401,
+    "COUNTY_CODE":18,
+    "COUNTY_NAME":"CROW WING",
+    "TELEPHONE":"218-454-8900",
+    "FAX":"218-454-8901",
+    "ADMINISTRATOR":"LINDSAY MISQUADACE-BERG",
+    "LIC_TYPE":"TRIBAL",
+    "SLFA_BEDS":24,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.009561,44.997584 ]
+    },
+    "properties": {
+    "HFID":1604,
+    "NAME":"FURNESS HOUSE",
+    "ADDRESS":"1866 FURNESS STREET",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.603914,44.93836 ]
+    },
+    "properties": {
+    "HFID":20875,
+    "NAME":"HAMMER CARLSON",
+    "ADDRESS":"16325 COUNTY ROAD 15",
+    "CITY":"WAYZATA",
+    "STATE":"MN",
+    "ZIP":55391,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.509973,45.012304 ]
+    },
+    "properties": {
+    "HFID":1581,
+    "NAME":"HAMMER KENTUCKY",
+    "ADDRESS":"18115 30TH AVENUE NORTH",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55447,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.505123,44.908076 ]
+    },
+    "properties": {
+    "HFID":1594,
+    "NAME":"HAMMER LAKESIDE",
+    "ADDRESS":"5209 MICHAELE LANE",
+    "CITY":"MINNETONKA",
+    "STATE":"MN",
+    "ZIP":55345,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.502221,45.076045 ]
+    },
+    "properties": {
+    "HFID":1686,
+    "NAME":"HAMMER LAWNDALE",
+    "ADDRESS":"6688 LAWNDALE LANE NORTH",
+    "CITY":"MAPLE GROVE",
+    "STATE":"MN",
+    "ZIP":55311,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.336251,45.009407 ]
+    },
+    "properties": {
+    "HFID":1607,
+    "NAME":"HAMMER LEE",
+    "ADDRESS":"2825 LEE AVENUE NORTH",
+    "CITY":"GOLDEN VALLEY",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.512869,45.007579 ]
+    },
+    "properties": {
+    "HFID":1669,
+    "NAME":"HAMMER MCGLINCH",
+    "ADDRESS":"18300 26TH AVENUE NORTH",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55447,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.514287,44.977303 ]
+    },
+    "properties": {
+    "HFID":4306,
+    "NAME":"HAMMER RIDGEVIEW",
+    "ADDRESS":"401 RIDGEVIEW DRIVE",
+    "CITY":"WAYZATA",
+    "STATE":"MN",
+    "ZIP":55391,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.473923,44.957855 ]
+    },
+    "properties": {
+    "HFID":21172,
+    "NAME":"HAMMER SHERIDAN",
+    "ADDRESS":"2412 SHERIDAN HILLS CURVE",
+    "CITY":"WAYZATA",
+    "STATE":"MN",
+    "ZIP":55391,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-1261",
+    "FAX":"952-473-8629",
+    "ADMINISTRATOR":"MR. JOHN ESTREM",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.986614,44.149095 ]
+    },
+    "properties": {
+    "HFID":1008,
+    "NAME":"HARRY MEYERING CTR INC",
+    "ADDRESS":"109 HOMESTEAD ROAD",
+    "CITY":"MANKATO",
+    "STATE":"MN",
+    "ZIP":56001,
+    "COUNTY_CODE":7,
+    "COUNTY_NAME":"BLUE EARTH",
+    "TELEPHONE":"507-387-8281",
+    "FAX":"507-625-9948",
+    "ADMINISTRATOR":"MS. LINDA LEIDING",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":25,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":25,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.425374,45.021931 ]
+    },
+    "properties": {
+    "HFID":1367,
+    "NAME":"HAZELDEN CTR FOR YOUTH & FAM",
+    "ADDRESS":"11505 36TH AVENUE NORTH",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55441,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-509-3843",
+    "FAX":"651-213-4551",
+    "ADMINISTRATOR":"MR. MARK SHEETS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.795124,45.378548 ]
+    },
+    "properties": {
+    "HFID":67,
+    "NAME":"HAZELDEN FOUNDATION",
+    "ADDRESS":"15251 PLEASANT VALLEY",
+    "CITY":"CENTER CITY",
+    "STATE":"MN",
+    "ZIP":55012,
+    "COUNTY_CODE":13,
+    "COUNTY_NAME":"CHISAGO",
+    "TELEPHONE":"651-213-4217",
+    "FAX":"651-213-4551",
+    "ADMINISTRATOR":"CHUCK RICE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":5,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.262521,44.936598 ]
+    },
+    "properties": {
+    "HFID":32885,
+    "NAME":"HCMC CRISIS RESIDENCE",
+    "ADDRESS":"3633 CHICAGO AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55407,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-873-6537",
+    "FAX":"612-904-4477",
+    "ADMINISTRATOR":"MS. MEGEN BOYSEN",
+    "LIC_TYPE":"COUNTY",
+    "SLFA_BEDS":14,
+    "SLFB_BEDS":2,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.853345,44.660924 ]
+    },
+    "properties": {
+    "HFID":1091,
+    "NAME":"HENRY HAGEN RESIDENCE",
+    "ADDRESS":"19845 LILLEHEI AVENUE",
+    "CITY":"HASTINGS",
+    "STATE":"MN",
+    "ZIP":55033,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"612-770-0304",
+    "FAX":"651-224-0624",
+    "ADMINISTRATOR":"MS. LAURA REYNOLDS",
+    "LIC_TYPE":"INDIVIDUAL",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.081874,44.613392 ]
+    },
+    "properties": {
+    "HFID":1313,
+    "NAME":"HIGH ISLAND CREEK RESIDENCE",
+    "ADDRESS":"708 CHESTNUT DRIVE",
+    "CITY":"ARLINGTON",
+    "STATE":"MN",
+    "ZIP":55307,
+    "COUNTY_CODE":72,
+    "COUNTY_NAME":"SIBLEY",
+    "TELEPHONE":"507-964-5984",
+    "FAX":"507-964-5661",
+    "ADMINISTRATOR":"MS. SUSAN BIENFANG",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":13,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":13,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.686305,44.058445 ]
+    },
+    "properties": {
+    "HFID":1134,
+    "NAME":"HOME AND COMMUNITY OPTIONS INC",
+    "ADDRESS":"174 EDWARD STREET",
+    "CITY":"WINONA",
+    "STATE":"MN",
+    "ZIP":55987,
+    "COUNTY_CODE":85,
+    "COUNTY_NAME":"WINONA",
+    "TELEPHONE":"507-452-1021",
+    "FAX":"507-452-1504",
+    "ADMINISTRATOR":"MS. SUZANNE HORSTMAN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.109625,43.865427 ]
+    },
+    "properties": {
+    "HFID":1194,
+    "NAME":"HOME FOR CREATIVE LIVING",
+    "ADDRESS":"108 9TH STREET",
+    "CITY":"WINDOM",
+    "STATE":"MN",
+    "ZIP":56101,
+    "COUNTY_CODE":17,
+    "COUNTY_NAME":"COTTONWOOD",
+    "TELEPHONE":"507-831-5033",
+    "FAX":"507-831-2612",
+    "ADMINISTRATOR":"DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":18,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":18,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.369081,45.094405 ]
+    },
+    "properties": {
+    "HFID":1273,
+    "NAME":"HOMEWARD BOUND BROOKLYN PARK",
+    "ADDRESS":"7839 BROOKLYN BOULEVARD",
+    "CITY":"BROOKLYN PARK",
+    "STATE":"MN",
+    "ZIP":55445,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-746-4850",
+    "FAX":"763-525-4084",
+    "ADMINISTRATOR":"GERRI DUKART GBOR",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":32,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":32,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.439416,45.077391 ]
+    },
+    "properties": {
+    "HFID":1585,
+    "NAME":"HOMEWARD BOUND MAPLE GROVE",
+    "ADDRESS":"6769 EAST FISH LAKE ROAD",
+    "CITY":"MAPLE GROVE",
+    "STATE":"MN",
+    "ZIP":55369,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-746-4850",
+    "FAX":"763-525-4084",
+    "ADMINISTRATOR":"MS. GERRI DUKART GBOR",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.452125,44.981706 ]
+    },
+    "properties": {
+    "HFID":1583,
+    "NAME":"HOMEWARD BOUND PLYMOUTH",
+    "ADDRESS":"13522 SUNSET TRAIL",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55441,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-746-4850",
+    "FAX":"763-525-4084",
+    "ADMINISTRATOR":"MR. GERRI DUKART GBOR",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.007548,44.992265 ]
+    },
+    "properties": {
+    "HFID":1603,
+    "NAME":"HOWARD HOUSE",
+    "ADDRESS":"1685 HOWARD STREET NORTH",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.484027,44.019682 ]
+    },
+    "properties": {
+    "HFID":33823,
+    "NAME":"JOHN E HERMAN HOME & TRMT FAC",
+    "ADDRESS":"351 14TH AVENUE SW",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55902,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"507-422-0480",
+    "FAX":"507-422-0481",
+    "ADMINISTRATOR":"JODIE BOONE",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.297086,44.939874 ]
+    },
+    "properties": {
+    "HFID":1535,
+    "NAME":"JORGENSEN HOUSE",
+    "ADDRESS":"3444 GIRARD AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55408,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-353-5580",
+    "FAX":"612-353-5481",
+    "ADMINISTRATOR":"JESSE MILLARD-DERRELL",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.142719,45.586621 ]
+    },
+    "properties": {
+    "HFID":25468,
+    "NAME":"JOURNEY HOME",
+    "ADDRESS":"1485 10TH AVENUE NE",
+    "CITY":"SAUK RAPIDS",
+    "STATE":"MN",
+    "ZIP":56379,
+    "COUNTY_CODE":5,
+    "COUNTY_NAME":"BENTON",
+    "TELEPHONE":"320-255-5949",
+    "FAX":"320-259-4563",
+    "ADMINISTRATOR":"MR. CRAIG BROMAN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":86,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.420085,45.017229 ]
+    },
+    "properties": {
+    "HFID":1384,
+    "NAME":"JUDY RATTERATH WDRL MGT CTR",
+    "ADDRESS":"3409 E MEDICINE LAKE BOULEVARD",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55441,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-559-1402",
+    "FAX":"763-559-2559",
+    "ADMINISTRATOR":"MS. JESSICA SPRENGER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":21,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.221197,44.060679 ]
+    },
+    "properties": {
+    "HFID":1408,
+    "NAME":"KAPLAN WOODS CARE HOME INC",
+    "ADDRESS":"285 CEDARDALE DRIVE SE",
+    "CITY":"OWATONNA",
+    "STATE":"MN",
+    "ZIP":55060,
+    "COUNTY_CODE":74,
+    "COUNTY_NAME":"STEELE",
+    "TELEPHONE":"507-451-5327",
+    "FAX":"507-451-5354",
+    "ADMINISTRATOR":"MR. CHRISTOPHER BOWMAN",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":16,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.109075,45.042609 ]
+    },
+    "properties": {
+    "HFID":831,
+    "NAME":"LAKE OWASSO RESIDENCE",
+    "ADDRESS":"210 OWASSO BOULEVARD NORTH",
+    "CITY":"SHOREVIEW",
+    "STATE":"MN",
+    "ZIP":55126,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-765-7703",
+    "FAX":"651-765-7722",
+    "ADMINISTRATOR":"KEVIN THOMPSON",
+    "LIC_TYPE":"COUNTY",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":64,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":64,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.958756,45.076359 ]
+    },
+    "properties": {
+    "HFID":29821,
+    "NAME":"LAKE SHORE RES TREATMENT",
+    "ADDRESS":"140 QUAIL STREET",
+    "CITY":"MAHTOMEDI",
+    "STATE":"MN",
+    "ZIP":55115,
+    "COUNTY_CODE":82,
+    "COUNTY_NAME":"WASHINGTON",
+    "TELEPHONE":"651-429-2311",
+    "FAX":"651-429-2677",
+    "ADMINISTRATOR":"MS. REBECCA BJORKLUND",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":23,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.096425,44.989741 ]
+    },
+    "properties": {
+    "HFID":29465,
+    "NAME":"LATITUDES TREATMENT CENTER LLC",
+    "ADDRESS":"1609 JACKSON STREET",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55117,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-454-2016",
+    "FAX":"651-488-5658",
+    "ADMINISTRATOR":"MS. JANET JOHNSON",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":20,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.147742,44.457333 ]
+    },
+    "properties": {
+    "HFID":1163,
+    "NAME":"LAURA BAKER SERVICES ASSC",
+    "ADDRESS":"211 OAK STREET",
+    "CITY":"NORTHFIELD",
+    "STATE":"MN",
+    "ZIP":55057,
+    "COUNTY_CODE":66,
+    "COUNTY_NAME":"RICE",
+    "TELEPHONE":"507-645-8866",
+    "FAX":"507-645-8869",
+    "ADMINISTRATOR":"SANDRA GERDES",
+    "LIC_TYPE":"OTHER NONPROFIT OWNERSHIP",
+    "SLFA_BEDS":30,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":30,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.264268,44.89927 ]
+    },
+    "properties": {
+    "HFID":1527,
+    "NAME":"LIVING CHALLENGE",
+    "ADDRESS":"701 EAST 57TH STREET",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55417,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-8466",
+    "FAX":"952-922-8463",
+    "ADMINISTRATOR":"MR. MIDE DEMEHIN",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.331072,45.024248 ]
+    },
+    "properties": {
+    "HFID":1379,
+    "NAME":"LIVING WELL 3801",
+    "ADDRESS":"3801 WEST BROADWAY AVENUE",
+    "CITY":"ROBBINSDALE",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-522-7556",
+    "FAX":"763-522-4573",
+    "ADMINISTRATOR":"MS. CINDI SHARP",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":9,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":9,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.331226,45.024384 ]
+    },
+    "properties": {
+    "HFID":1475,
+    "NAME":"LIVING WELL 3807",
+    "ADDRESS":"3807 WEST BROADWAY AVENUE",
+    "CITY":"ROBBINSDALE",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-420-5848",
+    "FAX":"763-420-6121",
+    "ADMINISTRATOR":"MR. TEEWON DOLOPEI",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":9,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":9,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.468534,45.09101 ]
+    },
+    "properties": {
+    "HFID":1401,
+    "NAME":"LIVING WELL 75TH",
+    "ADDRESS":"14850 75TH AVENUE NORTH",
+    "CITY":"MAPLE GROVE",
+    "STATE":"MN",
+    "ZIP":55369,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-420-5848",
+    "FAX":"763-420-6121",
+    "ADMINISTRATOR":"MS. STACY QUACKENBUSH",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.987382,44.946425 ]
+    },
+    "properties": {
+    "HFID":1600,
+    "NAME":"LIVING WELL BROOKVIEW",
+    "ADDRESS":"2675 BROOKVIEW DRIVE EAST",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-731-1602",
+    "FAX":"651-731-9120",
+    "ADMINISTRATOR":"MS. LYNDSEY THOMAS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.134174,44.884169 ]
+    },
+    "properties": {
+    "HFID":21108,
+    "NAME":"LIVING WELL CARMEN",
+    "ADDRESS":"915 CARMEN LANE",
+    "CITY":"MENDOTA HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55118,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-405-0569",
+    "FAX":"651-405-0559",
+    "ADMINISTRATOR":"MS. JENNI ZEIS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.239252,45.5472 ]
+    },
+    "properties": {
+    "HFID":1371,
+    "NAME":"LIVING WELL CENTRAL",
+    "ADDRESS":"1555 CENTRAL AVENUE SW",
+    "CITY":"CAMBRIDGE",
+    "STATE":"MN",
+    "ZIP":55008,
+    "COUNTY_CODE":30,
+    "COUNTY_NAME":"ISANTI",
+    "TELEPHONE":"763-689-3794",
+    "FAX":"763-444-7011",
+    "ADMINISTRATOR":"MR. JARRETT PUNG",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.06278,44.899669 ]
+    },
+    "properties": {
+    "HFID":20874,
+    "NAME":"LIVING WELL CONGRESS",
+    "ADDRESS":"2207 CONGRESS STREET",
+    "CITY":"SOUTH ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55075,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-450-2304",
+    "FAX":"651-450-2341",
+    "ADMINISTRATOR":"ANGELA PRICE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.043144,45.01008 ]
+    },
+    "properties": {
+    "HFID":1599,
+    "NAME":"LIVING WELL COPE",
+    "ADDRESS":"1362 EAST COPE AVENUE",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-483-9596",
+    "FAX":"651-483-4139",
+    "ADMINISTRATOR":"MS. JOSIE JEFFREY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.133284,44.895717 ]
+    },
+    "properties": {
+    "HFID":1646,
+    "NAME":"LIVING WELL DIANE",
+    "ADDRESS":"1668 DIANE ROAD",
+    "CITY":"MENDOTA HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55118,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-686-7872",
+    "FAX":"651-686-6572",
+    "ADMINISTRATOR":"JORDAN PEARSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.83831,45.195949 ]
+    },
+    "properties": {
+    "HFID":1179,
+    "NAME":"LIVING WELL DOUGLAS",
+    "ADDRESS":"303 DOUGLAS DRIVE",
+    "CITY":"BUFFALO",
+    "STATE":"MN",
+    "ZIP":55313,
+    "COUNTY_CODE":86,
+    "COUNTY_NAME":"WRIGHT",
+    "TELEPHONE":"763-682-4588",
+    "FAX":"763-682-9650",
+    "ADMINISTRATOR":"MS. THERESA MILLER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.082873,44.904307 ]
+    },
+    "properties": {
+    "HFID":1633,
+    "NAME":"LIVING WELL EAST EMERSON",
+    "ADDRESS":"41 EMERSON AVENUE EAST",
+    "CITY":"WEST ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55118,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-450-1880",
+    "FAX":"651-450-2070",
+    "ADMINISTRATOR":"MS. NICOLE THEYSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.361955,45.073811 ]
+    },
+    "properties": {
+    "HFID":1258,
+    "NAME":"LIVING WELL EDGEWOOD",
+    "ADDRESS":"6525 EDGEWOOD AVENUE NORTH",
+    "CITY":"BROOKLYN PARK",
+    "STATE":"MN",
+    "ZIP":55428,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-533-5104",
+    "FAX":"763-533-2630",
+    "ADMINISTRATOR":"MR. CHRISTOPHER PETERSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.328656,45.009583 ]
+    },
+    "properties": {
+    "HFID":1290,
+    "NAME":"LIVING WELL FRANCE",
+    "ADDRESS":"2759 FRANCE AVENUE NORTH",
+    "CITY":"ROBBINSDALE",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-521-0387",
+    "FAX":"763-521-2294",
+    "ADMINISTRATOR":"MR. ALI GOEPFERT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.237932,44.786541 ]
+    },
+    "properties": {
+    "HFID":1466,
+    "NAME":"LIVING WELL KENNELLY",
+    "ADDRESS":"12000 KENNELLY ROAD",
+    "CITY":"BURNSVILLE",
+    "STATE":"MN",
+    "ZIP":55337,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"952-894-3044",
+    "FAX":"952-894-1926",
+    "ADMINISTRATOR":"MR. AARON ODEN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":7,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":7,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.01817,44.991984 ]
+    },
+    "properties": {
+    "HFID":1595,
+    "NAME":"LIVING WELL LARPENTEUR",
+    "ADDRESS":"1951 LARPENTEUR AVENUE EAST",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-770-7120",
+    "FAX":"651-770-7130",
+    "ADMINISTRATOR":"MS. ANNETTE RIPLEY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.284786,45.054361 ]
+    },
+    "properties": {
+    "HFID":1243,
+    "NAME":"LIVING WELL LYNDALE",
+    "ADDRESS":"5449 LYNDALE AVENUE NORTH",
+    "CITY":"BROOKLYN CENTER",
+    "STATE":"MN",
+    "ZIP":55430,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-560-2220",
+    "FAX":"763-560-7596",
+    "ADMINISTRATOR":"MR. CHRISTOPHER DOMIER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":8,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":8,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.144464,44.882137 ]
+    },
+    "properties": {
+    "HFID":20941,
+    "NAME":"LIVING WELL MARY ADELE",
+    "ADDRESS":"1055 MARY ADELE AVENUE",
+    "CITY":"MENDOTA HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55120,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-365-8707",
+    "FAX":"651-365-8708",
+    "ADMINISTRATOR":"MR. ZACH EMMONS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.001301,44.977572 ]
+    },
+    "properties": {
+    "HFID":20783,
+    "NAME":"LIVING WELL MARYLAND",
+    "ADDRESS":"2355 MARYLAND AVENUE EAST",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-773-4074",
+    "FAX":"651-773-3314",
+    "ADMINISTRATOR":"JULIE CONRAD",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.161436,44.847103 ]
+    },
+    "properties": {
+    "HFID":20857,
+    "NAME":"LIVING WELL POPPLER",
+    "ADDRESS":"3020 POPPLER LANE",
+    "CITY":"EAGAN",
+    "STATE":"MN",
+    "ZIP":55122,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-688-8035",
+    "FAX":"651-688-8250",
+    "ADMINISTRATOR":"MR. ALEX BUSLEE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.067918,44.867308 ]
+    },
+    "properties": {
+    "HFID":20938,
+    "NAME":"LIVING WELL UPPER 55TH",
+    "ADDRESS":"1885 UPPER 55TH STREET EAST",
+    "CITY":"INVER GROVE HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55077,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-552-8748",
+    "FAX":"651-552-8794",
+    "ADMINISTRATOR":"MS. KIT PILTINGSRUD",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.145595,44.88432 ]
+    },
+    "properties": {
+    "HFID":1359,
+    "NAME":"LIVING WELL VICTORIA",
+    "ADDRESS":"2031 VICTORIA ROAD SOUTH",
+    "CITY":"MENDOTA HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55118,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-452-4295",
+    "FAX":"651-452-4296",
+    "ADMINISTRATOR":"MS. DEVONA VERDEJA",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":12,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.130532,44.864358 ]
+    },
+    "properties": {
+    "HFID":21238,
+    "NAME":"MARGARETS HOUSE",
+    "ADDRESS":"2535 CONDON COURT",
+    "CITY":"MENDOTA HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55120,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-686-0518",
+    "FAX":"651-686-0526",
+    "ADMINISTRATOR":"JENNIFER FRAZER JOHN",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":10,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.482467,44.315156 ]
+    },
+    "properties": {
+    "HFID":1598,
+    "NAME":"MBW COMPANY",
+    "ADDRESS":"1407 10TH STREET NORTH",
+    "CITY":"NEW ULM",
+    "STATE":"MN",
+    "ZIP":56073,
+    "COUNTY_CODE":8,
+    "COUNTY_NAME":"BROWN",
+    "TELEPHONE":"507-233-3030",
+    "FAX":"507-354-2168",
+    "ADMINISTRATOR":"RICHARD NELSON",
+    "LIC_TYPE":"BUSINESS TRUST",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.483482,44.31814 ]
+    },
+    "properties": {
+    "HFID":1210,
+    "NAME":"MBW ON RAYMOND",
+    "ADDRESS":"1131 RAYMOND DRIVE",
+    "CITY":"NEW ULM",
+    "STATE":"MN",
+    "ZIP":56073,
+    "COUNTY_CODE":8,
+    "COUNTY_NAME":"BROWN",
+    "TELEPHONE":"507-233-3030",
+    "FAX":"507-354-2168",
+    "ADMINISTRATOR":"RICHARD NELSON",
+    "LIC_TYPE":"BUSINESS TRUST",
+    "SLFA_BEDS":4,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.001512,45.855449 ]
+    },
+    "properties": {
+    "HFID":1637,
+    "NAME":"MEADOW CREEK",
+    "ADDRESS":"17305 MEADOW CREEK LANE",
+    "CITY":"PINE CITY",
+    "STATE":"MN",
+    "ZIP":55063,
+    "COUNTY_CODE":58,
+    "COUNTY_NAME":"PINE",
+    "TELEPHONE":"763-444-4838",
+    "FAX":"763-444-6007",
+    "ADMINISTRATOR":"MS. CONNIE BOMBENGER",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":50,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.543817,47.520407 ]
+    },
+    "properties": {
+    "HFID":20793,
+    "NAME":"MERRITT HOUSE",
+    "ADDRESS":"731 3RD STREET SOUTH",
+    "CITY":"VIRGINIA",
+    "STATE":"MN",
+    "ZIP":55792,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-749-2881",
+    "FAX":"218-749-3806",
+    "ADMINISTRATOR":"MS. JANIS ALLEN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.771447,46.454454 ]
+    },
+    "properties": {
+    "HFID":1674,
+    "NAME":"MN SEX OFFENDER PROGRAM",
+    "ADDRESS":"1111 HIGHWAY 73",
+    "CITY":"MOOSE LAKE",
+    "STATE":"MN",
+    "ZIP":55767,
+    "COUNTY_CODE":9,
+    "COUNTY_NAME":"CARLTON",
+    "TELEPHONE":"651-431-5874",
+    "FAX":"651-431-7404",
+    "ADMINISTRATOR":"MR. DAVID BORNUS",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":558,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.15356,46.35551 ]
+    },
+    "properties": {
+    "HFID":89,
+    "NAME":"MN SPECIALTY HEALTH SYSTEM",
+    "ADDRESS":"11615 STATE AVENUE",
+    "CITY":"BRAINERD",
+    "STATE":"MN",
+    "ZIP":56401,
+    "COUNTY_CODE":18,
+    "COUNTY_NAME":"CROW WING",
+    "TELEPHONE":"218-855-8757",
+    "FAX":"651-431-7437",
+    "ADMINISTRATOR":"MS. LORRAINE SELLNER",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.115832,46.440041 ]
+    },
+    "properties": {
+    "HFID":23896,
+    "NAME":"MN SPECIALTY HEALTH SYSTEM",
+    "ADDRESS":"240 SHADY LANE DRIVE BOX 430",
+    "CITY":"WADENA",
+    "STATE":"MN",
+    "ZIP":56482,
+    "COUNTY_CODE":80,
+    "COUNTY_NAME":"WADENA",
+    "TELEPHONE":"218-319-6001",
+    "FAX":"218-632-6583",
+    "ADMINISTRATOR":"MS. AMY GREENWALDT",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.027606,45.114023 ]
+    },
+    "properties": {
+    "HFID":25363,
+    "NAME":"MN SPECIALTY HEALTH SYSTEM",
+    "ADDRESS":"1208 OLENA AVENUE SE",
+    "CITY":"WILLMAR",
+    "STATE":"MN",
+    "ZIP":56201,
+    "COUNTY_CODE":34,
+    "COUNTY_NAME":"KANDIYOHI",
+    "TELEPHONE":"320-235-0341",
+    "FAX":"320-214-3335",
+    "ADMINISTRATOR":"MS. HEIDI JAMMA",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.442321,45.316226 ]
+    },
+    "properties": {
+    "HFID":1440,
+    "NAME":"MONARCH HEIGHTS",
+    "ADDRESS":"501 BURDICK AVENUE",
+    "CITY":"ORTONVILLE",
+    "STATE":"MN",
+    "ZIP":56278,
+    "COUNTY_CODE":6,
+    "COUNTY_NAME":"BIG STONE",
+    "TELEPHONE":"320-839-6139",
+    "FAX":"320-839-2060",
+    "ADMINISTRATOR":"STACEY KARELS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":12,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.937617,44.769196 ]
+    },
+    "properties": {
+    "HFID":21000,
+    "NAME":"MOUNT OLIVET ROLLING ACRES",
+    "ADDRESS":"129 MACKENTHUN LANE",
+    "CITY":"NORWOOD YOUNGAMERICA",
+    "STATE":"MN",
+    "ZIP":55368,
+    "COUNTY_CODE":10,
+    "COUNTY_NAME":"CARVER",
+    "TELEPHONE":"952-467-6484",
+    "FAX":"866-380-3092",
+    "ADMINISTRATOR":"MS. TRACY MURPHY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.641276,44.875518 ]
+    },
+    "properties": {
+    "HFID":1022,
+    "NAME":"MOUNT OLIVET ROLLING ACRES",
+    "ADDRESS":"7200 ROLLING ACRES ROAD #220",
+    "CITY":"VICTORIA",
+    "STATE":"MN",
+    "ZIP":55386,
+    "COUNTY_CODE":10,
+    "COUNTY_NAME":"CARVER",
+    "TELEPHONE":"952-474-5974",
+    "FAX":"952-474-3652",
+    "ADMINISTRATOR":"MS. TRACY MURPHY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":15,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":15,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.75342,44.834075 ]
+    },
+    "properties": {
+    "HFID":31654,
+    "NAME":"MOUNT OLIVET ROLLING ACRES",
+    "ADDRESS":"9375 JAN VIEW LANE",
+    "CITY":"WACONIA",
+    "STATE":"MN",
+    "ZIP":55387,
+    "COUNTY_CODE":10,
+    "COUNTY_NAME":"CARVER",
+    "TELEPHONE":"952-442-3226",
+    "FAX":"866-879-6938",
+    "ADMINISTRATOR":"TRACY MURPHY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.978687,44.304022 ]
+    },
+    "properties": {
+    "HFID":27850,
+    "NAME":"MSOP GREEN ACRES",
+    "ADDRESS":"100 FREEMAN DRIVE",
+    "CITY":"ST. PETER",
+    "STATE":"MN",
+    "ZIP":56082,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"651-431-5874",
+    "FAX":"651-431-7404",
+    "ADMINISTRATOR":"MR. DAVID BORNUS",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":44,
+    "SLFB_BEDS":15,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.978687,44.304022 ]
+    },
+    "properties": {
+    "HFID":27851,
+    "NAME":"MSOP PEXTON SHANTZ",
+    "ADDRESS":"100 FREEMAN DRIVE",
+    "CITY":"ST. PETER",
+    "STATE":"MN",
+    "ZIP":56082,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"651-431-5874",
+    "FAX":"651-431-7404",
+    "ADMINISTRATOR":"MR. DAVID BORNUS",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":260,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.978687,44.304022 ]
+    },
+    "properties": {
+    "HFID":30872,
+    "NAME":"MSOP SUNRISE",
+    "ADDRESS":"100 FREEMAN DRIVE",
+    "CITY":"ST. PETER",
+    "STATE":"MN",
+    "ZIP":56082,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"651-431-5874",
+    "FAX":"651-431-7404",
+    "ADMINISTRATOR":"MR. DAVID BORNUS",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":27,
+    "SLFB_BEDS":3,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.257329,44.824638 ]
+    },
+    "properties": {
+    "HFID":1565,
+    "NAME":"MTAI ALBERT PLACE",
+    "ADDRESS":"9911 13TH AVENUE SOUTH",
+    "CITY":"BLOOMINGTON",
+    "STATE":"MN",
+    "ZIP":55425,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-442-7830",
+    "FAX":"763-754-0332",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.335898,44.810985 ]
+    },
+    "properties": {
+    "HFID":1098,
+    "NAME":"MTAI BLOOMINGTON",
+    "ADDRESS":"10633 KELL AVENUE SOUTH",
+    "CITY":"BLOOMINGTON",
+    "STATE":"MN",
+    "ZIP":55437,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-881-2848",
+    "FAX":"952-884-0179",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.289341,45.080033 ]
+    },
+    "properties": {
+    "HFID":1021,
+    "NAME":"MTAI BROOKLYN CENTER",
+    "ADDRESS":"507 69TH AVENUE NORTH",
+    "CITY":"BROOKLYN CENTER",
+    "STATE":"MN",
+    "ZIP":55430,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-561-9030",
+    "FAX":"763-561-0263",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.373946,44.980059 ]
+    },
+    "properties": {
+    "HFID":1564,
+    "NAME":"MTAI GLADSON",
+    "ADDRESS":"7350 RIDGEWAY ROAD",
+    "CITY":"GOLDEN VALLEY",
+    "STATE":"MN",
+    "ZIP":55427,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-542-8340",
+    "FAX":"763-542-3285",
+    "ADMINISTRATOR":"MARY KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.394154,45.041502 ]
+    },
+    "properties": {
+    "HFID":1563,
+    "NAME":"MTAI MINNEHAHA CREEK",
+    "ADDRESS":"8949 48TH AVENUE NORTH",
+    "CITY":"NEW HOPE",
+    "STATE":"MN",
+    "ZIP":55428,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-537-9220",
+    "FAX":"763-537-6416",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":5,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.427261,45.048557 ]
+    },
+    "properties": {
+    "HFID":1471,
+    "NAME":"MTAI PLYMOUTH EAST",
+    "ADDRESS":"11550 52ND AVENUE NORTH",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55413,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-208-4889",
+    "FAX":"763-208-4890",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.348874,45.043766 ]
+    },
+    "properties": {
+    "HFID":1562,
+    "NAME":"MTAI RICE CREEK",
+    "ADDRESS":"5402 FAIRVIEW AVENUE NORTH",
+    "CITY":"CRYSTAL",
+    "STATE":"MN",
+    "ZIP":55428,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-442-7830",
+    "FAX":"763-754-0332",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.350284,45.002629 ]
+    },
+    "properties": {
+    "HFID":1561,
+    "NAME":"MTAI SAND CREEK",
+    "ADDRESS":"5555 WESTBROOK ROAD",
+    "CITY":"GOLDEN VALLEY",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-545-7086",
+    "FAX":"763-545-4251",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":5,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.057719,44.966289 ]
+    },
+    "properties": {
+    "HFID":1614,
+    "NAME":"MTAI TRILLIUM",
+    "ADDRESS":"306 WESTGATE DRIVE",
+    "CITY":"WINSTED",
+    "STATE":"MN",
+    "ZIP":55395,
+    "COUNTY_CODE":43,
+    "COUNTY_NAME":"MCLEOD",
+    "TELEPHONE":"320-485-3759",
+    "FAX":"320-485-4738",
+    "ADMINISTRATOR":"BRENT KROCAK",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.10253,44.007656 ]
+    },
+    "properties": {
+    "HFID":1241,
+    "NAME":"NEW LIFE TREATMENT CENTER",
+    "ADDRESS":"130 DAKOTA STREET",
+    "CITY":"WOODSTOCK",
+    "STATE":"MN",
+    "ZIP":56186,
+    "COUNTY_CODE":59,
+    "COUNTY_NAME":"PIPESTONE",
+    "TELEPHONE":"507-777-4321",
+    "FAX":"507-777-4284",
+    "ADMINISTRATOR":"MS. CHERYL THACKER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":21,
+    "SLFB_BEDS":7,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.475174,44.312504 ]
+    },
+    "properties": {
+    "HFID":24059,
+    "NAME":"NEW ULM MEDICAL CENTER",
+    "ADDRESS":"1324 5TH STREET NORTH",
+    "CITY":"NEW ULM",
+    "STATE":"MN",
+    "ZIP":56073,
+    "COUNTY_CODE":8,
+    "COUNTY_NAME":"BROWN",
+    "TELEPHONE":"507-217-5000",
+    "FAX":"507-217-5575",
+    "ADMINISTRATOR":"MR. TOBY FREIER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":10,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.518001,47.218071 ]
+    },
+    "properties": {
+    "HFID":1608,
+    "NAME":"NORTHLAND RECOVERY CENTER",
+    "ADDRESS":"1215 7TH AVENUE SE",
+    "CITY":"GRAND RAPIDS",
+    "STATE":"MN",
+    "ZIP":55744,
+    "COUNTY_CODE":31,
+    "COUNTY_NAME":"ITASCA",
+    "TELEPHONE":"218-313-1315",
+    "FAX":"218-327-1932",
+    "ADMINISTRATOR":"COLLEEN MACKEY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":34,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.157488,46.755746 ]
+    },
+    "properties": {
+    "HFID":33695,
+    "NAME":"NORTHWOOD CHILDRENS SVS INC",
+    "ADDRESS":"4000 WEST 9TH STREET",
+    "CITY":"DULUTH",
+    "STATE":"MN",
+    "ZIP":55807,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-625-2660",
+    "FAX":"218-724-0215",
+    "ADMINISTRATOR":"MR. RICHARD WOLLEAT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":48,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.365952,44.989531 ]
+    },
+    "properties": {
+    "HFID":1516,
+    "NAME":"OASIS",
+    "ADDRESS":"6739 GOLDEN VALLEY ROAD",
+    "CITY":"GOLDEN VALLEY",
+    "STATE":"MN",
+    "ZIP":55427,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-544-1447",
+    "FAX":"763-544-0833",
+    "ADMINISTRATOR":"MR. HUGH AYLWARD",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.428579,44.98015 ]
+    },
+    "properties": {
+    "HFID":1293,
+    "NAME":"ON BELAY HOUSE",
+    "ADDRESS":"115 FORESTVIEW LANE NORTH",
+    "CITY":"PLYMOUTH",
+    "STATE":"MN",
+    "ZIP":55441,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-546-8008",
+    "FAX":"763-546-7674",
+    "ADMINISTRATOR":"JON BENSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":20,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.576518,44.998598 ]
+    },
+    "properties": {
+    "HFID":1366,
+    "NAME":"ORONO WOODLANDS",
+    "ADDRESS":"2100 6TH AVENUE NORTH BOX 507",
+    "CITY":"LONG LAKE",
+    "STATE":"MN",
+    "ZIP":55356,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-473-0852",
+    "FAX":"952-473-8428",
+    "ADMINISTRATOR":"MS. JULIE MANWORREN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.092601,44.628689 ]
+    },
+    "properties": {
+    "HFID":25956,
+    "NAME":"PAUL'S PLACE",
+    "ADDRESS":"22355 ALBATROSS CIRCLE",
+    "CITY":"FARMINGTON",
+    "STATE":"MN",
+    "ZIP":55024,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-734-9633",
+    "FAX":"651-734-9533",
+    "ADMINISTRATOR":"JENNIFER FRAZER JOHN",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.297982,44.912969 ]
+    },
+    "properties": {
+    "HFID":1556,
+    "NAME":"PEOPLE II",
+    "ADDRESS":"1380 WEST MINNEHAHA PARKWAY",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55419,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"651-774-0011",
+    "FAX":"651-454-5000",
+    "ADMINISTRATOR":"MS. JILL WIEDEMANN WEST",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.995582,44.901747 ]
+    },
+    "properties": {
+    "HFID":23589,
+    "NAME":"PHOENIX AT CARVER",
+    "ADDRESS":"2465 CARVER AVENUE",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.008762,45.093797 ]
+    },
+    "properties": {
+    "HFID":23428,
+    "NAME":"PHOENIX AT CASWELL",
+    "ADDRESS":"2168 12TH STREET",
+    "CITY":"WHITE BEAR LAKE",
+    "STATE":"MN",
+    "ZIP":55110,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.068538,45.050393 ]
+    },
+    "properties": {
+    "HFID":1649,
+    "NAME":"PHOENIX AT CENTERVILLE",
+    "ADDRESS":"785 COUNTY ROAD EAST",
+    "CITY":"VADNAIS HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55127,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.007571,44.894985 ]
+    },
+    "properties": {
+    "HFID":23482,
+    "NAME":"PHOENIX AT DOUGLAS",
+    "ADDRESS":"1538 POINT DOUGLAS ROAD SOUTH",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.044343,45.050325 ]
+    },
+    "properties": {
+    "HFID":1648,
+    "NAME":"PHOENIX AT ENGLISH",
+    "ADDRESS":"1336 COUNTY ROAD EAST",
+    "CITY":"VADNAIS HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55110,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.037315,44.97243 ]
+    },
+    "properties": {
+    "HFID":23483,
+    "NAME":"PHOENIX AT FOSS",
+    "ADDRESS":"1500 AMES AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55106,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.176041,45.065557 ]
+    },
+    "properties": {
+    "HFID":23588,
+    "NAME":"PHOENIX AT JANET COURT",
+    "ADDRESS":"1769 JANET COURT",
+    "CITY":"ARDEN HILLS",
+    "STATE":"MN",
+    "ZIP":55112,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.208983,45.1084 ]
+    },
+    "properties": {
+    "HFID":23427,
+    "NAME":"PHOENIX AT LUDDEN",
+    "ADDRESS":"7717 LONG LAKE ROAD",
+    "CITY":"MOUNDS VIEW",
+    "STATE":"MN",
+    "ZIP":55112,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.004869,44.869128 ]
+    },
+    "properties": {
+    "HFID":23519,
+    "NAME":"PHOENIX AT NEWPORT",
+    "ADDRESS":"351 14TH STREET",
+    "CITY":"NEWPORT",
+    "STATE":"MN",
+    "ZIP":55055,
+    "COUNTY_CODE":82,
+    "COUNTY_NAME":"WASHINGTON",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.073547,45.00999 ]
+    },
+    "properties": {
+    "HFID":1195,
+    "NAME":"PHOENIX AT VIKING",
+    "ADDRESS":"645 VIKING DRIVE EAST",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55117,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-7655",
+    "FAX":"651-227-6847",
+    "ADMINISTRATOR":"MS. DARLENE SCOTT",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.904791,46.929714 ]
+    },
+    "properties": {
+    "HFID":1578,
+    "NAME":"PINE MANORS INC",
+    "ADDRESS":"22195 STATE 34",
+    "CITY":"NEVIS",
+    "STATE":"MN",
+    "ZIP":56467,
+    "COUNTY_CODE":29,
+    "COUNTY_NAME":"HUBBARD",
+    "TELEPHONE":"218-732-4337",
+    "FAX":"218-732-0399",
+    "ADMINISTRATOR":"MS. RACHEL MUELLER",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":28,
+    "SLFB_BEDS":8,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.760168,43.986549 ]
+    },
+    "properties": {
+    "HFID":1520,
+    "NAME":"PRAIRIE VIEW INC",
+    "ADDRESS":"2220 27TH STREET",
+    "CITY":"SLAYTON",
+    "STATE":"MN",
+    "ZIP":56172,
+    "COUNTY_CODE":51,
+    "COUNTY_NAME":"MURRAY",
+    "TELEPHONE":"218-310-4322",
+    "FAX":"952-226-5806",
+    "ADMINISTRATOR":"MR. ERIC NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":14,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":14,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.950487,44.157126 ]
+    },
+    "properties": {
+    "HFID":23697,
+    "NAME":"PRAIRIES EDGE",
+    "ADDRESS":"152 COUGAR DRIVE",
+    "CITY":"MANKATO",
+    "STATE":"MN",
+    "ZIP":56001,
+    "COUNTY_CODE":7,
+    "COUNTY_NAME":"BLUE EARTH",
+    "TELEPHONE":"507-387-8281",
+    "FAX":"507-625-9948",
+    "ADMINISTRATOR":"MS. LINDA LEIDING",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.328809,45.920132 ]
+    },
+    "properties": {
+    "HFID":1684,
+    "NAME":"PRAIRIEWOOD HOME",
+    "ADDRESS":"2736 LEHOMME DIEU HEIGHTS NW",
+    "CITY":"ALEXANDRIA",
+    "STATE":"MN",
+    "ZIP":56308,
+    "COUNTY_CODE":21,
+    "COUNTY_NAME":"DOUGLAS",
+    "TELEPHONE":"320-763-4787",
+    "FAX":"320-759-1912",
+    "ADMINISTRATOR":"ASHLEY HOBERG",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.460095,44.864697 ]
+    },
+    "properties": {
+    "HFID":1405,
+    "NAME":"PRIDE INSTITUTE",
+    "ADDRESS":"14400 MARTIN DRIVE",
+    "CITY":"EDEN PRAIRIE",
+    "STATE":"MN",
+    "ZIP":55344,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-345-1881",
+    "FAX":"952-934-8764",
+    "ADMINISTRATOR":"TERRI HAYDEN",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":42,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.566238,44.812473 ]
+    },
+    "properties": {
+    "HFID":21953,
+    "NAME":"PROJECT TURNABOUT",
+    "ADDRESS":"660 18TH STREET",
+    "CITY":"GRANITE FALLS",
+    "STATE":"MN",
+    "ZIP":56241,
+    "COUNTY_CODE":87,
+    "COUNTY_NAME":"YELLOW MEDICINE",
+    "TELEPHONE":"320-564-4911",
+    "FAX":"320-564-3122",
+    "ADMINISTRATOR":"MICHAEL SCHIKS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":96,
+    "SLFB_BEDS":15,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.771144,44.452647 ]
+    },
+    "properties": {
+    "HFID":1617,
+    "NAME":"PROJECT TURNABOUT HALFWAY HSE",
+    "ADDRESS":"1220 BIRCH STREET",
+    "CITY":"MARSHALL",
+    "STATE":"MN",
+    "ZIP":56258,
+    "COUNTY_CODE":42,
+    "COUNTY_NAME":"LYON",
+    "TELEPHONE":"507-532-3008",
+    "FAX":"507-532-3056",
+    "ADMINISTRATOR":"MICHAEL SCHIKS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":24,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.055516,45.013645 ]
+    },
+    "properties": {
+    "HFID":1549,
+    "NAME":"RADIAS HEALTH",
+    "ADDRESS":"1096 GERVAIS AVENUE",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-256-1260",
+    "FAX":"651-291-7578",
+    "ADMINISTRATOR":"TERRY SCHNEIDER",
+    "LIC_TYPE":"OTHER NONPROFIT OWNERSHIP",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.998258,45.030359 ]
+    },
+    "properties": {
+    "HFID":1572,
+    "NAME":"RAJWOOD",
+    "ADDRESS":"2951 BARTELMY LANE",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-483-9500",
+    "FAX":"651-483-0775",
+    "ADMINISTRATOR":"MR. JIM MARTIN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":4,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.086867,44.957843 ]
+    },
+    "properties": {
+    "HFID":1571,
+    "NAME":"RAMSEY COUNTY DETOX CENTER",
+    "ADDRESS":"402 UNIVERSITY AVENUE EAST",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55130,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-266-4417",
+    "FAX":"651-266-4439",
+    "ADMINISTRATOR":"MS. WOMAZETTA JONES",
+    "LIC_TYPE":"COUNTY",
+    "SLFA_BEDS":10,
+    "SLFB_BEDS":40,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.915436,47.402184 ]
+    },
+    "properties": {
+    "HFID":1629,
+    "NAME":"RANGE CENTER ASPENWOOD HOME",
+    "ADDRESS":"1820 EAST 39TH STREET",
+    "CITY":"HIBBING",
+    "STATE":"MN",
+    "ZIP":55746,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-263-9079",
+    "FAX":"218-254-7343",
+    "ADMINISTRATOR":"NICOLE STEEL",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.879447,47.497198 ]
+    },
+    "properties": {
+    "HFID":1062,
+    "NAME":"RANGE CENTER LEGACY",
+    "ADDRESS":"112 9TH STREET NW",
+    "CITY":"CHISHOLM",
+    "STATE":"MN",
+    "ZIP":55719,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-254-4875",
+    "FAX":"218-254-7343",
+    "ADMINISTRATOR":"NICOLE STEEL",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.947376,47.393123 ]
+    },
+    "properties": {
+    "HFID":1315,
+    "NAME":"RANGE CENTER MAPLEVIEW HOME",
+    "ADDRESS":"506 WEST 47TH STREET",
+    "CITY":"HIBBING",
+    "STATE":"MN",
+    "ZIP":55746,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-263-4573",
+    "FAX":"218-254-7343",
+    "ADMINISTRATOR":"NICOLE STEEL",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.922635,45.583057 ]
+    },
+    "properties": {
+    "HFID":1662,
+    "NAME":"RAVENWOOD HOME",
+    "ADDRESS":"605 WEST 6TH STREET",
+    "CITY":"MORRIS",
+    "STATE":"MN",
+    "ZIP":56267,
+    "COUNTY_CODE":75,
+    "COUNTY_NAME":"STEVENS",
+    "TELEPHONE":"320-589-2057",
+    "FAX":"320-589-0462",
+    "ADMINISTRATOR":"JESSICA KRENZ",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.789844,45.253625 ]
+    },
+    "properties": {
+    "HFID":22017,
+    "NAME":"REBECCAS RESIDENCE",
+    "ADDRESS":"21077 PENROSE AVENUE NORTH",
+    "CITY":"SCANDIA",
+    "STATE":"MN",
+    "ZIP":55073,
+    "COUNTY_CODE":82,
+    "COUNTY_NAME":"WASHINGTON",
+    "TELEPHONE":"651-433-5839",
+    "FAX":"651-734-9533",
+    "ADMINISTRATOR":"JENNIFER FRAZER JOHN",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":10,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.288284,44.89734 ]
+    },
+    "properties": {
+    "HFID":1470,
+    "NAME":"REENTRY HOUSE",
+    "ADDRESS":"5812 LYNDALE AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55419,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-869-2411",
+    "FAX":"612-869-0313",
+    "ADMINISTRATOR":"TERRY SCHNEIDER",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.262545,44.964747 ]
+    },
+    "properties": {
+    "HFID":33693,
+    "NAME":"REENTRY HOUSE CRISIS STBL PROG",
+    "ADDRESS":"1800 CHICAGO AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55404,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-540-5703",
+    "FAX":"612-540-5701",
+    "ADMINISTRATOR":"LISA COOPER",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.199981,45.45084 ]
+    },
+    "properties": {
+    "HFID":34437,
+    "NAME":"REFRACTIONS LLC",
+    "ADDRESS":"22575 43RD AVE",
+    "CITY":"ST. AUGUSTA",
+    "STATE":"MN",
+    "ZIP":56301,
+    "COUNTY_CODE":73,
+    "COUNTY_NAME":"STEARNS",
+    "TELEPHONE":"320-252-6017",
+    "FAX":"320-252-6278",
+    "ADMINISTRATOR":"MOLLY PENA",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.460711,43.613476 ]
+    },
+    "properties": {
+    "HFID":1205,
+    "NAME":"REM HEARTLAND INC AMBER",
+    "ADDRESS":"107 DOROTHY STREET",
+    "CITY":"FAIRMONT",
+    "STATE":"MN",
+    "ZIP":56031,
+    "COUNTY_CODE":46,
+    "COUNTY_NAME":"MARTIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.963951,44.156825 ]
+    },
+    "properties": {
+    "HFID":1537,
+    "NAME":"REM HEARTLAND INC BIRCH",
+    "ADDRESS":"206 THOMAS DRIVE",
+    "CITY":"MANKATO",
+    "STATE":"MN",
+    "ZIP":56001,
+    "COUNTY_CODE":7,
+    "COUNTY_NAME":"BLUE EARTH",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":12,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.460237,43.613476 ]
+    },
+    "properties": {
+    "HFID":1427,
+    "NAME":"REM HEARTLAND INC BUDD",
+    "ADDRESS":"111 DOROTHY STREET",
+    "CITY":"FAIRMONT",
+    "STATE":"MN",
+    "ZIP":56031,
+    "COUNTY_CODE":46,
+    "COUNTY_NAME":"MARTIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":12,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.96395,44.156844 ]
+    },
+    "properties": {
+    "HFID":1536,
+    "NAME":"REM HEARTLAND INC CYPRESS",
+    "ADDRESS":"204 THOMAS DRIVE",
+    "CITY":"MANKATO",
+    "STATE":"MN",
+    "ZIP":56001,
+    "COUNTY_CODE":7,
+    "COUNTY_NAME":"BLUE EARTH",
+    "TELEPHONE":"507-387-3181",
+    "FAX":"507-387-3182",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":11,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":11,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.409338,44.048381 ]
+    },
+    "properties": {
+    "HFID":1455,
+    "NAME":"REM HEARTLAND INC MADELIA",
+    "ADDRESS":"226 DREW AVENUE SOUTH",
+    "CITY":"MADELIA",
+    "STATE":"MN",
+    "ZIP":56062,
+    "COUNTY_CODE":83,
+    "COUNTY_NAME":"WATONWAN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":13,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":13,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.342742,45.017085 ]
+    },
+    "properties": {
+    "HFID":26137,
+    "NAME":"REM HENNEPIN INC CRYSTAL",
+    "ADDRESS":"3400 QUAIL AVENUE NORTH",
+    "CITY":"CRYSTAL",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.367983,45.072878 ]
+    },
+    "properties": {
+    "HFID":1026,
+    "NAME":"REM HENNEPIN INC LAKELAND",
+    "ADDRESS":"6816 65TH AVENUE NORTH",
+    "CITY":"BROOKLYN PARK",
+    "STATE":"MN",
+    "ZIP":55428,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.309611,44.971291 ]
+    },
+    "properties": {
+    "HFID":1130,
+    "NAME":"REM HENNEPIN INC QUEEN",
+    "ADDRESS":"614 QUEEN AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55405,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.344201,45.014419 ]
+    },
+    "properties": {
+    "HFID":1274,
+    "NAME":"REM HENNEPIN INC REGENT",
+    "ADDRESS":"3239 REGENT AVENUE NORTH",
+    "CITY":"GOLDEN VALLEY",
+    "STATE":"MN",
+    "ZIP":55422,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.357594,44.911323 ]
+    },
+    "properties": {
+    "HFID":1149,
+    "NAME":"REM HENNEPIN INC WILLIAM",
+    "ADDRESS":"5100 WILLIAM AVENUE SOUTH",
+    "CITY":"EDINA",
+    "STATE":"MN",
+    "ZIP":55436,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTEN WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.412329,44.973977 ]
+    },
+    "properties": {
+    "HFID":1403,
+    "NAME":"REM HENNEPIN MINNETONKA",
+    "ADDRESS":"21 WESTWOOD ROAD",
+    "CITY":"MINNETONKA",
+    "STATE":"MN",
+    "ZIP":55305,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":12,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.28127,44.95961 ]
+    },
+    "properties": {
+    "HFID":1029,
+    "NAME":"REM HENNEPIN PILLSBURY",
+    "ADDRESS":"2311 PILLSBURY AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55404,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":9,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":9,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.138724,44.937828 ]
+    },
+    "properties": {
+    "HFID":1055,
+    "NAME":"REM RAMSEY INC GOODRICH",
+    "ADDRESS":"917 GOODRICH AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55105,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. PATRICK MASYGA",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.999462,44.911745 ]
+    },
+    "properties": {
+    "HFID":28182,
+    "NAME":"REM RAMSEY INC LAKEWOOD",
+    "ADDRESS":"975 LAKEWOOD DRIVE SOUTH",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. PATRICK MASYGA",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":5,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.986491,44.965558 ]
+    },
+    "properties": {
+    "HFID":26750,
+    "NAME":"REM RAMSEY INC MAYHILL",
+    "ADDRESS":"797 MAYHILL ROAD NORTH",
+    "CITY":"MAPLEWOOD",
+    "STATE":"MN",
+    "ZIP":55119,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"PATRICK MASYGA",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":5,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.992092,44.999414 ]
+    },
+    "properties": {
+    "HFID":1344,
+    "NAME":"REM RAMSEY INC NORTH OAKS",
+    "ADDRESS":"2570 HOLLOWAY AVENUE EAST",
+    "CITY":"NORTH ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55109,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. PATRICK MASYGA",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":5,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.438858,44.000159 ]
+    },
+    "properties": {
+    "HFID":1320,
+    "NAME":"REM RIVER BLUFFS ROCHESTER SE",
+    "ADDRESS":"1631 19TH AVENUE SE",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55904,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. PATRICK MASYGA",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":12,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":12,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.41986,44.034814 ]
+    },
+    "properties": {
+    "HFID":1464,
+    "NAME":"REM RIVER BLUFFS STONE PARK",
+    "ADDRESS":"3003 STONE PARK DRIVE",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55904,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. PATRICK MASYGA",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.872275,45.182581 ]
+    },
+    "properties": {
+    "HFID":1487,
+    "NAME":"REM SO CENTRAL SERVS BUFFALO",
+    "ADDRESS":"914 3RD AVENUE NE",
+    "CITY":"BUFFALO",
+    "STATE":"MN",
+    "ZIP":55313,
+    "COUNTY_CODE":86,
+    "COUNTY_NAME":"WRIGHT",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MS. KRISTINE WAINRIGHT-TADYCH",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":8,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":8,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.779887,44.456763 ]
+    },
+    "properties": {
+    "HFID":1042,
+    "NAME":"REM SOUTHWEST SRVS MARSHALL A",
+    "ADDRESS":"1003 NORTH 4TH STREET",
+    "CITY":"MARSHALL",
+    "STATE":"MN",
+    "ZIP":56258,
+    "COUNTY_CODE":42,
+    "COUNTY_NAME":"LYON",
+    "TELEPHONE":"507-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.779695,44.456903 ]
+    },
+    "properties": {
+    "HFID":1616,
+    "NAME":"REM SOUTHWEST SRVS MARSHALL C",
+    "ADDRESS":"1007 NORTH 4TH STREET",
+    "CITY":"MARSHALL",
+    "STATE":"MN",
+    "ZIP":56258,
+    "COUNTY_CODE":42,
+    "COUNTY_NAME":"LYON",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.723306,44.937487 ]
+    },
+    "properties": {
+    "HFID":1266,
+    "NAME":"REM SW SERVICES MONTEVIDEO",
+    "ADDRESS":"585 GRAVEL ROAD",
+    "CITY":"MONTEVIDEO",
+    "STATE":"MN",
+    "ZIP":56265,
+    "COUNTY_CODE":12,
+    "COUNTY_NAME":"CHIPPEWA",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.896946,44.760269 ]
+    },
+    "properties": {
+    "HFID":1312,
+    "NAME":"RENVILLE COUNTY COMM RES",
+    "ADDRESS":"831 GROVE AVENUE",
+    "CITY":"BIRD ISLAND",
+    "STATE":"MN",
+    "ZIP":55310,
+    "COUNTY_CODE":65,
+    "COUNTY_NAME":"RENVILLE",
+    "TELEPHONE":"320-365-3748",
+    "FAX":"320-365-4533",
+    "ADMINISTRATOR":"MS. HEATHER SANDER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.080557,46.800453 ]
+    },
+    "properties": {
+    "HFID":21125,
+    "NAME":"RES TREATMENT & DETOX CTR",
+    "ADDRESS":"1402 EAST SUPERIOR STREET",
+    "CITY":"DULUTH",
+    "STATE":"MN",
+    "ZIP":55805,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-723-8444",
+    "FAX":"218-336-4653",
+    "ADMINISTRATOR":"TINA SILVERNESS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":40,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.203056,43.653314 ]
+    },
+    "properties": {
+    "HFID":1345,
+    "NAME":"RESIDENTIAL ADVANTAGES LLC",
+    "ADDRESS":"107 SOUTH BLUE MOUND AVENUE",
+    "CITY":"LUVERNE",
+    "STATE":"MN",
+    "ZIP":56156,
+    "COUNTY_CODE":67,
+    "COUNTY_NAME":"ROCK",
+    "TELEPHONE":"952-922-6776",
+    "FAX":"952-922-6885",
+    "ADMINISTRATOR":"MR. DEVIN NELSON",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.279728,44.717169 ]
+    },
+    "properties": {
+    "HFID":32962,
+    "NAME":"RIVER RIDGE GLEN CREEK LODGE",
+    "ADDRESS":"16005 JOPLIN AVENUE",
+    "CITY":"LAKEVILLE",
+    "STATE":"MN",
+    "ZIP":55044,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"952-894-7722",
+    "FAX":"952-288-2174",
+    "ADMINISTRATOR":"BRIAN SAMMON",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.416863,44.874054 ]
+    },
+    "properties": {
+    "HFID":25914,
+    "NAME":"RIVER RIDGE LLC A WOMAN'S WAY",
+    "ADDRESS":"7170 BRYANT LAKE DRIVE",
+    "CITY":"EDEN PRAIRIE",
+    "STATE":"MN",
+    "ZIP":55344,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-894-7722",
+    "FAX":"952-894-0882",
+    "ADMINISTRATOR":"MR. BRIAN SAMMON",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.050965,44.197166 ]
+    },
+    "properties": {
+    "HFID":29812,
+    "NAME":"ROLLINGWOOD HOME",
+    "ADDRESS":"2203 ROLLING GREEN LANE",
+    "CITY":"NORTH MANKATO",
+    "STATE":"MN",
+    "ZIP":56003,
+    "COUNTY_CODE":7,
+    "COUNTY_NAME":"BLUE EARTH",
+    "TELEPHONE":"507-779-7187",
+    "FAX":"507-779-7186",
+    "ADMINISTRATOR":"EMILY EBRANSKY",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":5,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":5,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.352395,45.087269 ]
+    },
+    "properties": {
+    "HFID":1430,
+    "NAME":"SHINGLE CREEK OPTION",
+    "ADDRESS":"5624 73RD AVENUE NORTH",
+    "CITY":"BROOKLYN PARK",
+    "STATE":"MN",
+    "ZIP":55429,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-560-5330",
+    "FAX":"763-566-8426",
+    "ADMINISTRATOR":"MR. MICHAEL AMON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":15,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":15,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.226893,45.08234 ]
+    },
+    "properties": {
+    "HFID":1586,
+    "NAME":"SILVER OAKS",
+    "ADDRESS":"3277 RICE CREEK ROAD",
+    "CITY":"NEW BRIGHTON",
+    "STATE":"MN",
+    "ZIP":55112,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-636-0546",
+    "FAX":"651-636-4530",
+    "ADMINISTRATOR":"SANDRA QUINN",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":4,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.079093,45.075206 ]
+    },
+    "properties": {
+    "HFID":1636,
+    "NAME":"SPRINGHILL",
+    "ADDRESS":"531 SPRINGHILL ROAD",
+    "CITY":"VADNAIS HEIGHTS",
+    "STATE":"MN",
+    "ZIP":55127,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-483-9500",
+    "FAX":"651-483-0775",
+    "ADMINISTRATOR":"MR. JIM MARTIN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":4,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":4,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.129118,44.971746 ]
+    },
+    "properties": {
+    "HFID":4307,
+    "NAME":"ST. PAUL COMO COMMUNITY UNIT",
+    "ADDRESS":"690 COMO AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55103,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-558-2187",
+    "FAX":"651-558-2230",
+    "ADMINISTRATOR":"DAMIR UTRZAN",
+    "LIC_TYPE":"STATE",
+    "SLFA_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.049258,44.905104 ]
+    },
+    "properties": {
+    "HFID":1331,
+    "NAME":"SUMMIT AVENUE RESIDENCE",
+    "ADDRESS":"920 SUMMIT AVENUE",
+    "CITY":"SOUTH ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55075,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-451-2889",
+    "FAX":"651-451-5955",
+    "ADMINISTRATOR":"MS. SANDRA KINDEM",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":13,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":13,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.078914,44.934783 ]
+    },
+    "properties": {
+    "HFID":25565,
+    "NAME":"TAPESTRY",
+    "ADDRESS":"135 EAST COLORADO STREET",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55107,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"612-454-2342",
+    "FAX":"651-489-6458",
+    "ADMINISTRATOR":"MS. ANDREA KOFOED",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":64,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.471746,44.018195 ]
+    },
+    "properties": {
+    "HFID":1449,
+    "NAME":"THE GABLES",
+    "ADDRESS":"604 5TH STREET SW",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55902,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"507-282-2500",
+    "FAX":"507-282-6036",
+    "ADMINISTRATOR":"NANCY STOFFERAHN",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":30,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.776984,44.623031 ]
+    },
+    "properties": {
+    "HFID":1682,
+    "NAME":"THE LUTHERAN HOME HOPE RES",
+    "ADDRESS":"611 WEST MAIN STREET",
+    "CITY":"BELLE PLAINE",
+    "STATE":"MN",
+    "ZIP":56011,
+    "COUNTY_CODE":70,
+    "COUNTY_NAME":"SCOTT",
+    "TELEPHONE":"952-873-2143",
+    "FAX":"952-873-2184",
+    "ADMINISTRATOR":"DEBRA WILBRIGHT",
+    "LIC_TYPE":"CHURCH RELATED",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":52,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":52,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.345853,44.935987 ]
+    },
+    "properties": {
+    "HFID":1647,
+    "NAME":"THE WAYSIDE HOUSE INC",
+    "ADDRESS":"3705 PARK CENTER BOULEVARD",
+    "CITY":"ST. LOUIS PARK",
+    "STATE":"MN",
+    "ZIP":55416,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-926-5626",
+    "FAX":"952-926-9713",
+    "ADMINISTRATOR":"CARRIE SALSNESS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":41,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.033689,44.189891 ]
+    },
+    "properties": {
+    "HFID":1454,
+    "NAME":"THERESE K SEXTON HOME SOUTH",
+    "ADDRESS":"2050 HAUGHTON AVENUE",
+    "CITY":"NORTH MANKATO",
+    "STATE":"MN",
+    "ZIP":56003,
+    "COUNTY_CODE":52,
+    "COUNTY_NAME":"NICOLLET",
+    "TELEPHONE":"507-387-8281",
+    "FAX":"507-625-9948",
+    "ADMINISTRATOR":"LINDA LEIDING",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":8,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":8,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.217659,46.686439 ]
+    },
+    "properties": {
+    "HFID":1358,
+    "NAME":"THUNDERBIRD WREN HOUSE",
+    "ADDRESS":"9302 IDAHO STREET",
+    "CITY":"DULUTH",
+    "STATE":"MN",
+    "ZIP":55808,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-879-6731",
+    "FAX":"218-879-6734",
+    "ADMINISTRATOR":"MR. JAMES MALLERY II",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":40,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.299992,44.998735 ]
+    },
+    "properties": {
+    "HFID":1678,
+    "NAME":"TURNING POINT INC",
+    "ADDRESS":"1500 GOLDEN VALLEY ROAD",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55411,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-520-9161",
+    "FAX":"612-520-0047",
+    "ADMINISTRATOR":"MS. ELIZABETH REED",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":24,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.172335,44.955571 ]
+    },
+    "properties": {
+    "HFID":1200,
+    "NAME":"TWIN TOWN TREATMENT CENTER",
+    "ADDRESS":"1706 UNIVERSITY AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55104,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-645-3661",
+    "FAX":"651-645-0959",
+    "ADMINISTRATOR":"MR. ALEXANDER DAVIS",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":50,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.879843,45.004392 ]
+    },
+    "properties": {
+    "HFID":1523,
+    "NAME":"WILLOW HAVEN",
+    "ADDRESS":"3819 LAVERNE AVENUE NORTH",
+    "CITY":"LAKE ELMO",
+    "STATE":"MN",
+    "ZIP":55042,
+    "COUNTY_CODE":82,
+    "COUNTY_NAME":"WASHINGTON",
+    "TELEPHONE":"651-770-2224",
+    "FAX":"651-773-6501",
+    "ADMINISTRATOR":"MS. LISA GASNER",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "SLFA_BEDS":13,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.308238,44.838287 ]
+    },
+    "properties": {
+    "HFID":1198,
+    "NAME":"WINGSPAN LIFE RESOURCES",
+    "ADDRESS":"2209 91 1/2 STREET WEST",
+    "CITY":"BLOOMINGTON",
+    "STATE":"MN",
+    "ZIP":55431,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"651-646-3846",
+    "FAX":"651-646-2347",
+    "ADMINISTRATOR":"MS. THERESE DAVIS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":6,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.178295,44.94724 ]
+    },
+    "properties": {
+    "HFID":1102,
+    "NAME":"WINGSPAN LIFE RESOURCES",
+    "ADDRESS":"1846 DAYTON AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55104,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-646-3846",
+    "FAX":"651-646-2347",
+    "ADMINISTRATOR":"MS. THERESE DAVIS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.130246,45.046674 ]
+    },
+    "properties": {
+    "HFID":1287,
+    "NAME":"WINGSPAN LIFE RESOURCES",
+    "ADDRESS":"707 HARRIET AVENUE EAST",
+    "CITY":"SHOREVIEW",
+    "STATE":"MN",
+    "ZIP":55126,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-646-3846",
+    "FAX":"651-646-2347",
+    "ADMINISTRATOR":"MS. THERESE DAVIS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.178352,44.942922 ]
+    },
+    "properties": {
+    "HFID":1173,
+    "NAME":"WINGSPAN LIFE RESOURCES",
+    "ADDRESS":"1846 PORTLAND AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55104,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-646-3846",
+    "FAX":"651-646-2347",
+    "ADMINISTRATOR":"THERESE DAVIS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":6,
+    "ICFMR":"Intermediate Care Facility"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.785779,46.866056 ]
+    },
+    "properties": {
+    "HFID":1651,
+    "NAME":"WINTER HOMES INCORPORATED",
+    "ADDRESS":"4982 PAUPORES ROAD",
+    "CITY":"BROOKSTON",
+    "STATE":"MN",
+    "ZIP":55711,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-879-2275",
+    "FAX":"218-878-3365",
+    "ADMINISTRATOR":"DIETRICH WINTER",
+    "LIC_TYPE":"CORPORATION",
+    "SLFA_BEDS":6,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.03698,45.1111988 ]
+    },
+    "properties": {
+    "HFID":1502,
+    "NAME":"WOODLAND CENTERS",
+    "ADDRESS":"1125 6TH STREET S PO BOX 787",
+    "CITY":"WILLMAR",
+    "STATE":"MN",
+    "ZIP":56201,
+    "COUNTY_CODE":34,
+    "COUNTY_NAME":"KANDIYOHI",
+    "TELEPHONE":"320-235-4613",
+    "FAX":"855-625-7406",
+    "ADMINISTRATOR":"MS. ASHLEY KJOS",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":16,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.456765,43.971738 ]
+    },
+    "properties": {
+    "HFID":25343,
+    "NAME":"ZUMBRO VALLEY CONNECTIONS",
+    "ADDRESS":"343 WOOD LAKE DRIVE SE",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55904,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"507-535-5776",
+    "FAX":"507-535-5792",
+    "ADMINISTRATOR":"MR. COREY KANZ",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "SLFA_BEDS":0,
+    "SLFB_BEDS":22,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0,
+    "ICFMR_BEDS":0,
+    "ICFMR":""
+    }
+  }
+]
+}

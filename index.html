@@ -68,23 +68,20 @@
 								</label>
 								<hr>
 								<h3>Layers - COVID-19 Response</h3>
-								<label class="container">COVID-19 cases by county
-									<input type="checkbox" id="cases" checked>
+								<label class="container">Number of COVID-19 cumulative confirmed cases (per 100,000)
+									<input name="use_us" type="checkbox" id="cases" checked>
 									<span class="checkmark"></span>
-									<div class="legend">
-										<h5>Cases reported</h5>
-										<div style="background-color: rgb(255,255,255)">0</div>
-										<div style="background-color: rgb(255,215,215, 0.7)">1 to 2 </div>
-										<div style="background-color: rgb(255,181,181, 0.7)">3 to 9 </div>
-										<div style="background-color: rgb(255,144,144, 0.7)">10 to 29 </div>
-										<div style="background-color: rgb(255,111,111, 0.7)">30 to 99 </div>
-										<div style="background-color: rgb(255,74,74, 0.7)">100 to 299 </div>
-										<div style="background-color: rgb(255,40,40, 0.7)">300 to 999 </div>
-										<div style="background-color: rgb(255,3,3, 0.7)">1,000 to 2,999</div>
-										<div style="background-color: rgb(229,0,51)">3,000 to 9,999</div>
-										<div style="background-color: rgb(199,0,113)">10,000 to 29,000</div>
-										<div style="background-color: rgb(171,0,169)">30,000 to 99,999</div>
-										<div style="background-color: rgb(140,0,230)">100,000 or more</div>
+									<div class="legend"><br>
+										<div style="color: white; background-color: #000000">0</div>
+										<div style="color: white; background-color: #000004">1</div>
+										<div style="color: white; background-color: #1a1042">3</div>
+										<div style="color: white; background-color: #51127c">10</div>
+										<div style="color: white; background-color: #802582">30</div>
+										<div style="background-color: #b73779">100</div>
+										<div style="background-color: #e44f64">300</div>
+										<div style="background-color: #fc8961">1000</div>
+										<div style="background-color: #fec185">3000</div>
+										<div style="background-color: #fcfdbf">10000</div>
 									</div>
 								</label>
 								<div id="dateControls">
@@ -95,8 +92,8 @@
 									<!-- <input type="button" value="Animate" onclick="startAnimation()">
 									<input type="button" value="Stop Animation" onclick="stopAnimation()"> -->
 								</div><br><br>
-								<label class="container">Minnesota COVID-19 cases by county of Residence
-									<input type="checkbox" id="positiveCounties">
+								<label class="container">Cumulative Minnesota COVID-19 cases by county
+									<input type="checkbox" id="positiveCounties" name="use_mn">
 									<span class="checkmark"></span>
 									<div class="legend">
 										<h5>Positive Cases</h5>
@@ -145,6 +142,27 @@
 											<i style="margin-left: 10px;">Military or Joint Use</i>
 									</div>
 								</label>
+								<label class="container">Assisted Living – Nursing Homes
+									<input id="nursingHomes" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="nursingHomesLegend"><img class="icon" src="data/assistedLiving/nursingHomes.svg" alt="legend for nursing Homes"></div>
+								</label>
+								<label class="container">Assisted Living – Housing with Services
+									<input id="housingWithServices" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="housingWithServicesLegend"><img class="icon" src="data/assistedLiving/housingWithServices.svg" alt="legend for housing With Services"></div>
+								</label>
+								<label class="container">Assisted Living – Boarding Care Homes
+									<input id="boardingCareHomes" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="boardingCareHomesLegend"><img class="icon" src="data/assistedLiving/boardingCareHomes.svg" alt="legend for Boarding Care Homes"></div>
+								</label>
+								<label class="container">Assisted Living – Supervised Living Facilities
+									<input id="supervisedLivingFacilities" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="supervisedLivingFacilitiesLegend"><img class="icon" src="data/assistedLiving/supervisedLivingFacilities.svg" alt="legend for supervised Living Facilities"></div>
+								</label>
+
 								<label class="container">Fire Stations
 									<input id="fireStations" type="checkbox">
 									<span class="checkmark"></span>
@@ -160,7 +178,7 @@
 									<span class="checkmark"></span>
 									<div id="vaLegend"><img class="icon" src="data/va.svg" alt="legend for va"></div>
 								</label>
-								<label class="container">Military - Federal Facilities
+								<label class="container">Military Facilities - Federal
 									<input class="special" id="federal" type="checkbox">
 									<span class="checkmark"></span><br>
 									<div id="specialLegend">
@@ -192,7 +210,7 @@
 											<i style="margin-left: 10px;">US Marine Corps</i>
 									</div>
 								</label>
-								<label class="container">Military - Minnesota National Guard Facilities
+								<label class="container">Military Facilities - Minnesota National Guard
 									<input class="special" id="national" type="checkbox">
 									<span class="checkmark"></span><br>
 									<div id="specialLegend">
@@ -220,15 +238,10 @@
 											<i style="margin-left: 10px;">Weapons of Mass Destruction Support Team</i>
 									</div>
 								</label>
-								<label class="container">Military - Other States Facilities
+								<label class="container">Military Facilities - Other States Major
 									<input id="bases" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="basesLegend"><img class="icon" src="data/military/other_military.svg" alt="legend for other military"></div>
-								</label>
-								<label class="container">Nursing Homes
-									<input id="nursingHomes" type="checkbox">
-									<span class="checkmark"></span>
-									<div id="nursingHomesLegend"><img class="icon" src="data/nursingHomes.svg" alt="legend for nursingHomes"></div>
 								</label>
 								<label class="container">Police Stations
 									<input id="policeStations" type="checkbox">

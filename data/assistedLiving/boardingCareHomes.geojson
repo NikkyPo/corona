@@ -1,0 +1,551 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.090658,46.814989 ]
+    },
+    "properties": {
+    "HFID":581,
+    "NAME":"AFTENRO HOME",
+    "ADDRESS":"510 WEST COLLEGE STREET",
+    "CITY":"DULUTH",
+    "STATE":"MN",
+    "ZIP":55811,
+    "COUNTY_CODE":69,
+    "COUNTY_NAME":"SAINT LOUIS",
+    "TELEPHONE":"218-728-6600",
+    "FAX":"218-728-5452",
+    "ADMINISTRATOR":"MR. ERIC EVERSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":54,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":54
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.114793,44.944226 ]
+    },
+    "properties": {
+    "HFID":777,
+    "NAME":"AMY JOHNSON RESIDENCE",
+    "ADDRESS":"89 VIRGINIA STREET",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55102,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-224-3363",
+    "FAX":"651-290-2600",
+    "ADMINISTRATOR":"MS. DONETTA JOHNSON",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":25,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.256795,44.967725 ]
+    },
+    "properties": {
+    "HFID":993,
+    "NAME":"ANDREW RESIDENCE",
+    "ADDRESS":"1215 SOUTH 9TH STREET",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55404,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-333-0111",
+    "FAX":"612-338-1734",
+    "ADMINISTRATOR":"MS. KAREN FOY",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":212,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":212
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.288959,44.946601 ]
+    },
+    "properties": {
+    "HFID":168,
+    "NAME":"BIRCHWOOD CARE HOME",
+    "ADDRESS":"715 WEST 31ST STREET",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55408,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-823-7286",
+    "FAX":"612-823-0518",
+    "ADMINISTRATOR":"MR. RANDAL HAGEMEYER",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":60,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":60
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.289392,44.946293 ]
+    },
+    "properties": {
+    "HFID":159,
+    "NAME":"BRIDGES MN",
+    "ADDRESS":"3101 ALDRICH AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55408,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-825-4488",
+    "FAX":"612-825-4489",
+    "ADMINISTRATOR":"CAROL WATSON",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "NH_BEDS":0,
+    "BCH_BEDS":25,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.247261,45.030259 ]
+    },
+    "properties": {
+    "HFID":176,
+    "NAME":"BYWOOD EAST HEALTH CARE",
+    "ADDRESS":"3427 CENTRAL AVENUE NE",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55418,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-788-9757",
+    "FAX":"612-789-6564",
+    "ADMINISTRATOR":"ANNETTE THORSON",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":95,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":95
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.267678,44.956525 ]
+    },
+    "properties": {
+    "HFID":191,
+    "NAME":"EBENEZER CARE CENTER",
+    "ADDRESS":"2545 PORTLAND AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55404,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-879-2262",
+    "FAX":"612-879-2316",
+    "ADMINISTRATOR":"MR. ROBERT BRITAIN",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "NH_BEDS":34,
+    "BCH_BEDS":85,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":34,
+    "NF2_BEDS":85
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.178776,44.954795 ]
+    },
+    "properties": {
+    "HFID":486,
+    "NAME":"EPISCOPAL CHURCH HOME OF MN",
+    "ADDRESS":"1879 FERONIA AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55104,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-646-4061",
+    "FAX":"651-646-2079",
+    "ADMINISTRATOR":"MS. MELISSA SCHNEIDER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "NH_BEDS":81,
+    "BCH_BEDS":50,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":81,
+    "NF2_BEDS":50
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.389996,44.854859 ]
+    },
+    "properties": {
+    "HFID":806,
+    "NAME":"FRIENDSHIP VILLAGE OF BLOOMING",
+    "ADDRESS":"8100 HIGHWOOD DRIVE",
+    "CITY":"BLOOMINGTON",
+    "STATE":"MN",
+    "ZIP":55438,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"952-831-7500",
+    "FAX":"952-830-9405",
+    "ADMINISTRATOR":"JENNIFER BEVER",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "NH_BEDS":66,
+    "BCH_BEDS":53,
+    "SNF_BEDS":66,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.284392,44.930648 ]
+    },
+    "properties": {
+    "HFID":208,
+    "NAME":"GRAND AVE REST HOME",
+    "ADDRESS":"3956 GRAND AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55409,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-824-1434",
+    "FAX":"612-824-2219",
+    "ADMINISTRATOR":"MR. ALLEN SODERBECK",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":20,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.168916,44.926992 ]
+    },
+    "properties": {
+    "HFID":928,
+    "NAME":"HAYES RESIDENCE",
+    "ADDRESS":"1620 RANDOLPH AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55105,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-690-4458",
+    "FAX":"651-690-2787",
+    "ADMINISTRATOR":"MS. LAURA FAULKNER",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":40,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":40
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.105885,44.939517 ]
+    },
+    "properties": {
+    "HFID":763,
+    "NAME":"LITTLE SISTERS OF THE POOR",
+    "ADDRESS":"330 SOUTH EXCHANGE STREET",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55102,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-227-0336",
+    "FAX":"651-227-5484",
+    "ADMINISTRATOR":"SR. MARY ELIZABETH ANDERSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "NH_BEDS":40,
+    "BCH_BEDS":33,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":40,
+    "NF2_BEDS":33
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.611147,45.318539 ]
+    },
+    "properties": {
+    "HFID":930,
+    "NAME":"MEADOW LANE REHAB AND HCC",
+    "ADDRESS":"2209 UTAH AVENUE",
+    "CITY":"BENSON",
+    "STATE":"MN",
+    "ZIP":56215,
+    "COUNTY_CODE":76,
+    "COUNTY_NAME":"SWIFT",
+    "TELEPHONE":"320-843-2225",
+    "FAX":"320-843-2496",
+    "ADMINISTRATOR":"MS. BROOKE SLAUGHTER",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "NH_BEDS":37,
+    "BCH_BEDS":19,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":37,
+    "NF2_BEDS":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.238063,45.013191 ]
+    },
+    "properties": {
+    "HFID":272,
+    "NAME":"MINNESOTA TEEN CHALLENGE",
+    "ADDRESS":"1507 LOWRY AVENUE NE",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55418,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-373-3366",
+    "FAX":"612-333-4111",
+    "ADMINISTRATOR":"ERIC VAGLE",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":53,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.840614,44.727362 ]
+    },
+    "properties": {
+    "HFID":788,
+    "NAME":"MN VETERANS HOME HASTINGS",
+    "ADDRESS":"1200 EAST 18TH STREET",
+    "CITY":"HASTINGS",
+    "STATE":"MN",
+    "ZIP":55033,
+    "COUNTY_CODE":19,
+    "COUNTY_NAME":"DAKOTA",
+    "TELEPHONE":"651-539-2401",
+    "FAX":"651-437-2203",
+    "ADMINISTRATOR":"MICHAEL RH ANDERSON",
+    "LIC_TYPE":"STATE",
+    "NH_BEDS":0,
+    "BCH_BEDS":200,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.20792,44.911826 ]
+    },
+    "properties": {
+    "HFID":233,
+    "NAME":"MN VETERANS HOME MINNEAPOLIS",
+    "ADDRESS":"5101 MINNEHAHA AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55417,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"651-539-2401",
+    "FAX":"651-437-2203",
+    "ADMINISTRATOR":"THOMAS PAUL",
+    "LIC_TYPE":"STATE",
+    "NH_BEDS":341,
+    "BCH_BEDS":50,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":300,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.288237,44.902952 ]
+    },
+    "properties": {
+    "HFID":236,
+    "NAME":"MOUNT OLIVET HOME",
+    "ADDRESS":"5517 LYNDALE AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55419,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-827-5677",
+    "FAX":"612-821-3241",
+    "ADMINISTRATOR":"TIMOTHY HOKANSON",
+    "LIC_TYPE":"CHURCH RELATED",
+    "NH_BEDS":0,
+    "BCH_BEDS":92,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":92
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.358992,43.526821 ]
+    },
+    "properties": {
+    "HFID":824,
+    "NAME":"REVERE HOME",
+    "ADDRESS":"300 SOUTH MAIN STREET",
+    "CITY":"REVERE",
+    "STATE":"MN",
+    "ZIP":56166,
+    "COUNTY_CODE":64,
+    "COUNTY_NAME":"REDWOOD",
+    "TELEPHONE":"507-752-7182",
+    "FAX":"651-257-9245",
+    "ADMINISTRATOR":"ROBERT CARDENAS",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":26,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.289331,44.954202 ]
+    },
+    "properties": {
+    "HFID":780,
+    "NAME":"SOUTHSIDE CARE CENTER",
+    "ADDRESS":"2644 ALDRICH AVENUE SOUTH",
+    "CITY":"MINNEAPOLIS",
+    "STATE":"MN",
+    "ZIP":55408,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"612-872-4233",
+    "FAX":"612-872-0005",
+    "ADMINISTRATOR":"MR. DONALD FLACK",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "NH_BEDS":0,
+    "BCH_BEDS":17,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.112795,44.941481 ]
+    },
+    "properties": {
+    "HFID":363,
+    "NAME":"THE QUINLAN HOME",
+    "ADDRESS":"391 PLEASANT AVENUE",
+    "CITY":"ST. PAUL",
+    "STATE":"MN",
+    "ZIP":55102,
+    "COUNTY_CODE":62,
+    "COUNTY_NAME":"RAMSEY",
+    "TELEPHONE":"651-222-7200",
+    "FAX":"651-224-0624",
+    "ADMINISTRATOR":"LAURA REYNOLDS",
+    "LIC_TYPE":"CORPORATION",
+    "NH_BEDS":0,
+    "BCH_BEDS":58,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":0,
+    "NF2_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.395441,45.114347 ]
+    },
+    "properties": {
+    "HFID":733,
+    "NAME":"THE VILLA AT OSSEO",
+    "ADDRESS":"501 2ND STREET SE",
+    "CITY":"OSSEO",
+    "STATE":"MN",
+    "ZIP":55369,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-762-1800",
+    "FAX":"763-424-2777",
+    "ADMINISTRATOR":"MS. KRISTINA UMBERGER",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "NH_BEDS":20,
+    "BCH_BEDS":80,
+    "SNF_BEDS":0,
+    "SNFNF_BEDS":20,
+    "NF2_BEDS":80
+    }
+  }
+]
+}

@@ -25,6 +25,26 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -93.20,44.88715 ]
+    },
+    "properties": {
+    "Name":"USMC Reserve",
+    "Street":"6400 Bloomington Road",
+    "City":"St. Paul",
+    "State":"MN",
+    "Zip":55111,
+    "Phone":"612-726-1313  ",
+    "Type":"USMC Reserve",
+    "TypeLabel":"USMC",
+    "PrincipalUnitsNotes":"4th Law Enforcement Battalion",
+    "Website":"https://www.marforres.marines.mil/Major-Subordinate-Commands/Force-Headquarters-Group/4th-Law-Enforcement-Battalion/",
+    "Other Info":"https://en.wikipedia.org/wiki/4th_Law_Enforcement_Battalion"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ -93.29944,44.32322 ]
     },
     "properties": {
@@ -288,7 +308,7 @@
        "coordinates":  [ -93.216376,44.895748 ]
     },
     "properties": {
-    "Name":"Minneapolis�Saint Paul Joint Air Reserve Station",
+    "Name":"Minneapolis Saint Paul Joint Air Reserve Station",
     "Street":"760 Military Hwy #707",
     "City":"Minneapolis",
     "State":"MN",

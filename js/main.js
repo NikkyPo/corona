@@ -20,10 +20,11 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
-// Get yesterday's date
-const today = new Date()
-const yesterday = new Date(today)
-yesterday.setDate(yesterday.getDate() - 1)
+// Get 2 days ago at 11pm date
+const yesterday = new Date()
+yesterday.setHours(23,0,0,0);
+yesterday.setDate(yesterday.getDate() - 2)
+console.log(yesterday)
 
 var displayDate = moment(yesterday).format('YYYY-MM-DD');
 $("#date").attr("max", displayDate)
@@ -36,7 +37,7 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
     maxDetailZoom: 8,
     attribution: "COVID-19 data is from the New York Times <a href='https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html'>Dashboard</a> <a href='https://github.com/nytimes/covid-19-data'>Data Source</a>  <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC</a>",
     style: function(f, name) {
-      //console.log(f, name);
+
       const state = f.properties.st_name;
       const county = f.properties.cty_name;
       const population = f.properties.tot_pop;
@@ -44,12 +45,15 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       let r = 255;
       let g = 255;
       let b = 255;
+
       if(data[state] &&
        data[state]["counties"] &&
        data[state]["counties"][county] &&
        data[state]["counties"][county][displayDate]) {
         const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
+
         const log_cases = (cases > 1) ? Math.log10(cases) : 0;
+        // console.log(log_cases, county, state)
 
         if (log_cases <= 2.5) {
           r = 255;
@@ -59,7 +63,6 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
           g = 0;
           r = 255 - (b / 2);
         }
-        console.log(county, cases, log_cases, r, g, b);
       }
       const rgb = (255 << 16) + (g << 8) + (b);
 
@@ -83,10 +86,10 @@ $("#date").change(function() {
   } );
 });
 
-
 let min = moment($("#date").attr("min"));
 let max = moment($("#date").attr("max"));
 let day = moment(min);
+console.log(day)
 
 function showNextDay() {
   if (day < max) {
@@ -163,6 +166,90 @@ $.getJSON('data/airport/airport.geojson')
            return L.marker(latlng, {icon: airport_military}).bindPopup(function (layer) {
              return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
            });
+       }
+  }
+})
+});
+
+
+//////////////////////////////////////////
+// Assisted Living: boarding care homes, housing with services, nursing homes and supervised living facilities
+
+var boardingCareHomesIcon = L.icon({
+	iconUrl: 'data/assistedLiving/boardingCareHomes.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -8]
+});
+
+$.getJSON('data/assistedLiving/boardingCareHomes.geojson')
+ .done( data => {
+   boardingCareHomes = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
+        if (feature.properties.foodshelves_Url !== null) {
+          return L.marker(latlng, {icon: boardingCareHomesIcon}).bindPopup(function (feature) {
+            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+          });
+       }
+  }
+})
+});
+
+var housingWithServicesIcon = L.icon({
+	iconUrl: 'data/assistedLiving/housingWithServices.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -8]
+});
+
+$.getJSON('data/assistedLiving/housingWithServices.geojson')
+ .done( data => {
+   housingWithServices = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
+        if (feature.properties.foodshelves_Url !== null) {
+          return L.marker(latlng, {icon: housingWithServicesIcon}).bindPopup(function (feature) {
+            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+          });
+       }
+  }
+})
+});
+
+var nursingHomesIcon = L.icon({
+	iconUrl: 'data/assistedLiving/nursingHomes.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -8]
+});
+
+$.getJSON('data/assistedLiving/nursingHomes.geojson')
+ .done( data => {
+   nursingHomes = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
+        if (feature.properties.foodshelves_Url !== null) {
+          return L.marker(latlng, {icon: nursingHomesIcon}).bindPopup(function (feature) {
+            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+          });
+       }
+  }
+})
+});
+
+var supervisedLivingFacilitiesIcon = L.icon({
+	iconUrl: 'data/assistedLiving/supervisedLivingFacilities.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -8]
+});
+
+$.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
+ .done( data => {
+   supervisedLivingFacilities = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
+        if (feature.properties.foodshelves_Url !== null) {
+          return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
+            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+          });
        }
   }
 })
@@ -324,6 +411,22 @@ hospitals.bindPopup(function (layer) {
 
 /////////////////////////////////////////
 // National Guard
+
+// National Guard Bases
+$.getJSON('data/military/national_guard_bases.geojson')
+ .done( data => {
+   national_guard_bases = new L.geoJSON(data, {
+     onEachFeature: function(feature, featureLayer){
+       featureLayer.setStyle({
+         color: 'black',
+         weight: 5,
+         fill: true
+       });
+     }
+})
+});
+
+
 $.getJSON('data/military/national_guard.geojson')
  .done( data => {
    national = new L.geoJSON(data, {
@@ -388,26 +491,6 @@ $.getJSON('data/military/national_guard.geojson')
 })
 });
 
-
-//////////////////////////////////////////
-// Nursing Homes
-var nursingHomesIcon = L.icon({
-	iconUrl: 'data/nursingHomes.svg',
-	iconSize: [25, 25],
-  popupAnchor: [0, -28]
-});
-var nursingHomes = L.esri.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/NursingHomes/FeatureServer/0',
-  where: "STATE = 'MN'",
-  pointToLayer: function (geojson, latlng) {
-    return L.marker(latlng, {
-        icon: nursingHomesIcon
-      });
-  }
- });
-nursingHomes.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>Type: <br>Population: {POPULATION}<br>Description: {NAICS_DESC}<br><br>{ADDRESS}, {CITY} {ZIP}</p>', layer.feature.properties);
-});
 
 //////////////////////////////////////////
 // Police
@@ -688,28 +771,28 @@ var sidebar = L.control.sidebar('sidebar').addTo(mymap);
 // });
 // L.control.layers(base, null).addTo(mymap);
 
-// Basemap logic
+// Layer logic
 
 $("input[type='checkbox']").change(function() {
   var layerClicked = $(this).attr("id")
   switch (layerClicked) {
+    case "airports":
+      toggleLayer(this.checked, airports)
+    break;
     case "bases":
     toggleLayer(this.checked, bases);
     break;
-    case "counties":
-      toggleLayer(this.checked, counties)
+    case "boardingCareHomes":
+    toggleLayer(this.checked, boardingCareHomes);
+    break;
+    case "boundaries":
+      toggleLayer(this.checked, boundaries);
     break;
     case "cases":
       toggleLayer(this.checked, cases)
     break;
-    case "airports":
-      toggleLayer(this.checked, airports)
-    break;
-    case "redCrossFacilities":
-      toggleLayer(this.checked, redCrossFacilities);
-    break;
-    case "redCross":
-      toggleLayer(this.checked, redCross);
+    case "counties":
+      toggleLayer(this.checked, counties)
     break;
     case "federal":
       toggleLayer(this.checked, federal);
@@ -723,14 +806,12 @@ $("input[type='checkbox']").change(function() {
     case "hospitals":
       toggleLayer(this.checked, hospitals);
     break;
-    case "bases":
-      toggleLayer(this.checked, bases);
-    break;
-    case "boundaries":
-      toggleLayer(this.checked, boundaries);
+    case "housingWithServices":
+      toggleLayer(this.checked, housingWithServices);
     break;
     case "national":
       toggleLayer(this.checked, national);
+      toggleLayer(this.checked, national_guard_bases)
     break;
     case "nursingHomes":
       toggleLayer(this.checked, nursingHomes);
@@ -747,8 +828,17 @@ $("input[type='checkbox']").change(function() {
     case "publicSchools":
       toggleLayer(this.checked, publicSchools);
     break;
+    case "redCrossFacilities":
+      toggleLayer(this.checked, redCrossFacilities);
+    break;
+    case "redCross":
+      toggleLayer(this.checked, redCross);
+    break;
     case "shelters":
       toggleLayer(this.checked, shelters);
+    break;
+    case "supervisedLivingFacilities":
+      toggleLayer(this.checked, supervisedLivingFacilities);
     break;
     case "testing":
       toggleLayer(this.checked, testing);
@@ -769,7 +859,7 @@ function toggleLayer(checked, layer) {
 }
 
 
-
+// Radio buttons for basemaps
 $("input[type='radio']").change(function() {
   var radioClicked = $(this).attr("id")
   switch (radioClicked) {
@@ -794,7 +884,18 @@ $("input[type='radio']").change(function() {
   }
 });
 
+// Ensures mn cases and us covid cases are not on at the same time
+var us = $('input[name="use_us"]');
+var mn = $('input[name="use_mn"]');
 
+us.change(function(){
+  mn.prop('checked',false);
+  mymap.removeLayer(positiveCounties);
+});
+mn.change(function(){
+  us.prop('checked',false);
+  mymap.removeLayer(cases);
+});
 
 // var tooltipThreshold = 10;
 // mymap.on('zoomend', function() {
