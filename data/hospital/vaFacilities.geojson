@@ -1,0 +1,413 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.203061,44.902105 ]
+    },
+    "properties": {
+    "Type":"Hospital",
+    "U.S. National Grid":"15T VK  83904  72068",
+    "NAME":"Minneapolis VAHCS",
+    "ADDRESS":"One Veterans Drive",
+    "CITY":"Minneapolis",
+    "STATE":"MN",
+    "ZIP":"55417",
+    "TELEPHONE":"612-725-2000",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":309,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/index.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.389531,43.646454 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VJ  68643  32662",
+    "NAME":"Albert Lea VA Clinic",
+    "ADDRESS":"1665 West Main Street",
+    "CITY":"Albert Lea",
+    "STATE":"MN",
+    "ZIP":"56007-1868",
+    "TELEPHONE":"507-377-6051",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/AlbertLea.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.856241,47.907117 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T WP  85471  06606",
+    "NAME":"Ely VA Clinic",
+    "ADDRESS":"720 East Miners Drive",
+    "CITY":"Ely",
+    "STATE":"MN",
+    "ZIP":"55731-1400",
+    "TELEPHONE":"218-365-0001",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Ely.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.194633,44.893036 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VK  84688  71146",
+    "NAME":"Fort Snelling VA Clinic (Compensation and Pension)",
+    "ADDRESS":"1 Federal Drive",
+    "CITY":"Fort Snelling",
+    "STATE":"MN",
+    "ZIP":"55111-4080",
+    "TELEPHONE":"612-467-2721",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Compensation_and_Pension_Clinic.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.952048,47.40033 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T WN  03632  49601",
+    "NAME":"Hibbing VA Clinic",
+    "ADDRESS":"990 West 41st Street, Suite 5",
+    "CITY":"Hibbing",
+    "STATE":"MN",
+    "ZIP":"55746-3041",
+    "TELEPHONE":"218-263-1400",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Hibbing.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.94552,44.17979 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VJ  24461  92300",
+    "NAME":"Lyle C. Pearson Community Based Outpatient Clinic",
+    "ADDRESS":"1961 Premier Drive, Suite 330",
+    "CITY":"Mankato",
+    "STATE":"MN",
+    "ZIP":"56001-6494",
+    "TELEPHONE":"507-387-2939",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Mankato.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.027863,45.033479 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VK  97736  86641",
+    "NAME":"Maplewood VA Clinic",
+    "ADDRESS":"1725 Legacy Parkway, Suite 100",
+    "CITY":"Maplewood",
+    "STATE":"MN",
+    "ZIP":"55109-5434",
+    "TELEPHONE":"651-225-5420",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Maplewood.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.279933,44.973656 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VK  77926  80058",
+    "NAME":"Minneapolis VA Clinic (Community Resource & Referral Center)",
+    "ADDRESS":"1201 Harmon Place, Suite 103",
+    "CITY":"Minneapolis",
+    "STATE":"MN",
+    "ZIP":"55403-2043",
+    "TELEPHONE":"612-313-3240",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Community_Resource_and_Referral_Center.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.458197,45.231221 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VL  64030  08743",
+    "NAME":"Northwest Metro VA Clinic",
+    "ADDRESS":"7545 Veterans Drive",
+    "CITY":"Ramsey",
+    "STATE":"MN",
+    "ZIP":"55303-7500",
+    "TELEPHONE":"612-467-1100",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/NorthwestMetro.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.463731,43.970118 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T WJ  43013  68799",
+    "NAME":"Rochester VA Clinic",
+    "ADDRESS":"3551 Commercial Drive South West, Suite 400",
+    "CITY":"Rochester",
+    "STATE":"MN",
+    "ZIP":"55902-2876",
+    "TELEPHONE":"507-252-0885",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Rochester.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.554747,44.782675 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VK  56208  59316",
+    "NAME":"Shakopee VA Clinic",
+    "ADDRESS":"1111 Shakopee Town Square",
+    "CITY":"Shakopee",
+    "STATE":"MN",
+    "ZIP":"55379-1908",
+    "TELEPHONE":"952-445-4070",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/Shakopee.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.6181,43.970746 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T UJ  70206  69894",
+    "NAME":"St. James VA Clinic",
+    "ADDRESS":"1212 Heckman Court",
+    "CITY":"St. James",
+    "STATE":"MN",
+    "ZIP":"56081-8702",
+    "TELEPHONE":"507-375-9670",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/SouthCentral.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.10405,46.697995 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T WM  68497  71938",
+    "NAME":"Twin Ports VA Clinic",
+    "ADDRESS":"3520 Tower Avenue",
+    "CITY":"Superior",
+    "STATE":"WI",
+    "ZIP":"54880-5335",
+    "TELEPHONE":"715-398-2400",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.minneapolis.va.gov/locations/TwinPorts.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.217341,45.567582 ]
+    },
+    "properties": {
+    "Type":"Hospital",
+    "U.S. National Grid":"15T VL  04972  46738",
+    "NAME":"St. Cloud VAHCS",
+    "ADDRESS":"4801 Veterans Drive",
+    "CITY":"St. Cloud",
+    "STATE":"MN",
+    "ZIP":"56303-2015",
+    "TELEPHONE":"320-252-1670",
+    "FAX":"320-255-6494",
+    "PSY_HOSP_BEDS":15,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":15,
+    "SNF_BEDS":200,
+    "NF1_BEDS":250,
+    "Website":"https://www.stcloud.va.gov/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.711177,44.955658 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T TK  86149  81602",
+    "NAME":"Montevideo VA Clinic",
+    "ADDRESS":"1025 North 13th Street",
+    "CITY":"Montevideo",
+    "STATE":"MN",
+    "ZIP":"56265-1653",
+    "TELEPHONE":"320-269-2222",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.stcloud.va.gov/locations/montevideo.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.222288,46.359278 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T VM  05964  34706",
+    "NAME":"Brainerd VA Clinic",
+    "ADDRESS":"722 Northwest 7th Street",
+    "CITY":"Brainerd",
+    "STATE":"MN",
+    "ZIP":"56401-2912",
+    "TELEPHONE":"218-855-1115",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.stcloud.va.gov/locations/brainerd.asp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.370622,45.866476 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "U.S. National Grid":"15T UL  16001  81935",
+    "NAME":"Max J. Beilke Department of Veterans Affairs Outpatient Clinic",
+    "ADDRESS":"515 22nd Avenue East",
+    "CITY":"Alexandria",
+    "STATE":"MN",
+    "ZIP":"56308-4652",
+    "TELEPHONE":"320-759-2640",
+    "FAX":"",
+    "PSY_HOSP_BEDS":null,
+    "HOSP18_BEDS":null,
+    "PSY18_BEDS":null,
+    "SNF_BEDS":null,
+    "NF1_BEDS":null,
+    "Website":"https://www.stcloud.va.gov/locations/alexandria.asp"
+    }
+  }
+]
+}

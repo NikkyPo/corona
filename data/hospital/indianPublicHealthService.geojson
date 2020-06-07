@@ -1,0 +1,131 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.25526,44.959122 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "NAME":"Indian Health Board",
+    "ADDRESS":"1315 East 24th Street",
+    "CITY":"Minneapolis",
+    "STATE":"MN",
+    "ZIP":"55404",
+    "TELEPHONE":"612-721-9800",
+    "FAX":"612-721-2904",
+    "ADMINISTRATOR":"Dr. Patrick Rock",
+    "HOSP_BEDS":null,
+    "BASS_BEDS":null,
+    "Website":"http://www.indianhealthboard.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.609515,47.384094 ]
+    },
+    "properties": {
+    "Type":"Hospital",
+    "NAME":"Cass Lake IHS Hospital",
+    "ADDRESS":"425 7th St NW",
+    "CITY":"Cass Lake",
+    "STATE":"MN",
+    "ZIP":"56633",
+    "TELEPHONE":"218-335-3200",
+    "FAX":"",
+    "ADMINISTRATOR":"",
+    "HOSP_BEDS":4,
+    "BASS_BEDS":1,
+    "Website":"https://www.ihs.gov/bemidji/healthcarefacilities/casslake/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.030746,47.87741 ]
+    },
+    "properties": {
+    "Type":"Hospital",
+    "NAME":"Red Lake IHS Hospital",
+    "ADDRESS":"24760 Hospital Drive",
+    "CITY":"Red Lake",
+    "STATE":"MN",
+    "ZIP":"56671",
+    "TELEPHONE":"218-679-3912",
+    "FAX":"218-679-0181",
+    "ADMINISTRATOR":"",
+    "HOSP_BEDS":18,
+    "BASS_BEDS":4,
+    "Website":"https://www.ihs.gov/bemidji/healthcarefacilities/redlake/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.85565,47.093065 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "NAME":"White Earth Health Center",
+    "ADDRESS":"40520 County Highway 34",
+    "CITY":"Ogema",
+    "STATE":"MN",
+    "ZIP":"56569-9612",
+    "TELEPHONE":"218-983-4300",
+    "FAX":"",
+    "ADMINISTRATOR":"",
+    "HOSP_BEDS":null,
+    "BASS_BEDS":null,
+    "Website":"https://www.ihs.gov/bemidji/healthcarefacilities/whiteearth/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.623366,47.262717 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "NAME":"Naytahwaush Health Center",
+    "ADDRESS":"238 Church St",
+    "CITY":"Naytahwaush",
+    "STATE":"MN",
+    "ZIP":"56566",
+    "TELEPHONE":"218-935-2238",
+    "FAX":"",
+    "ADMINISTRATOR":"",
+    "HOSP_BEDS":null,
+    "BASS_BEDS":null,
+    "Website":"https://www.ihs.gov/bemidji/healthcarefacilities/whiteearth/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.804063,47.016756 ]
+    },
+    "properties": {
+    "Type":"Clinic",
+    "NAME":"Pine Point Health Center",
+    "ADDRESS":"47520 282nd Street",
+    "CITY":"Ponsford",
+    "STATE":"MN",
+    "ZIP":"56575",
+    "TELEPHONE":"218-573-2162",
+    "FAX":"",
+    "ADMINISTRATOR":"",
+    "HOSP_BEDS":null,
+    "BASS_BEDS":null,
+    "Website":"https://www.ihs.gov/bemidji/healthcarefacilities/whiteearth/"
+    }
+  }
+]
+}

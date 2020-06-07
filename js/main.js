@@ -24,7 +24,6 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
 const yesterday = new Date()
 yesterday.setHours(0,0,0,0);
 yesterday.setDate(yesterday.getDate() - 1)
-console.log(yesterday)
 
 var displayDate = moment(yesterday).format('YYYY-MM-DD');
 $("#date").attr("max", displayDate)
@@ -60,8 +59,7 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       data[state]["counties"][county][displayDate]) {
       const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
       const log_cases = (cases > 1) ? Math.log10(cases) : 0;
-      color_index = Math.min(Math.floor(log_cases) * 64, 255);
-      console.log(color_index, log_cases)
+      color_index = Math.min(Math.floor(log_cases * 64), 255);
     }
     return ({
       stroke: false,
@@ -86,7 +84,6 @@ $("#date").change(function() {
 let min = moment($("#date").attr("min"));
 let max = moment($("#date").attr("max"));
 let day = moment(min);
-console.log(day)
 
 function showNextDay() {
   if (day < max) {

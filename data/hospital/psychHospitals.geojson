@@ -1,0 +1,255 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.378,45.2103 ]
+    },
+    "properties": {
+    "HFID":4,
+    "NAME":"ANOKA METRO REG TREATMENT CTR",
+    "ADDRESS":"3301 7TH AVENUE NORTH",
+    "CITY":"ANOKA",
+    "STATE":"MN",
+    "ZIP":55303,
+    "COUNTY_CODE":2,
+    "COUNTY_NAME":"ANOKA",
+    "TELEPHONE":"651-431-5252",
+    "FAX":"651-431-7733",
+    "ADMINISTRATOR":"ROCHELLE FISCHER",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":29,
+    "OTHER_BEDS":175,
+    "PSY18_BEDS":175
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.00753,45.146612 ]
+    },
+    "properties": {
+    "HFID":318,
+    "NAME":"CHILD & ADOLESCENT BEHAV HLTH",
+    "ADDRESS":"2301 TRANSPORTATION DRIVE",
+    "CITY":"WILLMAR",
+    "STATE":"MN",
+    "ZIP":56201,
+    "COUNTY_CODE":34,
+    "COUNTY_NAME":"KANDIYOHI",
+    "TELEPHONE":"320-231-5404",
+    "FAX":"218-231-5901",
+    "ADMINISTRATOR":"MICHAEL GALLAGHER",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.879684,47.476067 ]
+    },
+    "properties": {
+    "HFID":25049,
+    "NAME":"COMM BEHAV HLTH HOSP BEMIDJI",
+    "ADDRESS":"800 BEMIDJI AVENUE NORTH",
+    "CITY":"BEMIDJI",
+    "STATE":"MN",
+    "ZIP":56601,
+    "COUNTY_CODE":4,
+    "COUNTY_NAME":"BELTRAMI",
+    "TELEPHONE":"218-308-2400",
+    "FAX":"218-431-7530",
+    "ADMINISTRATOR":"LARRY LAUDON",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.456949,43.973447 ]
+    },
+    "properties": {
+    "HFID":24231,
+    "NAME":"COMM BEHAV HLTH HOSP ROCHESTER",
+    "ADDRESS":"251 WOOD LAKE DRIVE SE",
+    "CITY":"ROCHESTER",
+    "STATE":"MN",
+    "ZIP":55904,
+    "COUNTY_CODE":55,
+    "COUNTY_NAME":"OLMSTED",
+    "TELEPHONE":"507-206-2561",
+    "FAX":"651-431-7758",
+    "ADMINISTRATOR":"JAMES PIERCE",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.105719,46.275932 ]
+    },
+    "properties": {
+    "HFID":24073,
+    "NAME":"COMM BEHAV HOSP FERGUS FALLS",
+    "ADDRESS":"1801 WEST ALCOTT AVENUE",
+    "CITY":"FERGUS FALLS",
+    "STATE":"MN",
+    "ZIP":56537,
+    "COUNTY_CODE":56,
+    "COUNTY_NAME":"OTTER TAIL",
+    "TELEPHONE":"218-332-5005",
+    "FAX":"218-739-1329",
+    "ADMINISTRATOR":"BRENDA SCHLESKE",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.353724,45.883226 ]
+    },
+    "properties": {
+    "HFID":23908,
+    "NAME":"COMM BEHAVIORAL HEALTH HOSP",
+    "ADDRESS":"1610 8TH AVENUE EAST",
+    "CITY":"ALEXANDRIA",
+    "STATE":"MN",
+    "ZIP":56308,
+    "COUNTY_CODE":21,
+    "COUNTY_NAME":"DOUGLAS",
+    "TELEPHONE":"320-335-6201",
+    "FAX":"320-759-1002",
+    "ADMINISTRATOR":"JENNIFER WESTRUM",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.101386,45.254576 ]
+    },
+    "properties": {
+    "HFID":24145,
+    "NAME":"COMM BEHAVORIAL HLTH HOSPITAL",
+    "ADDRESS":"400 ANNANDALE BOULEVARD",
+    "CITY":"ANNANDALE",
+    "STATE":"MN",
+    "ZIP":55302,
+    "COUNTY_CODE":86,
+    "COUNTY_NAME":"WRIGHT",
+    "TELEPHONE":"651-259-3850",
+    "FAX":"320-274-7018",
+    "ADMINISTRATOR":"JAMES KELLY",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.256975,46.359679 ]
+    },
+    "properties": {
+    "HFID":24037,
+    "NAME":"COMMUNITY BEHAVIORAL HLTH HOSP",
+    "ADDRESS":"14241 GRAND OAKS DRIVE",
+    "CITY":"BAXTER",
+    "STATE":"MN",
+    "ZIP":56425,
+    "COUNTY_CODE":18,
+    "COUNTY_NAME":"CROW WING",
+    "TELEPHONE":"218-316-3101",
+    "FAX":"218-829-9141",
+    "ADMINISTRATOR":"RYAN CERNEY",
+    "LIC_TYPE":"STATE",
+    "PSY_HOSP_BEDS":0,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":16,
+    "PSY18_BEDS":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.356216,45.124772 ]
+    },
+    "properties": {
+    "HFID":31033,
+    "NAME":"PRAIRIECARE",
+    "ADDRESS":"9400 ZANE AVENUE NORTH",
+    "CITY":"BROOKLYN PARK",
+    "STATE":"MN",
+    "ZIP":55443,
+    "COUNTY_CODE":27,
+    "COUNTY_NAME":"HENNEPIN",
+    "TELEPHONE":"763-762-6805",
+    "FAX":"763-315-4669",
+    "ADMINISTRATOR":"RYAN WILLIAMS",
+    "LIC_TYPE":"LIMITED LIABILITY COMPANY",
+    "PSY_HOSP_BEDS":71,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.180007,48.116991 ]
+    },
+    "properties": {
+    "HFID":31208,
+    "NAME":"SANFORD BEHAVIORAL HLTH CENTER",
+    "ADDRESS":"120 LABREE AVENUE SOUTH",
+    "CITY":"THIEF RIVER FALLS",
+    "STATE":"MN",
+    "ZIP":56701,
+    "COUNTY_CODE":57,
+    "COUNTY_NAME":"PENNINGTON",
+    "TELEPHONE":"218-681-4240",
+    "FAX":"218-683-4507",
+    "ADMINISTRATOR":"MR. BRIAN CARLSON",
+    "LIC_TYPE":"NONPROFIT CORPORATION",
+    "PSY_HOSP_BEDS":16,
+    "SLFB_BEDS":0,
+    "OTHER_BEDS":0,
+    "PSY18_BEDS":16
+    }
+  }
+]
+}
