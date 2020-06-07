@@ -13,7 +13,7 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   vectorTileLayerStyles: {
     cb_2017_us_county_500k: {
       weight: 1,
-      color: '#000000',
+      color: '#808080',
       opacity: 0.2,
       fill: false,
     }
@@ -22,8 +22,8 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
 
 // Get 2 days ago at 11pm date
 const yesterday = new Date()
-yesterday.setHours(23,0,0,0);
-yesterday.setDate(yesterday.getDate() - 2)
+yesterday.setHours(0,0,0,0);
+yesterday.setDate(yesterday.getDate() - 1)
 console.log(yesterday)
 
 var displayDate = moment(yesterday).format('YYYY-MM-DD');
@@ -42,36 +42,33 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       const county = f.properties.cty_name;
       const population = f.properties.tot_pop;
 
-      let r = 255;
-      let g = 255;
-      let b = 255;
+       let color_index = 0;
 
-      if(data[state] &&
-       data[state]["counties"] &&
-       data[state]["counties"][county] &&
-       data[state]["counties"][county][displayDate]) {
-        const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
+      // From https://github.com/d3/d3-scale-chromatic/blob/master/src/colors.js
+    colors = function(specifier) {
+      var n = specifier.length / 6 | 0, colors = new Array(n), i = 0;
+      while (i < n) colors[i] = "#" + specifier.slice(i * 6, ++i * 6);
+      return colors;
+    };
 
-        const log_cases = (cases > 1) ? Math.log10(cases) : 0;
-        // console.log(log_cases, county, state)
+    // From https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/viridis.js
+    var magma_colors = colors("00000401000501010601010802010902020b02020d03030f03031204041405041606051806051a07061c08071e0907200a08220b09240c09260d0a290e0b2b100b2d110c2f120d31130d34140e36150e38160f3b180f3d19103f1a10421c10441d11471e114920114b21114e22115024125325125527125829115a2a115c2c115f2d11612f116331116533106734106936106b38106c390f6e3b0f703d0f713f0f72400f74420f75440f764510774710784910784a10794c117a4e117b4f127b51127c52137c54137d56147d57157e59157e5a167e5c167f5d177f5f187f601880621980641a80651a80671b80681c816a1c816b1d816d1d816e1e81701f81721f817320817521817621817822817922827b23827c23827e24828025828125818326818426818627818827818928818b29818c29818e2a81902a81912b81932b80942c80962c80982d80992d809b2e7f9c2e7f9e2f7fa02f7fa1307ea3307ea5317ea6317da8327daa337dab337cad347cae347bb0357bb2357bb3367ab5367ab73779b83779ba3878bc3978bd3977bf3a77c03a76c23b75c43c75c53c74c73d73c83e73ca3e72cc3f71cd4071cf4070d0416fd2426fd3436ed5446dd6456cd8456cd9466bdb476adc4869de4968df4a68e04c67e24d66e34e65e44f64e55064e75263e85362e95462ea5661eb5760ec5860ed5a5fee5b5eef5d5ef05f5ef1605df2625df2645cf3655cf4675cf4695cf56b5cf66c5cf66e5cf7705cf7725cf8745cf8765cf9785df9795df97b5dfa7d5efa7f5efa815ffb835ffb8560fb8761fc8961fc8a62fc8c63fc8e64fc9065fd9266fd9467fd9668fd9869fd9a6afd9b6bfe9d6cfe9f6dfea16efea36ffea571fea772fea973feaa74feac76feae77feb078feb27afeb47bfeb67cfeb77efeb97ffebb81febd82febf84fec185fec287fec488fec68afec88cfeca8dfecc8ffecd90fecf92fed194fed395fed597fed799fed89afdda9cfddc9efddea0fde0a1fde2a3fde3a5fde5a7fde7a9fde9aafdebacfcecaefceeb0fcf0b2fcf2b4fcf4b6fcf6b8fcf7b9fcf9bbfcfbbdfcfdbf");
 
-        if (log_cases <= 2.5) {
-          r = 255;
-          g = b = 255 - Math.floor(log_cases * 255 / 2.5);
-        } else {
-          b = Math.floor((log_cases - 2.5) * (255 / 2.5));
-          g = 0;
-          r = 255 - (b / 2);
-        }
-      }
-      const rgb = (255 << 16) + (g << 8) + (b);
-
-      return ({
-        stroke: false,
-        fillColor: '#'+rgb.toString(16),
-        fill: true,
-        fillOpacity: 0.6
-      });
+    if(data[state] &&
+      data[state]["counties"] &&
+      data[state]["counties"][county] &&
+      data[state]["counties"][county][displayDate]) {
+      const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
+      const log_cases = (cases > 1) ? Math.log10(cases) : 0;
+      color_index = Math.min(Math.floor(log_cases) * 64, 255);
+      console.log(color_index, log_cases)
+    }
+    return ({
+      stroke: false,
+      fillColor: magma_colors[color_index],
+      fill: true,
+      fillOpacity: 0.7
+     });
     },
     zIndex: 1
   });
@@ -127,7 +124,7 @@ function stopAnimation() {
 
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
 boundaries.setStyle({
-  color: 'grey',
+  color: '#808080',
   weight: 2,
   fill: false
 });
@@ -258,8 +255,8 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
 ////////////////////////////////////
 // Bases
 var bases = L.esri.featureLayer({
-  url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0",
-  where: "STATE_TERR NOT LIKE 'Minnesota'",
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0",
+  where: "STATE = 'MN'",
 });
 bases.setStyle({
   color: 'green',
@@ -268,6 +265,27 @@ bases.setStyle({
 });
 bases.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{SITE_NAME}</strong><br><br>State Territory: {STATE_TERR}<br>Status: {OPER_STAT}<br>Component: {COMPONENT}</p>', layer.feature.properties);
+});
+
+
+////////////////////////////////////
+// EOC
+var eocIcon = L.icon({
+	iconUrl: 'data/EOC.png',
+	iconSize: [25, 25],
+  popupAnchor: [0, -28]
+});
+var eoc = L.esri.featureLayer({
+  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0',
+  where: "STATE = 'MN'",
+  pointToLayer: function (geojson, latlng) {
+    return L.marker(latlng, {
+        icon: eocIcon
+      });
+  }
+    });
+eoc.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Telephone: {TELEPHONE}</p>', layer.feature.properties);
 });
 
 /////////////////////////////////////////
@@ -418,7 +436,7 @@ $.getJSON('data/military/national_guard_bases.geojson')
    national_guard_bases = new L.geoJSON(data, {
      onEachFeature: function(feature, featureLayer){
        featureLayer.setStyle({
-         color: 'black',
+         color: 'green',
          weight: 5,
          fill: true
        });
@@ -491,6 +509,20 @@ $.getJSON('data/military/national_guard.geojson')
 })
 });
 
+//////////////////////////////////////////
+// Native American Lands
+var nativeLand = L.esri.featureLayer({
+  url: 'https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Native_Lands/FeatureServer/0',
+  where: "State_Nm = 'MN'"
+});
+nativeLand.setStyle({
+  color: '#A87000',
+  weight: 2,
+  fill: '#A87000'
+});
+nativeLand.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{Loc_Own}</strong></p>', layer.feature.properties);
+});
 
 //////////////////////////////////////////
 // Police
@@ -509,7 +541,7 @@ var policeStations = L.esri.featureLayer({
   }
    });
 policeStations.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}<br><br>Phone: </p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
 });
 
 
@@ -794,6 +826,9 @@ $("input[type='checkbox']").change(function() {
     case "counties":
       toggleLayer(this.checked, counties)
     break;
+    case "EOC":
+      toggleLayer(this.checked, eoc);
+    break;
     case "federal":
       toggleLayer(this.checked, federal);
     break;
@@ -812,6 +847,9 @@ $("input[type='checkbox']").change(function() {
     case "national":
       toggleLayer(this.checked, national);
       toggleLayer(this.checked, national_guard_bases)
+    break;
+    case "nativeLand":
+      toggleLayer(this.checked, nativeLand);
     break;
     case "nursingHomes":
       toggleLayer(this.checked, nursingHomes);
