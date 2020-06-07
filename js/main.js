@@ -179,12 +179,9 @@ $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
  .done( data => {
    boardingCareHomes = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
-       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
-        if (feature.properties.foodshelves_Url !== null) {
           return L.marker(latlng, {icon: boardingCareHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
           });
-       }
   }
 })
 });
@@ -199,12 +196,9 @@ $.getJSON('data/assistedLiving/housingWithServices.geojson')
  .done( data => {
    housingWithServices = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
-       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
-        if (feature.properties.foodshelves_Url !== null) {
           return L.marker(latlng, {icon: housingWithServicesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
           });
-       }
   }
 })
 });
@@ -219,12 +213,9 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
  .done( data => {
    nursingHomes = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
-       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
-        if (feature.properties.foodshelves_Url !== null) {
           return L.marker(latlng, {icon: nursingHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
           });
-       }
   }
 })
 });
@@ -239,12 +230,9 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
  .done( data => {
    supervisedLivingFacilities = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
-       // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
-        if (feature.properties.foodshelves_Url !== null) {
           return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br>{CITY} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
           });
-       }
   }
 })
 });
@@ -403,14 +391,14 @@ $.getJSON('data/foodshelves/foodshelves.geojson')
 });
 
 ///////////////////////////////////////////
-// Hospitals
+// Medical - General Hospitals, Native American, Psychiatric, Veterans Affairs
 var hospitalsIcon = L.icon({
-	iconUrl: 'data/hospital.svg',
+	iconUrl: 'data/hospital/hospital.svg',
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var hospitals = L.esri.featureLayer({
-  url: "https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/6",
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Hospitals_1/FeatureServer/0",
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
@@ -419,10 +407,80 @@ var hospitals = L.esri.featureLayer({
   }
  });
 hospitals.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}</p>', layer.feature.properties);
 });
 
+$.getJSON('data/hospital/naPublicHealthService.geojson')
+ .done( data => {
+   na = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       switch(feature.properties["Type"]) {
+         case "Clinic":
+           var naClinic = L.icon({
+           	iconUrl: 'data/hospital/naClinic.svg',
+           	iconSize: [20, 20],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: naClinic}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
+           });
+         case "Hospital":
+           var naHospital = L.icon({
+           	iconUrl: 'data/hospital/naHospital.svg',
+           	iconSize: [20, 20],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: naHospital}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
+           });
+       }
+  }
+})
+});
 
+var psychIcon = L.icon({
+	iconUrl: 'data/hospital/psychHospital.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -8]
+});
+$.getJSON('data/hospital/psychHospital.geojson')
+ .done( data => {
+   psych = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: psychIcon}).bindPopup(function (feature) {
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+          });
+  }
+})
+});
+
+$.getJSON('data/hospital/vaFacilities.geojson')
+ .done( data => {
+   va = new L.geoJSON(data, {
+     pointToLayer: function (feature, latlng) {
+       switch(feature.properties["Type"]) {
+         case "Clinic":
+           var vaClinic = L.icon({
+           	iconUrl: 'data/hospital/vaClinic.svg',
+           	iconSize: [20, 20],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: vaClinic}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
+           });
+         case "Hospital":
+           var vaHospital = L.icon({
+           	iconUrl: 'data/hospital/vaHospital.svg',
+           	iconSize: [20, 20],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: vaHospital}).bindPopup(function (layer) {
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {State} {ZIP}<br><br>{TELEPHONE}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
+           });
+       }
+  }
+})
+});
 
 /////////////////////////////////////////
 // National Guard
@@ -758,27 +816,6 @@ var testing = L.esri.featureLayer({
  });
 
 
-/////////////////////////////////////////
-// veterans
-var vaIcon = L.icon({
-	iconUrl: 'data/va.svg',
-	iconSize: [25, 25],
-  popupAnchor: [0, -28]
-});
-var va = L.esri.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0',
-  where: "STATE = 'MN'",
-  pointToLayer: function (geojson, latlng) {
-    return L.marker(latlng, {
-        icon: vaIcon
-      });
-  }
- });
-va.bindPopup(function (layer) {
-  return L.Util.template("<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}</p>", layer.feature.properties);
-});
-
-
 // Add it all together
 var mymap = L.map('mapid', {
   preferCanvas: true,
@@ -848,6 +885,9 @@ $("input[type='checkbox']").change(function() {
     case "nativeLand":
       toggleLayer(this.checked, nativeLand);
     break;
+    case "na":
+      toggleLayer(this.checked, na);
+    break;
     case "nursingHomes":
       toggleLayer(this.checked, nursingHomes);
     break;
@@ -859,6 +899,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "prisons":
       toggleLayer(this.checked, prisons);
+    break;
+    case "psych":
+      toggleLayer(this.checked, psych);
     break;
     case "publicSchools":
       toggleLayer(this.checked, publicSchools);

@@ -1,0 +1,16 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_4" height="181" width="226" y="39.453125" x="15.5" stroke-width="1.5" fill="#ffffff"/>
+  <g id="svg_1" fill="#000000" transform="translate(0,256) scale(0.10000000149011612,-0.10000000149011612) ">
+   <path fill="#0171c9" stroke="#0E353B" id="svg_2" d="m212,2239c-68,-34 -121,-118 -142,-224c-8,-43 -10,-271 -8,-795c3,-734 3,-735 25,-790c29,-70 74,-125 126,-153l42,-22l1030,0c1162,0 1056,-8 1134,81c28,32 48,68 61,113c20,64 20,90 18,831l-3,765l-26,55c-33,71 -72,116 -120,140c-37,19 -66,20 -1066,20l-1028,0l-43,-21zm2117,-121c63,-65 62,-46 59,-879l-3,-754l-28,-47c-49,-85 38,-79 -1088,-76l-1001,3l-33,37c-66,71 -65,63 -65,858c0,797 0,792 65,857l33,33l1015,0l1015,0l31,-32z"/>
+   <path fill="#0171c9" stroke="#0E353B" id="svg_3" d="m600,1245l0,-785l180,0l180,0l0,355l0,355l310,0l310,0l0,-355l0,-355l180,0l180,0l0,785l0,785l-180,0l-180,0l0,-295l0,-295l-310,0l-310,0l0,295l0,295l-180,0l-180,0l0,-785z"/>
+  </g>
+ </g>
+</svg>

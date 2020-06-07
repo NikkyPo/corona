@@ -1,0 +1,22 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_11" height="113.249379" width="127.249302" y="5.8636" x="1.125345" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <g id="svg_1" fill="#57a1ae" transform="translate(0,128) scale(0.10000000149011612,-0.10000000149011612) ">
+   <path stroke="null" id="svg_2" d="m0,640l0,-640l640,0l640,0l0,640l0,640l-640,0l-640,0l0,-640zm1219,484c49,-35 51,-53 51,-494c0,-441 -2,-459 -51,-494c-21,-14 -82,-16 -579,-16c-497,0 -558,2 -579,16c-49,35 -51,53 -51,495c0,359 2,415 16,445c32,67 1,64 614,64c497,0 558,-2 579,-16z"/>
+   <path stroke="null" id="svg_3" d="m102,1118c-12,-6 -32,-27 -45,-47c-22,-35 -22,-43 -25,-418c-2,-249 1,-396 8,-422c6,-22 24,-54 41,-70l31,-31l527,0c590,0 556,-4 592,74c17,38 19,71 19,423c0,420 -3,442 -60,483c-27,19 -45,20 -547,19c-353,0 -525,-4 -541,-11zm1063,-62c14,-14 26,-41 30,-67c3,-24 5,-202 3,-396c-3,-339 -4,-353 -24,-380l-21,-28l-503,-3c-431,-2 -506,0 -526,13c-40,26 -46,94 -42,467c3,302 5,347 20,375c10,17 23,33 30,36c7,3 237,6 511,6l498,1l24,-24z"/>
+   <path stroke="null" id="svg_4" d="m655,1018c-2,-7 -13,-60 -25,-118c-33,-164 -17,-150 -174,-150c-154,0 -138,12 -156,-115c-6,-44 -14,-90 -17,-102l-5,-23l151,0c83,0 151,-2 151,-5c0,-7 -29,-203 -35,-242l-6,-33l128,0l129,0l19,137l20,138l130,5l130,5l17,105c9,58 17,111 17,118c1,9 -32,12 -134,12c-158,0 -147,-16 -110,154c14,64 25,118 25,121c0,3 -56,5 -125,5c-92,0 -127,-3 -130,-12z"/>
+  </g>
+  <rect stroke="#57a1ae" id="svg_6" height="0.166666" width="41.083169" y="86.400855" x="12.416875" stroke-width="1.5" fill="#0fffff"/>
+  <rect stroke="#57a1ae" id="svg_7" height="0.166666" width="15.083313" y="64.650975" x="11.666878" stroke-width="1.5" fill="#0fffff"/>
+  <rect stroke="#57a1ae" id="svg_8" height="0.166666" width="42.083166" y="48.401063" x="12.249937" stroke-width="1.5" fill="#0fffff"/>
+  <rect stroke="#57a1ae" id="svg_9" height="0.166666" width="47.833136" y="26.901181" x="12" stroke-width="1.5" fill="#0fffff"/>
+  <rect stroke="#57a1ae" id="svg_10" height="0.166666" width="37.083193" y="103.650764" x="12" stroke-width="1.5" fill="#0fffff"/>
+ </g>
+</svg>
