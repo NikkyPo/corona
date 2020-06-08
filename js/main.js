@@ -20,14 +20,6 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
-// Get 2 days ago at 11pm date
-const yesterday = new Date()
-yesterday.setHours(0,0,0,0);
-yesterday.setDate(yesterday.getDate() - 1)
-
-var displayDate = moment(yesterday).format('YYYY-MM-DD');
-$("#date").attr("max", displayDate)
-$("#date").attr("value", displayDate)
 
 $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
  .done( data => {
@@ -41,7 +33,16 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       const county = f.properties.cty_name;
       const population = f.properties.tot_pop;
 
-       let color_index = 0;
+      // var k = [];
+      // var date = data[state]["counties"][county]
+      // // k.push(date)
+      // // console.log(k[Object.keys(k)[0]])
+      // k.push(Object.keys(date)[0])
+      // console.log(k)
+
+      // var maxDate=new Date(Math.max.apply(null,k));
+
+      let color_index = 0;
 
       // From https://github.com/d3/d3-scale-chromatic/blob/master/src/colors.js
     colors = function(specifier) {
@@ -72,6 +73,16 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
   });
    cases.addTo(mymap);
  });
+
+
+ // Get 2 days ago at 11pm date
+ const yesterday = new Date()
+ yesterday.setHours(0,0,0,0);
+ yesterday.setDate(yesterday.getDate() - 1)
+
+ var displayDate = moment(yesterday).format('YYYY-MM-DD');
+ $("#date").attr("max", displayDate)
+ $("#date").attr("value", displayDate)
 
 $("#date").change(function() {
   displayDate = $("#date").val();
@@ -180,7 +191,7 @@ $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
    boardingCareHomes = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: boardingCareHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>Administrator: {ADMINISTRATOR}<br>Beds: {BCH_BEDS}</p>', feature.feature.properties);
           });
   }
 })
@@ -197,7 +208,7 @@ $.getJSON('data/assistedLiving/housingWithServices.geojson')
    housingWithServices = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: housingWithServicesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>{HWS_TYPE}<br><br>Administrator: {ADMINISTRATOR}</p>', feature.feature.properties);
           });
   }
 })
@@ -214,7 +225,7 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
    nursingHomes = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: nursingHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>Administrator: {ADMINISTRATOR}<br>Beds: {NH_BEDS}</p>', feature.feature.properties);
           });
   }
 })
@@ -231,7 +242,7 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
    supervisedLivingFacilities = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>{ICFMR}<br><br>Administrator: {ADMINISTRATOR}<br>Beds: {SLFB_BEDS}</p>', feature.feature.properties);
           });
   }
 })
@@ -275,6 +286,21 @@ eoc.bindPopup(function (layer) {
 
 /////////////////////////////////////////
 // Federal Guard
+
+// Federal Bases
+$.getJSON('data/military/federal_bases.geojson')
+ .done( data => {
+   federal_bases = new L.geoJSON(data, {
+     onEachFeature: function(feature, featureLayer){
+       featureLayer.setStyle({
+         color: 'green',
+         weight: 5,
+         fill: true
+       });
+     }
+})
+});
+
 $.getJSON('data/military/federal.geojson')
  .done( data => {
    federal = new L.geoJSON(data, {
@@ -407,7 +433,7 @@ var hospitals = L.esri.featureLayer({
   }
  });
 hospitals.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br>County: {COUNTY}<br><br>Type: {TYPE}<br>Status:{STATUS}<br>NAICS Description: {NAICS_DESC}<br><br>Beds: {BEDS}<br>Owner: {OWNER}<br>Trauma: {TRAUMA}<br>Helipad: {HELIPAD}<br><br><button><a target="_blank" href="{WEBSITE}"></a>Website</button></p>', layer.feature.properties);
 });
 
 $.getJSON('data/hospital/naPublicHealthService.geojson')
@@ -422,7 +448,7 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naClinic}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>Administrator: {ADMINISTRATOR}<br>Hospital beds: {HOSP_BEDS}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
            });
          case "Hospital":
            var naHospital = L.icon({
@@ -431,7 +457,7 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naHospital}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>Administrator: {ADMINISTRATOR}<br>Hospital beds: {HOSP_BEDS}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
            });
        }
   }
@@ -448,7 +474,7 @@ $.getJSON('data/hospital/psychHospital.geojson')
    psych = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: psychIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}<br>Administrator: {ADMINISTRATOR}<br>Beds: {OTHER_BEDS}</p>', feature.feature.properties);
           });
   }
 })
@@ -475,7 +501,7 @@ $.getJSON('data/hospital/vaFacilities.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaHospital}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {State} {ZIP}<br><br>{TELEPHONE}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {State} {ZIP}<br><br>{TELEPHONE}<br><br>Beds: {HOSP18_BEDS}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
            });
        }
   }
@@ -676,7 +702,8 @@ $.getJSON('data/prison/prisons.geojson')
 })
 });
 //////////////////////////////////////////
-// Public Schools
+// Schools: public and private
+
 var publicSchoolsIcon = L.icon({
 	iconUrl: 'data/publicSchools.svg',
 	iconSize: [25, 25],
@@ -692,7 +719,26 @@ var publicSchools = L.esri.featureLayer({
   }
     });
 publicSchools.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}}</p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {ST_GRADE} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
+});
+
+
+var privateSchoolsIcon = L.icon({
+	iconUrl: 'data/privateSchools.svg',
+	iconSize: [25, 25],
+  popupAnchor: [0, -28]
+});
+var privateSchools = L.esri.featureLayer({
+  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0',
+  where: "STATE = 'MN'",
+  pointToLayer: function (geojson, latlng) {
+    return L.marker(latlng, {
+        icon: privateSchoolsIcon
+      });
+  }
+    });
+privateSchools.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {START_GRAD} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
 });
 
 //////////////////////////////////////////
@@ -865,6 +911,7 @@ $("input[type='checkbox']").change(function() {
     break;
     case "federal":
       toggleLayer(this.checked, federal);
+      toggleLayer(this.checked, federal_bases);
     break;
     case "foodshelves":
       toggleLayer(this.checked, foodshelves);
@@ -880,7 +927,7 @@ $("input[type='checkbox']").change(function() {
     break;
     case "national":
       toggleLayer(this.checked, national);
-      toggleLayer(this.checked, national_guard_bases)
+      toggleLayer(this.checked, national_guard_bases);
     break;
     case "nativeLand":
       toggleLayer(this.checked, nativeLand);
@@ -902,6 +949,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "psych":
       toggleLayer(this.checked, psych);
+    break;
+    case "privateSchools":
+      toggleLayer(this.checked, privateSchools);
     break;
     case "publicSchools":
       toggleLayer(this.checked, publicSchools);

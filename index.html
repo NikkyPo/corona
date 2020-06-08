@@ -37,7 +37,8 @@
                     Data
                     <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
-								<p style="margin-top: 1em; margin-bottom: 1em;"><i>See Resources tab for a list of data sources</i></p><hr>
+								<p style="margin-top: 1em; margin-bottom: 1em;"><i>See Resources tab for a list of data sources</i></p>
+								<hr class="group">
 								<h3>Basemaps</h3>
 								<label class="container">Aerial
 									<input type="radio" name="radio" id="aerial">
@@ -51,7 +52,7 @@
 								  <input type="radio" name="radio" id="streets">
 								  <span class="radiobtn"></span>
 								</label>
-								<hr>
+								<hr class="group">
 								<h3>Boundaries</h3>
 								<label class="container">Counties
 									<input type="checkbox" id="counties" checked>
@@ -71,7 +72,7 @@
 									<span class="checkmark"></span>
 									<div id="redCrossLegend"><img class="icon" src="data/redCross.svg" alt="legend for redCross"></div>
 								</label>
-								<hr>
+								<hr class="group">
 								<h3>Layers - COVID-19 Response</h3>
 								<label class="container">Cumulative CONUS COVID-19 cases by county (per 100,000)
 									<input name="use_us" type="checkbox" id="cases" checked>
@@ -96,7 +97,8 @@
 									<input type="button" value="Next Day" onclick="showNextDay()">
 									<!-- <input type="button" value="Animate" onclick="startAnimation()">
 									<input type="button" value="Stop Animation" onclick="stopAnimation()"> -->
-								</div><br><br>
+								</div><br>
+								<hr class="layer"><br>
 								<label class="container">Cumulative Minnesota COVID-19 cases by county
 									<input type="checkbox" id="positiveCounties" name="use_mn">
 									<span class="checkmark"></span>
@@ -106,13 +108,15 @@
 										<div style="background-color: rgb(123, 204, 196, 0.7)">6 to 50</div>
 										<div style="background-color: rgb(67, 162, 202, 0.7)">51 to 500</div>
 										<div style="background-color: rgb(7, 85, 145, 0.7)">501 to 10,000</div>
-									</div>
+									</div><br>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Local Foodshelves
 									<input id="foodshelves" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="foodshelvesLegend"><img class="icon" src="data/foodshelves/foodshelves.svg" alt="legend for foodshelves"></div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Testing Locations
 									<input id="testing" type="checkbox">
 									<span class="checkmark"></span>
@@ -129,7 +133,7 @@
 											<i style="margin-left: 10px;">All other</i>
 									</div>
 								</label>
-								<hr>
+								<hr class="group">
 								<h3>Layers - General</h3>
 								<label class="container">Airports with hard surface runways 5,000' or more
 									<input class="special" id="airports" type="checkbox">
@@ -147,6 +151,7 @@
 											<i style="margin-left: 10px;">Military or Joint Use</i>
 									</div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Assisted Living – Nursing Homes
 									<input id="nursingHomes" type="checkbox">
 									<span class="checkmark"></span>
@@ -167,17 +172,19 @@
 									<span class="checkmark"></span>
 									<div id="supervisedLivingFacilitiesLegend"><img class="icon" src="data/assistedLiving/supervisedLivingFacilities.svg" alt="legend for supervised Living Facilities"></div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Emergency Operations Centers - Local
 									<input id="EOC" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="EOCLegend"><img class="icon" src="data/eoc.png" alt="legend for Emergency Operations Centers - Local"></div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Fire Stations
 									<input id="fireStations" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="fireStationsLegend"><img class="icon" src="data/fireStations.svg" alt="legend for fireStations"></div>
 								</label>
-
+								<hr class="layer"><br>
 								<label class="container">Medical - General Hospitals
 									<input id="hospitals" type="checkbox">
 									<span class="checkmark"></span>
@@ -212,7 +219,7 @@
 											<i style="margin-left: 10px;">Hospitals</i>
 									</div>
 								</label>
-
+								<hr class="layer"><br>
 								<label class="container">Military Facilities - Federal
 									<input class="special" id="federal" type="checkbox">
 									<span class="checkmark"></span><br>
@@ -278,11 +285,13 @@
 									<span class="checkmark"></span>
 									<div id="basesLegend"><img class="icon" src="data/military/other_military.svg" alt="legend for other military"></div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Police Stations
 									<input id="policeStations" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="policeStationsLegend"><img class="icon" src="data/policeStations.svg" alt="legend for policeStations"></div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Prisons
 									<input id="prisons" type="checkbox">
 									<span class="checkmark"></span>
@@ -295,16 +304,24 @@
 											<i style="margin-left: 10px;">Minnesota</i>
 									</div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Red Cross Facilities
 									<input id="redCrossFacilities" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="redCrossFacilitiesLegend"><img class="icon" src="data/redCrossFacilities.svg" alt="legend for redCrossFacilities"></div>
 								</label>
-								<label class="container">Schools
+								<hr class="layer"><br>
+								<label class="container">Schools - Private
+									<input id="privateSchools" type="checkbox">
+									<span class="checkmark"></span>
+									<div id="privateSchoolsLegend"><img class="icon" src="data/privateSchools.svg" alt="legend for privateSchools"></div>
+								</label>
+								<label class="container">Schools - Public
 									<input id="publicSchools" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="publicSchoolsLegend"><img class="icon" src="data/publicSchools.svg" alt="legend for publicSchools"></div>
 								</label>
+								<hr class="layer"><br>
 								<label class="container">Shelter System Facilities
 									<input id="shelters" type="checkbox">
 									<span class="checkmark"></span>

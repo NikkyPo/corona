@@ -156,3 +156,12 @@ input {
   font-weight: bold;
   font-size: 15px;
   }
+
+  /* Dashed black border to seperate layer groups */
+  hr.layer {
+    border-top: .2px dashed grey;
+  }
+  /* Dashed black border to seperate large groups */
+  hr.group {
+    border-top: 1.5px solid grey;
+  }

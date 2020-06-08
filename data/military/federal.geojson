@@ -25,7 +25,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -93.20,44.88715 ]
+       "coordinates":  [ -93.1977,44.8878 ]
     },
     "properties": {
     "Name":"USMC Reserve",
@@ -85,7 +85,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -93.22289,44.89625 ]
+       "coordinates":  [ -93.221264,44.8967 ]
     },
     "properties": {
     "Name":"Navy Operational Support Center",
