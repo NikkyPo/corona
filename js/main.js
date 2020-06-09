@@ -20,9 +20,46 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
+// Get yesterday's date
+// const today = new Date()
+// const yesterday = new Date(today)
+// yesterday.setDate(yesterday.getDate() - 1)
+
+///////////////////////////////////////////////////
+  let displayDate;
+  let min;
+  let max;
+  let day;
+
+  function getval( callback ){
+     $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json', function(data) {
+         // We can't use .return because return is a JavaScript keyword.
+         const st = data[Object.keys(data)[0]];
+         const maxDate = Object.keys(st.statewide).slice(-1)[0];
+         callback(maxDate);
+     });
+  }
+    getval( function ( value ) {
+      displayDate = moment(value).format('YYYY-MM-DD');
+      $("#date").attr("max", displayDate)
+      $("#date").attr("value", displayDate)
+      min = moment($("#date").attr("min"));
+      max = moment($("#date").attr("max"));
+      day = moment(min);
+  });
+  $("#date").change(function() {
+    displayDate = $("#date").val();
+    mymap.eachLayer( l => {
+      if(l.options.attribution && l.options.attribution.startsWith("COVID"))
+        l.redraw();
+    } );
+  });
+//////////////////////////////////////////////////////
+
 
 $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
  .done( data => {
+
   cases = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
     minDetailZoom: 0,
     maxDetailZoom: 8,
@@ -33,17 +70,7 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       const county = f.properties.cty_name;
       const population = f.properties.tot_pop;
 
-      // var k = [];
-      // var date = data[state]["counties"][county]
-      // // k.push(date)
-      // // console.log(k[Object.keys(k)[0]])
-      // k.push(Object.keys(date)[0])
-      // console.log(k)
-
-      // var maxDate=new Date(Math.max.apply(null,k));
-
       let color_index = 0;
-
       // From https://github.com/d3/d3-scale-chromatic/blob/master/src/colors.js
     colors = function(specifier) {
       var n = specifier.length / 6 | 0, colors = new Array(n), i = 0;
@@ -75,59 +102,38 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
  });
 
 
- // Get 2 days ago at 11pm date
- const yesterday = new Date()
- yesterday.setHours(0,0,0,0);
- yesterday.setDate(yesterday.getDate() - 1)
-
- var displayDate = moment(yesterday).format('YYYY-MM-DD');
- $("#date").attr("max", displayDate)
- $("#date").attr("value", displayDate)
-
-$("#date").change(function() {
-  displayDate = $("#date").val();
-  mymap.eachLayer( l => {
-    if(l.options.attribution && l.options.attribution.startsWith("COVID"))
-      l.redraw();
-  } );
-});
-
-let min = moment($("#date").attr("min"));
-let max = moment($("#date").attr("max"));
-let day = moment(min);
-
-function showNextDay() {
-  if (day < max) {
-    day.add(1, 'days');
-  } else {
-    day = moment(min);
+  function showNextDay() {
+    if (day < max) {
+      day.add(1, 'days');
+    } else {
+      day = moment(min);
+    }
+    $("#date").val(day.format('YYYY-MM-DD')).change();
   }
 
-  $("#date").val(day.format('YYYY-MM-DD')).change();
-}
-
-function showPreviousDay() {
-  if (day > min) {
-    day.add(-1, 'days');
-  } else {
-    day = moment(max);
+  function showPreviousDay() {
+console.log(displayDate)
+    if (day > min) {
+      day.add(-1, 'days');
+    } else {
+      day = moment(max);
+    }
+    $("#date").val(day.format('YYYY-MM-DD')).change();
   }
 
-  $("#date").val(day.format('YYYY-MM-DD')).change();
-}
+  var timer = null;
+  function startAnimation() {
+    if (timer == null) {
+      timer = setInterval( showNextDay, 2000 );
+    }
+  }
+  function stopAnimation() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
 
-var timer = null;
-function startAnimation() {
-  if (timer == null) {
-    timer = setInterval( showNextDay, 2000 );
-  }
-}
-function stopAnimation() {
-  if (timer) {
-    clearInterval(timer);
-    timer = null;
-  }
-}
 
 
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
@@ -251,8 +257,8 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
 ////////////////////////////////////
 // Bases
 var bases = L.esri.featureLayer({
-  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0",
-  where: "STATE = 'MN'",
+  url: "https://geo.dot.gov/server/rest/services/NTAD/Military_Bases/MapServer/0",
+  where: "STATE_TERR NOT LIKE 'Minnesota'",
 });
 bases.setStyle({
   color: 'green',
@@ -977,12 +983,18 @@ $("input[type='checkbox']").change(function() {
   }
 });
 
+let clusters;
 function toggleLayer(checked, layer) {
-	if (checked) {
-  	mymap.addLayer(layer);
+  	if (checked) {
+    // clusters = L.markerClusterGroup({disableClusteringAtZoom: 12});
+    // clusters.addLayer(layer);
+  	// mymap.addLayer(clusters);
+    mymap.addLayer(layer);
     layer.bringToFront();
   } else {
-  	mymap.removeLayer(layer);
+    mymap.removeLayer(layer);
+
+
   }
 }
 
