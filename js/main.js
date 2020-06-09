@@ -20,10 +20,7 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
-// Get yesterday's date
-// const today = new Date()
-// const yesterday = new Date(today)
-// yesterday.setDate(yesterday.getDate() - 1)
+
 
 ///////////////////////////////////////////////////
   let displayDate;
@@ -39,14 +36,19 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
          callback(maxDate);
      });
   }
+
     getval( function ( value ) {
       displayDate = moment(value).format('YYYY-MM-DD');
+
       $("#date").attr("max", displayDate)
       $("#date").attr("value", displayDate)
+
       min = moment($("#date").attr("min"));
       max = moment($("#date").attr("max"));
-      day = moment(min);
+      day = moment(max);
   });
+
+
   $("#date").change(function() {
     displayDate = $("#date").val();
     mymap.eachLayer( l => {
@@ -112,7 +114,6 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
   }
 
   function showPreviousDay() {
-console.log(displayDate)
     if (day > min) {
       day.add(-1, 'days');
     } else {
@@ -133,7 +134,6 @@ console.log(displayDate)
       timer = null;
     }
   }
-
 
 
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
