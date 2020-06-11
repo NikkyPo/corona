@@ -1,3 +1,5 @@
+/////////////////////////////////////////
+// basemaps
 var none = L.tileLayer('');
 var aerial = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
@@ -6,7 +8,8 @@ var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 })
 
-// Layers
+/////////////////////////////////////////
+// Counties
 var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
   minDetailZoom: 0,
   maxDetailZoom: 8,
@@ -20,9 +23,8 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
-
-
 ///////////////////////////////////////////////////
+// Covid layer and Date Controls
   let displayDate;
   let min;
   let max;
@@ -56,7 +58,6 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
         l.redraw();
     } );
   });
-//////////////////////////////////////////////////////
 
 
 $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
@@ -135,7 +136,8 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
     }
   }
 
-
+/////////////////////////////////////////
+// Political boundaries
 var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
 boundaries.setStyle({
   color: '#808080',
@@ -507,7 +509,7 @@ $.getJSON('data/hospital/vaFacilities.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaHospital}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {State} {ZIP}<br><br>{TELEPHONE}<br><br>Beds: {HOSP18_BEDS}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>{TELEPHONE}<br><br>Beds: {HOSP18_BEDS}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
            });
        }
   }
