@@ -10,7 +10,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <ellipse stroke="#000" ry="239.000001" rx="240.500009" id="svg_1" cy="249.999995" cx="250.000005" stroke-width="0" fill="#fff"/>
+  <ellipse stroke="#000" ry="239.000001" rx="240.500009" id="svg_1" cy="249.999995" cx="250.000005" stroke-width="15" fill="#fff"/>
   <style transform="matrix(1.695421110424732,0,0,1.695421110424732,0,0) " type="text/css">.st0{display:none;fill:#262626;}
 	.st1{display:none;}
 	.st2{display:inline;fill:#4C4C4C;}

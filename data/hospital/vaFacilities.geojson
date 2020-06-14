@@ -9,7 +9,7 @@
     },
     "properties": {
     "Type":"Hospital",
-    "U.S. National Grid":"15T VK  83904  72068",
+    "USNationalGrid":"15T VK  83904  72068",
     "NAME":"Minneapolis VAHCS",
     "ADDRESS":"One Veterans Drive",
     "CITY":"Minneapolis",
@@ -33,7 +33,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VJ  68643  32662",
+    "USNationalGrid":"15T VJ  68643  32662",
     "NAME":"Albert Lea VA Clinic",
     "ADDRESS":"1665 West Main Street",
     "CITY":"Albert Lea",
@@ -57,7 +57,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T WP  85471  06606",
+    "USNationalGrid":"15T WP  85471  06606",
     "NAME":"Ely VA Clinic",
     "ADDRESS":"720 East Miners Drive",
     "CITY":"Ely",
@@ -81,7 +81,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VK  84688  71146",
+    "USNationalGrid":"15T VK  84688  71146",
     "NAME":"Fort Snelling VA Clinic (Compensation and Pension)",
     "ADDRESS":"1 Federal Drive",
     "CITY":"Fort Snelling",
@@ -105,7 +105,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T WN  03632  49601",
+    "USNationalGrid":"15T WN  03632  49601",
     "NAME":"Hibbing VA Clinic",
     "ADDRESS":"990 West 41st Street, Suite 5",
     "CITY":"Hibbing",
@@ -129,7 +129,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VJ  24461  92300",
+    "USNationalGrid":"15T VJ  24461  92300",
     "NAME":"Lyle C. Pearson Community Based Outpatient Clinic",
     "ADDRESS":"1961 Premier Drive, Suite 330",
     "CITY":"Mankato",
@@ -153,7 +153,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VK  97736  86641",
+    "USNationalGrid":"15T VK  97736  86641",
     "NAME":"Maplewood VA Clinic",
     "ADDRESS":"1725 Legacy Parkway, Suite 100",
     "CITY":"Maplewood",
@@ -177,7 +177,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VK  77926  80058",
+    "USNationalGrid":"15T VK  77926  80058",
     "NAME":"Minneapolis VA Clinic (Community Resource & Referral Center)",
     "ADDRESS":"1201 Harmon Place, Suite 103",
     "CITY":"Minneapolis",
@@ -201,7 +201,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VL  64030  08743",
+    "USNationalGrid":"15T VL  64030  08743",
     "NAME":"Northwest Metro VA Clinic",
     "ADDRESS":"7545 Veterans Drive",
     "CITY":"Ramsey",
@@ -225,7 +225,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T WJ  43013  68799",
+    "USNationalGrid":"15T WJ  43013  68799",
     "NAME":"Rochester VA Clinic",
     "ADDRESS":"3551 Commercial Drive South West, Suite 400",
     "CITY":"Rochester",
@@ -249,7 +249,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VK  56208  59316",
+    "USNationalGrid":"15T VK  56208  59316",
     "NAME":"Shakopee VA Clinic",
     "ADDRESS":"1111 Shakopee Town Square",
     "CITY":"Shakopee",
@@ -273,7 +273,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T UJ  70206  69894",
+    "USNationalGrid":"15T UJ  70206  69894",
     "NAME":"St. James VA Clinic",
     "ADDRESS":"1212 Heckman Court",
     "CITY":"St. James",
@@ -297,7 +297,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T WM  68497  71938",
+    "USNationalGrid":"15T WM  68497  71938",
     "NAME":"Twin Ports VA Clinic",
     "ADDRESS":"3520 Tower Avenue",
     "CITY":"Superior",
@@ -321,7 +321,7 @@
     },
     "properties": {
     "Type":"Hospital",
-    "U.S. National Grid":"15T VL  04972  46738",
+    "USNationalGrid":"15T VL  04972  46738",
     "NAME":"St. Cloud VAHCS",
     "ADDRESS":"4801 Veterans Drive",
     "CITY":"St. Cloud",
@@ -345,7 +345,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T TK  86149  81602",
+    "USNationalGrid":"15T TK  86149  81602",
     "NAME":"Montevideo VA Clinic",
     "ADDRESS":"1025 North 13th Street",
     "CITY":"Montevideo",
@@ -369,7 +369,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T VM  05964  34706",
+    "USNationalGrid":"15T VM  05964  34706",
     "NAME":"Brainerd VA Clinic",
     "ADDRESS":"722 Northwest 7th Street",
     "CITY":"Brainerd",
@@ -393,7 +393,7 @@
     },
     "properties": {
     "Type":"Clinic",
-    "U.S. National Grid":"15T UL  16001  81935",
+    "USNationalGrid":"15T UL  16001  81935",
     "NAME":"Max J. Beilke Department of Veterans Affairs Outpatient Clinic",
     "ADDRESS":"515 22nd Avenue East",
     "CITY":"Alexandria",

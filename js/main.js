@@ -199,7 +199,21 @@ $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
    boardingCareHomes = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: boardingCareHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>Administrator: {ADMINISTRATOR}<br>Beds: {BCH_BEDS}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+            'Health Facility ID Number: {HFID}<br><br>\n'+
+            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
+            'County: {COUNTY_NAME}<br><br>\n'+
+            'Phone: {TELEPHONE}<br> \n'+
+            'Fax: {FAX}<br><br> \n'+
+            'License Type: {LIC_TYPE}<br>\n'+
+            'Administrator: {ADMINISTRATOR}<br><br>\n'+
+            'State Licensed Nursing Home beds:<strong> {NH_BEDS}</strong><br>\n'+
+            'State Licensed Boarding Care Home beds:<strong> {BCH_BEDS}</strong><br>\n'+
+            'Federal Medicare Skilled Nursing Facility beds: <strong>{SNF_BEDS}</strong><br>\n'+
+            'Federal Medicare/Medicaid Dual Skilled Nursing Facility and Nursing Facility beds:<strong> {SNFNF_BEDS}</strong><br>\n'+
+            'Federal Medicaid Nursing Facility beds (Nursing Home): <strong>{NF2_BEDS}</strong><br><br>\n'+
+            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
+            '</p>', feature.feature.properties);
           });
   }
 })
@@ -216,7 +230,16 @@ $.getJSON('data/assistedLiving/housingWithServices.geojson')
    housingWithServices = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: housingWithServicesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>{HWS_TYPE}<br><br>Administrator: {ADMINISTRATOR}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+            'Health Facility ID Number: {HFID}<br><br>\n'+
+            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
+            'County: {COUNTY_NAME}<br><br>\n'+
+            'Phone: {TELEPHONE}<br>\n'+
+            'Fax: {FAX}<br><br> \n'+
+            'License Type: {LIC_TYPE}<br>\n'+
+            'Administrator: {ADMINISTRATOR}<br><br>\n'+
+            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
+            '</p>', feature.feature.properties);
           });
   }
 })
@@ -233,7 +256,25 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
    nursingHomes = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: nursingHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>Administrator: {ADMINISTRATOR}<br>Beds: {NH_BEDS}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+            'Health Facility ID Number: {HFID}<br><br>\n'+
+            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
+            'County: {COUNTY_NAME}<br><br>\n'+
+            'Phone: {TELEPHONE}<br> \n'+
+            'Fax: {FAX}<br><br> \n'+
+            'License Type: {LIC_TYPE}<br>\n'+
+            'Administrator: {ADMINISTRATOR}<br><br>\n'+
+            'State licensed Hospital beds: <strong>{HOSP_BEDS}</strong><br>\n'+
+            'Infant Bassinets: <strong>{BASS_BEDS}</strong><br>\n'+
+            'State Licensed Boarding Care Home beds: <strong>{BCH_BEDS}</strong><br>\n'+
+            'Federal Medicare Certified Hospital beds: <strong>{HOSP18_BEDS}</strong><br>\n'+
+            'Federal Medicare Critical Access Hospital:<strong> {CAH}</strong><br>\n'+
+            'Hospital Swing Bed Provider:<strong> {SWING}</strong><br>\n'+
+            'State Licensed Nursing Home beds:<strong> {NH_BEDS}</strong><br>\n'+
+            'Federal Medicare Skilled Nursing Facility beds: <strong>{SNF_BEDS}</strong><br>\n'+
+            'Federal Medicare/Medicaid Dual Skilled Nursing Facility and Nursing Facility beds: <strong>{SNFNF_BEDS}</strong><br><br>\n'+
+            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
+            '</p>', feature.feature.properties);
           });
   }
 })
@@ -250,7 +291,21 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
    supervisedLivingFacilities = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br>County: {COUNTY_NAME}<br><br>License Type: {LIC_TYPE}<br>{ICFMR}<br><br>Administrator: {ADMINISTRATOR}<br>Beds: {SLFB_BEDS}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+            'Health Facility ID Number: {HFID}<br><br>\n'+
+            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
+            'County: {COUNTY_NAME}<br><br>\n'+
+            'Phone: {TELEPHONE}<br> \n'+
+            'Fax: {FAX}<br><br> \n'+
+            'License Type: {LIC_TYPE}<br>\n'+
+            'Administrator: {ADMINISTRATOR}<br><br>\n'+
+            'Supervised Living Facility Class A beds: <strong>{SLFA_BEDS}</strong><br>\n'+
+            'Supervised Living Facility Class B beds:<strong> {SLFB_BEDS}</strong><br>\n'+
+            'Other beds:<strong> {OTHER_BEDS}</strong><br>\n'+
+            'Psychiatric beds:<strong>  {PSY18_BEDS}</strong><br>\n'+
+            'Intermediate Care Facility Mental Retardation beds: <strong>{ICFMR_BEDS}</strong><br><br>\n'+
+            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
+            '</p>', feature.feature.properties);
           });
   }
 })
@@ -343,7 +398,7 @@ $.getJSON('data/military/federal.geojson')
            });
            case "Air Force":
              var military_airport_national = L.icon({
-               iconUrl: 'data/military/military_airport_national.svg',
+               iconUrl: 'data/military/military_airport_federal.svg',
                iconSize: [20, 20],
                popupAnchor: [0, -8]
              });
@@ -441,7 +496,22 @@ var hospitals = L.esri.featureLayer({
   }
  });
 hospitals.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br>County: {COUNTY}<br><br>Type: {TYPE}<br>Status:{STATUS}<br>NAICS Description: {NAICS_DESC}<br><br>Beds: {BEDS}<br>Owner: {OWNER}<br>Trauma: {TRAUMA}<br>Helipad: {HELIPAD}<br><br><button><a target="_blank" href="{WEBSITE}"></a>Website</button></p>', layer.feature.properties);
+  return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
+  '{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br>\n'+
+  'County: {COUNTY}<br><br>\n'+
+  'Type: {TYPE}<br>\n'+
+  'Owner: {OWNER}<br>\n'+
+  'Status:{STATUS}<br>\n'+
+  'NAICS Description: {NAICS_DESC}<br>\n'+
+  // 'Source Date:{SOURCEDATE}<br><br>\n'+
+  'Validation Method: {VAL_METHOD}<br>\n'+
+  // 'Validation Date: {VAL_DATE}<br><br>\n'+
+  'Beds: {BEDS}<br>\n'+
+  'Trauma: {TRAUMA}<br>\n'+
+  'Helipad: {HELIPAD}<br><br>\n'+
+  // '<a target="_blank" href="{SOURCE}"><button>Data Source</button></a><br><br>\n'+
+  '<a target="_blank" href="{WEBSITE}"><button>Website</button></a><br>\n'+
+  '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', layer.feature.properties);
 });
 
 $.getJSON('data/hospital/naPublicHealthService.geojson')
@@ -456,7 +526,16 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naClinic}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>Administrator: {ADMINISTRATOR}<br>Hospital beds: {HOSP_BEDS}<br><br><button><a target="_blank" href="{Website}">Website</a></button></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+             '{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>\n'+
+             'Type: {Type}<br><br>\n'+
+             'Phone: {TELEPHONE}<br>\n'+
+             'Fax: {FAX}<br><br>\n'+
+             'Administrator: {ADMINISTRATOR}<br>\n'+
+             'State Licensed Hospital beds: <strong> {HOSP_BEDS}</strong><br>\n'+
+             'Infant Bassinets: <strong>{BASS_BEDS}</strong><br><br>\n'+
+             '<a target="_blank" href="{Website}"><button>Website</button></a><br>\n'+
+             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', layer.feature.properties);
            });
          case "Hospital":
            var naHospital = L.icon({
@@ -465,7 +544,16 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naHospital}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>Administrator: {ADMINISTRATOR}<br>Hospital beds: {HOSP_BEDS}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
+             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+             '{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>\n'+
+             'Type: {Type}<br><br>\n'+
+             'Phone: {TELEPHONE}<br>\n'+
+             'Fax: {FAX}<br><br>\n'+
+             'Administrator: {ADMINISTRATOR}<br>\n'+
+             'State Licensed Hospital beds: <strong> {HOSP_BEDS}</strong><br>\n'+
+             'Infant Bassinets: <strong>{BASS_BEDS}</strong><br><br>\n'+
+             '<a target="_blank" href="{Website}"><button>Website</button></a><br>\n'+
+             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', layer.feature.properties);
            });
        }
   }
@@ -482,7 +570,18 @@ $.getJSON('data/hospital/psychHospital.geojson')
    psych = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: psychIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br>License Type: {LIC_TYPE}<br>Administrator: {ADMINISTRATOR}<br>Beds: {OTHER_BEDS}</p>', feature.feature.properties);
+            return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
+            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
+            'County: {COUNTY_NAME}<br><br>\n'+
+            'Phone: {TELEPHONE}<br>\n'+
+            'Fax: {FAX}<br><br>\n'+
+            'License Type: {LIC_TYPE}<br>\n'+
+            'Administrator: {ADMINISTRATOR}<br><br>\n'+
+            'State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n'+
+            'Supervised Living Facility Class B beds:<strong> {SLFB_BEDS}</strong><br>\n'+
+            'Other beds:<strong> {OTHER_BEDS}</strong><br>\n'+
+            'Federal Medicare Psychiatric beds: <strong>{PSY18_BEDS}</strong><br><br>\n'+
+            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
           });
   }
 })
@@ -499,8 +598,20 @@ $.getJSON('data/hospital/vaFacilities.geojson')
            	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
-           return L.marker(latlng, {icon: vaClinic}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>Phone: {TELEPHONE}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
+           return L.marker(latlng, {icon: vaClinic}).bindPopup(function (feature) {
+             return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
+             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
+             'Phone: {TELEPHONE}<br>\n'+
+             'Fax: {FAX}<br><br>\n'+
+             'Type: {Type}<br><br>\n'+
+             'US National Grid: {USNationalGrid}<br><br>\n'+
+             'State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n'+
+             'Federal Medicare Certified Hospital beds:<strong> {HOSP18_BEDS}</strong><br>\n'+
+             'Federal Medicare Psychiatric beds:<strong> {PSY18_BEDS}</strong><br>\n'+
+             'Federal Medicare Skilled Nursing Facility beds:<strong> {SNF_BEDS}</strong><br><br>\n'+
+             'Federal Medicaid Nursing Facility beds (Nursing Home):<strong> {NF1_BEDS}</strong><br><br>\n'+
+             '<a target="_blank" href={Website}><button>Website</button></a><br>\n'+
+             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
            });
          case "Hospital":
            var vaHospital = L.icon({
@@ -508,8 +619,15 @@ $.getJSON('data/hospital/vaFacilities.geojson')
            	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
-           return L.marker(latlng, {icon: vaHospital}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>{TELEPHONE}<br><br>Beds: {HOSP18_BEDS}<br><br><button><a target="_blank" href="{Website}"></a>Website</button></p>', layer.feature.properties);
+           return L.marker(latlng, {icon: vaHospital}).bindPopup(function (feature) {
+             return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
+             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
+             'Phone: {TELEPHONE}<br>\n'+
+             'Fax: {FAX}<br><br>\n'+
+             'Type: {Type}<br><br>\n'+
+             'US National Grid: {USNationalGrid}<br><br>\n'+
+             '<a target="_blank" href={Website}><button>Website</button></a><br>\n'+
+             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
            });
        }
   }
@@ -586,7 +704,7 @@ $.getJSON('data/military/national_guard.geojson')
              });
              case "AFRC":
                var afrc_federal = L.icon({
-                 iconUrl: 'data/military/afrc_federal.svg',
+                 iconUrl: 'data/military/afrc_national.svg',
                  iconSize: [20, 20],
                  popupAnchor: [0, -8]
                });

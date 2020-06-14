@@ -1,0 +1,59 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="502" width="502" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#1a447b" ry="242.000006" rx="240.499999" id="svg_1" cy="249.999994" cx="249.999999" stroke-width="15" fill="#fff"/>
+  <defs>
+   <style>.cls-1{fill:#1a447b;}</style>
+  </defs>
+  <g fill="#1a447b" stroke="#1a447b" id="svg_46">
+   <g fill="#1a447b" stroke="#1a447b" transform="matrix(7.0137747369989745,0,0,7.503136234154265,216.32919420363197,188.1335331388779) " id="svg_21">
+    <g fill="#1a447b" stroke="#1a447b" id="svg_22">
+     <rect stroke="#1a447b" id="svg_23" y="4.213307" x="15.700669" width="3.7" height="5.6" fill="#1a447b"/>
+    </g>
+    <g fill="#1a447b"  stroke="#1a447b" id="svg_24">
+     <g fill="#1a447b" stroke="#1a447b" id="svg_25">
+      <rect stroke="#1a447b" id="svg_26" y="11.713307" x="23.500669" width="3.7" height="7.9" fill="#1a447b"/>
+     </g>
+     <g fill="#1a447b" stroke="#1a447b" id="svg_27">
+      <rect stroke="#1a447b" id="svg_28" y="11.713307" x="-17.499331" width="3.7" height="7.9" fill="#1a447b"/>
+     </g>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_29">
+     <rect stroke="#1a447b" id="svg_30" y="4.213307" x="9.300669" width="3.7" height="5.6" fill="#1a447b"/>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_31">
+     <rect stroke="#1a447b" id="svg_32" y="4.213307" x="3.000669" width="3.7" height="5.6" fill="#1a447b"/>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_33">
+     <rect stroke="#1a447b" id="svg_34" y="4.213307" x="-3.399331" width="3.7" height="5.6" fill="#1a447b"/>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_35">
+     <rect stroke="#1a447b" id="svg_36" y="4.213307" x="-9.799331" width="3.7" height="5.6" fill="#1a447b"/>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_37">
+     <polygon stroke="#1a447b" id="svg_38" points="18.40066632628441,1.5133075714111328 4.800668329000473,-11.086692810058594 -8.799331575632095,1.5133075714111328 " fill="#1a447b"/>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_39">
+     <g fill="#1a447b" stroke="#1a447b" id="svg_40">
+      <polygon stroke="#1a447b" id="svg_41" points="11.500669568777084,-18.18669319152832 5.9006687104702,-18.18669319152832 4.9006687104702,-18.18669319152832 3.9006689488887787,-18.18669319152832 3.9006689488887787,-6.386692047119141 5.9006687104702,-6.386692047119141 5.9006687104702,-14.086692810058594 11.500669568777084,-14.086692810058594 " fill="#1a447b"/>
+     </g>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_42">
+     <path stroke="#1a447b" id="svg_43" fill="#1a447b" d="m21.600669,17.113307l0,-9.3l-33.6,0l0,9.3l-6.7,0l0,11.7l17.8,0l0,-8.7c0,-2.9 2.6,-5.3 5.7,-5.3s5.7,2.4 5.7,5.3l0,8.7l17.8,0l0,-11.7l-6.7,0z"/>
+    </g>
+    <g fill="#1a447b" stroke="#1a447b" id="svg_44">
+     <ellipse stroke="#1a447b" id="svg_45" ry="1.1" rx="1.2" fill="#1a447b" cy="22.013307" cx="1.900669"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

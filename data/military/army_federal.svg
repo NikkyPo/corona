@@ -10,7 +10,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <ellipse stroke="#000" ry="242.000006" rx="240.499999" id="svg_1" cy="249.999994" cx="249.999999" stroke-width="0" fill="#fff"/>
+  <ellipse stroke="#000" ry="242.000006" rx="240.499999" id="svg_1" cy="249.999994" cx="249.999999" stroke-width="15" fill="#fff"/>
   <defs>
    <style>.cls-1{fill:#373737;}</style>
   </defs>
