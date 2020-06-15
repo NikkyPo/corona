@@ -6,7 +6,7 @@ var aerial = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/W
 });
 var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-})
+});
 
 /////////////////////////////////////////
 // Counties
@@ -334,7 +334,7 @@ var eocIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var eoc = L.esri.featureLayer({
+var eoc = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0',
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
@@ -444,7 +444,7 @@ var fireStationsIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
-var fireStations = L.esri.featureLayer({
+var fireStations = L.esri.Cluster.featureLayer({
   url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Fire_Station/FeatureServer/0",
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
@@ -738,7 +738,7 @@ var policeIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var policeStations = L.esri.featureLayer({
+var policeStations = L.esri.Cluster.featureLayer({
   url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30',
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
@@ -835,7 +835,7 @@ var publicSchoolsIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var publicSchools = L.esri.featureLayer({
+var publicSchools = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0',
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
@@ -854,7 +854,7 @@ var privateSchoolsIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var privateSchools = L.esri.featureLayer({
+var privateSchools = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0',
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
@@ -910,7 +910,7 @@ var sheltersIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var shelters = L.esri.featureLayer({
+var shelters = L.esri.Cluster.featureLayer({
   url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5",
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
@@ -999,15 +999,6 @@ var mymap = L.map('mapid', {
 
 
 var sidebar = L.control.sidebar('sidebar').addTo(mymap);
-// mymap.on('zoomend', function() {
-//     if (mymap.getZoom() < 8){
-//             mymap.removeLayer(airports);
-//     }
-//     else {
-//             mymap.addLayer(airports);
-//         }
-// });
-// L.control.layers(base, null).addTo(mymap);
 
 // Layer logic
 
@@ -1110,7 +1101,7 @@ function toggleLayer(checked, layer) {
     // clusters.addLayer(layer);
   	// mymap.addLayer(clusters);
     mymap.addLayer(layer);
-    layer.bringToFront();
+    // layer.bringToFront();
   } else {
     mymap.removeLayer(layer);
 
