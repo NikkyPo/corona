@@ -447,6 +447,15 @@ var fireStationsIcon = L.icon({
 var fireStations = L.esri.Cluster.featureLayer({
   url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/ArcGIS/rest/services/Fire_Station/FeatureServer/0",
   where: "STATE = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var digits = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'fsCluster fs-' + digits,
+   iconSize: null
+ });
+},
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: fireStationsIcon
@@ -592,6 +601,28 @@ $.getJSON('data/hospital/vaFacilities.geojson')
    va = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Type"]) {
+         case "Hospital":
+           var vaHospital = L.icon({
+             iconUrl: 'data/hospital/vaHospital.svg',
+             iconSize: [20, 20],
+             iconAnchor: [20, 0],
+             popupAnchor: [0, -8]
+           });
+           return L.marker(latlng, {icon: vaHospital}).bindPopup(function (feature) {
+             return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
+             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
+             'Phone: {TELEPHONE}<br>\n'+
+             'Fax: {FAX}<br><br>\n'+
+             'Type: {Type}<br><br>\n'+
+             'US National Grid: {USNationalGrid}<br><br>\n'+
+             'Federal Medicare Certified Hospital beds:<strong> {HOSP18_BEDS}</strong><br>\n'+
+             'State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n'+
+             'Federal Medicare Psychiatric beds:<strong> {PSY18_BEDS}</strong><br>\n'+
+             'Federal Medicare Skilled Nursing Facility beds:<strong> {SNF_BEDS}</strong><br><br>\n'+
+             'Federal Medicaid Nursing Facility beds (Nursing Home):<strong> {NF1_BEDS}</strong><br><br>\n'+
+             '<a target="_blank" href={Website}><button>Website</button></a><br>\n'+
+             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
+           });
          case "Clinic":
            var vaClinic = L.icon({
            	iconUrl: 'data/hospital/vaClinic.svg',
@@ -599,27 +630,6 @@ $.getJSON('data/hospital/vaFacilities.geojson')
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaClinic}).bindPopup(function (feature) {
-             return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
-             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
-             'Phone: {TELEPHONE}<br>\n'+
-             'Fax: {FAX}<br><br>\n'+
-             'Type: {Type}<br><br>\n'+
-             'US National Grid: {USNationalGrid}<br><br>\n'+
-             'State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n'+
-             'Federal Medicare Certified Hospital beds:<strong> {HOSP18_BEDS}</strong><br>\n'+
-             'Federal Medicare Psychiatric beds:<strong> {PSY18_BEDS}</strong><br>\n'+
-             'Federal Medicare Skilled Nursing Facility beds:<strong> {SNF_BEDS}</strong><br><br>\n'+
-             'Federal Medicaid Nursing Facility beds (Nursing Home):<strong> {NF1_BEDS}</strong><br><br>\n'+
-             '<a target="_blank" href={Website}><button>Website</button></a><br>\n'+
-             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
-           });
-         case "Hospital":
-           var vaHospital = L.icon({
-           	iconUrl: 'data/hospital/vaHospital.svg',
-           	iconSize: [20, 20],
-             popupAnchor: [0, -8]
-           });
-           return L.marker(latlng, {icon: vaHospital}).bindPopup(function (feature) {
              return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
              '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
              'Phone: {TELEPHONE}<br>\n'+
@@ -838,6 +848,15 @@ var publicSchoolsIcon = L.icon({
 var publicSchools = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0',
   where: "STATE = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var digits = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'pusCluster pus-' + digits,
+   iconSize: null
+ });
+},
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
         icon: publicSchoolsIcon
@@ -857,6 +876,15 @@ var privateSchoolsIcon = L.icon({
 var privateSchools = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0',
   where: "STATE = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var digits = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'psCluster ps-' + digits,
+   iconSize: null
+ });
+},
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
         icon: privateSchoolsIcon
