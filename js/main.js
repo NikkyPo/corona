@@ -337,6 +337,15 @@ var eocIcon = L.icon({
 var eoc = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0',
   where: "STATE = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var eoc_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'eocCluster eoc-' + eoc_digit,
+   iconSize: null
+ });
+},
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
         icon: eocIcon
@@ -751,6 +760,15 @@ var policeIcon = L.icon({
 var policeStations = L.esri.Cluster.featureLayer({
   url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30',
   where: "STATE = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var police = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'policeCluster police-' + police,
+   iconSize: null
+ });
+},
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: policeIcon
@@ -941,6 +959,15 @@ var sheltersIcon = L.icon({
 var shelters = L.esri.Cluster.featureLayer({
   url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5",
   where: "STATE = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var shelter_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'shelterCluster shelter-' + shelter_digit,
+   iconSize: null
+ });
+},
   pointToLayer: function (geojson, latlng) {
   return L.marker(latlng, {
       icon: sheltersIcon
