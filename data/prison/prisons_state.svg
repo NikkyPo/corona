@@ -6,7 +6,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <ellipse stroke="#000" ry="253.000008" rx="254.500007" id="svg_23" cy="255.453114" cx="255.99999" stroke-width="1.5" fill="#fff"/>
+  <ellipse stroke="#000" ry="253.000008" rx="254.500007" id="svg_23" cy="255.453114" cx="255.99999" stroke-width="15" fill="#fff"/>
   <g id="svg_1">
    <g id="svg_2">
     <path id="svg_3" fill="#c7c7dd" d="m96,115.26l320,0l0,32.985l-320,0l0,-32.985z"/>

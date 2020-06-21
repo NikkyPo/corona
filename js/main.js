@@ -193,10 +193,20 @@ var boardingCareHomesIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
-
+var boardingCareHomes = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var bch_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'bchCluster bch-' + bch_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
  .done( data => {
-   boardingCareHomes = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: boardingCareHomesIcon}).bindPopup(function (feature) {
             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
@@ -216,7 +226,7 @@ $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
             '</p>', feature.feature.properties);
           });
   }
-})
+}).addTo(boardingCareHomes)
 });
 
 var housingWithServicesIcon = L.icon({
@@ -224,10 +234,20 @@ var housingWithServicesIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
-
+var housingWithServices = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var hws_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'hwsCluster hws-' + hws_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/assistedLiving/housingWithServices.geojson')
  .done( data => {
-   housingWithServices = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: housingWithServicesIcon}).bindPopup(function (feature) {
             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
@@ -242,7 +262,7 @@ $.getJSON('data/assistedLiving/housingWithServices.geojson')
             '</p>', feature.feature.properties);
           });
   }
-})
+}).addTo(housingWithServices)
 });
 
 var nursingHomesIcon = L.icon({
@@ -250,10 +270,20 @@ var nursingHomesIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
-
+var nursingHomes = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var nh_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'nhCluster nh-' + nh_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/assistedLiving/nursingHomes.geojson')
  .done( data => {
-   nursingHomes = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: nursingHomesIcon}).bindPopup(function (feature) {
             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
@@ -277,18 +307,29 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
             '</p>', feature.feature.properties);
           });
   }
-})
+}).addTo(nursingHomes)
 });
+
 
 var supervisedLivingFacilitiesIcon = L.icon({
 	iconUrl: 'data/assistedLiving/supervisedLivingFacilities.svg',
 	iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
-
+var supervisedLivingFacilities = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var sl_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'slCluster sl-' + sl_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
  .done( data => {
-   supervisedLivingFacilities = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
@@ -308,7 +349,7 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
             '</p>', feature.feature.properties);
           });
   }
-})
+}).addTo(supervisedLivingFacilities)
 });
 
 ////////////////////////////////////
@@ -318,7 +359,7 @@ var bases = L.esri.featureLayer({
   where: "STATE_TERR NOT LIKE 'Minnesota'",
 });
 bases.setStyle({
-  color: 'green',
+  color: 'black',
   weight: 5,
   fill: true
 });
@@ -373,9 +414,20 @@ $.getJSON('data/military/federal_bases.geojson')
 })
 });
 
+var federal = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var fed_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'fedCluster fed-' + fed_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/military/federal.geojson')
  .done( data => {
-   federal = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["TypeLabel"]) {
          case "Army":
@@ -443,7 +495,7 @@ $.getJSON('data/military/federal.geojson')
                  });
        }
   }
-})
+}).addTo(federal);
 });
 
 /////////////////////////////////////////////
@@ -479,13 +531,23 @@ fireStations.bindPopup(function (layer) {
 // Foodshelves
 var foodshelvesIcon = L.icon({
 	iconUrl: 'data/foodshelves/foodshelves.svg',
-	iconSize: [25, 25],
+	iconSize: [20, 20],
   popupAnchor: [0, -8]
 });
-
+var foodshelves = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var foodshelves_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'foodshelvesCluster foodshelves-' + foodshelves_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/foodshelves/foodshelves.geojson')
  .done( data => {
-   foodshelves = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        // Filter out cities with no foodshelves. Foodshelves are scraped from this website: https://www.foodpantries.org/st/minnesota
         if (feature.properties.foodshelves_Url !== null) {
@@ -494,7 +556,7 @@ $.getJSON('data/foodshelves/foodshelves.geojson')
           });
        }
   }
-})
+}).addTo(foodshelves);
 });
 
 ///////////////////////////////////////////
@@ -662,7 +724,7 @@ $.getJSON('data/military/national_guard_bases.geojson')
    national_guard_bases = new L.geoJSON(data, {
      onEachFeature: function(feature, featureLayer){
        featureLayer.setStyle({
-         color: 'green',
+         color: '#1a447b',
          weight: 5,
          fill: true
        });
@@ -670,10 +732,20 @@ $.getJSON('data/military/national_guard_bases.geojson')
 })
 });
 
-
+var national = L.markerClusterGroup({
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var national_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'nationalCluster national-' + national_digit,
+   iconSize: null
+ });
+}
+});
 $.getJSON('data/military/national_guard.geojson')
  .done( data => {
-   national = new L.geoJSON(data, {
+   new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Symbol"]) {
          case "Armory":
@@ -732,7 +804,7 @@ $.getJSON('data/military/national_guard.geojson')
                });
        }
   }
-})
+}).addTo(national);
 });
 
 //////////////////////////////////////////
@@ -755,7 +827,7 @@ nativeLand.bindPopup(function (layer) {
 var policeIcon = L.icon({
 	iconUrl: 'data/policeStations.svg',
 	iconSize: [25, 25],
-  popupAnchor: [0, -28]
+  popupAnchor: [0, -8]
 });
 var policeStations = L.esri.Cluster.featureLayer({
   url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30',
@@ -845,7 +917,7 @@ $.getJSON('data/prison/prisons.geojson')
          case "State":
            var prisons_state = L.icon({
            	iconUrl: 'data/prison/prisons_state.svg',
-           	iconSize: [25, 25],
+           	iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_state}).bindPopup(function (layer) {
@@ -1006,9 +1078,18 @@ var testingIcon = L.icon({
 	iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
-var testing = L.esri.featureLayer({
+var testing = L.esri.Cluster.featureLayer({
   url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/ArcGIS/rest/services/CovidTestLocations_ProductionMap/FeatureServer/0",
   where: "State = 'MN'",
+  iconCreateFunction: function (cluster) {
+  var count = cluster.getChildCount();
+  var testing_digit = (count + '').length;
+  return L.divIcon({
+   html: count,
+   className: 'testingCluster testing-' + testing_digit,
+   iconSize: null
+ });
+},
   pointToLayer: function (feature, latlng) {
     switch(feature.properties["DirUtilCol"]) {
       case "By appointment":
