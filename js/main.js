@@ -359,7 +359,7 @@ var bases = L.esri.featureLayer({
   where: "STATE_TERR NOT LIKE 'Minnesota'",
 });
 bases.setStyle({
-  color: 'black',
+  color: 'green',
   weight: 5,
   fill: true
 });
@@ -724,7 +724,7 @@ $.getJSON('data/military/national_guard_bases.geojson')
    national_guard_bases = new L.geoJSON(data, {
      onEachFeature: function(feature, featureLayer){
        featureLayer.setStyle({
-         color: '#1a447b',
+         color: 'green',
          weight: 5,
          fill: true
        });
