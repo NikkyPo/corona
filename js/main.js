@@ -101,7 +101,6 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
     },
     zIndex: 1
   });
-   cases.addTo(mymap);
  });
 
 
@@ -870,6 +869,7 @@ var positiveCounties = L.esri.featureLayer({
 }
 });
 
+
 positiveCounties.on('popupopen', function(evt) {
 	// when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
   queryInfo(evt.layer.feature, evt.popup);
@@ -1129,8 +1129,7 @@ var mymap = L.map('mapid', {
   preferCanvas: true,
   center: [45.9, -95.9],
   zoom: 6,
-  layers: [counties, boundaries, none]
-  // layers: [counties, cases, boundaries, none]
+  layers: [positiveCounties, counties, boundaries, none]
 });
 
 
