@@ -987,19 +987,19 @@ privateSchools.bindPopup(function (layer) {
 
 //////////////////////////////////////////
 // RedCross
-var redCross = L.esri.featureLayer({
-  url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3',
-  simplifyFactor: 0.5,
-  precision: 5
- });
-redCross.setStyle({
-  color: 'red',
-  weight: 2,
-  fillColor: '#ffcccb'
-});
-redCross.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{chapter}</strong><br><br>Region: {region}<br>Division: {division}</p>', layer.feature.properties);
-});
+// var redCross = L.esri.featureLayer({
+//   url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3',
+//   simplifyFactor: 0.5,
+//   precision: 5
+//  });
+// redCross.setStyle({
+//   color: 'red',
+//   weight: 2,
+//   fillColor: '#ffcccb'
+// });
+// redCross.bindPopup(function (layer) {
+//   return L.Util.template('<p><strong>{chapter}</strong><br><br>Region: {region}<br>Division: {division}</p>', layer.feature.properties);
+// });
 
 ///////////////////////////////////////////
 // RedCross Facilities
@@ -1212,9 +1212,9 @@ $("input[type='checkbox']").change(function() {
     case "redCrossFacilities":
       toggleLayer(this.checked, redCrossFacilities);
     break;
-    case "redCross":
-      toggleLayer(this.checked, redCross);
-    break;
+    // case "redCross":
+    //   toggleLayer(this.checked, redCross);
+    // break;
     case "shelters":
       toggleLayer(this.checked, shelters);
     break;
