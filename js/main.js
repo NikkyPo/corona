@@ -1,11 +1,11 @@
 /////////////////////////////////////////
 // basemaps
-var none = L.tileLayer('');
-var aerial = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+var none = L.tileLayer("");
+var aerial = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+  attribution: "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
 });
 var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 });
 
 /////////////////////////////////////////
@@ -18,7 +18,7 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
       weight: 1,
       color: '#808080',
       opacity: 0.2,
-      fill: false,
+      fill: false
     }
   }
 });
@@ -42,8 +42,8 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
     getval( function ( value ) {
       displayDate = moment(value).format('YYYY-MM-DD');
 
-      $("#date").attr("max", displayDate)
-      $("#date").attr("value", displayDate)
+      $("#date").attr("max", displayDate);
+      $("#date").attr("value", displayDate);
 
       min = moment($("#date").attr("min"));
       max = moment($("#date").attr("max"));
@@ -153,8 +153,8 @@ $.getJSON('data/airport/airport.geojson')
        switch(feature.properties["Certified"]) {
          case "Yes":
            var airport_com = L.icon({
-           	iconUrl: 'data/airport/airport_com.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/airport/airport_com.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_com}).bindPopup(function (layer) {
@@ -162,8 +162,8 @@ $.getJSON('data/airport/airport.geojson')
            });
          case "":
            var airport_non_com = L.icon({
-           	iconUrl: 'data/airport/airport_non_com.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/airport/airport_non_com.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_non_com}).bindPopup(function (layer) {
@@ -180,7 +180,7 @@ $.getJSON('data/airport/airport.geojson')
            });
        }
   }
-})
+});
 });
 
 
@@ -188,8 +188,8 @@ $.getJSON('data/airport/airport.geojson')
 // Assisted Living: boarding care homes, housing with services, nursing homes and supervised living facilities
 
 var boardingCareHomesIcon = L.icon({
-	iconUrl: 'data/assistedLiving/boardingCareHomes.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/assistedLiving/boardingCareHomes.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var boardingCareHomes = L.markerClusterGroup({
@@ -225,12 +225,12 @@ $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
             '</p>', feature.feature.properties);
           });
   }
-}).addTo(boardingCareHomes)
+}).addTo(boardingCareHomes);
 });
 
 var housingWithServicesIcon = L.icon({
-	iconUrl: 'data/assistedLiving/housingWithServices.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/assistedLiving/housingWithServices.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var housingWithServices = L.markerClusterGroup({
@@ -261,12 +261,12 @@ $.getJSON('data/assistedLiving/housingWithServices.geojson')
             '</p>', feature.feature.properties);
           });
   }
-}).addTo(housingWithServices)
+}).addTo(housingWithServices);
 });
 
 var nursingHomesIcon = L.icon({
-	iconUrl: 'data/assistedLiving/nursingHomes.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/assistedLiving/nursingHomes.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var nursingHomes = L.markerClusterGroup({
@@ -306,32 +306,32 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
             '</p>', feature.feature.properties);
           });
   }
-}).addTo(nursingHomes)
+}).addTo(nursingHomes);
 });
 
 
 var supervisedLivingFacilitiesIcon = L.icon({
-	iconUrl: 'data/assistedLiving/supervisedLivingFacilities.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/assistedLiving/supervisedLivingFacilities.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var supervisedLivingFacilities = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
-  var count = cluster.getChildCount();
-  var sl_digit = (count + '').length;
-  return L.divIcon({
-   html: count,
-   className: 'slCluster sl-' + sl_digit,
-   iconSize: null
- });
-}
+    var count = cluster.getChildCount();
+    var sl_digit = (count + '').length;
+    return L.divIcon({
+      html: count,
+      className: 'slCluster sl-' + sl_digit,
+      iconSize: null
+    });
+  }
 });
 $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
-          return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
+       return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
+         return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
             'Health Facility ID Number: {HFID}<br><br>\n'+
             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
             'County: {COUNTY_NAME}<br><br>\n'+
@@ -348,7 +348,7 @@ $.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
             '</p>', feature.feature.properties);
           });
   }
-}).addTo(supervisedLivingFacilities)
+}).addTo(supervisedLivingFacilities);
 });
 
 ////////////////////////////////////
@@ -370,8 +370,8 @@ bases.bindPopup(function (layer) {
 ////////////////////////////////////
 // EOC
 var eocIcon = L.icon({
-	iconUrl: 'data/EOC.png',
-	iconSize: [25, 25],
+  iconUrl: 'data/EOC.png',
+  iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
 var eoc = L.esri.Cluster.featureLayer({
@@ -410,7 +410,7 @@ $.getJSON('data/military/federal_bases.geojson')
          fill: true
        });
      }
-})
+});
 });
 
 var federal = L.markerClusterGroup({
@@ -430,20 +430,20 @@ $.getJSON('data/military/federal.geojson')
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["TypeLabel"]) {
          case "Army":
-           var army_federal = L.icon({
-           	iconUrl: 'data/military/army_federal.svg',
-           	iconSize: [20, 20],
-             popupAnchor: [0, -8]
-           });
-           return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+         var army_federal = L.icon({
+           iconUrl: 'data/military/army_federal.svg',
+           iconSize: [20, 20],
+           popupAnchor: [0, -8]
+         });
+         return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
+           return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
            });
          case "Navy":
-           var navy_federal = L.icon({
-           	iconUrl: 'data/military/navy_federal.svg',
-           	iconSize: [20, 20],
-             popupAnchor: [0, -8]
-           });
+         var navy_federal = L.icon({
+           iconUrl: 'data/military/navy_federal.svg',
+           iconSize: [20, 20],
+           popupAnchor: [0, -8]
+         });
            return L.marker(latlng, {icon: navy_federal}).bindPopup(function (layer) {
              return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
            });
@@ -500,8 +500,8 @@ $.getJSON('data/military/federal.geojson')
 /////////////////////////////////////////////
 // fireStations
 var fireStationsIcon = L.icon({
-	iconUrl: 'data/fireStations.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/fireStations.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var fireStations = L.esri.Cluster.featureLayer({
@@ -529,8 +529,8 @@ fireStations.bindPopup(function (layer) {
 /////////////////////////////////////////
 // Foodshelves
 var foodshelvesIcon = L.icon({
-	iconUrl: 'data/foodshelves/foodshelves.svg',
-	iconSize: [20, 20],
+  iconUrl: 'data/foodshelves/foodshelves.svg',
+  iconSize: [20, 20],
   popupAnchor: [0, -8]
 });
 var foodshelves = L.markerClusterGroup({
@@ -561,8 +561,8 @@ $.getJSON('data/foodshelves/foodshelves.geojson')
 ///////////////////////////////////////////
 // Medical - General Hospitals, Native American, Psychiatric, Veterans Affairs
 var hospitalsIcon = L.icon({
-	iconUrl: 'data/hospital/hospital.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/hospital/hospital.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var hospitals = L.esri.featureLayer({
@@ -600,8 +600,8 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
        switch(feature.properties["Type"]) {
          case "Clinic":
            var naClinic = L.icon({
-           	iconUrl: 'data/hospital/naClinic.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/hospital/naClinic.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naClinic}).bindPopup(function (layer) {
@@ -618,8 +618,8 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
            });
          case "Hospital":
            var naHospital = L.icon({
-           	iconUrl: 'data/hospital/naHospital.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/hospital/naHospital.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naHospital}).bindPopup(function (layer) {
@@ -636,12 +636,12 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
            });
        }
   }
-})
+});
 });
 
 var psychIcon = L.icon({
-	iconUrl: 'data/hospital/psychHospital.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/hospital/psychHospital.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 $.getJSON('data/hospital/psychHospital.geojson')
@@ -663,7 +663,7 @@ $.getJSON('data/hospital/psychHospital.geojson')
             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
           });
   }
-})
+});
 });
 
 $.getJSON('data/hospital/vaFacilities.geojson')
@@ -695,8 +695,8 @@ $.getJSON('data/hospital/vaFacilities.geojson')
            });
          case "Clinic":
            var vaClinic = L.icon({
-           	iconUrl: 'data/hospital/vaClinic.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/hospital/vaClinic.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaClinic}).bindPopup(function (feature) {
@@ -711,7 +711,7 @@ $.getJSON('data/hospital/vaFacilities.geojson')
            });
        }
   }
-})
+});
 });
 
 /////////////////////////////////////////
@@ -728,7 +728,7 @@ $.getJSON('data/military/national_guard_bases.geojson')
          fill: true
        });
      }
-})
+});
 });
 
 var national = L.markerClusterGroup({
@@ -749,8 +749,8 @@ $.getJSON('data/military/national_guard.geojson')
        switch(feature.properties["Symbol"]) {
          case "Armory":
            var armory_national = L.icon({
-           	iconUrl: 'data/military/armory_national.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/military/armory_national.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: armory_national}).bindPopup(function (layer) {
@@ -758,8 +758,8 @@ $.getJSON('data/military/national_guard.geojson')
            });
          case "Military Airport":
            var military_airport_national = L.icon({
-           	iconUrl: 'data/military/military_airport_national.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/military/military_airport_national.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
@@ -824,8 +824,8 @@ nativeLand.bindPopup(function (layer) {
 //////////////////////////////////////////
 // Police
 var policeIcon = L.icon({
-	iconUrl: 'data/policeStations.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/policeStations.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -8]
 });
 var policeStations = L.esri.Cluster.featureLayer({
@@ -871,13 +871,13 @@ var positiveCounties = L.esri.featureLayer({
 
 
 positiveCounties.on('popupopen', function(evt) {
-	// when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
+  // when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
   queryInfo(evt.layer.feature, evt.popup);
 });
 
 positiveCounties.bindPopup(function (layer) {
   // return temporary message while the "queryTrees" function called from the popupopen function runs:
-	return L.Util.template('Getting information');
+  return L.Util.template('Getting information');
 });
 
 var queryInfo = function(feature, popup) {
@@ -888,15 +888,15 @@ var queryInfo = function(feature, popup) {
   .within(feature)
   .run(function(error, featureCollection) {
     try {
-      var deaths = featureCollection.features[0].properties.Deaths
+      var deaths = featureCollection.features[0].properties.Deaths;
     } catch (error) {
-      var deaths = "no data"
-      var recovered = "no data"
+      var deaths = "no data";
+      var recovered = "no data";
     }
-  	// this function is called when the query is complete. Update the currently open popup.
+  // this function is called when the query is complete. Update the currently open popup.
     popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Deaths: ' + deaths, feature.properties));
   }.bind(this));
-}
+};
 
 /////////////////////////////////////////
 // Prisons
@@ -907,8 +907,8 @@ $.getJSON('data/prison/prisons.geojson')
        switch(feature.properties["Type"]) {
          case "Federal":
            var prisons_fed = L.icon({
-           	iconUrl: 'data/prison/prisons_fed.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/prison/prisons_fed.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_fed}).bindPopup(function (layer) {
@@ -916,8 +916,8 @@ $.getJSON('data/prison/prisons.geojson')
            });
          case "State":
            var prisons_state = L.icon({
-           	iconUrl: 'data/prison/prisons_state.svg',
-           	iconSize: [20, 20],
+             iconUrl: 'data/prison/prisons_state.svg',
+             iconSize: [20, 20],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_state}).bindPopup(function (layer) {
@@ -925,62 +925,62 @@ $.getJSON('data/prison/prisons.geojson')
            });
        }
   }
-})
+});
 });
 //////////////////////////////////////////
 // Schools: public and private
 
 var publicSchoolsIcon = L.icon({
-	iconUrl: 'data/publicSchools.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/publicSchools.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
 var publicSchools = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0',
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
-  var count = cluster.getChildCount();
-  var digits = (count + '').length;
-  return L.divIcon({
-   html: count,
-   className: 'pusCluster pus-' + digits,
-   iconSize: null
- });
-},
+    var count = cluster.getChildCount();
+    var digits = (count + '').length;
+    return L.divIcon({
+      html: count,
+      className: 'pusCluster pus-' + digits,
+      iconSize: null
+    });
+  },
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
-        icon: publicSchoolsIcon
-      });
-  }
+      icon: publicSchoolsIcon
     });
+  }
+});
 publicSchools.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {ST_GRADE} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
 });
 
-
 var privateSchoolsIcon = L.icon({
-	iconUrl: 'data/privateSchools.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/privateSchools.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
 var privateSchools = L.esri.Cluster.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0',
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
-  var count = cluster.getChildCount();
-  var digits = (count + '').length;
-  return L.divIcon({
-   html: count,
-   className: 'psCluster ps-' + digits,
-   iconSize: null
- });
-},
+    var count = cluster.getChildCount();
+    var digits = (count + '').length;
+    return L.divIcon({
+      html: count,
+      className: 'psCluster ps-' + digits,
+      iconSize: null
+    });
+  },
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
-        icon: privateSchoolsIcon
-      });
-  }
+      icon: privateSchoolsIcon
     });
+  }
+});
+
 privateSchools.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {START_GRAD} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
 });
@@ -1004,19 +1004,20 @@ privateSchools.bindPopup(function (layer) {
 ///////////////////////////////////////////
 // RedCross Facilities
 var redCrossFacilitiesIcon = L.icon({
-	iconUrl: 'data/redCrossFacilities.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/redCrossFacilities.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
 var redCrossFacilities = L.esri.featureLayer({
   url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0',
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
-  return L.marker(latlng, {
+    return L.marker(latlng, {
       icon: redCrossFacilitiesIcon
     });
   }
- });
+});
+
 redCrossFacilities.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Phone: {PHONE}</p>', layer.feature.properties);
 });
@@ -1024,28 +1025,29 @@ redCrossFacilities.bindPopup(function (layer) {
 ////////////////////////////////////////////
 // Shelters
 var sheltersIcon = L.icon({
-	iconUrl: 'data/shelters.svg',
-	iconSize: [25, 25],
+  iconUrl: 'data/shelters.svg',
+  iconSize: [25, 25],
   popupAnchor: [0, -28]
 });
 var shelters = L.esri.Cluster.featureLayer({
   url: "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/FeatureServer/5",
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
-  var count = cluster.getChildCount();
-  var shelter_digit = (count + '').length;
-  return L.divIcon({
-   html: count,
-   className: 'shelterCluster shelter-' + shelter_digit,
-   iconSize: null
- });
-},
+    var count = cluster.getChildCount();
+    var shelter_digit = (count + '').length;
+    return L.divIcon({
+      html: count,
+      className: 'shelterCluster shelter-' + shelter_digit,
+      iconSize: null
+    });
+  },
   pointToLayer: function (geojson, latlng) {
-  return L.marker(latlng, {
+    return L.marker(latlng, {
       icon: sheltersIcon
     });
   }
- });
+});
+
 shelters.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{SHELTER_NAME} \n'+
   '</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}<br><br>\n'+
@@ -1073,55 +1075,50 @@ shelters.bindPopup(function (layer) {
 
 ////////////////////////////////////////////
 // Test Locations
-var testingIcon = L.icon({
-	iconUrl: 'data/testing.svg',
-	iconSize: [25, 25],
-  popupAnchor: [0, -28]
-});
 var testing = L.esri.Cluster.featureLayer({
   url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/ArcGIS/rest/services/CovidTestLocations_ProductionMap/FeatureServer/0",
   where: "State = 'MN'",
   iconCreateFunction: function (cluster) {
-  var count = cluster.getChildCount();
-  var testing_digit = (count + '').length;
-  return L.divIcon({
-   html: count,
-   className: 'testingCluster testing-' + testing_digit,
-   iconSize: null
- });
-},
+    var count = cluster.getChildCount();
+    var testing_digit = (count + '').length;
+    return L.divIcon({
+      html: count,
+      className: 'testingCluster testing-' + testing_digit,
+      iconSize: null
+    });
+  },
   pointToLayer: function (feature, latlng) {
     switch(feature.properties["DirUtilCol"]) {
       case "By appointment":
-        var testing_appt = L.icon({
-         iconUrl: 'data/testing/testing_appt.svg',
-         iconSize: [20, 20],
-          popupAnchor: [0, -8]
-        });
-        return L.marker(latlng, {icon: testing_appt}).bindPopup(function (layer) {
-          return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
-        });
+      var testing_appt = L.icon({
+        iconUrl: 'data/testing/testing_appt.svg',
+        iconSize: [20, 20],
+        popupAnchor: [0, -8]
+      });
+      return L.marker(latlng, {icon: testing_appt}).bindPopup(function (layer) {
+        return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+      });
       case "Drive-up":
-        var testing_driveup = L.icon({
-         iconUrl: 'data/testing/testing_driveup.svg',
-         iconSize: [20, 20],
-          popupAnchor: [0, -8]
-        });
-        return L.marker(latlng, {icon: testing_driveup}).bindPopup(function (layer) {
-          return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
-        });
+      var testing_driveup = L.icon({
+        iconUrl: 'data/testing/testing_driveup.svg',
+        iconSize: [20, 20],
+        popupAnchor: [0, -8]
+      });
+      return L.marker(latlng, {icon: testing_driveup}).bindPopup(function (layer) {
+        return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+      });
       default:
-        var testing_else = L.icon({
-          iconUrl: 'data/testing/testing_else.svg',
-          iconSize: [20, 20],
-          popupAnchor: [0, -8]
-        });
-        return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
-          return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
-        });
+      var testing_else = L.icon({
+        iconUrl: 'data/testing/testing_else.svg',
+        iconSize: [20, 20],
+        popupAnchor: [0, -8]
+      });
+      return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
+        return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+      });
     }
   }
- });
+});
 
 
 // Add it all together
@@ -1133,15 +1130,15 @@ var mymap = L.map('mapid', {
 });
 
 
-var sidebar = L.control.sidebar('sidebar').addTo(mymap);
+L.control.sidebar('sidebar').addTo(mymap);
 
 // Layer logic
 
 $("input[type='checkbox']").change(function() {
-  var layerClicked = $(this).attr("id")
+  var layerClicked = $(this).attr("id");
   switch (layerClicked) {
     case "airports":
-      toggleLayer(this.checked, airports)
+      toggleLayer(this.checked, airports);
     break;
     case "bases":
     toggleLayer(this.checked, bases);
@@ -1153,10 +1150,10 @@ $("input[type='checkbox']").change(function() {
       toggleLayer(this.checked, boundaries);
     break;
     case "cases":
-      toggleLayer(this.checked, cases)
+      toggleLayer(this.checked, cases);
     break;
     case "counties":
-      toggleLayer(this.checked, counties)
+      toggleLayer(this.checked, counties);
     break;
     case "EOC":
       toggleLayer(this.checked, eoc);
@@ -1229,25 +1226,18 @@ $("input[type='checkbox']").change(function() {
   }
 });
 
-let clusters;
 function toggleLayer(checked, layer) {
-  	if (checked) {
-    // clusters = L.markerClusterGroup({disableClusteringAtZoom: 12});
-    // clusters.addLayer(layer);
-  	// mymap.addLayer(clusters);
+  if (checked) {
     mymap.addLayer(layer);
-    // layer.bringToFront();
   } else {
     mymap.removeLayer(layer);
-
-
   }
 }
 
 
 // Radio buttons for basemaps
 $("input[type='radio']").change(function() {
-  var radioClicked = $(this).attr("id")
+  var radioClicked = $(this).attr("id");
   switch (radioClicked) {
     case "none":
       mymap.removeLayer(streets);
