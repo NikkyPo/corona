@@ -154,7 +154,7 @@ $.getJSON('data/airport/airport.geojson')
          case "Yes":
            var airport_com = L.icon({
              iconUrl: 'data/airport/airport_com.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_com}).bindPopup(function (layer) {
@@ -163,7 +163,7 @@ $.getJSON('data/airport/airport.geojson')
          case "":
            var airport_non_com = L.icon({
              iconUrl: 'data/airport/airport_non_com.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_non_com}).bindPopup(function (layer) {
@@ -172,7 +172,7 @@ $.getJSON('data/airport/airport.geojson')
          case "Military":
            var airport_military = L.icon({
              iconUrl: 'data/airport/airport_military.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_military}).bindPopup(function (layer) {
@@ -189,7 +189,7 @@ $.getJSON('data/airport/airport.geojson')
 
 var boardingCareHomesIcon = L.icon({
   iconUrl: 'data/assistedLiving/boardingCareHomes.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var boardingCareHomes = L.markerClusterGroup({
@@ -230,7 +230,7 @@ $.getJSON('data/assistedLiving/boardingCareHomes.geojson')
 
 var housingWithServicesIcon = L.icon({
   iconUrl: 'data/assistedLiving/housingWithServices.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var housingWithServices = L.markerClusterGroup({
@@ -266,7 +266,7 @@ $.getJSON('data/assistedLiving/housingWithServices.geojson')
 
 var nursingHomesIcon = L.icon({
   iconUrl: 'data/assistedLiving/nursingHomes.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var nursingHomes = L.markerClusterGroup({
@@ -312,7 +312,7 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
 
 var supervisedLivingFacilitiesIcon = L.icon({
   iconUrl: 'data/assistedLiving/supervisedLivingFacilities.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var supervisedLivingFacilities = L.markerClusterGroup({
@@ -371,7 +371,7 @@ bases.bindPopup(function (layer) {
 // EOC
 var eocIcon = L.icon({
   iconUrl: 'data/EOC.png',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var eoc = L.esri.Cluster.featureLayer({
@@ -432,7 +432,7 @@ $.getJSON('data/military/federal.geojson')
          case "Army":
          var army_federal = L.icon({
            iconUrl: 'data/military/army_federal.svg',
-           iconSize: [20, 20],
+           iconSize: [22, 22],
            popupAnchor: [0, -8]
          });
          return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
@@ -441,7 +441,7 @@ $.getJSON('data/military/federal.geojson')
          case "Navy":
          var navy_federal = L.icon({
            iconUrl: 'data/military/navy_federal.svg',
-           iconSize: [20, 20],
+           iconSize: [22, 22],
            popupAnchor: [0, -8]
          });
            return L.marker(latlng, {icon: navy_federal}).bindPopup(function (layer) {
@@ -450,7 +450,7 @@ $.getJSON('data/military/federal.geojson')
          case "USMC":
            var usmc_federal = L.icon({
              iconUrl: 'data/military/usmc_federal.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: usmc_federal}).bindPopup(function (layer) {
@@ -459,7 +459,7 @@ $.getJSON('data/military/federal.geojson')
            case "Air Force":
              var military_airport_national = L.icon({
                iconUrl: 'data/military/military_airport_federal.svg',
-               iconSize: [20, 20],
+               iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
@@ -468,7 +468,7 @@ $.getJSON('data/military/federal.geojson')
            case "Coast Guard":
              var coast_federal = L.icon({
                iconUrl: 'data/military/coast_federal.svg',
-               iconSize: [20, 20],
+               iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: coast_federal}).bindPopup(function (layer) {
@@ -477,7 +477,7 @@ $.getJSON('data/military/federal.geojson')
              case "USACE":
                var usace_federal = L.icon({
                  iconUrl: 'data/military/usace_federal.svg',
-                 iconSize: [20, 20],
+                 iconSize: [22, 22],
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: usace_federal}).bindPopup(function (layer) {
@@ -486,7 +486,7 @@ $.getJSON('data/military/federal.geojson')
                case "AFRC":
                  var afrc_federal = L.icon({
                    iconUrl: 'data/military/afrc_federal.svg',
-                   iconSize: [20, 20],
+                   iconSize: [22, 22],
                    popupAnchor: [0, -8]
                  });
                  return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
@@ -501,7 +501,7 @@ $.getJSON('data/military/federal.geojson')
 // fireStations
 var fireStationsIcon = L.icon({
   iconUrl: 'data/fireStations.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var fireStations = L.esri.Cluster.featureLayer({
@@ -530,7 +530,7 @@ fireStations.bindPopup(function (layer) {
 // Foodshelves
 var foodshelvesIcon = L.icon({
   iconUrl: 'data/foodshelves/foodshelves.svg',
-  iconSize: [20, 20],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var foodshelves = L.markerClusterGroup({
@@ -562,7 +562,7 @@ $.getJSON('data/foodshelves/foodshelves.geojson')
 // Medical - General Hospitals, Native American, Psychiatric, Veterans Affairs
 var hospitalsIcon = L.icon({
   iconUrl: 'data/hospital/hospital.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var hospitals = L.esri.featureLayer({
@@ -601,7 +601,7 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
          case "Clinic":
            var naClinic = L.icon({
              iconUrl: 'data/hospital/naClinic.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naClinic}).bindPopup(function (layer) {
@@ -619,7 +619,7 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
          case "Hospital":
            var naHospital = L.icon({
              iconUrl: 'data/hospital/naHospital.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naHospital}).bindPopup(function (layer) {
@@ -641,7 +641,7 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
 
 var psychIcon = L.icon({
   iconUrl: 'data/hospital/psychHospital.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 $.getJSON('data/hospital/psychHospital.geojson')
@@ -674,7 +674,7 @@ $.getJSON('data/hospital/vaFacilities.geojson')
          case "Hospital":
            var vaHospital = L.icon({
              iconUrl: 'data/hospital/vaHospital.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              iconAnchor: [20, 0],
              popupAnchor: [0, -8]
            });
@@ -696,7 +696,7 @@ $.getJSON('data/hospital/vaFacilities.geojson')
          case "Clinic":
            var vaClinic = L.icon({
              iconUrl: 'data/hospital/vaClinic.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaClinic}).bindPopup(function (feature) {
@@ -750,7 +750,7 @@ $.getJSON('data/military/national_guard.geojson')
          case "Armory":
            var armory_national = L.icon({
              iconUrl: 'data/military/armory_national.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: armory_national}).bindPopup(function (layer) {
@@ -759,7 +759,7 @@ $.getJSON('data/military/national_guard.geojson')
          case "Military Airport":
            var military_airport_national = L.icon({
              iconUrl: 'data/military/military_airport_national.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
@@ -768,7 +768,7 @@ $.getJSON('data/military/national_guard.geojson')
          case "Helo":
            var helo_national = L.icon({
              iconUrl: 'data/military/helo_national.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: helo_national}).bindPopup(function (layer) {
@@ -777,7 +777,7 @@ $.getJSON('data/military/national_guard.geojson')
            case "Training":
              var training_national = L.icon({
                iconUrl: 'data/military/training_national.svg',
-               iconSize: [20, 20],
+               iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: training_national}).bindPopup(function (layer) {
@@ -786,7 +786,7 @@ $.getJSON('data/military/national_guard.geojson')
            case "WMD":
              var wmd_national = L.icon({
                iconUrl: 'data/military/wmd_national.svg',
-               iconSize: [20, 20],
+               iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: wmd_national}).bindPopup(function (layer) {
@@ -795,7 +795,7 @@ $.getJSON('data/military/national_guard.geojson')
              case "AFRC":
                var afrc_federal = L.icon({
                  iconUrl: 'data/military/afrc_national.svg',
-                 iconSize: [20, 20],
+                 iconSize: [22, 22],
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
@@ -825,7 +825,7 @@ nativeLand.bindPopup(function (layer) {
 // Police
 var policeIcon = L.icon({
   iconUrl: 'data/policeStations.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var policeStations = L.esri.Cluster.featureLayer({
@@ -908,7 +908,7 @@ $.getJSON('data/prison/prisons.geojson')
          case "Federal":
            var prisons_fed = L.icon({
              iconUrl: 'data/prison/prisons_fed.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_fed}).bindPopup(function (layer) {
@@ -917,7 +917,7 @@ $.getJSON('data/prison/prisons.geojson')
          case "State":
            var prisons_state = L.icon({
              iconUrl: 'data/prison/prisons_state.svg',
-             iconSize: [20, 20],
+             iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_state}).bindPopup(function (layer) {
@@ -932,7 +932,7 @@ $.getJSON('data/prison/prisons.geojson')
 
 var publicSchoolsIcon = L.icon({
   iconUrl: 'data/publicSchools.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var publicSchools = L.esri.Cluster.featureLayer({
@@ -959,7 +959,7 @@ publicSchools.bindPopup(function (layer) {
 
 var privateSchoolsIcon = L.icon({
   iconUrl: 'data/privateSchools.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var privateSchools = L.esri.Cluster.featureLayer({
@@ -1005,7 +1005,7 @@ privateSchools.bindPopup(function (layer) {
 // RedCross Facilities
 var redCrossFacilitiesIcon = L.icon({
   iconUrl: 'data/redCrossFacilities.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var redCrossFacilities = L.esri.featureLayer({
@@ -1026,7 +1026,7 @@ redCrossFacilities.bindPopup(function (layer) {
 // Shelters
 var sheltersIcon = L.icon({
   iconUrl: 'data/shelters.svg',
-  iconSize: [25, 25],
+  iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var shelters = L.esri.Cluster.featureLayer({
@@ -1092,7 +1092,7 @@ var testing = L.esri.Cluster.featureLayer({
       case "By appointment":
       var testing_appt = L.icon({
         iconUrl: 'data/testing/testing_appt.svg',
-        iconSize: [20, 20],
+        iconSize: [22, 22],
         popupAnchor: [0, -8]
       });
       return L.marker(latlng, {icon: testing_appt}).bindPopup(function (layer) {
@@ -1101,7 +1101,7 @@ var testing = L.esri.Cluster.featureLayer({
       case "Drive-up":
       var testing_driveup = L.icon({
         iconUrl: 'data/testing/testing_driveup.svg',
-        iconSize: [20, 20],
+        iconSize: [22, 22],
         popupAnchor: [0, -8]
       });
       return L.marker(latlng, {icon: testing_driveup}).bindPopup(function (layer) {
@@ -1110,7 +1110,7 @@ var testing = L.esri.Cluster.featureLayer({
       default:
       var testing_else = L.icon({
         iconUrl: 'data/testing/testing_else.svg',
-        iconSize: [20, 20],
+        iconSize: [22, 22],
         popupAnchor: [0, -8]
       });
       return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
