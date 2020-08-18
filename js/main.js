@@ -16,7 +16,7 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   vectorTileLayerStyles: {
     cb_2017_us_county_500k: {
       weight: 1,
-      color: '#808080',
+      color: '#6F7C80',
       opacity: 0.2,
       fill: false
     }
@@ -78,7 +78,7 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
     colors = function(specifier) {
       var n = specifier.length / 6 | 0, colors = new Array(n), i = 0;
       while (i < n) colors[i] = "#" + specifier.slice(i * 6, ++i * 6);
-      return colors;
+      return colors.reverse();
     };
 
     // From https://github.com/d3/d3-scale-chromatic/blob/master/src/sequential-multi/viridis.js
@@ -90,13 +90,17 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       data[state]["counties"][county][displayDate]) {
       const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
       const log_cases = (cases > 1) ? Math.log10(cases) : 0;
-      color_index = Math.min(Math.floor(log_cases * 64), 255);
+      color_index = Math.min(Math.floor(log_cases * 40), 255);
+      if (cases < 11105.2 && cases > 9945.8) {
+        console.log("cases", cases, magma_colors[color_index])
+      }
+
     }
     return ({
       stroke: false,
       fillColor: magma_colors[color_index],
       fill: true,
-      fillOpacity: 0.7
+      fillOpacity: 1
      });
     },
     zIndex: 1
