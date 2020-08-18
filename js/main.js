@@ -91,10 +91,6 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
       const cases = 100000.0 * data[state]["counties"][county][displayDate] / population;
       const log_cases = (cases > 1) ? Math.log10(cases) : 0;
       color_index = Math.min(Math.floor(log_cases * 40), 255);
-      if (cases < 11105.2 && cases > 9945.8) {
-        console.log("cases", cases, magma_colors[color_index])
-      }
-
     }
     return ({
       stroke: false,
