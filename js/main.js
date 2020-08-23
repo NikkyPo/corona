@@ -23,6 +23,66 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
   }
 });
 
+////////////////////////////////////
+// Positive COVID counties
+// positiveCounties variable url displays the "Current Cases" count of each county in the pop-up
+var positiveCounties = L.esri.featureLayer({
+  url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/PositiveCountyCount/FeatureServer/0",
+  style: function (feature) {
+  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY < 6) {
+    return { fillColor: 'rgb(230, 238, 207)', fill: true, stroke: false,fillOpacity: 0.6};
+  } else if (feature.properties.MLMIS_CTY > 5 && feature.properties.MLMIS_CTY < 51) {
+    return { fillColor: 'rgb(123, 204, 196)', fill: true, stroke: false,fillOpacity: 0.6};
+  } else if (feature.properties.MLMIS_CTY > 50 && feature.properties.MLMIS_CTY < 501) {
+    return { fillColor: 'rgb(67, 162, 202)', fill: true, stroke: false,fillOpacity: 0.6};
+  } else {
+    return { fillColor: 'rgb(7, 85, 145)', fill: true, stroke: false,fillOpacity: 0.6};
+  }
+}
+});
+
+positiveCounties.bindPopup(function (layer) {
+  // return temporary message while the "queryInfo" function called from the popupopen function runs:
+  return L.Util.template('Getting information');
+});
+
+positiveCounties.on('popupopen', function(evt) {
+  // when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
+  queryInfo(evt.layer.feature, evt.popup);
+});
+
+positiveCounties.getPopup().on('remove', function() {
+  positiveCounties.bindPopup(function (layer) {
+    // return temporary message while the "queryInfo" function called from the popupopen function runs:
+    return L.Util.template('Getting information');
+  });
+});
+
+// queryInfo url displays the "deaths" count in the pop-up
+var queryInfo = function(feature, popup) {
+  L.esri.query({
+    url: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases2_v1/FeatureServer/1",
+    where: "Province_State = 'Minnesota'"
+  })
+  .within(feature)
+  .run(function(error, featureCollection) {
+    try {
+      var deaths = featureCollection.features[0].properties.Deaths;
+    } catch (error) {
+      var deaths = "no data";
+      var recovered = "no data";
+    }
+  // this function is called when the query is complete. Update the currently open popup.
+    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Deaths: ' + deaths, feature.properties));
+  }.bind(this));
+};
+
+// Make sure layer sits on top
+positiveCounties.on('load', function (e) {
+  positiveCounties.bringToFront();
+});
+
+
 ///////////////////////////////////////////////////
 // Covid layer and Date Controls
   let displayDate;
@@ -851,53 +911,6 @@ policeStations.bindPopup(function (layer) {
 });
 
 
-////////////////////////////////////
-// Positive COVID counties
-// other url:
-var positiveCounties = L.esri.featureLayer({
-  url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/PositiveCountyCount/FeatureServer/0",
-  style: function (feature) {
-  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY < 6) {
-    return { fillColor: 'rgb(230, 238, 207)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else if (feature.properties.MLMIS_CTY > 5 && feature.properties.MLMIS_CTY < 51) {
-    return { fillColor: 'rgb(123, 204, 196)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else if (feature.properties.MLMIS_CTY > 50 && feature.properties.MLMIS_CTY < 501) {
-    return { fillColor: 'rgb(67, 162, 202)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else {
-    return { fillColor: 'rgb(7, 85, 145)', fill: true, stroke: false,fillOpacity: 0.6};
-  }
-}
-});
-
-
-positiveCounties.on('popupopen', function(evt) {
-  // when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
-  queryInfo(evt.layer.feature, evt.popup);
-});
-
-positiveCounties.bindPopup(function (layer) {
-  // return temporary message while the "queryTrees" function called from the popupopen function runs:
-  return L.Util.template('Getting information');
-});
-
-var queryInfo = function(feature, popup) {
-  L.esri.query({
-    url: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases2_v1/FeatureServer/1",
-    where: "Province_State = 'Minnesota'"
-  })
-  .within(feature)
-  .run(function(error, featureCollection) {
-    try {
-      var deaths = featureCollection.features[0].properties.Deaths;
-    } catch (error) {
-      var deaths = "no data";
-      var recovered = "no data";
-    }
-  // this function is called when the query is complete. Update the currently open popup.
-    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Deaths: ' + deaths, feature.properties));
-  }.bind(this));
-};
-
 /////////////////////////////////////////
 // Prisons
 $.getJSON('data/prison/prisons.geojson')
@@ -985,6 +998,7 @@ privateSchools.bindPopup(function (layer) {
   return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {START_GRAD} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
 });
 
+// Layer is not working as of: 8/12/2020
 //////////////////////////////////////////
 // RedCross
 // var redCross = L.esri.featureLayer({
@@ -1120,7 +1134,6 @@ var testing = L.esri.Cluster.featureLayer({
   }
 });
 
-
 // Add it all together
 var mymap = L.map('mapid', {
   preferCanvas: true,
@@ -1129,11 +1142,9 @@ var mymap = L.map('mapid', {
   layers: [positiveCounties, counties, boundaries, none]
 });
 
-
 L.control.sidebar('sidebar').addTo(mymap);
 
 // Layer logic
-
 $("input[type='checkbox']").change(function() {
   var layerClicked = $(this).attr("id");
   switch (layerClicked) {
