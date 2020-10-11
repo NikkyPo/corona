@@ -1134,6 +1134,30 @@ var testing = L.esri.Cluster.featureLayer({
   }
 });
 
+/////////////////////////////////////////
+// USNG Responder Maps
+
+// USNG none selected
+var usngNone = L.tileLayer("");
+
+// 10K Overview map - Aerial
+var usngAerial = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_aerial_10Kmapindex/FeatureServer/0'});
+usngAerial.setStyle({
+  color: '#808080',
+  weight: 1,
+  fill: false
+});
+
+// 10K Overview map - Maps
+var usngMap = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_street_10Kmapindex/FeatureServer/0'});
+usngMap.setStyle({
+  color: '#808080',
+  weight: 1,
+  fill: false
+});
+
+
+
 // Add it all together
 var mymap = L.map('mapid', {
   preferCanvas: true,
@@ -1247,7 +1271,7 @@ function toggleLayer(checked, layer) {
 
 
 // Radio buttons for basemaps
-$("input[type='radio']").change(function() {
+$("input[type='radio'][name=radiobtn-basemap]").change(function() {
   var radioClicked = $(this).attr("id");
   switch (radioClicked) {
     case "none":
@@ -1267,6 +1291,31 @@ $("input[type='radio']").change(function() {
       mymap.removeLayer(aerial);
       mymap.addLayer(streets);
       streets.bringToBack();
+    break;
+  }
+});
+
+// Radio buttons for USNG maps
+$("input[type=radio][name=radiobtn-usng]").change(function() {
+  var radioClicked = $(this).attr("id");
+  switch (radioClicked) {
+    case "usng-none":
+      mymap.removeLayer(usngMap);
+      mymap.removeLayer(usngAerial);
+      mymap.addLayer(usngNone);
+      usngNone.bringToBack();
+    break;
+    case "usng-aerial":
+      mymap.removeLayer(usngMap);
+      mymap.removeLayer(usngNone);
+      mymap.addLayer(usngAerial);
+      usngAerial.bringToBack();
+    break;
+    case "usng-map":
+      mymap.removeLayer(usngAerial);
+      mymap.removeLayer(usngNone);
+      mymap.addLayer(usngMap);
+      usngMap.bringToBack();
     break;
   }
 });

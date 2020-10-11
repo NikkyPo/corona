@@ -39,6 +39,8 @@
         </div>
 
         <!-- Tab panes -->
+
+				<!-- Data Panel -->
         <div class="sidebar-content">
             <div class="sidebar-pane active" id="layers">
                 <h1 class="sidebar-header">
@@ -51,15 +53,15 @@
 								<hr class="group">
 								<h3>Basemaps</h3>
 								<label class="container">Aerial
-									<input type="radio" name="radio" id="aerial">
+									<input type="radio" name="radiobtn-basemap" id="aerial">
 									<span class="radiobtn"></span>
 								</label>
 								<label class="container">None
-								  <input type="radio" checked="checked" name="radio" id="none">
+								  <input type="radio" checked="checked" name="radiobtn-basemap" id="none">
 								  <span class="radiobtn"></span>
 								</label>
 								<label class="container">Map
-								  <input type="radio" name="radio" id="streets">
+								  <input type="radio" name="radiobtn-basemap" id="streets">
 								  <span class="radiobtn"></span>
 								</label>
 								<hr class="group">
@@ -337,7 +339,23 @@
 									<span class="checkmark"></span>
 									<div id="sheltersLegend"><img class="icon" src="data/shelters.svg" alt="legend for shelters"></div>
 								</label>
+								<hr class="group">
+								<h3>USNG Responder Maps</h3>
+								<label class="container">None
+									<input type="radio" checked="checked" name="radiobtn-usng" id="usng-none">
+									<span class="radiobtn"></span>
+								</label>
+								<label class="container">10K Overview - Aerial
+									<input type="radio" name="radiobtn-usng" id="usng-aerial">
+									<span class="radiobtn"></span>
+								</label>
+								<label class="container">10K Overview - Map
+								  <input type="radio" name="radiobtn-usng" id="usng-map">
+								  <span class="radiobtn"></span>
+								</label>
             </div>
+
+						<!-- Resources panel -->
 						<div class="sidebar-pane" id="resources">
                 <h1 class="sidebar-header">About<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
 								<h3>Author</h3>
@@ -354,6 +372,8 @@
 								<h3>Version</h3>
 								<p>Last Update: 8/4/2020</p>
 						</div>
+
+						<!-- Help Panel -->
 						<div class="sidebar-pane" id="help">
 								<h1 class="sidebar-header">Help<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
 								<h3>How to use this map</h3>
