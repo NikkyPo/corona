@@ -1157,7 +1157,6 @@ usngMap.setStyle({
 });
 
 
-
 // Add it all together
 var mymap = L.map('mapid', {
   preferCanvas: true,
