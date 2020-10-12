@@ -1147,6 +1147,12 @@ usngAerial.setStyle({
   weight: 1,
   fill: false
 });
+usngAerial.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
+  'National Grid (100k) : {NG100K}<br><br>\n'+
+  'Latitude: {Lat}<br>Longitude: {Lon}<br><br>\n'+
+  '<a target="_blank" href="{URL}"><button>Download Aerial Map</button></a></p>', layer.feature.properties);
+});
 
 // 10K Overview map - Maps
 var usngMap = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_street_10Kmapindex/FeatureServer/0'});
@@ -1154,6 +1160,12 @@ usngMap.setStyle({
   color: '#808080',
   weight: 1,
   fill: false
+});
+usngMap.bindPopup(function (layer) {
+  return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
+  'National Grid (100k) : {NG100K}<br><br>\n'+
+  'Latitude: {Lat}<br>Longitude: {Lon}<br><br>\n'+
+  '<a target="_blank" href="{URL}"><button>Download Street Map</button></a></p>', layer.feature.properties);
 });
 
 
