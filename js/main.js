@@ -1137,6 +1137,26 @@ var testing = L.esri.Cluster.featureLayer({
 /////////////////////////////////////////
 // USNG Responder Maps
 
+// Function converts lat/long to DMS
+function toDegreesMinutesAndSeconds(coordinate) {
+    var absolute = Math.abs(coordinate);
+    var degrees = Math.floor(absolute);
+    var minutesNotTruncated = (absolute - degrees) * 60;
+    var minutes = Math.floor(minutesNotTruncated);
+    var seconds = Math.floor((minutesNotTruncated - minutes) * 60);
+
+    return degrees + " " + minutes + " " + seconds;
+}
+function convertDMS(lat, lng) {
+    var latitude = toDegreesMinutesAndSeconds(lat);
+    var latitudeCardinal = lat >= 0 ? "N" : "S";
+
+    var longitude = toDegreesMinutesAndSeconds(lng);
+    var longitudeCardinal = lng >= 0 ? "E" : "W";
+
+    return "Latitude: " + latitude + " " + latitudeCardinal + "<br> \n" + "Longitude: " + longitude + " " + longitudeCardinal;
+}
+
 // USNG none selected
 var usngNone = L.tileLayer("");
 
@@ -1148,13 +1168,18 @@ usngAerial.setStyle({
   fill: false
 });
 usngAerial.bindPopup(function (layer) {
+  let lat = layer.feature.properties.Lat;
+  let long = layer.feature.properties.Lon;
+  let dms = convertDMS(lat, long);
+
   return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
   'National Grid (100k) : {NG100K}<br><br>\n'+
-  'Latitude: {Lat}<br>Longitude: {Lon}<br><br>\n'+
+  dms + '<br><br>\n'+
   '<a target="_blank" href="{URL}"><button>Download Aerial Map</button></a></p>', layer.feature.properties);
 });
 
 // 10K Overview map - Maps
+
 var usngMap = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_street_10Kmapindex/FeatureServer/0'});
 usngMap.setStyle({
   color: '#808080',
@@ -1162,9 +1187,13 @@ usngMap.setStyle({
   fill: false
 });
 usngMap.bindPopup(function (layer) {
+  let lat = layer.feature.properties.Lat;
+  let long = layer.feature.properties.Lon;
+  let dms = convertDMS(lat, long);
+
   return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
   'National Grid (100k) : {NG100K}<br><br>\n'+
-  'Latitude: {Lat}<br>Longitude: {Lon}<br><br>\n'+
+  dms + '<br><br>\n'+
   '<a target="_blank" href="{URL}"><button>Download Street Map</button></a></p>', layer.feature.properties);
 });
 
