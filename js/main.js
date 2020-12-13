@@ -29,11 +29,11 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
 var positiveCounties = L.esri.featureLayer({
   url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/PositiveCountyCount/FeatureServer/0",
   style: function (feature) {
-  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY < 6) {
+  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY < 501) {
     return { fillColor: 'rgb(230, 238, 207)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else if (feature.properties.MLMIS_CTY > 5 && feature.properties.MLMIS_CTY < 51) {
+  } else if (feature.properties.MLMIS_CTY > 5 && feature.properties.MLMIS_CTY < 1001) {
     return { fillColor: 'rgb(123, 204, 196)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else if (feature.properties.MLMIS_CTY > 50 && feature.properties.MLMIS_CTY < 501) {
+  } else if (feature.properties.MLMIS_CTY > 50 && feature.properties.MLMIS_CTY < 5001) {
     return { fillColor: 'rgb(67, 162, 202)', fill: true, stroke: false,fillOpacity: 0.6};
   } else {
     return { fillColor: 'rgb(7, 85, 145)', fill: true, stroke: false,fillOpacity: 0.6};
@@ -1315,6 +1315,11 @@ function toggleLayer(checked, layer) {
   }
 }
 
+// Radio button variables
+let us = $('input[name="use_us"]');
+let mn = $('input[name="use_mn"]');
+let co = $('input[name="county"]');
+let st = $('input[name="states"]');
 
 // Radio buttons for basemaps
 $("input[type='radio'][name=radiobtn-basemap]").change(function() {
@@ -1352,14 +1357,42 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
       usngNone.bringToBack();
     break;
     case "usng-aerial":
+    // Turns COVID layers off but makes sure County and State boundaries are on
       mymap.removeLayer(usngMap);
       mymap.removeLayer(usngNone);
+      mn.prop('checked',false);
+      mymap.removeLayer(positiveCounties);
+      us.prop('checked',false);
+      mymap.removeLayer(cases);
+
+      document.getElementById('streets').checked = true;
+      mymap.addLayer(streets);
+      streets.bringToBack();
+
+      st.prop('checked',true);
+      mymap.addLayer(boundaries);
+      co.prop('checked',true);
+      mymap.addLayer(counties);
       mymap.addLayer(usngAerial);
       usngAerial.bringToBack();
     break;
     case "usng-map":
+    // Turns COVID layers off but makes sure County and State boundaries are on
       mymap.removeLayer(usngAerial);
       mymap.removeLayer(usngNone);
+      mn.prop('checked',false);
+      mymap.removeLayer(positiveCounties);
+      us.prop('checked',false);
+      mymap.removeLayer(cases);
+
+      document.getElementById('streets').checked = true;
+      mymap.addLayer(streets);
+      streets.bringToBack();
+      
+      st.prop('checked',true);
+      mymap.addLayer(boundaries);
+      co.prop('checked',true);
+      mymap.addLayer(counties);
       mymap.addLayer(usngMap);
       usngMap.bringToBack();
     break;
@@ -1367,9 +1400,6 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
 });
 
 // Ensures mn cases and us covid cases are not on at the same time
-var us = $('input[name="use_us"]');
-var mn = $('input[name="use_mn"]');
-
 us.change(function(){
   mn.prop('checked',false);
   mymap.removeLayer(positiveCounties);
@@ -1378,12 +1408,3 @@ mn.change(function(){
   us.prop('checked',false);
   mymap.removeLayer(cases);
 });
-
-// var tooltipThreshold = 10;
-// mymap.on('zoomend', function() {
-//   if (mymap.getZoom() < tooltipThreshold) {
-//       $(".leaflet-tooltip").css("display","none")
-//   } else {
-//       $(".leaflet-tooltip").css("display","block")
-//   }
-// })
