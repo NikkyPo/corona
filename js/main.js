@@ -1137,24 +1137,21 @@ var testing = L.esri.Cluster.featureLayer({
 /////////////////////////////////////////
 // USNG Responder Maps
 
-// Function converts lat/long to DMS
-function toDegreesMinutesAndSeconds(coordinate) {
-    var absolute = Math.abs(coordinate);
-    var degrees = Math.floor(absolute);
-    var minutesNotTruncated = (absolute - degrees) * 60;
-    var minutes = Math.floor(minutesNotTruncated);
-    var seconds = Math.floor((minutesNotTruncated - minutes) * 60);
+// Accepts [lon,lat]
+// Returns [[lon_deg,lon_min,lon_dir],[lat_deg,lat_min,lat_dir]]
+function dd2ddm(xy) {
+  var coords = [];
 
-    return degrees + " " + minutes + " " + seconds;
-}
-function convertDMS(lat, lng) {
-    var latitude = toDegreesMinutesAndSeconds(lat);
-    var latitudeCardinal = lat >= 0 ? "N" : "S";
+  for (i=0; i<xy.length; i++) {
+    var arr = [1,0,1];
+    var spl = xy[i].toString().split('.');
+    arr[0] = Math.abs(xy[i].toString().split('.')[0]);
+    arr[1] = spl.length == 2 ? Math.abs(parseFloat('.'+xy[i].toString().split('.')[1])*60.0) : 0;
+    arr[2] = xy[i] >= 0 ? 1 : -1;
 
-    var longitude = toDegreesMinutesAndSeconds(lng);
-    var longitudeCardinal = lng >= 0 ? "E" : "W";
-
-    return "Latitude: " + latitude + " " + latitudeCardinal + "<br> \n" + "Longitude: " + longitude + " " + longitudeCardinal;
+    coords[i] = arr;
+  }
+  return coords;
 }
 
 // USNG none selected
@@ -1168,18 +1165,22 @@ usngAerial.setStyle({
   fill: false
 });
 usngAerial.bindPopup(function (layer) {
-  let lat = layer.feature.properties.Lat;
-  let long = layer.feature.properties.Lon;
-  let dms = convertDMS(lat, long);
+  let input = [layer.feature.properties.Lat ,layer.feature.properties.Lon];
+  let dms = dd2ddm(input);
+
+  var lat_dir = dms[0][2] < 0 ? 'S' : 'N';
+  var long_dir = dms[1][2] < 0 ? 'W' : 'E';
+
+  let lat = 'Latitude: ' + dms[0][0] + ' ' + Math.round(dms[0][1]*100)/100 + ' ' + lat_dir;
+  let long = 'Longitude: ' + dms[1][0] + ' ' + Math.round(dms[1][1]*100)/100 + ' ' + long_dir;
 
   return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
   'National Grid (100k) : {NG100K}<br><br>\n'+
-  dms + '<br><br>\n'+
-  '<a target="_blank" href="{URL}"><button>Download Aerial Map</button></a></p>', layer.feature.properties);
+  lat + '<br>' + long + '<br><br>\n'+
+  '<a target="_blank" href="{URL}"><button>Download 10K Aerial</button></a></p>', layer.feature.properties);
 });
 
 // 10K Overview map - Maps
-
 var usngMap = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_street_10Kmapindex/FeatureServer/0'});
 usngMap.setStyle({
   color: '#808080',
@@ -1187,14 +1188,19 @@ usngMap.setStyle({
   fill: false
 });
 usngMap.bindPopup(function (layer) {
-  let lat = layer.feature.properties.Lat;
-  let long = layer.feature.properties.Lon;
-  let dms = convertDMS(lat, long);
+  let input = [layer.feature.properties.Lat ,layer.feature.properties.Lon];
+  let dms = dd2ddm(input);
+
+  var lat_dir = dms[0][2] < 0 ? 'S' : 'N';
+  var long_dir = dms[1][2] < 0 ? 'W' : 'E';
+
+  let lat = 'Latitude: ' + dms[0][0] + ' ' + Math.round(dms[0][1]*100)/100 + ' ' + lat_dir;
+  let long = 'Longitude: ' + dms[1][0] + ' ' + Math.round(dms[1][1]*100)/100 + ' ' + long_dir;
 
   return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
   'National Grid (100k) : {NG100K}<br><br>\n'+
-  dms + '<br><br>\n'+
-  '<a target="_blank" href="{URL}"><button>Download Street Map</button></a></p>', layer.feature.properties);
+  lat + '<br>' + long + '<br><br>\n'+
+  '<a target="_blank" href="{URL}"><button>Download 10K Map</button></a></p>', layer.feature.properties);
 });
 
 
