@@ -1090,8 +1090,7 @@ shelters.bindPopup(function (layer) {
 ////////////////////////////////////////////
 // Test Locations
 var testing = L.esri.Cluster.featureLayer({
-  url: "https://services1.arcgis.com/KoDrdxDCTDvfgddz/ArcGIS/rest/services/CovidTestLocations_ProductionMap/FeatureServer/0",
-  where: "State = 'MN'",
+  url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/arcgis/rest/services/CovidTestLocations_view_prd/FeatureServer/0",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
     var testing_digit = (count + '').length;
@@ -1102,24 +1101,112 @@ var testing = L.esri.Cluster.featureLayer({
     });
   },
   pointToLayer: function (feature, latlng) {
-    switch(feature.properties["DirUtilCol"]) {
-      case "By appointment":
+    var l = feature.properties;
+
+
+    var template =
+    "<br>"
+    if (!l.MondayStart && !l.MondayEnd && !l.TuesdayStart && !l.TuesdayEnd && !l.WednesdayStart && !l.WednesdayEnd && !l.ThursdayStart && !l.ThursdayEnd
+        && !l.FridayStart && !l.FridayEnd && !l.SaturdayStart && !l.SaturdayEnd && !l.SundayStart && !l.SundayEnd ) {
+      template +=
+          "<br/>Contact for hours of operation"
+    } else {
+      template += "<br/><strong>Hours of operation:</strong>";
+      if (l.MondayStart === l.TuesdayStart && l.MondayStart === l.WednesdayStart && l.MondayStart === l.ThursdayStart && l.MondayStart === l.FridayStart &&
+          l.MondayEnd === l.TuesdayEnd && l.MondayEnd === l.WednesdayEnd && l.MondayEnd === l.ThursdayEnd && l.MondayEnd === l.FridayEnd) {
+        if(!l.MondayStart && !l.MondayEnd) {
+          template +=
+              "<br/><strong>Weekdays: </strong> Closed"
+        } else {
+          template +=
+              "<br/><strong>Weekdays: </strong> { MondayStart } - { MondayEnd }"
+        }
+      } else {
+        if(!l.MondayStart && !l.MondayEnd) {
+          template +=
+              "<br/><strong>Mondays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Mondays: </strong> { MondayStart } - { MondayEnd }"
+        }
+        if(!l.TuesdayStart && !l.TuesdayEnd) {
+          template +=
+              "<br/><strong>Tuesdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Tuesdays: </strong> { TuesdayStart } - { TuesdayEnd }"
+        }
+        if(!l.WednesdayStart && !l.WednesdayEnd) {
+          template +=
+              "<br/><strong>Wednesdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Wednesdays: </strong> { WednesdayStart } - { WednesdayEnd }";
+        }
+        if(!l.ThursdayStart && !l.ThursdayEnd) {
+          template +=
+              "<br/><strong>Thursdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Thursdays: </strong> { ThursdayStart } - { ThursdayEnd }";
+        }
+        if(!l.FridayStart && !l.FridayEnd) {
+          template +=
+              "<br/><strong>Fridays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Fridays: </strong> { FridayStart } - { FridayEnd }";
+        }
+      }
+      if (l.SaturdayStart === l.SundayStart && l.SaturdayEnd === l.SundayEnd) {
+        if (!l.SundayStart && !l.SaturdayEnd) {
+          template +=
+              "<br/><strong>Weekends: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Weekends: </strong> { SaturdayStart } - { SaturdayEnd }";
+        }
+      } else {
+        if(!l.SaturdayStart && !l.SaturdayEnd) {
+          template +=
+              "<br/><strong>Saturdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Saturdays: </strong> { SaturdayStart } - { SaturdayEnd }";
+        }
+        if(!l.SundayStart && !l.SundayEnd) {
+          template +=
+              "<br/><strong>Sundays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Sundays: </strong> { SundayStart } - { SundayEnd }"
+        }
+      }
+    }
+    if (l.TestingRequirements) {
+      template += "<br/><br><strong>Testing Requirements: </strong>"
+      if (l.TestingRequirements.trim().includes("|")) {
+        $.each(l.TestingRequirements.trim().split("|"), function (idx, result) {
+          if (result.trim().toLowerCase() != "other" && result.trim().length > 0) {
+            template += '<br>  ' +result.trim();
+          }
+        });
+
+      } else {
+        template +=
+            "{ TestingRequirements }";
+      }
+    }
+
+    switch(feature.properties["ProviderName"]) {
+      case "No-Cost Community Testing Sites":
       var testing_appt = L.icon({
         iconUrl: 'data/testing/testing_appt.svg',
         iconSize: [22, 22],
         popupAnchor: [0, -8]
       });
       return L.marker(latlng, {icon: testing_appt}).bindPopup(function (layer) {
-        return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
-      });
-      case "Drive-up":
-      var testing_driveup = L.icon({
-        iconUrl: 'data/testing/testing_driveup.svg',
-        iconSize: [22, 22],
-        popupAnchor: [0, -8]
-      });
-      return L.marker(latlng, {icon: testing_driveup}).bindPopup(function (layer) {
-        return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+        return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
       });
       default:
       var testing_else = L.icon({
@@ -1128,7 +1215,7 @@ var testing = L.esri.Cluster.featureLayer({
         popupAnchor: [0, -8]
       });
       return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
-        return L.Util.template('<h3>{CollectSiteName}</h3><p>{HealthSystem}<br><br>{CollectAddress1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a><br><br>Directions: {DirUtilCol}<br><strong>Weekday Hours: </strong>{HoursOfOpMF}<br><strong>Weekend Hours: </strong>{HoursOfOpSatSun}<br><br><a target="_blank" href="https://mn.gov/covid19/for-minnesotans/if-sick/testing-locations/"><button>Click for more details</button></a></p>', layer.feature.properties);
+        return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
       });
     }
   }
@@ -1388,7 +1475,7 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
       document.getElementById('streets').checked = true;
       mymap.addLayer(streets);
       streets.bringToBack();
-      
+
       st.prop('checked',true);
       mymap.addLayer(boundaries);
       co.prop('checked',true);
