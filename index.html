@@ -91,10 +91,10 @@
 									<span class="checkmark"></span>
 									<div class="legend">
 										<h5>Positive Cases</h5>
-										<div style="background-color: rgb(230, 238, 207)">0 to 500</div>
-										<div style="background-color: rgb(123, 204, 196, 0.7)">501 to 1000</div>
-										<div style="background-color: rgb(67, 162, 202, 0.7)">1001 to 5000</div>
-										<div style="background-color: rgb(7, 85, 145, 0.7)">5001 or more</div>
+										<div style="background-color: rgb(230, 238, 207)">0 to 1000</div>
+										<div style="background-color: rgb(123, 204, 196, 0.7)">1001 to 5,000</div>
+										<div style="background-color: rgb(67, 162, 202, 0.7)">5,001 to 10,000</div>
+										<div style="color: white; background-color: rgb(7, 85, 145, 0.7)">10,001 or more</div>
 									</div><br>
 								</label>
 								<hr class="layer"><br>
@@ -123,22 +123,37 @@
 									<input type="button" value="Stop Animation" onclick="stopAnimation()"> -->
 								</div><br>
 								<hr class="layer"><br>
+								<label class="container">Number of COVID-19 providers registered by county
+									<input name="vaccineCounty" type="checkbox" id="vaccineCounty">
+									<span class="checkmark"></span>
+									<div class="legend"><br>
+										<div style="background-color: #F6E5CF">0 to 5</div>
+										<div style="background-color: #E6B7C4">6 to 20</div>
+										<div style="background-color: #CC71B4">21 to 50</div>
+										<div style="color: white; background-color: #8C3C88">51 or more</div>
+									</div><br>
+								</label>
+								<hr class="layer"><br>
 								<label class="container">Local Foodshelves
 									<input id="foodshelves" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="foodshelvesLegend"><img class="icon" src="data/foodshelves/foodshelves.svg" alt="legend for foodshelves"></div>
 								</label>
 								<hr class="layer"><br>
-								<label class="container">Testing Locations
-									<input id="testing" type="checkbox">
+								<label class="container">Testing Locations - No-Cost
+									<input id="testingFree" type="checkbox">
 									<span class="checkmark"></span>
 									<div id="specialLegend">
-											<img class="icon" src="data/testing/testing_appt.svg" alt="legend for testing locations">
-											<i style="margin-left: 10px;">No-Cost</i>
+											<img class="icon" src="data/testing/testing_appt.svg" alt="legend for free testing locations">
+											<i style="margin-left: 10px;"></i>
 									</div>
+								</label>
+								<label class="container">Testing Locations - All other
+									<input id="testingOther" type="checkbox">
+									<span class="checkmark"></span>
 									<div id="specialLegend">
-											<img class="icon" src="data/testing/testing_else.svg" alt="legend for testing locations">
-											<i style="margin-left: 10px;">All other</i>
+											<img class="icon" src="data/testing/testing_else.svg" alt="legend for other testing locations">
+											<i style="margin-left: 10px;"></i>
 									</div>
 								</label>
 								<hr class="group">

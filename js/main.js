@@ -29,11 +29,11 @@ var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/
 var positiveCounties = L.esri.featureLayer({
   url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/PositiveCountyCount/FeatureServer/0",
   style: function (feature) {
-  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY < 501) {
+  if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY <= 1000) {
     return { fillColor: 'rgb(230, 238, 207)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else if (feature.properties.MLMIS_CTY > 5 && feature.properties.MLMIS_CTY < 1001) {
+  } else if (feature.properties.MLMIS_CTY > 1000 && feature.properties.MLMIS_CTY <= 5000) {
     return { fillColor: 'rgb(123, 204, 196)', fill: true, stroke: false,fillOpacity: 0.6};
-  } else if (feature.properties.MLMIS_CTY > 50 && feature.properties.MLMIS_CTY < 5001) {
+  } else if (feature.properties.MLMIS_CTY > 5000 && feature.properties.MLMIS_CTY <= 10000) {
     return { fillColor: 'rgb(67, 162, 202)', fill: true, stroke: false,fillOpacity: 0.6};
   } else {
     return { fillColor: 'rgb(7, 85, 145)', fill: true, stroke: false,fillOpacity: 0.6};
@@ -1088,9 +1088,11 @@ shelters.bindPopup(function (layer) {
 });
 
 ////////////////////////////////////////////
-// Test Locations
-var testing = L.esri.Cluster.featureLayer({
+// Test Locations: No Cost
+
+var testingFree = L.esri.Cluster.featureLayer({
   url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/arcgis/rest/services/CovidTestLocations_view_prd/FeatureServer/0",
+  where: "(ProviderName = 'No-Cost Community Testing Sites') AND (State = 'MN')",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
     var testing_digit = (count + '').length;
@@ -1102,7 +1104,6 @@ var testing = L.esri.Cluster.featureLayer({
   },
   pointToLayer: function (feature, latlng) {
     var l = feature.properties;
-
 
     var template =
     "<br>"
@@ -1198,26 +1199,135 @@ var testing = L.esri.Cluster.featureLayer({
       }
     }
 
-    switch(feature.properties["ProviderName"]) {
-      case "No-Cost Community Testing Sites":
-      var testing_appt = L.icon({
-        iconUrl: 'data/testing/testing_appt.svg',
-        iconSize: [22, 22],
-        popupAnchor: [0, -8]
-      });
-      return L.marker(latlng, {icon: testing_appt}).bindPopup(function (layer) {
-        return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
-      });
-      default:
-      var testing_else = L.icon({
-        iconUrl: 'data/testing/testing_else.svg',
-        iconSize: [22, 22],
-        popupAnchor: [0, -8]
-      });
-      return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
-        return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
-      });
+    var testing_free = L.icon({
+      iconUrl: 'data/testing/testing_appt.svg',
+      iconSize: [22, 22],
+      popupAnchor: [0, -8]
+    });
+    return L.marker(latlng, {icon: testing_free}).bindPopup(function (layer) {
+      return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
+    });
+  }
+});
+
+// Test Locations: All Other
+var testingOther = L.esri.Cluster.featureLayer({
+  url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/arcgis/rest/services/CovidTestLocations_view_prd/FeatureServer/0",
+  where: "(NOT ProviderName = 'No-Cost Community Testing Sites') AND (State = 'MN')",
+  iconCreateFunction: function (cluster) {
+    var count = cluster.getChildCount();
+    var testing_digit = (count + '').length;
+    return L.divIcon({
+      html: count,
+      className: 'testingClusterOther testing-' + testing_digit,
+      iconSize: null
+    });
+  },
+  pointToLayer: function (feature, latlng) {
+    var l = feature.properties;
+
+    var template =
+    "<br>"
+    if (!l.MondayStart && !l.MondayEnd && !l.TuesdayStart && !l.TuesdayEnd && !l.WednesdayStart && !l.WednesdayEnd && !l.ThursdayStart && !l.ThursdayEnd
+        && !l.FridayStart && !l.FridayEnd && !l.SaturdayStart && !l.SaturdayEnd && !l.SundayStart && !l.SundayEnd ) {
+      template +=
+          "<br/>Contact for hours of operation"
+    } else {
+      template += "<br/><strong>Hours of operation:</strong>";
+      if (l.MondayStart === l.TuesdayStart && l.MondayStart === l.WednesdayStart && l.MondayStart === l.ThursdayStart && l.MondayStart === l.FridayStart &&
+          l.MondayEnd === l.TuesdayEnd && l.MondayEnd === l.WednesdayEnd && l.MondayEnd === l.ThursdayEnd && l.MondayEnd === l.FridayEnd) {
+        if(!l.MondayStart && !l.MondayEnd) {
+          template +=
+              "<br/><strong>Weekdays: </strong> Closed"
+        } else {
+          template +=
+              "<br/><strong>Weekdays: </strong> { MondayStart } - { MondayEnd }"
+        }
+      } else {
+        if(!l.MondayStart && !l.MondayEnd) {
+          template +=
+              "<br/><strong>Mondays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Mondays: </strong> { MondayStart } - { MondayEnd }"
+        }
+        if(!l.TuesdayStart && !l.TuesdayEnd) {
+          template +=
+              "<br/><strong>Tuesdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Tuesdays: </strong> { TuesdayStart } - { TuesdayEnd }"
+        }
+        if(!l.WednesdayStart && !l.WednesdayEnd) {
+          template +=
+              "<br/><strong>Wednesdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Wednesdays: </strong> { WednesdayStart } - { WednesdayEnd }";
+        }
+        if(!l.ThursdayStart && !l.ThursdayEnd) {
+          template +=
+              "<br/><strong>Thursdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Thursdays: </strong> { ThursdayStart } - { ThursdayEnd }";
+        }
+        if(!l.FridayStart && !l.FridayEnd) {
+          template +=
+              "<br/><strong>Fridays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Fridays: </strong> { FridayStart } - { FridayEnd }";
+        }
+      }
+      if (l.SaturdayStart === l.SundayStart && l.SaturdayEnd === l.SundayEnd) {
+        if (!l.SundayStart && !l.SaturdayEnd) {
+          template +=
+              "<br/><strong>Weekends: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Weekends: </strong> { SaturdayStart } - { SaturdayEnd }";
+        }
+      } else {
+        if(!l.SaturdayStart && !l.SaturdayEnd) {
+          template +=
+              "<br/><strong>Saturdays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Saturdays: </strong> { SaturdayStart } - { SaturdayEnd }";
+        }
+        if(!l.SundayStart && !l.SundayEnd) {
+          template +=
+              "<br/><strong>Sundays: </strong> Closed";
+        } else {
+          template +=
+              "<br/><strong>Sundays: </strong> { SundayStart } - { SundayEnd }"
+        }
+      }
     }
+    if (l.TestingRequirements) {
+      template += "<br/><br><strong>Testing Requirements: </strong>"
+      if (l.TestingRequirements.trim().includes("|")) {
+        $.each(l.TestingRequirements.trim().split("|"), function (idx, result) {
+          if (result.trim().toLowerCase() != "other" && result.trim().length > 0) {
+            template += '<br>  ' +result.trim();
+          }
+        });
+
+      } else {
+        template +=
+            "{ TestingRequirements }";
+      }
+    }
+
+    var testing_else = L.icon({
+      iconUrl: 'data/testing/testing_else.svg',
+      iconSize: [22, 22],
+      popupAnchor: [0, -8]
+    });
+    return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
+      return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
+    });
   }
 });
 
@@ -1290,7 +1400,29 @@ usngMap.bindPopup(function (layer) {
   '<a target="_blank" href="{URL}"><button>Download 10K Map</button></a></p>', layer.feature.properties);
 });
 
+// Vaccine By County
+var vaccineCounty = L.esri.featureLayer({
+  url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/Join_Features_to_VaccineByCounty/FeatureServer/0/",
+  style: function (feature) {
+  if (feature.properties.RegPrvdrs >= 0 && feature.properties.RegPrvdrs <= 5) {
+    return { fillColor: '#F6E5CF', fill: true, stroke: false,fillOpacity: 0.6};
+  } else if (feature.properties.RegPrvdrs > 5 && feature.properties.RegPrvdrs <= 20) {
+    return { fillColor: '#E6B7C4', fill: true, stroke: false,fillOpacity: 0.6};
+  } else if (feature.properties.RegPrvdrs > 20 && feature.properties.RegPrvdrs <= 50) {
+    return { fillColor: '#CC71B4', fill: true, stroke: false,fillOpacity: 0.6};
+  } else {
+    return { fillColor: '#8C3C88', fill: true, stroke: false,fillOpacity: 0.6};
+  }
+}
+});
+vaccineCounty.bindPopup(function (layer) {
+  // return temporary message while the "queryInfo" function called from the popupopen function runs:
+  return L.Util.template('<p><strong>{NAME_LOWER} County</strong><br><br> \n'+
+  'Number of Providers: {RegPrvdrs}<br><br>\n'+
+  '</p>', layer.feature.properties);
+});
 
+////////////////////////////////////
 // Add it all together
 var mymap = L.map('mapid', {
   preferCanvas: true,
@@ -1385,11 +1517,17 @@ $("input[type='checkbox']").change(function() {
     case "supervisedLivingFacilities":
       toggleLayer(this.checked, supervisedLivingFacilities);
     break;
-    case "testing":
-      toggleLayer(this.checked, testing);
+    case "testingFree":
+      toggleLayer(this.checked, testingFree);
+    break;
+    case "testingOther":
+      toggleLayer(this.checked, testingOther);
     break;
     case "va":
       toggleLayer(this.checked, va);
+    break;
+    case "vaccineCounty":
+      toggleLayer(this.checked, vaccineCounty)
     break;
   }
 });
@@ -1407,6 +1545,7 @@ let us = $('input[name="use_us"]');
 let mn = $('input[name="use_mn"]');
 let co = $('input[name="county"]');
 let st = $('input[name="states"]');
+let vc = $('input[name="vaccineCounty"]');
 
 // Radio buttons for basemaps
 $("input[type='radio'][name=radiobtn-basemap]").change(function() {
@@ -1450,6 +1589,8 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
       mn.prop('checked',false);
       mymap.removeLayer(positiveCounties);
       us.prop('checked',false);
+      mymap.removeLayer(vaccineCounty);
+      vc.prop('checked', false);
       mymap.removeLayer(cases);
 
       document.getElementById('streets').checked = true;
@@ -1470,6 +1611,8 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
       mn.prop('checked',false);
       mymap.removeLayer(positiveCounties);
       us.prop('checked',false);
+      mymap.removeLayer(vaccineCounty);
+      vc.prop('checked', false);
       mymap.removeLayer(cases);
 
       document.getElementById('streets').checked = true;
@@ -1489,9 +1632,19 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
 // Ensures mn cases and us covid cases are not on at the same time
 us.change(function(){
   mn.prop('checked',false);
+  vc.prop('checked',false);
   mymap.removeLayer(positiveCounties);
+  mymap.removeLayer(vaccineCounty);
 });
 mn.change(function(){
   us.prop('checked',false);
+  vc.prop('checked',false);
+  mymap.removeLayer(cases);
+  mymap.removeLayer(vaccineCounty);
+});
+vc.change(function(){
+  us.prop('checked',false);
+  mn.prop('checked',false);
+  mymap.removeLayer(positiveCounties);
   mymap.removeLayer(cases);
 });
