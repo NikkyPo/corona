@@ -4,19 +4,19 @@ var none = L.tileLayer("");
 var aerial = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
   attribution: "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
 });
-var streets = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+var streets = L.tileLayer("https://a.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>"
 });
 
 /////////////////////////////////////////
 // Counties
-var counties = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf', {
+var counties = VectorTileLayer("https://www.sharedgeo.org/COVID-19/leaflet/data/boundary/{z}/{x}/{y}.pbf", {
   minDetailZoom: 0,
   maxDetailZoom: 8,
   vectorTileLayerStyles: {
     cb_2017_us_county_500k: {
       weight: 1,
-      color: '#6F7C80',
+      color: "#6F7C80",
       opacity: 0.2,
       fill: false
     }
@@ -30,31 +30,31 @@ var positiveCounties = L.esri.featureLayer({
   url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/PositiveCountyCount/FeatureServer/0",
   style: function (feature) {
   if (feature.properties.MLMIS_CTY >= 0 && feature.properties.MLMIS_CTY <= 1000) {
-    return { fillColor: 'rgb(230, 238, 207)', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "rgb(230, 238, 207)", fill: true, stroke: false, fillOpacity: 0.6};
   } else if (feature.properties.MLMIS_CTY > 1000 && feature.properties.MLMIS_CTY <= 5000) {
-    return { fillColor: 'rgb(123, 204, 196)', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "rgb(123, 204, 196)", fill: true, stroke: false, fillOpacity: 0.6};
   } else if (feature.properties.MLMIS_CTY > 5000 && feature.properties.MLMIS_CTY <= 10000) {
-    return { fillColor: 'rgb(67, 162, 202)', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "rgb(67, 162, 202)", fill: true, stroke: false, fillOpacity: 0.6};
   } else {
-    return { fillColor: 'rgb(7, 85, 145)', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "rgb(7, 85, 145)", fill: true, stroke: false, fillOpacity: 0.6};
   }
 }
 });
 
-positiveCounties.bindPopup(function (layer) {
+positiveCounties.bindPopup(function () {
   // return temporary message while the "queryInfo" function called from the popupopen function runs:
-  return L.Util.template('Getting information');
+  return L.Util.template("Getting information");
 });
 
-positiveCounties.on('popupopen', function(evt) {
+positiveCounties.on("popupopen", function (evt) {
   // when the popup opens, we get the layer/featuere AND a reference to the popup in the evt variable here.
   queryInfo(evt.layer.feature, evt.popup);
 });
 
-positiveCounties.getPopup().on('remove', function() {
-  positiveCounties.bindPopup(function (layer) {
+positiveCounties.getPopup().on("remove", function () {
+  positiveCounties.bindPopup(function () {
     // return temporary message while the "queryInfo" function called from the popupopen function runs:
-    return L.Util.template('Getting information');
+    return L.Util.template("Getting information");
   });
 });
 
@@ -73,12 +73,12 @@ var queryInfo = function(feature, popup) {
       var recovered = "no data";
     }
   // this function is called when the query is complete. Update the currently open popup.
-    popup.setContent(L.Util.template('<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Deaths: ' + deaths, feature.properties));
+    popup.setContent(L.Util.template("<p><strong>{NAME_LOWER} County</strong><br></p> Confirmed Cases: {MLMIS_CTY}<br>Deaths: " + deaths, feature.properties));
   }.bind(this));
 };
 
 // Make sure layer sits on top
-positiveCounties.on('load', function (e) {
+positiveCounties.on("load", function (e) {
   positiveCounties.bringToFront();
 });
 
@@ -91,8 +91,8 @@ positiveCounties.on('load', function (e) {
   let day;
 
   function getval( callback ){
-     $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json', function(data) {
-         // We can't use .return because return is a JavaScript keyword.
+     $.getJSON("https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json", function(data) {
+         // We can"t use .return because return is a JavaScript keyword.
          const st = data[Object.keys(data)[0]];
          const maxDate = Object.keys(st.statewide).slice(-1)[0];
          callback(maxDate);
@@ -100,7 +100,7 @@ positiveCounties.on('load', function (e) {
   }
 
     getval( function ( value ) {
-      displayDate = moment(value).format('YYYY-MM-DD');
+      displayDate = moment(value).format("YYYY-MM-DD");
 
       $("#date").attr("max", displayDate);
       $("#date").attr("value", displayDate);
@@ -120,10 +120,10 @@ positiveCounties.on('load', function (e) {
   });
 
 
-$.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
+$.getJSON("https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json")
  .done( data => {
 
-  cases = VectorTileLayer('https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf', {
+  cases = VectorTileLayer("https://www.sharedgeo.org/COVID-19/leaflet/data/state_county/{z}/{x}/{y}.pbf", {
     minDetailZoom: 0,
     maxDetailZoom: 8,
     attribution: "COVID-19 data is from the New York Times <a href='https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html'>Dashboard</a> <a href='https://github.com/nytimes/covid-19-data'>Data Source</a>  <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC</a>",
@@ -166,20 +166,20 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
 
   function showNextDay() {
     if (day < max) {
-      day.add(1, 'days');
+      day.add(1, "days");
     } else {
       day = moment(min);
     }
-    $("#date").val(day.format('YYYY-MM-DD')).change();
+    $("#date").val(day.format("YYYY-MM-DD")).change();
   }
 
   function showPreviousDay() {
     if (day > min) {
-      day.add(-1, 'days');
+      day.add(-1, "days");
     } else {
       day = moment(max);
     }
-    $("#date").val(day.format('YYYY-MM-DD')).change();
+    $("#date").val(day.format("YYYY-MM-DD")).change();
   }
 
   var timer = null;
@@ -197,46 +197,46 @@ $.getJSON('https://www.sharedgeo.org/COVID-19/leaflet/data/covid-19-cases.json')
 
 /////////////////////////////////////////
 // Political boundaries
-var boundaries = L.esri.featureLayer({ url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0'});
+var boundaries = L.esri.featureLayer({ url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Political_Boundaries_Area/FeatureServer/0"});
 boundaries.setStyle({
-  color: '#808080',
+  color: "#808080",
   weight: 2,
   fill: false
 });
 
 /////////////////////////////////////////
 // Airports
-$.getJSON('data/airport/airport.geojson')
+$.getJSON("data/airport/airport.geojson")
  .done( data => {
    airports = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Certified"]) {
          case "Yes":
            var airport_com = L.icon({
-             iconUrl: 'data/airport/airport_com.svg',
+             iconUrl: "data/airport/airport_com.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_com}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{QuickRef}">Quick reference</a><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target='_blank' href='{QuickRef}'>Quick reference</a><br><a target='_blank' href='{airportURL}'>Detailed airport reference</a></p>", layer.feature.properties);
            });
          case "":
            var airport_non_com = L.icon({
-             iconUrl: 'data/airport/airport_non_com.svg',
+             iconUrl: "data/airport/airport_non_com.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_non_com}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{QuickRef}">Quick reference</a><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target='_blank' href='{QuickRef}>Quick reference</a><br><a target='_blank' href='{airportURL}'>Detailed airport reference</a></p>", layer.feature.properties);
            });
          case "Military":
            var airport_military = L.icon({
-             iconUrl: 'data/airport/airport_military.svg',
+             iconUrl: "data/airport/airport_military.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: airport_military}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target="_blank" href="{airportURL}">Detailed airport reference</a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{FacilityName}</strong><br>{City}, {State}<br>{LocationID}<br><br><a target='_blank' href='{airportURL}'>Detailed airport reference</a></p>", layer.feature.properties);
            });
        }
   }
@@ -248,122 +248,122 @@ $.getJSON('data/airport/airport.geojson')
 // Assisted Living: boarding care homes, housing with services, nursing homes and supervised living facilities
 
 var boardingCareHomesIcon = L.icon({
-  iconUrl: 'data/assistedLiving/boardingCareHomes.svg',
+  iconUrl: "data/assistedLiving/boardingCareHomes.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var boardingCareHomes = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var bch_digit = (count + '').length;
+  var bch_digit = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'bchCluster bch-' + bch_digit,
+   className: "bchCluster bch-" + bch_digit,
    iconSize: null
  });
 }
 });
-$.getJSON('data/assistedLiving/boardingCareHomes.geojson')
+$.getJSON("data/assistedLiving/boardingCareHomes.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: boardingCareHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
-            'Health Facility ID Number: {HFID}<br><br>\n'+
-            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
-            'County: {COUNTY_NAME}<br><br>\n'+
-            'Phone: {TELEPHONE}<br> \n'+
-            'Fax: {FAX}<br><br> \n'+
-            'License Type: {LIC_TYPE}<br>\n'+
-            'Administrator: {ADMINISTRATOR}<br><br>\n'+
-            'State Licensed Nursing Home beds:<strong> {NH_BEDS}</strong><br>\n'+
-            'State Licensed Boarding Care Home beds:<strong> {BCH_BEDS}</strong><br>\n'+
-            'Federal Medicare Skilled Nursing Facility beds: <strong>{SNF_BEDS}</strong><br>\n'+
-            'Federal Medicare/Medicaid Dual Skilled Nursing Facility and Nursing Facility beds:<strong> {SNFNF_BEDS}</strong><br>\n'+
-            'Federal Medicaid Nursing Facility beds (Nursing Home): <strong>{NF2_BEDS}</strong><br><br>\n'+
-            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
-            '</p>', feature.feature.properties);
+            return L.Util.template("<p><strong>{NAME}</strong><br>\n"+
+            "Health Facility ID Number: {HFID}<br><br>\n"+
+            "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n"+
+            "County: {COUNTY_NAME}<br><br>\n"+
+            "Phone: {TELEPHONE}<br> \n"+
+            "Fax: {FAX}<br><br> \n"+
+            "License Type: {LIC_TYPE}<br>\n"+
+            "Administrator: {ADMINISTRATOR}<br><br>\n"+
+            "State Licensed Nursing Home beds:<strong> {NH_BEDS}</strong><br>\n"+
+            "State Licensed Boarding Care Home beds:<strong> {BCH_BEDS}</strong><br>\n"+
+            "Federal Medicare Skilled Nursing Facility beds: <strong>{SNF_BEDS}</strong><br>\n"+
+            "Federal Medicare/Medicaid Dual Skilled Nursing Facility and Nursing Facility beds:<strong> {SNFNF_BEDS}</strong><br>\n"+
+            "Federal Medicaid Nursing Facility beds (Nursing Home): <strong>{NF2_BEDS}</strong><br><br>\n"+
+            "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a>\n"+
+            "</p>", feature.feature.properties);
           });
   }
 }).addTo(boardingCareHomes);
 });
 
 var housingWithServicesIcon = L.icon({
-  iconUrl: 'data/assistedLiving/housingWithServices.svg',
+  iconUrl: "data/assistedLiving/housingWithServices.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var housingWithServices = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var hws_digit = (count + '').length;
+  var hws_digit = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'hwsCluster hws-' + hws_digit,
+   className: "hwsCluster hws-" + hws_digit,
    iconSize: null
  });
 }
 });
-$.getJSON('data/assistedLiving/housingWithServices.geojson')
+$.getJSON("data/assistedLiving/housingWithServices.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: housingWithServicesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
-            'Health Facility ID Number: {HFID}<br><br>\n'+
-            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
-            'County: {COUNTY_NAME}<br><br>\n'+
-            'Phone: {TELEPHONE}<br>\n'+
-            'Fax: {FAX}<br><br> \n'+
-            'License Type: {LIC_TYPE}<br>\n'+
-            'Administrator: {ADMINISTRATOR}<br><br>\n'+
-            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
-            '</p>', feature.feature.properties);
+            return L.Util.template("<p><strong>{NAME}</strong><br>\n"+
+            "Health Facility ID Number: {HFID}<br><br>\n"+
+            "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n"+
+            "County: {COUNTY_NAME}<br><br>\n"+
+            "Phone: {TELEPHONE}<br>\n"+
+            "Fax: {FAX}<br><br> \n"+
+            "License Type: {LIC_TYPE}<br>\n"+
+            "Administrator: {ADMINISTRATOR}<br><br>\n"+
+            "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a>\n"+
+            "</p>", feature.feature.properties);
           });
   }
 }).addTo(housingWithServices);
 });
 
 var nursingHomesIcon = L.icon({
-  iconUrl: 'data/assistedLiving/nursingHomes.svg',
+  iconUrl: "data/assistedLiving/nursingHomes.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var nursingHomes = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var nh_digit = (count + '').length;
+  var nh_digit = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'nhCluster nh-' + nh_digit,
+   className: "nhCluster nh-" + nh_digit,
    iconSize: null
  });
 }
 });
-$.getJSON('data/assistedLiving/nursingHomes.geojson')
+$.getJSON("data/assistedLiving/nursingHomes.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: nursingHomesIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
-            'Health Facility ID Number: {HFID}<br><br>\n'+
-            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
-            'County: {COUNTY_NAME}<br><br>\n'+
-            'Phone: {TELEPHONE}<br> \n'+
-            'Fax: {FAX}<br><br> \n'+
-            'License Type: {LIC_TYPE}<br>\n'+
-            'Administrator: {ADMINISTRATOR}<br><br>\n'+
-            'State licensed Hospital beds: <strong>{HOSP_BEDS}</strong><br>\n'+
-            'Infant Bassinets: <strong>{BASS_BEDS}</strong><br>\n'+
-            'State Licensed Boarding Care Home beds: <strong>{BCH_BEDS}</strong><br>\n'+
-            'Federal Medicare Certified Hospital beds: <strong>{HOSP18_BEDS}</strong><br>\n'+
-            'Federal Medicare Critical Access Hospital:<strong> {CAH}</strong><br>\n'+
-            'Hospital Swing Bed Provider:<strong> {SWING}</strong><br>\n'+
-            'State Licensed Nursing Home beds:<strong> {NH_BEDS}</strong><br>\n'+
-            'Federal Medicare Skilled Nursing Facility beds: <strong>{SNF_BEDS}</strong><br>\n'+
-            'Federal Medicare/Medicaid Dual Skilled Nursing Facility and Nursing Facility beds: <strong>{SNFNF_BEDS}</strong><br><br>\n'+
-            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
-            '</p>', feature.feature.properties);
+            return L.Util.template("<p><strong>{NAME}</strong><br>\n"+
+            "Health Facility ID Number: {HFID}<br><br>\n"+
+            "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n"+
+            "County: {COUNTY_NAME}<br><br>\n"+
+            "Phone: {TELEPHONE}<br> \n"+
+            "Fax: {FAX}<br><br> \n"+
+            "License Type: {LIC_TYPE}<br>\n"+
+            "Administrator: {ADMINISTRATOR}<br><br>\n"+
+            "State licensed Hospital beds: <strong>{HOSP_BEDS}</strong><br>\n"+
+            "Infant Bassinets: <strong>{BASS_BEDS}</strong><br>\n"+
+            "State Licensed Boarding Care Home beds: <strong>{BCH_BEDS}</strong><br>\n"+
+            "Federal Medicare Certified Hospital beds: <strong>{HOSP18_BEDS}</strong><br>\n"+
+            "Federal Medicare Critical Access Hospital:<strong> {CAH}</strong><br>\n"+
+            "Hospital Swing Bed Provider:<strong> {SWING}</strong><br>\n"+
+            "State Licensed Nursing Home beds:<strong> {NH_BEDS}</strong><br>\n"+
+            "Federal Medicare Skilled Nursing Facility beds: <strong>{SNF_BEDS}</strong><br>\n"+
+            "Federal Medicare/Medicaid Dual Skilled Nursing Facility and Nursing Facility beds: <strong>{SNFNF_BEDS}</strong><br><br>\n"+
+            "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a>\n"+
+            "</p>", feature.feature.properties);
           });
   }
 }).addTo(nursingHomes);
@@ -371,41 +371,41 @@ $.getJSON('data/assistedLiving/nursingHomes.geojson')
 
 
 var supervisedLivingFacilitiesIcon = L.icon({
-  iconUrl: 'data/assistedLiving/supervisedLivingFacilities.svg',
+  iconUrl: "data/assistedLiving/supervisedLivingFacilities.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var supervisedLivingFacilities = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
-    var sl_digit = (count + '').length;
+    var sl_digit = (count + "").length;
     return L.divIcon({
       html: count,
-      className: 'slCluster sl-' + sl_digit,
+      className: "slCluster sl-" + sl_digit,
       iconSize: null
     });
   }
 });
-$.getJSON('data/assistedLiving/supervisedLivingFacilities.geojson')
+$.getJSON("data/assistedLiving/supervisedLivingFacilities.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        return L.marker(latlng, {icon: supervisedLivingFacilitiesIcon}).bindPopup(function (feature) {
-         return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
-            'Health Facility ID Number: {HFID}<br><br>\n'+
-            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n'+
-            'County: {COUNTY_NAME}<br><br>\n'+
-            'Phone: {TELEPHONE}<br> \n'+
-            'Fax: {FAX}<br><br> \n'+
-            'License Type: {LIC_TYPE}<br>\n'+
-            'Administrator: {ADMINISTRATOR}<br><br>\n'+
-            'Supervised Living Facility Class A beds: <strong>{SLFA_BEDS}</strong><br>\n'+
-            'Supervised Living Facility Class B beds:<strong> {SLFB_BEDS}</strong><br>\n'+
-            'Other beds:<strong> {OTHER_BEDS}</strong><br>\n'+
-            'Psychiatric beds:<strong>  {PSY18_BEDS}</strong><br>\n'+
-            'Intermediate Care Facility Mental Retardation beds: <strong>{ICFMR_BEDS}</strong><br><br>\n'+
-            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a>\n'+
-            '</p>', feature.feature.properties);
+         return L.Util.template("<p><strong>{NAME}</strong><br>\n"+
+            "Health Facility ID Number: {HFID}<br><br>\n"+
+            "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br> \n"+
+            "County: {COUNTY_NAME}<br><br>\n"+
+            "Phone: {TELEPHONE}<br> \n"+
+            "Fax: {FAX}<br><br> \n"+
+            "License Type: {LIC_TYPE}<br>\n"+
+            "Administrator: {ADMINISTRATOR}<br><br>\n"+
+            "Supervised Living Facility Class A beds: <strong>{SLFA_BEDS}</strong><br>\n"+
+            "Supervised Living Facility Class B beds:<strong> {SLFB_BEDS}</strong><br>\n"+
+            "Other beds:<strong> {OTHER_BEDS}</strong><br>\n"+
+            "Psychiatric beds:<strong>  {PSY18_BEDS}</strong><br>\n"+
+            "Intermediate Care Facility Mental Retardation beds: <strong>{ICFMR_BEDS}</strong><br><br>\n"+
+            "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a>\n"+
+            "</p>", feature.feature.properties);
           });
   }
 }).addTo(supervisedLivingFacilities);
@@ -418,31 +418,31 @@ var bases = L.esri.featureLayer({
   where: "STATE_TERR NOT LIKE 'Minnesota'",
 });
 bases.setStyle({
-  color: 'green',
+  color: "green",
   weight: 5,
   fill: true
 });
 bases.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{SITE_NAME}</strong><br><br>State Territory: {STATE_TERR}<br>Status: {OPER_STAT}<br>Component: {COMPONENT}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{SITE_NAME}</strong><br><br>State Territory: {STATE_TERR}<br>Status: {OPER_STAT}<br>Component: {COMPONENT}</p>", layer.feature.properties);
 });
 
 
 ////////////////////////////////////
 // EOC
 var eocIcon = L.icon({
-  iconUrl: 'data/EOC.png',
+  iconUrl: "data/EOC.png",
   iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var eoc = L.esri.Cluster.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0',
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0",
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var eoc_digit = (count + '').length;
+  var eoc_digit = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'eocCluster eoc-' + eoc_digit,
+   className: "eocCluster eoc-" + eoc_digit,
    iconSize: null
  });
 },
@@ -453,19 +453,19 @@ var eoc = L.esri.Cluster.featureLayer({
   }
     });
 eoc.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Telephone: {TELEPHONE}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Telephone: {TELEPHONE}</p>", layer.feature.properties);
 });
 
 /////////////////////////////////////////
 // Federal Guard
 
 // Federal Bases
-$.getJSON('data/military/federal_bases.geojson')
+$.getJSON("data/military/federal_bases.geojson")
  .done( data => {
    federal_bases = new L.geoJSON(data, {
      onEachFeature: function(feature, featureLayer){
        featureLayer.setStyle({
-         color: 'green',
+         color: "green",
          weight: 5,
          fill: true
        });
@@ -476,81 +476,81 @@ $.getJSON('data/military/federal_bases.geojson')
 var federal = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var fed_digit = (count + '').length;
+  var fed_digit = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'fedCluster fed-' + fed_digit,
+   className: "fedCluster fed-" + fed_digit,
    iconSize: null
  });
 }
 });
-$.getJSON('data/military/federal.geojson')
+$.getJSON("data/military/federal.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["TypeLabel"]) {
          case "Army":
          var army_federal = L.icon({
-           iconUrl: 'data/military/army_federal.svg',
+           iconUrl: "data/military/army_federal.svg",
            iconSize: [22, 22],
            popupAnchor: [0, -8]
          });
          return L.marker(latlng, {icon: army_federal}).bindPopup(function (layer) {
-           return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+           return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
            });
          case "Navy":
          var navy_federal = L.icon({
-           iconUrl: 'data/military/navy_federal.svg',
+           iconUrl: "data/military/navy_federal.svg",
            iconSize: [22, 22],
            popupAnchor: [0, -8]
          });
            return L.marker(latlng, {icon: navy_federal}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
            });
          case "USMC":
            var usmc_federal = L.icon({
-             iconUrl: 'data/military/usmc_federal.svg',
+             iconUrl: "data/military/usmc_federal.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: usmc_federal}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
            });
            case "Air Force":
              var military_airport_national = L.icon({
-               iconUrl: 'data/military/military_airport_federal.svg',
+               iconUrl: "data/military/military_airport_federal.svg",
                iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+               return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
              });
            case "Coast Guard":
              var coast_federal = L.icon({
-               iconUrl: 'data/military/coast_federal.svg',
+               iconUrl: "data/military/coast_federal.svg",
                iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: coast_federal}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+               return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
              });
              case "USACE":
                var usace_federal = L.icon({
-                 iconUrl: 'data/military/usace_federal.svg',
+                 iconUrl: "data/military/usace_federal.svg",
                  iconSize: [22, 22],
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: usace_federal}).bindPopup(function (layer) {
-                 return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+                 return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
                });
                case "AFRC":
                  var afrc_federal = L.icon({
-                   iconUrl: 'data/military/afrc_federal.svg',
+                   iconUrl: "data/military/afrc_federal.svg",
                    iconSize: [22, 22],
                    popupAnchor: [0, -8]
                  });
                  return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
-                   return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+                   return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
                  });
        }
   }
@@ -560,7 +560,7 @@ $.getJSON('data/military/federal.geojson')
 /////////////////////////////////////////////
 // fireStations
 var fireStationsIcon = L.icon({
-  iconUrl: 'data/fireStations.svg',
+  iconUrl: "data/fireStations.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
@@ -569,10 +569,10 @@ var fireStations = L.esri.Cluster.featureLayer({
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var digits = (count + '').length;
+  var digits = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'fsCluster fs-' + digits,
+   className: "fsCluster fs-" + digits,
    iconSize: null
  });
 },
@@ -583,28 +583,28 @@ var fireStations = L.esri.Cluster.featureLayer({
   }
    });
 fireStations.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>", layer.feature.properties);
 });
 
 /////////////////////////////////////////
 // Foodshelves
 var foodshelvesIcon = L.icon({
-  iconUrl: 'data/foodshelves/foodshelves.svg',
+  iconUrl: "data/foodshelves/foodshelves.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var foodshelves = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var foodshelves_digit = (count + '').length;
+  var foodshelves_digit = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'foodshelvesCluster foodshelves-' + foodshelves_digit,
+   className: "foodshelvesCluster foodshelves-" + foodshelves_digit,
    iconSize: null
  });
 }
 });
-$.getJSON('data/foodshelves/foodshelves.geojson')
+$.getJSON("data/foodshelves/foodshelves.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
@@ -621,7 +621,7 @@ $.getJSON('data/foodshelves/foodshelves.geojson')
 ///////////////////////////////////////////
 // Medical - General Hospitals, Native American, Psychiatric, Veterans Affairs
 var hospitalsIcon = L.icon({
-  iconUrl: 'data/hospital/hospital.svg',
+  iconUrl: "data/hospital/hospital.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
@@ -635,64 +635,61 @@ var hospitals = L.esri.featureLayer({
   }
  });
 hospitals.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
-  '{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br>\n'+
-  'County: {COUNTY}<br><br>\n'+
-  'Type: {TYPE}<br>\n'+
-  'Owner: {OWNER}<br>\n'+
-  'Status:{STATUS}<br>\n'+
-  'NAICS Description: {NAICS_DESC}<br>\n'+
-  // 'Source Date:{SOURCEDATE}<br><br>\n'+
-  'Validation Method: {VAL_METHOD}<br>\n'+
-  // 'Validation Date: {VAL_DATE}<br><br>\n'+
-  'Beds: {BEDS}<br>\n'+
-  'Trauma: {TRAUMA}<br>\n'+
-  'Helipad: {HELIPAD}<br><br>\n'+
-  // '<a target="_blank" href="{SOURCE}"><button>Data Source</button></a><br><br>\n'+
-  '<a target="_blank" href="{WEBSITE}"><button>Website</button></a><br>\n'+
-  '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>\n"+
+  "{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br>\n"+
+  "County: {COUNTY}<br><br>\n"+
+  "Type: {TYPE}<br>\n"+
+  "Owner: {OWNER}<br>\n"+
+  "Status:{STATUS}<br>\n"+
+  "NAICS Description: {NAICS_DESC}<br>\n"+
+  "Validation Method: {VAL_METHOD}<br>\n"+
+  "Beds: {BEDS}<br>\n"+
+  "Trauma: {TRAUMA}<br>\n"+
+  "Helipad: {HELIPAD}<br><br>\n"+
+  "<a target='_blank' href='{WEBSITE}'><button>Website</button></a><br>\n"+
+  "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a></p>", layer.feature.properties);
 });
 
-$.getJSON('data/hospital/naPublicHealthService.geojson')
+$.getJSON("data/hospital/naPublicHealthService.geojson")
  .done( data => {
    na = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Type"]) {
          case "Clinic":
            var naClinic = L.icon({
-             iconUrl: 'data/hospital/naClinic.svg',
+             iconUrl: "data/hospital/naClinic.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naClinic}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
-             '{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>\n'+
-             'Type: {Type}<br><br>\n'+
-             'Phone: {TELEPHONE}<br>\n'+
-             'Fax: {FAX}<br><br>\n'+
-             'Administrator: {ADMINISTRATOR}<br>\n'+
-             'State Licensed Hospital beds: <strong> {HOSP_BEDS}</strong><br>\n'+
-             'Infant Bassinets: <strong>{BASS_BEDS}</strong><br><br>\n'+
-             '<a target="_blank" href="{Website}"><button>Website</button></a><br>\n'+
-             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{NAME}</strong><br>\n"+
+             "{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>\n"+
+             "Type: {Type}<br><br>\n"+
+             "Phone: {TELEPHONE}<br>\n"+
+             "Fax: {FAX}<br><br>\n"+
+             "Administrator: {ADMINISTRATOR}<br>\n"+
+             "State Licensed Hospital beds: <strong> {HOSP_BEDS}</strong><br>\n"+
+             "Infant Bassinets: <strong>{BASS_BEDS}</strong><br><br>\n"+
+             "<a target='_blank' href='{Website}'><button>Website</button></a><br>\n"+
+             "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a></p>", layer.feature.properties);
            });
          case "Hospital":
            var naHospital = L.icon({
-             iconUrl: 'data/hospital/naHospital.svg',
+             iconUrl: "data/hospital/naHospital.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: naHospital}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{NAME}</strong><br>\n'+
-             '{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>\n'+
-             'Type: {Type}<br><br>\n'+
-             'Phone: {TELEPHONE}<br>\n'+
-             'Fax: {FAX}<br><br>\n'+
-             'Administrator: {ADMINISTRATOR}<br>\n'+
-             'State Licensed Hospital beds: <strong> {HOSP_BEDS}</strong><br>\n'+
-             'Infant Bassinets: <strong>{BASS_BEDS}</strong><br><br>\n'+
-             '<a target="_blank" href="{Website}"><button>Website</button></a><br>\n'+
-             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{NAME}</strong><br>\n"+
+             "{ADDRESS}<br> {CITY}, {STATE} {ZIP}<br><br>\n"+
+             "Type: {Type}<br><br>\n"+
+             "Phone: {TELEPHONE}<br>\n"+
+             "Fax: {FAX}<br><br>\n"+
+             "Administrator: {ADMINISTRATOR}<br>\n"+
+             "State Licensed Hospital beds: <strong> {HOSP_BEDS}</strong><br>\n"+
+             "Infant Bassinets: <strong>{BASS_BEDS}</strong><br><br>\n"+
+             "<a target='_blank' href='{Website}'><button>Website</button></a><br>\n"+
+             "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a></p>", layer.feature.properties);
            });
        }
   }
@@ -700,203 +697,203 @@ $.getJSON('data/hospital/naPublicHealthService.geojson')
 });
 
 var psychIcon = L.icon({
-  iconUrl: 'data/hospital/psychHospital.svg',
+  iconUrl: "data/hospital/psychHospital.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
-$.getJSON('data/hospital/psychHospital.geojson')
+$.getJSON("data/hospital/psychHospital.geojson")
  .done( data => {
    psych = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: psychIcon}).bindPopup(function (feature) {
-            return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
-            '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
-            'County: {COUNTY_NAME}<br><br>\n'+
-            'Phone: {TELEPHONE}<br>\n'+
-            'Fax: {FAX}<br><br>\n'+
-            'License Type: {LIC_TYPE}<br>\n'+
-            'Administrator: {ADMINISTRATOR}<br><br>\n'+
-            'State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n'+
-            'Supervised Living Facility Class B beds:<strong> {SLFB_BEDS}</strong><br>\n'+
-            'Other beds:<strong> {OTHER_BEDS}</strong><br>\n'+
-            'Federal Medicare Psychiatric beds: <strong>{PSY18_BEDS}</strong><br><br>\n'+
-            '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
+            return L.Util.template("<p><strong>{NAME}</strong><br><br>\n"+
+            "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n"+
+            "County: {COUNTY_NAME}<br><br>\n"+
+            "Phone: {TELEPHONE}<br>\n"+
+            "Fax: {FAX}<br><br>\n"+
+            "License Type: {LIC_TYPE}<br>\n"+
+            "Administrator: {ADMINISTRATOR}<br><br>\n"+
+            "State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n"+
+            "Supervised Living Facility Class B beds:<strong> {SLFB_BEDS}</strong><br>\n"+
+            "Other beds:<strong> {OTHER_BEDS}</strong><br>\n"+
+            "Federal Medicare Psychiatric beds: <strong>{PSY18_BEDS}</strong><br><br>\n"+
+            "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a></p>", feature.feature.properties);
           });
-  }
-});
+    }
+  });
 });
 
-$.getJSON('data/hospital/vaFacilities.geojson')
+$.getJSON("data/hospital/vaFacilities.geojson")
  .done( data => {
    va = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Type"]) {
          case "Hospital":
            var vaHospital = L.icon({
-             iconUrl: 'data/hospital/vaHospital.svg',
+             iconUrl: "data/hospital/vaHospital.svg",
              iconSize: [22, 22],
              iconAnchor: [20, 0],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaHospital}).bindPopup(function (feature) {
-             return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
-             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
-             'Phone: {TELEPHONE}<br>\n'+
-             'Fax: {FAX}<br><br>\n'+
-             'Type: {Type}<br><br>\n'+
-             'US National Grid: {USNationalGrid}<br><br>\n'+
-             'Federal Medicare Certified Hospital beds:<strong> {HOSP18_BEDS}</strong><br>\n'+
-             'State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n'+
-             'Federal Medicare Psychiatric beds:<strong> {PSY18_BEDS}</strong><br>\n'+
-             'Federal Medicare Skilled Nursing Facility beds:<strong> {SNF_BEDS}</strong><br><br>\n'+
-             'Federal Medicaid Nursing Facility beds (Nursing Home):<strong> {NF1_BEDS}</strong><br><br>\n'+
-             '<a target="_blank" href={Website}><button>Website</button></a><br>\n'+
-             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
+             return L.Util.template("<p><strong>{NAME}</strong><br><br>\n"+
+             "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n"+
+             "Phone: {TELEPHONE}<br>\n"+
+             "Fax: {FAX}<br><br>\n"+
+             "Type: {Type}<br><br>\n"+
+             "US National Grid: {USNationalGrid}<br><br>\n"+
+             "Federal Medicare Certified Hospital beds:<strong> {HOSP18_BEDS}</strong><br>\n"+
+             "State Licensed Psychiatric Beds:<strong> {PSY_HOSP_BEDS}</strong><br>\n"+
+             "Federal Medicare Psychiatric beds:<strong> {PSY18_BEDS}</strong><br>\n"+
+             "Federal Medicare Skilled Nursing Facility beds:<strong> {SNF_BEDS}</strong><br><br>\n"+
+             "Federal Medicaid Nursing Facility beds (Nursing Home):<strong> {NF1_BEDS}</strong><br><br>\n"+
+             "<a target='_blank' href={Website}><button>Website</button></a><br>\n"+
+             "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a></p>", feature.feature.properties);
            });
          case "Clinic":
            var vaClinic = L.icon({
-             iconUrl: 'data/hospital/vaClinic.svg',
+             iconUrl: "data/hospital/vaClinic.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: vaClinic}).bindPopup(function (feature) {
-             return L.Util.template('<p><strong>{NAME}</strong><br><br>\n'+
-             '{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n'+
-             'Phone: {TELEPHONE}<br>\n'+
-             'Fax: {FAX}<br><br>\n'+
-             'Type: {Type}<br><br>\n'+
-             'US National Grid: {USNationalGrid}<br><br>\n'+
-             '<a target="_blank" href={Website}><button>Website</button></a><br>\n'+
-             '<a target="_blank" href="https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html"><button>Health Regulation provider Data fields</button></a></p>', feature.feature.properties);
+             return L.Util.template("<p><strong>{NAME}</strong><br><br>\n"+
+             "{ADDRESS}<br>{CITY}, {STATE} {ZIP}<br>\n"+
+             "Phone: {TELEPHONE}<br>\n"+
+             "Fax: {FAX}<br><br>\n"+
+             "Type: {Type}<br><br>\n"+
+             "US National Grid: {USNationalGrid}<br><br>\n"+
+             "<a target='_blank' href={Website}><button>Website</button></a><br>\n"+
+             "<a target='_blank' href='https://www.health.state.mn.us/facilities/regulation/directory/directorydatafile.html'><button>Health Regulation provider Data fields</button></a></p>", feature.feature.properties);
            });
        }
-  }
-});
+    }
+  });
 });
 
 /////////////////////////////////////////
 // National Guard
 
 // National Guard Bases
-$.getJSON('data/military/national_guard_bases.geojson')
+$.getJSON("data/military/national_guard_bases.geojson")
  .done( data => {
    national_guard_bases = new L.geoJSON(data, {
      onEachFeature: function(feature, featureLayer){
        featureLayer.setStyle({
-         color: 'green',
+         color: "green",
          weight: 5,
          fill: true
        });
      }
-});
+  });
 });
 
 var national = L.markerClusterGroup({
   iconCreateFunction: function (cluster) {
-  var count = cluster.getChildCount();
-  var national_digit = (count + '').length;
-  return L.divIcon({
-   html: count,
-   className: 'nationalCluster national-' + national_digit,
-   iconSize: null
- });
-}
+    var count = cluster.getChildCount();
+    var national_digit = (count + "").length;
+    return L.divIcon({
+      html: count,
+      className: "nationalCluster national-" + national_digit,
+      iconSize: null
+    });
+  }
 });
-$.getJSON('data/military/national_guard.geojson')
+$.getJSON("data/military/national_guard.geojson")
  .done( data => {
    new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Symbol"]) {
          case "Armory":
            var armory_national = L.icon({
-             iconUrl: 'data/military/armory_national.svg',
+             iconUrl: "data/military/armory_national.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: armory_national}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a><br><a target='_blank' href='{OtherInfo}'><button>Other Information</button></a></p>", layer.feature.properties);
            });
          case "Military Airport":
            var military_airport_national = L.icon({
-             iconUrl: 'data/military/military_airport_national.svg',
+             iconUrl: "data/military/military_airport_national.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: military_airport_national}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a><br><a target='_blank' href='{OtherInfo}'><button>Other Information</button></a></p>", layer.feature.properties);
            });
          case "Helo":
            var helo_national = L.icon({
-             iconUrl: 'data/military/helo_national.svg',
+             iconUrl: "data/military/helo_national.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: helo_national}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a><br><a target='_blank' href='{OtherInfo}'><button>Other Information</button></a></p>", layer.feature.properties);
            });
            case "Training":
              var training_national = L.icon({
-               iconUrl: 'data/military/training_national.svg',
+               iconUrl: "data/military/training_national.svg",
                iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: training_national}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+               return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a><br><a target='_blank' href='{OtherInfo}'><button>Other Information</button></a></p>", layer.feature.properties);
              });
            case "WMD":
              var wmd_national = L.icon({
-               iconUrl: 'data/military/wmd_national.svg',
+               iconUrl: "data/military/wmd_national.svg",
                iconSize: [22, 22],
                popupAnchor: [0, -8]
              });
              return L.marker(latlng, {icon: wmd_national}).bindPopup(function (layer) {
-               return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+               return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a><br><a target='_blank' href='{OtherInfo}'><button>Other Information</button></a></p>", layer.feature.properties);
              });
              case "AFRC":
                var afrc_federal = L.icon({
-                 iconUrl: 'data/military/afrc_national.svg',
+                 iconUrl: "data/military/afrc_national.svg",
                  iconSize: [22, 22],
                  popupAnchor: [0, -8]
                });
                return L.marker(latlng, {icon: afrc_federal}).bindPopup(function (layer) {
-                 return L.Util.template('<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target="_blank" href="{Website}"><button>Website</button></a><br><a target="_blank" href="{OtherInfo}"><button>Other Information</button></a></p>', layer.feature.properties);
+                 return L.Util.template("<p><strong>{Name}</strong><br>{Street}<br>{City} {Zip}<br><br>Phone: {Phone}<br><br>Principal Unit: {PrincipalUnitsNotes}<br><br><a target='_blank' href='{Website}'><button>Website</button></a><br><a target='_blank' href='{OtherInfo}'><button>Other Information</button></a></p>", layer.feature.properties);
                });
-       }
-  }
-}).addTo(national);
+         }
+    }
+  }).addTo(national);
 });
 
 //////////////////////////////////////////
 // Native American Lands
 var nativeLand = L.esri.featureLayer({
-  url: 'https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Native_Lands/FeatureServer/0',
+  url: "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Native_Lands/FeatureServer/0",
   where: "State_Nm = 'MN'"
 });
 nativeLand.setStyle({
-  color: '#A87000',
+  color: "#A87000",
   weight: 2,
-  fill: '#A87000'
+  fill: "#A87000"
 });
 nativeLand.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{Loc_Own}</strong></p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{Loc_Own}</strong></p>", layer.feature.properties);
 });
 
 //////////////////////////////////////////
 // Police
 var policeIcon = L.icon({
-  iconUrl: 'data/policeStations.svg',
+  iconUrl: "data/policeStations.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -8]
 });
 var policeStations = L.esri.Cluster.featureLayer({
-  url: 'https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30',
+  url: "https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/30",
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
   var count = cluster.getChildCount();
-  var police = (count + '').length;
+  var police = (count + "").length;
   return L.divIcon({
    html: count,
-   className: 'policeCluster police-' + police,
+   className: "policeCluster police-" + police,
    iconSize: null
  });
 },
@@ -907,34 +904,34 @@ var policeStations = L.esri.Cluster.featureLayer({
   }
    });
 policeStations.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIPCODE}</p>", layer.feature.properties);
 });
 
 
 /////////////////////////////////////////
 // Prisons
-$.getJSON('data/prison/prisons.geojson')
+$.getJSON("data/prison/prisons.geojson")
  .done( data => {
    prisons = new L.geoJSON(data, {
      pointToLayer: function (feature, latlng) {
        switch(feature.properties["Type"]) {
          case "Federal":
            var prisons_fed = L.icon({
-             iconUrl: 'data/prison/prisons_fed.svg',
+             iconUrl: "data/prison/prisons_fed.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_fed}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br>{Street}<br>{City} {Zip}<br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a></p>', layer.feature.properties);
+             return L.Util.template("<p><strong>{FacilityName}</strong><br>{Street}<br>{City} {Zip}<br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target='_blank' href='{Website}'><button>Website</button></a></p>", layer.feature.properties);
            });
          case "State":
            var prisons_state = L.icon({
-             iconUrl: 'data/prison/prisons_state.svg',
+             iconUrl: "data/prison/prisons_state.svg",
              iconSize: [22, 22],
              popupAnchor: [0, -8]
            });
            return L.marker(latlng, {icon: prisons_state}).bindPopup(function (layer) {
-             return L.Util.template('<p><strong>{FacilityName}</strong><br>{Street}<br>{City} {Zip}<br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target="_blank" href="{Website}"><button>Website</button></a>', layer.feature.properties);
+             return L.Util.template("<p><strong>{FacilityName}</strong><br>{Street}<br>{City} {Zip}<br><br>Capacity: {Capacity} <br>Male or Female: {MaleFemale} <br>Juvenile: {Juvenile} <br>Minimum: {Minimum} <br>Medium: {Medium} <br>Close: {Close} <br>Maximum: {Maximum} <br><br><a target='_blank' href='{Website}'><button>Website</button></a>", layer.feature.properties);
            });
        }
   }
@@ -944,19 +941,19 @@ $.getJSON('data/prison/prisons.geojson')
 // Schools: public and private
 
 var publicSchoolsIcon = L.icon({
-  iconUrl: 'data/publicSchools.svg',
+  iconUrl: "data/publicSchools.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var publicSchools = L.esri.Cluster.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0',
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0",
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
-    var digits = (count + '').length;
+    var digits = (count + "").length;
     return L.divIcon({
       html: count,
-      className: 'pusCluster pus-' + digits,
+      className: "pusCluster pus-" + digits,
       iconSize: null
     });
   },
@@ -967,23 +964,23 @@ var publicSchools = L.esri.Cluster.featureLayer({
   }
 });
 publicSchools.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {ST_GRADE} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {ST_GRADE} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>", layer.feature.properties);
 });
 
 var privateSchoolsIcon = L.icon({
-  iconUrl: 'data/privateSchools.svg',
+  iconUrl: "data/privateSchools.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var privateSchools = L.esri.Cluster.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0',
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0",
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
-    var digits = (count + '').length;
+    var digits = (count + "").length;
     return L.divIcon({
       html: count,
-      className: 'psCluster ps-' + digits,
+      className: "psCluster ps-" + digits,
       iconSize: null
     });
   },
@@ -995,35 +992,35 @@ var privateSchools = L.esri.Cluster.featureLayer({
 });
 
 privateSchools.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {START_GRAD} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>{ADDRESS}, {CITY} {ZIP}<br>Phone: {TELEPHONE}<br><br>Enrollment: {ENROLLMENT}<br>Grades: {START_GRAD} to {END_GRADE}<br><br>Shelter ID: {SHELTER_ID}</p>", layer.feature.properties);
 });
 
 // Layer is not working as of: 8/12/2020
 //////////////////////////////////////////
 // RedCross
 // var redCross = L.esri.featureLayer({
-//   url: 'https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3',
+//   url: "https://hosting.rcview.redcross.org/arcgis/rest/services/Hosted/ARC_Master_Geography_FY19_January/FeatureServer/3",
 //   simplifyFactor: 0.5,
 //   precision: 5
 //  });
 // redCross.setStyle({
-//   color: 'red',
+//   color: "red",
 //   weight: 2,
-//   fillColor: '#ffcccb'
+//   fillColor: "#ffcccb"
 // });
 // redCross.bindPopup(function (layer) {
-//   return L.Util.template('<p><strong>{chapter}</strong><br><br>Region: {region}<br>Division: {division}</p>', layer.feature.properties);
+//   return L.Util.template("<p><strong>{chapter}</strong><br><br>Region: {region}<br>Division: {division}</p>", layer.feature.properties);
 // });
 
 ///////////////////////////////////////////
 // RedCross Facilities
 var redCrossFacilitiesIcon = L.icon({
-  iconUrl: 'data/redCrossFacilities.svg',
+  iconUrl: "data/redCrossFacilities.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
 var redCrossFacilities = L.esri.featureLayer({
-  url: 'https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0',
+  url: "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/American_Red_Cross_Chapter_Facilities/FeatureServer/0",
   where: "STATE = 'MN'",
   pointToLayer: function (geojson, latlng) {
     return L.marker(latlng, {
@@ -1033,13 +1030,13 @@ var redCrossFacilities = L.esri.featureLayer({
 });
 
 redCrossFacilities.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Phone: {PHONE}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME}</strong><br><br>Description: {NAICSDESCR}<br><br>{ADDRESS}, {CITY} {ZIP}<br><br>Phone: {PHONE}</p>", layer.feature.properties);
 });
 
 ////////////////////////////////////////////
 // Shelters
 var sheltersIcon = L.icon({
-  iconUrl: 'data/shelters.svg',
+  iconUrl: "data/shelters.svg",
   iconSize: [22, 22],
   popupAnchor: [0, -28]
 });
@@ -1048,10 +1045,10 @@ var shelters = L.esri.Cluster.featureLayer({
   where: "STATE = 'MN'",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
-    var shelter_digit = (count + '').length;
+    var shelter_digit = (count + "").length;
     return L.divIcon({
       html: count,
-      className: 'shelterCluster shelter-' + shelter_digit,
+      className: "shelterCluster shelter-" + shelter_digit,
       iconSize: null
     });
   },
@@ -1063,149 +1060,154 @@ var shelters = L.esri.Cluster.featureLayer({
 });
 
 shelters.bindPopup(function (layer) {
-  return L.Util.template('<p><strong>{SHELTER_NAME} \n'+
-  '</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}<br><br>\n'+
-  'County: {COUNTY_PARISH}<br>FIPS CODE: {FIPS_CODE}<br>\n'+
-  'Evacuation Capacity: {EVACUATION_CAPACITY}<br> \n'+
-  'Post Impact Capacity: {POST_IMPACT_CAPACITY}<br> \n'+
-  'ADA Compliant: {ADA_COMPLIANT}<br>\n'+
-  'Wheelchair Accessible: {WHEELCHAIR_ACCESSIBLE}<br>\n'+
-  'Pet Accommodations: {PET_ACCOMMODATIONS_CODE} {PET_ACCOMMODATIONS_DESC}<br>\n'+
-  'Generator Onsite: {GENERATOR_ONSITE}<br>\n'+
-  'Self sufficient electricity: {SELF_SUFFICIENT_ELECTRICITY}<br>\n'+
-  'In 100 year floodplain: {IN_100_YR_FLOODPLAIN}<br\n'+
-  'In 500 year floodplain: {IN_500_YR_FLOODPLAIN}<br><br>\n'+
-  'Phone: {ORG_MAIN_PHONE}<br>\n'+
-  'Hotline Phone: {ORG_HOTLINE_PHONE}<br> \n'+
-  'Email: {ORG_EMAIL}<br>\n'+
-  'Shelter Status: {SHELTER_STATUS_CODE}<br>\n'+
-  'Shelter Open Date: {SHELTER_OPEN_DATE}<br>\n'+
-  'Shelter Closed Date: {SHELTER_CLOSED_DATE}<br> \n'+
-  'Medical needs population: {MEDICAL_NEEDS_POPULATION}<br> \n'+
-  'Other population: {OTHER_POPULATION} {OTHER_POPULATION_DESCRIPTION}<br>\n'+
-  'Total population: {TOTAL_POPULATION}<br> \n'+
-  'Pet population: {PET_POPULATION}</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{SHELTER_NAME} \n"+
+  "</strong><br><br>{ADDRESS_1}, {CITY} {ZIP}<br><br>\n"+
+  "County: {COUNTY_PARISH}<br>FIPS CODE: {FIPS_CODE}<br>\n"+
+  "Evacuation Capacity: {EVACUATION_CAPACITY}<br> \n"+
+  "Post Impact Capacity: {POST_IMPACT_CAPACITY}<br> \n"+
+  "ADA Compliant: {ADA_COMPLIANT}<br>\n"+
+  "Wheelchair Accessible: {WHEELCHAIR_ACCESSIBLE}<br>\n"+
+  "Pet Accommodations: {PET_ACCOMMODATIONS_CODE} {PET_ACCOMMODATIONS_DESC}<br>\n"+
+  "Generator Onsite: {GENERATOR_ONSITE}<br>\n"+
+  "Self sufficient electricity: {SELF_SUFFICIENT_ELECTRICITY}<br>\n"+
+  "In 100 year floodplain: {IN_100_YR_FLOODPLAIN}<br\n"+
+  "In 500 year floodplain: {IN_500_YR_FLOODPLAIN}<br><br>\n"+
+  "Phone: {ORG_MAIN_PHONE}<br>\n"+
+  "Hotline Phone: {ORG_HOTLINE_PHONE}<br> \n"+
+  "Email: {ORG_EMAIL}<br>\n"+
+  "Shelter Status: {SHELTER_STATUS_CODE}<br>\n"+
+  "Shelter Open Date: {SHELTER_OPEN_DATE}<br>\n"+
+  "Shelter Closed Date: {SHELTER_CLOSED_DATE}<br> \n"+
+  "Medical needs population: {MEDICAL_NEEDS_POPULATION}<br> \n"+
+  "Other population: {OTHER_POPULATION} {OTHER_POPULATION_DESCRIPTION}<br>\n"+
+  "Total population: {TOTAL_POPULATION}<br> \n"+
+  "Pet population: {PET_POPULATION}</p>", layer.feature.properties);
 });
 
 ////////////////////////////////////////////
 // Test Locations: No Cost
 
+function template(feature) {
+  var l = feature.properties;
+
+  var template =
+  "<br>"
+  if (!l.MondayStart && !l.MondayEnd && !l.TuesdayStart && !l.TuesdayEnd && !l.WednesdayStart && !l.WednesdayEnd && !l.ThursdayStart && !l.ThursdayEnd
+      && !l.FridayStart && !l.FridayEnd && !l.SaturdayStart && !l.SaturdayEnd && !l.SundayStart && !l.SundayEnd ) {
+    template +=
+        "<br/>Contact for hours of operation"
+  } else {
+    template += "<br/><strong>Hours of operation:</strong>";
+    if (l.MondayStart === l.TuesdayStart && l.MondayStart === l.WednesdayStart && l.MondayStart === l.ThursdayStart && l.MondayStart === l.FridayStart &&
+        l.MondayEnd === l.TuesdayEnd && l.MondayEnd === l.WednesdayEnd && l.MondayEnd === l.ThursdayEnd && l.MondayEnd === l.FridayEnd) {
+      if(!l.MondayStart && !l.MondayEnd) {
+        template +=
+            "<br/><strong>Weekdays: </strong> Closed"
+      } else {
+        template +=
+            "<br/><strong>Weekdays: </strong> { MondayStart } - { MondayEnd }"
+      }
+    } else {
+      if(!l.MondayStart && !l.MondayEnd) {
+        template +=
+            "<br/><strong>Mondays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Mondays: </strong> { MondayStart } - { MondayEnd }"
+      }
+      if(!l.TuesdayStart && !l.TuesdayEnd) {
+        template +=
+            "<br/><strong>Tuesdays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Tuesdays: </strong> { TuesdayStart } - { TuesdayEnd }"
+      }
+      if(!l.WednesdayStart && !l.WednesdayEnd) {
+        template +=
+            "<br/><strong>Wednesdays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Wednesdays: </strong> { WednesdayStart } - { WednesdayEnd }";
+      }
+      if(!l.ThursdayStart && !l.ThursdayEnd) {
+        template +=
+            "<br/><strong>Thursdays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Thursdays: </strong> { ThursdayStart } - { ThursdayEnd }";
+      }
+      if(!l.FridayStart && !l.FridayEnd) {
+        template +=
+            "<br/><strong>Fridays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Fridays: </strong> { FridayStart } - { FridayEnd }";
+      }
+    }
+    if (l.SaturdayStart === l.SundayStart && l.SaturdayEnd === l.SundayEnd) {
+      if (!l.SundayStart && !l.SaturdayEnd) {
+        template +=
+            "<br/><strong>Weekends: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Weekends: </strong> { SaturdayStart } - { SaturdayEnd }";
+      }
+    } else {
+      if(!l.SaturdayStart && !l.SaturdayEnd) {
+        template +=
+            "<br/><strong>Saturdays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Saturdays: </strong> { SaturdayStart } - { SaturdayEnd }";
+      }
+      if(!l.SundayStart && !l.SundayEnd) {
+        template +=
+            "<br/><strong>Sundays: </strong> Closed";
+      } else {
+        template +=
+            "<br/><strong>Sundays: </strong> { SundayStart } - { SundayEnd }"
+      }
+    }
+  }
+  if (l.TestingRequirements) {
+    template += "<br/><br><strong>Testing Requirements: </strong>"
+    if (l.TestingRequirements.trim().includes("|")) {
+      $.each(l.TestingRequirements.trim().split("|"), function (idx, result) {
+        if (result.trim().toLowerCase() != "other" && result.trim().length > 0) {
+          template += "<br>  " +result.trim();
+        }
+      });
+
+    } else {
+      template +=
+          "{ TestingRequirements }";
+    }
+  }
+  return template
+}
+
 var testingFree = L.esri.Cluster.featureLayer({
   url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/arcgis/rest/services/CovidTestLocations_view_prd/FeatureServer/0",
-  where: "(ProviderName = 'No-Cost Community Testing Sites') AND (State = 'MN')",
+  where: "(ProviderName = 'No-Cost Community Sites') AND (State = 'MN')",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
-    var testing_digit = (count + '').length;
+    var testing_digit = (count + "").length;
     return L.divIcon({
       html: count,
-      className: 'testingCluster testing-' + testing_digit,
+      className: "testingCluster testing-" + testing_digit,
       iconSize: null
     });
   },
   pointToLayer: function (feature, latlng) {
-    var l = feature.properties;
-
-    var template =
-    "<br>"
-    if (!l.MondayStart && !l.MondayEnd && !l.TuesdayStart && !l.TuesdayEnd && !l.WednesdayStart && !l.WednesdayEnd && !l.ThursdayStart && !l.ThursdayEnd
-        && !l.FridayStart && !l.FridayEnd && !l.SaturdayStart && !l.SaturdayEnd && !l.SundayStart && !l.SundayEnd ) {
-      template +=
-          "<br/>Contact for hours of operation"
-    } else {
-      template += "<br/><strong>Hours of operation:</strong>";
-      if (l.MondayStart === l.TuesdayStart && l.MondayStart === l.WednesdayStart && l.MondayStart === l.ThursdayStart && l.MondayStart === l.FridayStart &&
-          l.MondayEnd === l.TuesdayEnd && l.MondayEnd === l.WednesdayEnd && l.MondayEnd === l.ThursdayEnd && l.MondayEnd === l.FridayEnd) {
-        if(!l.MondayStart && !l.MondayEnd) {
-          template +=
-              "<br/><strong>Weekdays: </strong> Closed"
-        } else {
-          template +=
-              "<br/><strong>Weekdays: </strong> { MondayStart } - { MondayEnd }"
-        }
-      } else {
-        if(!l.MondayStart && !l.MondayEnd) {
-          template +=
-              "<br/><strong>Mondays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Mondays: </strong> { MondayStart } - { MondayEnd }"
-        }
-        if(!l.TuesdayStart && !l.TuesdayEnd) {
-          template +=
-              "<br/><strong>Tuesdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Tuesdays: </strong> { TuesdayStart } - { TuesdayEnd }"
-        }
-        if(!l.WednesdayStart && !l.WednesdayEnd) {
-          template +=
-              "<br/><strong>Wednesdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Wednesdays: </strong> { WednesdayStart } - { WednesdayEnd }";
-        }
-        if(!l.ThursdayStart && !l.ThursdayEnd) {
-          template +=
-              "<br/><strong>Thursdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Thursdays: </strong> { ThursdayStart } - { ThursdayEnd }";
-        }
-        if(!l.FridayStart && !l.FridayEnd) {
-          template +=
-              "<br/><strong>Fridays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Fridays: </strong> { FridayStart } - { FridayEnd }";
-        }
-      }
-      if (l.SaturdayStart === l.SundayStart && l.SaturdayEnd === l.SundayEnd) {
-        if (!l.SundayStart && !l.SaturdayEnd) {
-          template +=
-              "<br/><strong>Weekends: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Weekends: </strong> { SaturdayStart } - { SaturdayEnd }";
-        }
-      } else {
-        if(!l.SaturdayStart && !l.SaturdayEnd) {
-          template +=
-              "<br/><strong>Saturdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Saturdays: </strong> { SaturdayStart } - { SaturdayEnd }";
-        }
-        if(!l.SundayStart && !l.SundayEnd) {
-          template +=
-              "<br/><strong>Sundays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Sundays: </strong> { SundayStart } - { SundayEnd }"
-        }
-      }
-    }
-    if (l.TestingRequirements) {
-      template += "<br/><br><strong>Testing Requirements: </strong>"
-      if (l.TestingRequirements.trim().includes("|")) {
-        $.each(l.TestingRequirements.trim().split("|"), function (idx, result) {
-          if (result.trim().toLowerCase() != "other" && result.trim().length > 0) {
-            template += '<br>  ' +result.trim();
-          }
-        });
-
-      } else {
-        template +=
-            "{ TestingRequirements }";
-      }
-    }
+    var t = template(feature)
 
     var testing_free = L.icon({
-      iconUrl: 'data/testing/testing_appt.svg',
+      iconUrl: "data/testing/testing_appt.svg",
       iconSize: [22, 22],
       popupAnchor: [0, -8]
     });
     return L.marker(latlng, {icon: testing_free}).bindPopup(function (layer) {
-      return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
+      return L.Util.template("<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href='tel:{Phone}'>{Phone}</a>"+ t +"<br><br><a target='_blank' href='https://mn.gov/covid19/get-tested/testing-locations/index.jsp'><button>Click for more details</button></a></p>", layer.feature.properties);
     });
   }
 });
@@ -1216,117 +1218,23 @@ var testingOther = L.esri.Cluster.featureLayer({
   where: "(NOT ProviderName = 'No-Cost Community Testing Sites') AND (State = 'MN')",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
-    var testing_digit = (count + '').length;
+    var testing_digit = (count + "").length;
     return L.divIcon({
       html: count,
-      className: 'testingClusterOther testing-' + testing_digit,
+      className: "testingClusterOther testing-" + testing_digit,
       iconSize: null
     });
   },
   pointToLayer: function (feature, latlng) {
-    var l = feature.properties;
-
-    var template =
-    "<br>"
-    if (!l.MondayStart && !l.MondayEnd && !l.TuesdayStart && !l.TuesdayEnd && !l.WednesdayStart && !l.WednesdayEnd && !l.ThursdayStart && !l.ThursdayEnd
-        && !l.FridayStart && !l.FridayEnd && !l.SaturdayStart && !l.SaturdayEnd && !l.SundayStart && !l.SundayEnd ) {
-      template +=
-          "<br/>Contact for hours of operation"
-    } else {
-      template += "<br/><strong>Hours of operation:</strong>";
-      if (l.MondayStart === l.TuesdayStart && l.MondayStart === l.WednesdayStart && l.MondayStart === l.ThursdayStart && l.MondayStart === l.FridayStart &&
-          l.MondayEnd === l.TuesdayEnd && l.MondayEnd === l.WednesdayEnd && l.MondayEnd === l.ThursdayEnd && l.MondayEnd === l.FridayEnd) {
-        if(!l.MondayStart && !l.MondayEnd) {
-          template +=
-              "<br/><strong>Weekdays: </strong> Closed"
-        } else {
-          template +=
-              "<br/><strong>Weekdays: </strong> { MondayStart } - { MondayEnd }"
-        }
-      } else {
-        if(!l.MondayStart && !l.MondayEnd) {
-          template +=
-              "<br/><strong>Mondays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Mondays: </strong> { MondayStart } - { MondayEnd }"
-        }
-        if(!l.TuesdayStart && !l.TuesdayEnd) {
-          template +=
-              "<br/><strong>Tuesdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Tuesdays: </strong> { TuesdayStart } - { TuesdayEnd }"
-        }
-        if(!l.WednesdayStart && !l.WednesdayEnd) {
-          template +=
-              "<br/><strong>Wednesdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Wednesdays: </strong> { WednesdayStart } - { WednesdayEnd }";
-        }
-        if(!l.ThursdayStart && !l.ThursdayEnd) {
-          template +=
-              "<br/><strong>Thursdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Thursdays: </strong> { ThursdayStart } - { ThursdayEnd }";
-        }
-        if(!l.FridayStart && !l.FridayEnd) {
-          template +=
-              "<br/><strong>Fridays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Fridays: </strong> { FridayStart } - { FridayEnd }";
-        }
-      }
-      if (l.SaturdayStart === l.SundayStart && l.SaturdayEnd === l.SundayEnd) {
-        if (!l.SundayStart && !l.SaturdayEnd) {
-          template +=
-              "<br/><strong>Weekends: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Weekends: </strong> { SaturdayStart } - { SaturdayEnd }";
-        }
-      } else {
-        if(!l.SaturdayStart && !l.SaturdayEnd) {
-          template +=
-              "<br/><strong>Saturdays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Saturdays: </strong> { SaturdayStart } - { SaturdayEnd }";
-        }
-        if(!l.SundayStart && !l.SundayEnd) {
-          template +=
-              "<br/><strong>Sundays: </strong> Closed";
-        } else {
-          template +=
-              "<br/><strong>Sundays: </strong> { SundayStart } - { SundayEnd }"
-        }
-      }
-    }
-    if (l.TestingRequirements) {
-      template += "<br/><br><strong>Testing Requirements: </strong>"
-      if (l.TestingRequirements.trim().includes("|")) {
-        $.each(l.TestingRequirements.trim().split("|"), function (idx, result) {
-          if (result.trim().toLowerCase() != "other" && result.trim().length > 0) {
-            template += '<br>  ' +result.trim();
-          }
-        });
-
-      } else {
-        template +=
-            "{ TestingRequirements }";
-      }
-    }
+    var t = template(feature)
 
     var testing_else = L.icon({
-      iconUrl: 'data/testing/testing_else.svg',
+      iconUrl: "data/testing/testing_else.svg",
       iconSize: [22, 22],
       popupAnchor: [0, -8]
     });
     return L.marker(latlng, {icon: testing_else}).bindPopup(function (layer) {
-      return L.Util.template('<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href="tel:{Phone}">{Phone}</a>'+ template +'<br><br><a target="_blank" href="https://mn.gov/covid19/get-tested/testing-locations/index.jsp"><button>Click for more details</button></a></p>', layer.feature.properties);
+      return L.Util.template("<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{AddrLine1}<br>{City}, {Zip}<br><strong>Contact Info: </strong><a href='tel:{Phone}'>{Phone}</a>"+ t +"<br><br><a target='_blank' href='https://mn.gov/covid19/get-tested/testing-locations/index.jsp'><button>Click for more details</button></a></p>", layer.feature.properties);
     });
   }
 });
@@ -1341,9 +1249,9 @@ function dd2ddm(xy) {
 
   for (i=0; i<xy.length; i++) {
     var arr = [1,0,1];
-    var spl = xy[i].toString().split('.');
-    arr[0] = Math.abs(xy[i].toString().split('.')[0]);
-    arr[1] = spl.length == 2 ? Math.abs(parseFloat('.'+xy[i].toString().split('.')[1])*60.0) : 0;
+    var spl = xy[i].toString().split(".");
+    arr[0] = Math.abs(xy[i].toString().split(".")[0]);
+    arr[1] = spl.length == 2 ? Math.abs(parseFloat("."+xy[i].toString().split(".")[1])*60.0) : 0;
     arr[2] = xy[i] >= 0 ? 1 : -1;
 
     coords[i] = arr;
@@ -1355,9 +1263,9 @@ function dd2ddm(xy) {
 var usngNone = L.tileLayer("");
 
 // 10K Overview map - Aerial
-var usngAerial = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_aerial_10Kmapindex/FeatureServer/0'});
+var usngAerial = L.esri.featureLayer({ url: "https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_aerial_10Kmapindex/FeatureServer/0"});
 usngAerial.setStyle({
-  color: '#808080',
+  color: "#808080",
   weight: 1,
   fill: false
 });
@@ -1365,22 +1273,22 @@ usngAerial.bindPopup(function (layer) {
   let input = [layer.feature.properties.Lat ,layer.feature.properties.Lon];
   let dms = dd2ddm(input);
 
-  var lat_dir = dms[0][2] < 0 ? 'S' : 'N';
-  var long_dir = dms[1][2] < 0 ? 'W' : 'E';
+  var lat_dir = dms[0][2] < 0 ? "S" : "N";
+  var long_dir = dms[1][2] < 0 ? "W" : "E";
 
-  let lat = 'Latitude: ' + dms[0][0] + ' ' + Math.round(dms[0][1]*100)/100 + ' ' + lat_dir;
-  let long = 'Longitude: ' + dms[1][0] + ' ' + Math.round(dms[1][1]*100)/100 + ' ' + long_dir;
+  let lat = "Latitude: " + dms[0][0] + " " + Math.round(dms[0][1]*100)/100 + " " + lat_dir;
+  let long = "Longitude: " + dms[1][0] + " " + Math.round(dms[1][1]*100)/100 + " " + long_dir;
 
-  return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
-  'National Grid (100k) : {NG100K}<br><br>\n'+
-  lat + '<br>' + long + '<br><br>\n'+
-  '<a target="_blank" href="{URL}"><button>Download 10K Aerial</button></a></p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{Name}</strong><br><br> \n"+
+  "National Grid (100k) : {NG100K}<br><br>\n"+
+  lat + "<br>" + long + "<br><br>\n"+
+  "<a target='_blank' href='{URL}'><button>Download 10K Aerial</button></a></p>", layer.feature.properties);
 });
 
 // 10K Overview map - Maps
-var usngMap = L.esri.featureLayer({ url: 'https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_street_10Kmapindex/FeatureServer/0'});
+var usngMap = L.esri.featureLayer({ url: "https://services2.arcgis.com/CfhoRi2v351nuUH7/ArcGIS/rest/services/MGACEPC_street_10Kmapindex/FeatureServer/0"});
 usngMap.setStyle({
-  color: '#808080',
+  color: "#808080",
   weight: 1,
   fill: false
 });
@@ -1388,16 +1296,16 @@ usngMap.bindPopup(function (layer) {
   let input = [layer.feature.properties.Lat ,layer.feature.properties.Lon];
   let dms = dd2ddm(input);
 
-  var lat_dir = dms[0][2] < 0 ? 'S' : 'N';
-  var long_dir = dms[1][2] < 0 ? 'W' : 'E';
+  var lat_dir = dms[0][2] < 0 ? "S" : "N";
+  var long_dir = dms[1][2] < 0 ? "W" : "E";
 
-  let lat = 'Latitude: ' + dms[0][0] + ' ' + Math.round(dms[0][1]*100)/100 + ' ' + lat_dir;
-  let long = 'Longitude: ' + dms[1][0] + ' ' + Math.round(dms[1][1]*100)/100 + ' ' + long_dir;
+  let lat = "Latitude: " + dms[0][0] + " " + Math.round(dms[0][1]*100)/100 + " " + lat_dir;
+  let long = "Longitude: " + dms[1][0] + " " + Math.round(dms[1][1]*100)/100 + " " + long_dir;
 
-  return L.Util.template('<p><strong>{Name}</strong><br><br> \n'+
-  'National Grid (100k) : {NG100K}<br><br>\n'+
-  lat + '<br>' + long + '<br><br>\n'+
-  '<a target="_blank" href="{URL}"><button>Download 10K Map</button></a></p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{Name}</strong><br><br> \n"+
+  "National Grid (100k) : {NG100K}<br><br>\n"+
+  lat + "<br>" + long + "<br><br>\n"+
+  "<a target='_blank' href='{URL}'><button>Download 10K Map</button></a></p>", layer.feature.properties);
 });
 
 // Vaccine By County
@@ -1405,33 +1313,60 @@ var vaccineCounty = L.esri.featureLayer({
   url: "https://services2.arcgis.com/V12PKGiMAH7dktkU/arcgis/rest/services/Join_Features_to_VaccineByCounty/FeatureServer/0/",
   style: function (feature) {
   if (feature.properties.RegPrvdrs >= 0 && feature.properties.RegPrvdrs <= 5) {
-    return { fillColor: '#F6E5CF', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "#F6E5CF", fill: true, stroke: false,fillOpacity: 0.6};
   } else if (feature.properties.RegPrvdrs > 5 && feature.properties.RegPrvdrs <= 20) {
-    return { fillColor: '#E6B7C4', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "#E6B7C4", fill: true, stroke: false,fillOpacity: 0.6};
   } else if (feature.properties.RegPrvdrs > 20 && feature.properties.RegPrvdrs <= 50) {
-    return { fillColor: '#CC71B4', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "#CC71B4", fill: true, stroke: false,fillOpacity: 0.6};
   } else {
-    return { fillColor: '#8C3C88', fill: true, stroke: false,fillOpacity: 0.6};
+    return { fillColor: "#8C3C88", fill: true, stroke: false,fillOpacity: 0.6};
   }
 }
 });
 vaccineCounty.bindPopup(function (layer) {
   // return temporary message while the "queryInfo" function called from the popupopen function runs:
-  return L.Util.template('<p><strong>{NAME_LOWER} County</strong><br><br> \n'+
-  'Number of Providers: {RegPrvdrs}<br><br>\n'+
-  '</p>', layer.feature.properties);
+  return L.Util.template("<p><strong>{NAME_LOWER} County</strong><br><br> \n"+
+  "Number of Providers: {RegPrvdrs}<br><br>\n"+
+  "</p>", layer.feature.properties);
+});
+
+// Vaccine locations
+var vaccineLocations = L.esri.Cluster.featureLayer({
+  url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/ArcGIS/rest/services/CovidVacLocations_view_prod/FeatureServer/0",
+  where: "State = 'MN'",
+  iconCreateFunction: function (cluster) {
+    var count = cluster.getChildCount();
+    var vaccine_digit = (count + "").length;
+    return L.divIcon({
+      html: count,
+      className: "vaccineCluster vaccine-" + vaccine_digit,
+      iconSize: null
+    });
+  },
+  pointToLayer: function (feature, latlng) {
+    var t = template(feature)
+
+    var vaccine = L.icon({
+      iconUrl: "data/testing/vaccine.svg",
+      iconSize: [20, 20],
+      popupAnchor: [0, -8]
+    });
+    return L.marker(latlng, {icon: vaccine}).bindPopup(function (layer) {
+      return L.Util.template("<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{City}, {Zip}<br><br><strong>Contact Info: </strong><a href='tel:{Phone}'>{Phone}</a>"+ t +"<br><br><a target='_blank' href='https://mn.gov/covid19/vaccine/find-vaccine/locations/index.jsp'><button>Click for more details</button></a></p>", layer.feature.properties);
+    });
+  }
 });
 
 ////////////////////////////////////
 // Add it all together
-var mymap = L.map('mapid', {
+var mymap = L.map("mapid", {
   preferCanvas: true,
   center: [45.9, -95.9],
   zoom: 6,
   layers: [positiveCounties, counties, boundaries, none]
 });
 
-L.control.sidebar('sidebar').addTo(mymap);
+L.control.sidebar("sidebar").addTo(mymap);
 
 // Layer logic
 $("input[type='checkbox']").change(function() {
@@ -1441,10 +1376,10 @@ $("input[type='checkbox']").change(function() {
       toggleLayer(this.checked, airports);
     break;
     case "bases":
-    toggleLayer(this.checked, bases);
+      toggleLayer(this.checked, bases);
     break;
     case "boardingCareHomes":
-    toggleLayer(this.checked, boardingCareHomes);
+      toggleLayer(this.checked, boardingCareHomes);
     break;
     case "boundaries":
       toggleLayer(this.checked, boundaries);
@@ -1529,6 +1464,9 @@ $("input[type='checkbox']").change(function() {
     case "vaccineCounty":
       toggleLayer(this.checked, vaccineCounty)
     break;
+    case "vaccineLocations":
+      toggleLayer(this.checked, vaccineLocations)
+    break;
   }
 });
 
@@ -1541,14 +1479,14 @@ function toggleLayer(checked, layer) {
 }
 
 // Radio button variables
-let us = $('input[name="use_us"]');
-let mn = $('input[name="use_mn"]');
-let co = $('input[name="county"]');
-let st = $('input[name="states"]');
-let vc = $('input[name="vaccineCounty"]');
+let us = $("input[name='use_us']");
+let mn = $("input[name='use_mn']");
+let co = $("input[name='county']");
+let st = $("input[name='states']");
+let vc = $("input[name='vaccineCounty']");
 
 // Radio buttons for basemaps
-$("input[type='radio'][name=radiobtn-basemap]").change(function() {
+$("input[type='radio'][name='radiobtn-basemap']").change(function() {
   var radioClicked = $(this).attr("id");
   switch (radioClicked) {
     case "none":
@@ -1586,20 +1524,20 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
     // Turns COVID layers off but makes sure County and State boundaries are on
       mymap.removeLayer(usngMap);
       mymap.removeLayer(usngNone);
-      mn.prop('checked',false);
+      mn.prop("checked",false);
       mymap.removeLayer(positiveCounties);
-      us.prop('checked',false);
+      us.prop("checked",false);
       mymap.removeLayer(vaccineCounty);
-      vc.prop('checked', false);
+      vc.prop("checked", false);
       mymap.removeLayer(cases);
 
-      document.getElementById('streets').checked = true;
+      document.getElementById("streets").checked = true;
       mymap.addLayer(streets);
       streets.bringToBack();
 
-      st.prop('checked',true);
+      st.prop("checked",true);
       mymap.addLayer(boundaries);
-      co.prop('checked',true);
+      co.prop("checked",true);
       mymap.addLayer(counties);
       mymap.addLayer(usngAerial);
       usngAerial.bringToBack();
@@ -1608,20 +1546,20 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
     // Turns COVID layers off but makes sure County and State boundaries are on
       mymap.removeLayer(usngAerial);
       mymap.removeLayer(usngNone);
-      mn.prop('checked',false);
+      mn.prop("checked",false);
       mymap.removeLayer(positiveCounties);
-      us.prop('checked',false);
+      us.prop("checked",false);
       mymap.removeLayer(vaccineCounty);
-      vc.prop('checked', false);
+      vc.prop("checked", false);
       mymap.removeLayer(cases);
 
-      document.getElementById('streets').checked = true;
+      document.getElementById("streets").checked = true;
       mymap.addLayer(streets);
       streets.bringToBack();
 
-      st.prop('checked',true);
+      st.prop("checked",true);
       mymap.addLayer(boundaries);
-      co.prop('checked',true);
+      co.prop("checked",true);
       mymap.addLayer(counties);
       mymap.addLayer(usngMap);
       usngMap.bringToBack();
@@ -1631,20 +1569,20 @@ $("input[type=radio][name=radiobtn-usng]").change(function() {
 
 // Ensures mn cases and us covid cases are not on at the same time
 us.change(function(){
-  mn.prop('checked',false);
-  vc.prop('checked',false);
+  mn.prop("checked",false);
+  vc.prop("checked",false);
   mymap.removeLayer(positiveCounties);
   mymap.removeLayer(vaccineCounty);
 });
 mn.change(function(){
-  us.prop('checked',false);
-  vc.prop('checked',false);
+  us.prop("checked",false);
+  vc.prop("checked",false);
   mymap.removeLayer(cases);
   mymap.removeLayer(vaccineCounty);
 });
 vc.change(function(){
-  us.prop('checked',false);
-  mn.prop('checked',false);
+  us.prop("checked",false);
+  mn.prop("checked",false);
   mymap.removeLayer(positiveCounties);
   mymap.removeLayer(cases);
 });
