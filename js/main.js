@@ -1170,7 +1170,7 @@ function template(feature) {
     }
   }
   if (l.TestingRequirements) {
-    template += "<br/><br><strong>Testing Requirements: </strong>"
+    template += "<br/><br><strong>Requirements: </strong>"
     if (l.TestingRequirements.trim().includes("|")) {
       $.each(l.TestingRequirements.trim().split("|"), function (idx, result) {
         if (result.trim().toLowerCase() != "other" && result.trim().length > 0) {
@@ -1331,9 +1331,28 @@ vaccineCounty.bindPopup(function (layer) {
 });
 
 // Vaccine locations
+// Free
+var vaccineLocationsFree = L.esri.Cluster.featureLayer({
+  url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/ArcGIS/rest/services/CovidVacLocations_view_prod/FeatureServer/0",
+  where: "(ProviderName = 'No-Cost Community Sites') AND (State = 'MN')",
+  pointToLayer: function (feature, latlng) {
+    var t = template(feature)
+
+    var vaccine = L.icon({
+      iconUrl: "data/testing/vaccineFree.svg",
+      iconSize: [20, 20],
+      popupAnchor: [0, -8]
+    });
+    return L.marker(latlng, {icon: vaccine}).bindPopup(function (layer) {
+      return L.Util.template("<h3>{SiteName}</h3><p><strong>Provider: </strong>{ProviderName}<br><br>{City}, {Zip}<br><br><strong>Contact Info: </strong><a href='tel:{Phone}'>{Phone}</a>"+ t +"<br><br><a target='_blank' href='https://mn.gov/covid19/vaccine/find-vaccine/locations/index.jsp'><button>Click for more details</button></a></p>", layer.feature.properties);
+    });
+  }
+});
+
+// Vaccine locations: other
 var vaccineLocations = L.esri.Cluster.featureLayer({
   url: "https://services.arcgis.com/9OIuDHbyhmH91RfZ/ArcGIS/rest/services/CovidVacLocations_view_prod/FeatureServer/0",
-  where: "State = 'MN'",
+  where: "(NOT ProviderName = 'No-Cost Community Sites') AND (State = 'MN')",
   iconCreateFunction: function (cluster) {
     var count = cluster.getChildCount();
     var vaccine_digit = (count + "").length;
@@ -1466,6 +1485,9 @@ $("input[type='checkbox']").change(function() {
     break;
     case "vaccineLocations":
       toggleLayer(this.checked, vaccineLocations)
+    break;
+    case "vaccineLocationsFree":
+      toggleLayer(this.checked, vaccineLocationsFree)
     break;
   }
 });
